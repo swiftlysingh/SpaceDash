@@ -1,80 +1,45 @@
-# Project Title
+# SpaceX iOS App
+This is an iOS App uses SpaceX API from r/SpaceX. This app will show the status of various SpaceX launches and Vehicles.
 
-One Paragraph of project description goes here
+# Getting Started
 
-## Getting Started
+## Requirements for Development
+- iOS 10.0+
+- Xcode 8.0+
+- OSX or above
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+## Setup
 
-### Prerequisites
+- Fork this project.
+- Clone the forked project to your machine.
+- In your project directory open Terminal and Run `$ pod install` and `$ pod update`
+-  Open .xcworkspace file in Xcode to start working on the App
 
-What things you need to install the software and how to install them
+### Branch Policy
 
+We have the following branches
+ * **development** All development goes on in this branch. If you're contributing, you are supposed to make a pull request to _development_. PRs to development branch must pass a build check and a unit-test check on Circle CI.
+ * **master** This contains shipped code. After significant features/bugfixes are accumulated on development, we make a version update and make a release.
+ 
+### Code practices
+Please help us follow the best practices to make it easy for the reviewer as well as the contributor. We want to focus on the code quality more than on managing pull request ethics.
 
-Give examples
+ * Single commit per pull request
+ * For writing commit messages please read the COMMITSTYLE carefully. Kindly adhere to the guidelines.
+ * Follow uniform design practices. The design language must be consistent throughout the app.
+ * The pull request will not get merged until and unless the commits are squashed. In case there are multiple commits on the PR, the commit author needs to squash them and not the maintainers cherrypicking and merging squashes.
+ * If the PR is related to any front end change, please attach relevant screenshots in the pull request description.
 
+### Join the development
 
-### Installing
-
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
-
-
-Give the example
-
-
-And repeat
-
-
-until finished
-
-
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
+* Before you join the development, please set up the project on your local machine, run it and go through the application completely. Press on any button you can find and see where it leads to. Explore. (Don't worry ... Nothing will happen to the app or you due to the exploring :wink: Only thing that will happen is, you'll be more familiar with what is where and might even get some cool ideas on how to improve various aspects of the app.)
+* If you would like to work on an issue, drop in a comment at the issue. If it is already assigned to someone, but there is no sign of any work being done, please free to drop in a comment so that the issue can be assigned to you if the previous assignee has dropped it entirely.
 
 
-Give an example
-
-
-### And coding style tests
-
-Explain what these tests test and why
-
-
-Give an example
-
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
 
 ## Author
 
-* *Pushpinder Pal Singh* - Initial work - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+* [Pushpinder Pal Singh](https://github.com/pushpinderpalsingh)
 
 ## License
 
