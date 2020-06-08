@@ -1,5 +1,5 @@
 # SpaceX iOS App
-This is an iOS App uses SpaceX API from r/SpaceX. This app will show the status of various SpaceX launches and Vehicles.
+This is an iOS App uses SpaceX API from r/SpaceX. This app will show the status of various SpaceX launches and Vehicles. I have plan to integerate AR in future version of this app.
 
 # Getting Started
 
