@@ -1,6 +1,9 @@
 # SpaceX iOS App
 This is an iOS App uses SpaceX API from r/SpaceX. This app will show the status of various SpaceX launches and Vehicles. I have plan to integerate AR in future version of this app.
 
+## Screenshots
+![alt text](https://github.com/pushpinderpalsingh/SpaceX/blob/master/Screenshots/collage.png "Screen Shots")
+
 # Getting Started
 
 ## Requirements for Development
