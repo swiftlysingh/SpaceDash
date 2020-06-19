@@ -7,8 +7,8 @@ This is an iOS App uses SpaceX API from r/SpaceX. This app will show the status 
 # Getting Started
 
 ## Requirements for Development
-- iOS 10.0+
-- Xcode 8.0+
+- iOS 13.0+
+- Xcode 11.0+
 - OSX or above
 
 ## Setup
