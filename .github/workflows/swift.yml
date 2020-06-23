@@ -1,0 +1,26 @@
+name: Swift
+
+on:
+  push:
+    branches: 
+    - develop 
+  pull_request:
+    branches:  
+    - master
+    - develop 
+
+jobs:
+  build:
+
+    runs-on: macos-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Build
+      run: xcodebuild -workspace SpaceX.xcworkspace \
+            -scheme SpaceX\      
+            -destination platform=iOS\ Simulator,OS=13.3,name=iPhone\ 11 \
+            clean test | xcpretty
+      
+    - name: CocoaPods Action
+      uses: ty0x2333/cocoapods-action@0.2.0
