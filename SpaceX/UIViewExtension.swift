@@ -49,7 +49,7 @@ extension UIView{
     func roundedBottom(){
         let maskPath1 = UIBezierPath(roundedRect: bounds,
                                      byRoundingCorners: [.bottomRight , .bottomLeft],
-                                     cornerRadii: CGSize(width: 15, height: 15))
+                                     cornerRadii: CGSize(width: 30, height: 30))
         let maskLayer1 = CAShapeLayer()
         maskLayer1.frame = bounds
         maskLayer1.path = maskPath1.cgPath

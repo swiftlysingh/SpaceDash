@@ -13,7 +13,7 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var UpcomingLaunch: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        UpcomingLaunch.layer.cornerRadius = 40
+        UpcomingLaunch.roundedBottom()
 
     }
 
