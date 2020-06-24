@@ -1,0 +1,25 @@
+name: CI
+
+on:
+  push:
+    branches-ignore:
+      - master
+  pull_request:
+    branches:  
+    - master
+    - develop 
+
+jobs:
+  test:
+    runs-on: macOS-latest
+    steps:
+    - uses: actions/checkout@master
+    
+    - name: Installing Cocoapods
+      run: |
+       pod install
+       pod update
+     
+    - name: Running Tests
+      run: bundle exec fastlane tests
+      
