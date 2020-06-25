@@ -21,7 +21,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K0b-20-2Q0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1083" y="638"/>
+            <point key="canvasLocation" x="-165" y="344"/>
         </scene>
         <!--Home-->
         <scene sceneID="2oh-if-cUN">
@@ -31,7 +31,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="514" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="waM-qQ-kTW" userLabel="Upcoming Launch">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="waM-qQ-kTW" userLabel="Upcoming Launch">
                                 <rect key="frame" x="0.0" y="0.0" width="514" height="480"/>
                                 <color key="backgroundColor" red="0.84706455469999997" green="0.84704858059999999" blue="0.84705936910000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </view>
@@ -40,7 +40,7 @@
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jhh-OX-sob" userLabel="Content View">
                                         <rect key="frame" x="0.0" y="0.0" width="514" height="305"/>
-                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
                                 </subviews>
                                 <constraints>
@@ -60,8 +60,10 @@
                             <constraint firstItem="6rF-J0-zFb" firstAttribute="top" secondItem="waM-qQ-kTW" secondAttribute="bottom" constant="8" id="CE9-OU-jbu"/>
                             <constraint firstItem="6rF-J0-zFb" firstAttribute="top" secondItem="nU2-Np-Sti" secondAttribute="top" constant="488" id="DkO-gE-j5D"/>
                             <constraint firstItem="6rF-J0-zFb" firstAttribute="leading" secondItem="FWa-wi-cq3" secondAttribute="leading" id="Eh9-QM-2LH"/>
+                            <constraint firstItem="waM-qQ-kTW" firstAttribute="trailing" secondItem="6rF-J0-zFb" secondAttribute="trailing" priority="250" id="NZj-Kb-JD6"/>
                             <constraint firstItem="6rF-J0-zFb" firstAttribute="trailing" secondItem="FWa-wi-cq3" secondAttribute="trailing" id="VlI-cB-90u"/>
                             <constraint firstAttribute="bottom" secondItem="6rF-J0-zFb" secondAttribute="bottom" constant="20" id="W1B-Jo-Asx"/>
+                            <constraint firstItem="waM-qQ-kTW" firstAttribute="leading" secondItem="6rF-J0-zFb" secondAttribute="leading" id="bKj-6b-rIZ"/>
                             <constraint firstItem="waM-qQ-kTW" firstAttribute="top" secondItem="nU2-Np-Sti" secondAttribute="top" id="oYF-cy-qMG"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="FWa-wi-cq3"/>
