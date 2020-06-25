@@ -15,8 +15,9 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         UpcomingLaunch.translatesAutoresizingMaskIntoConstraints = false
         UpcomingLaunch.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.width).isActive = true
-//        UpcomingLaunch.roundedBottom()
-        print(UIScreen.main.bounds.width)
+        UpcomingLaunch.layer.cornerRadius = CGFloat(35)
+        UpcomingLaunch.clipsToBounds = true
+        UpcomingLaunch.layer.maskedCorners = [.layerMinXMaxYCorner,.layerMaxXMaxYCorner]
     }
 
 }
