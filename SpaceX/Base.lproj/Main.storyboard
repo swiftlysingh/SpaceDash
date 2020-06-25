@@ -33,7 +33,30 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="waM-qQ-kTW" userLabel="Upcoming Launch">
                                 <rect key="frame" x="0.0" y="0.0" width="1159" height="480"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="download" translatesAutoresizingMaskIntoConstraints="NO" id="SmH-WE-Rx5">
+                                        <rect key="frame" x="1001" y="52" width="150" height="420"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="SmH-WE-Rx5" secondAttribute="height" multiplier="223:420" constant="-73" id="2zh-pB-RhV"/>
+                                            <constraint firstAttribute="width" constant="150" id="JYq-Lu-U7K"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Upcoming Launch" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dqi-lY-WjY">
+                                        <rect key="frame" x="8" y="52" width="226.5" height="31"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="26"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <color key="backgroundColor" red="0.84706455469999997" green="0.84704858059999999" blue="0.84705936910000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstItem="SmH-WE-Rx5" firstAttribute="top" secondItem="waM-qQ-kTW" secondAttribute="top" constant="52" id="3W3-du-oaD"/>
+                                    <constraint firstAttribute="bottom" secondItem="SmH-WE-Rx5" secondAttribute="bottom" constant="8" id="Env-B3-L3M"/>
+                                    <constraint firstItem="dqi-lY-WjY" firstAttribute="top" secondItem="waM-qQ-kTW" secondAttribute="top" constant="52" id="JvR-5l-J9f"/>
+                                    <constraint firstItem="SmH-WE-Rx5" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="dqi-lY-WjY" secondAttribute="trailing" constant="8" symbolic="YES" id="ats-PQ-ERW"/>
+                                    <constraint firstAttribute="trailing" secondItem="SmH-WE-Rx5" secondAttribute="trailing" constant="8" id="enw-kJ-5Br"/>
+                                    <constraint firstItem="dqi-lY-WjY" firstAttribute="leading" secondItem="waM-qQ-kTW" secondAttribute="leading" constant="8" id="u1P-Ph-crp"/>
+                                </constraints>
                             </view>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6rF-J0-zFb">
                                 <rect key="frame" x="0.0" y="488" width="1159" height="305"/>
@@ -293,7 +316,7 @@
                             <constraint firstItem="6rF-J0-zFb" firstAttribute="top" secondItem="waM-qQ-kTW" secondAttribute="bottom" constant="8" id="CE9-OU-jbu"/>
                             <constraint firstItem="6rF-J0-zFb" firstAttribute="top" secondItem="nU2-Np-Sti" secondAttribute="top" constant="488" id="DkO-gE-j5D"/>
                             <constraint firstItem="6rF-J0-zFb" firstAttribute="leading" secondItem="FWa-wi-cq3" secondAttribute="leading" id="Eh9-QM-2LH"/>
-                            <constraint firstItem="waM-qQ-kTW" firstAttribute="trailing" secondItem="6rF-J0-zFb" secondAttribute="trailing" priority="250" id="NZj-Kb-JD6"/>
+                            <constraint firstItem="waM-qQ-kTW" firstAttribute="trailing" secondItem="FWa-wi-cq3" secondAttribute="trailing" priority="250" id="NZj-Kb-JD6"/>
                             <constraint firstItem="6rF-J0-zFb" firstAttribute="trailing" secondItem="FWa-wi-cq3" secondAttribute="trailing" id="VlI-cB-90u"/>
                             <constraint firstAttribute="bottom" secondItem="6rF-J0-zFb" secondAttribute="bottom" constant="20" id="W1B-Jo-Asx"/>
                             <constraint firstItem="waM-qQ-kTW" firstAttribute="leading" secondItem="6rF-J0-zFb" secondAttribute="leading" id="bKj-6b-rIZ"/>
@@ -341,6 +364,7 @@
     <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
     <resources>
         <image name="cargo-ship" width="512" height="512"/>
+        <image name="download" width="227" height="1161"/>
         <image name="fast" width="512" height="512"/>
         <image name="helipad (1)" width="512" height="512"/>
         <image name="house" catalog="system" width="128" height="110"/>
