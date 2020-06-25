@@ -13,8 +13,10 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var UpcomingLaunch: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        UpcomingLaunch.roundedBottom()
-
+        UpcomingLaunch.translatesAutoresizingMaskIntoConstraints = false
+        UpcomingLaunch.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.width).isActive = true
+//        UpcomingLaunch.roundedBottom()
+        print(UIScreen.main.bounds.width)
     }
 
 }

@@ -21,35 +21,62 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K0b-20-2Q0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-163" y="296"/>
+            <point key="canvasLocation" x="-1083" y="638"/>
         </scene>
         <!--Home-->
         <scene sceneID="2oh-if-cUN">
             <objects>
                 <viewController id="ZKl-d6-ple" customClass="HomeViewController" customModule="SpaceX" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nU2-Np-Sti">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <rect key="frame" x="0.0" y="0.0" width="514" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="waM-qQ-kTW" userLabel="Upcoming Launch">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="480"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="waM-qQ-kTW" userLabel="Upcoming Launch">
+                                <rect key="frame" x="0.0" y="0.0" width="514" height="480"/>
                                 <color key="backgroundColor" red="0.84706455469999997" green="0.84704858059999999" blue="0.84705936910000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6rF-J0-zFb">
+                                <rect key="frame" x="0.0" y="488" width="514" height="305"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jhh-OX-sob" userLabel="Content View">
+                                        <rect key="frame" x="0.0" y="0.0" width="514" height="305"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="jhh-OX-sob" firstAttribute="top" secondItem="6rF-J0-zFb" secondAttribute="top" id="91V-Pc-h15"/>
+                                    <constraint firstItem="jhh-OX-sob" firstAttribute="width" secondItem="6rF-J0-zFb" secondAttribute="width" priority="250" id="JEQ-Yh-yMp"/>
+                                    <constraint firstAttribute="trailing" secondItem="jhh-OX-sob" secondAttribute="trailing" id="JjD-Yw-cuG"/>
+                                    <constraint firstItem="jhh-OX-sob" firstAttribute="leading" secondItem="6rF-J0-zFb" secondAttribute="leading" id="YiU-fx-Gjs"/>
+                                    <constraint firstItem="jhh-OX-sob" firstAttribute="height" secondItem="6rF-J0-zFb" secondAttribute="height" id="doc-Nq-2Fd"/>
+                                    <constraint firstAttribute="bottom" secondItem="jhh-OX-sob" secondAttribute="bottom" id="rfm-d8-oHH"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="JN1-r1-O49"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="vD2-OO-oiv"/>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6rF-J0-zFb" firstAttribute="top" secondItem="waM-qQ-kTW" secondAttribute="bottom" constant="8" id="CE9-OU-jbu"/>
+                            <constraint firstItem="6rF-J0-zFb" firstAttribute="top" secondItem="nU2-Np-Sti" secondAttribute="top" constant="488" id="DkO-gE-j5D"/>
+                            <constraint firstItem="6rF-J0-zFb" firstAttribute="leading" secondItem="FWa-wi-cq3" secondAttribute="leading" id="Eh9-QM-2LH"/>
+                            <constraint firstItem="6rF-J0-zFb" firstAttribute="trailing" secondItem="FWa-wi-cq3" secondAttribute="trailing" id="VlI-cB-90u"/>
+                            <constraint firstAttribute="bottom" secondItem="6rF-J0-zFb" secondAttribute="bottom" constant="20" id="W1B-Jo-Asx"/>
+                            <constraint firstItem="waM-qQ-kTW" firstAttribute="top" secondItem="nU2-Np-Sti" secondAttribute="top" id="oYF-cy-qMG"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="FWa-wi-cq3"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" id="mmo-XP-eUv">
                         <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="0.0"/>
                     </tabBarItem>
+                    <size key="freeformSize" width="514" height="896"/>
                     <connections>
                         <outlet property="UpcomingLaunch" destination="waM-qQ-kTW" id="6Uo-aF-BQW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e7Z-RO-pza" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-164" y="-354"/>
+            <point key="canvasLocation" x="-165.21739130434784" y="-354.24107142857139"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="c1W-Ht-28c">
