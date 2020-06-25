@@ -15,7 +15,7 @@
 		FFF716E2249D3E210043EB81 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFF716E0249D3E210043EB81 /* LaunchScreen.storyboard */; };
 		FFF7170424A1ADE30043EB81 /* SpaceXDummyTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF7170324A1ADE30043EB81 /* SpaceXDummyTest.swift */; };
 		FFF7170C24A338D10043EB81 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF7170B24A338D10043EB81 /* HomeViewController.swift */; };
-		FFF7170E24A33D360043EB81 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF7170D24A33D360043EB81 /* UIViewExtension.swift */; };
+		FFF7171224A48F730043EB81 /* DetailScrollViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF7171124A48F730043EB81 /* DetailScrollViews.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +43,7 @@
 		FFF7170324A1ADE30043EB81 /* SpaceXDummyTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceXDummyTest.swift; sourceTree = "<group>"; };
 		FFF7170524A1ADE30043EB81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FFF7170B24A338D10043EB81 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		FFF7170D24A33D360043EB81 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		FFF7171124A48F730043EB81 /* DetailScrollViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailScrollViews.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,11 +108,11 @@
 				FFF716D5249D3E1C0043EB81 /* AppDelegate.swift */,
 				FFF716D7249D3E1C0043EB81 /* SceneDelegate.swift */,
 				FFF716DB249D3E1C0043EB81 /* Main.storyboard */,
+				FFF7171124A48F730043EB81 /* DetailScrollViews.swift */,
 				FFF716DE249D3E210043EB81 /* Assets.xcassets */,
 				FFF716E0249D3E210043EB81 /* LaunchScreen.storyboard */,
 				FFF716E3249D3E210043EB81 /* Info.plist */,
 				FFF7170B24A338D10043EB81 /* HomeViewController.swift */,
-				FFF7170D24A33D360043EB81 /* UIViewExtension.swift */,
 			);
 			path = SpaceX;
 			sourceTree = "<group>";
@@ -255,7 +255,7 @@
 			files = (
 				FFF716D6249D3E1C0043EB81 /* AppDelegate.swift in Sources */,
 				FFF716D8249D3E1C0043EB81 /* SceneDelegate.swift in Sources */,
-				FFF7170E24A33D360043EB81 /* UIViewExtension.swift in Sources */,
+				FFF7171224A48F730043EB81 /* DetailScrollViews.swift in Sources */,
 				FFF7170C24A338D10043EB81 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -28,75 +28,88 @@
             <objects>
                 <viewController id="ZKl-d6-ple" customClass="HomeViewController" customModule="SpaceX" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nU2-Np-Sti">
-                        <rect key="frame" x="0.0" y="0.0" width="1184" height="813"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1159" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="waM-qQ-kTW" userLabel="Upcoming Launch">
-                                <rect key="frame" x="0.0" y="0.0" width="1184" height="480"/>
+                                <rect key="frame" x="0.0" y="0.0" width="1159" height="480"/>
                                 <color key="backgroundColor" red="0.84706455469999997" green="0.84704858059999999" blue="0.84705936910000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </view>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6rF-J0-zFb">
-                                <rect key="frame" x="0.0" y="488" width="1184" height="305"/>
+                                <rect key="frame" x="0.0" y="488" width="1159" height="305"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jhh-OX-sob" userLabel="Content View">
-                                        <rect key="frame" x="0.0" y="0.0" width="1184" height="305"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="1159" height="305"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vn4-aa-S8P" userLabel="Rockets">
-                                                <rect key="frame" x="44" y="29" width="166" height="246"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vn4-aa-S8P" userLabel="Rockets" customClass="DetailScrollViews" customModule="SpaceX" customModuleProvider="target">
+                                                <rect key="frame" x="30" y="29" width="166" height="246"/>
                                                 <color key="backgroundColor" red="0.84515935180000001" green="0.84528148169999995" blue="0.84513264889999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="166" id="Wka-hj-5OG"/>
+                                                </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R2R-NN-sS8" userLabel="All Launches">
-                                                <rect key="frame" x="232" y="29" width="166" height="246"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R2R-NN-sS8" userLabel="All Launches" customClass="DetailScrollViews" customModule="SpaceX" customModuleProvider="target">
+                                                <rect key="frame" x="218" y="29" width="166" height="246"/>
                                                 <color key="backgroundColor" red="0.84515935180000001" green="0.84528148169999995" blue="0.84513264889999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="166" id="MDx-Gx-xmR"/>
+                                                </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UEs-D9-h9k" userLabel="Ships">
-                                                <rect key="frame" x="610" y="29" width="166" height="246"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UEs-D9-h9k" userLabel="Ships" customClass="DetailScrollViews" customModule="SpaceX" customModuleProvider="target">
+                                                <rect key="frame" x="594" y="29" width="166" height="246"/>
                                                 <color key="backgroundColor" red="0.84515935180000001" green="0.84528148169999995" blue="0.84513264889999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="166" id="HRY-6L-9HG"/>
+                                                </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pJi-e2-rok" userLabel="Capsules">
-                                                <rect key="frame" x="799" y="29" width="166" height="246"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pJi-e2-rok" userLabel="Capsules" customClass="DetailScrollViews" customModule="SpaceX" customModuleProvider="target">
+                                                <rect key="frame" x="782" y="29" width="166" height="246"/>
                                                 <color key="backgroundColor" red="0.84515935180000001" green="0.84528148169999995" blue="0.84513264889999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="166" id="r2U-3O-lTz"/>
+                                                </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vfK-0V-TBf" userLabel="Land Pads">
-                                                <rect key="frame" x="998" y="29" width="166" height="246"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vfK-0V-TBf" userLabel="Land Pads" customClass="DetailScrollViews" customModule="SpaceX" customModuleProvider="target">
+                                                <rect key="frame" x="970" y="29" width="166" height="246"/>
                                                 <color key="backgroundColor" red="0.84515935180000001" green="0.84528148169999995" blue="0.84513264889999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="166" id="OY7-gY-5fR"/>
+                                                </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9kB-Vb-uUf" userLabel="Launch Sites">
-                                                <rect key="frame" x="420" y="29" width="166" height="246"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9kB-Vb-uUf" userLabel="Launch Sites" customClass="DetailScrollViews" customModule="SpaceX" customModuleProvider="target">
+                                                <rect key="frame" x="406" y="29" width="166" height="246"/>
                                                 <color key="backgroundColor" red="0.84515935180000001" green="0.84528148169999995" blue="0.84513264889999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="166" id="4C3-db-6xm"/>
+                                                </constraints>
                                             </view>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="bottom" secondItem="Vn4-aa-S8P" secondAttribute="bottom" constant="30" id="2YS-zx-FS2"/>
-                                            <constraint firstItem="pJi-e2-rok" firstAttribute="top" secondItem="jhh-OX-sob" secondAttribute="top" constant="29" id="7MJ-Qc-YgP"/>
-                                            <constraint firstItem="vfK-0V-TBf" firstAttribute="leading" secondItem="pJi-e2-rok" secondAttribute="trailing" constant="33" id="Bx8-0E-NnJ"/>
-                                            <constraint firstItem="9kB-Vb-uUf" firstAttribute="leading" secondItem="R2R-NN-sS8" secondAttribute="trailing" constant="22" id="C5Q-Ad-Lji"/>
-                                            <constraint firstItem="UEs-D9-h9k" firstAttribute="leading" secondItem="9kB-Vb-uUf" secondAttribute="trailing" constant="24" id="DK8-DH-Hed"/>
-                                            <constraint firstItem="R2R-NN-sS8" firstAttribute="leading" secondItem="jhh-OX-sob" secondAttribute="leading" constant="232" id="ETZ-C0-ZWA"/>
-                                            <constraint firstItem="R2R-NN-sS8" firstAttribute="top" secondItem="jhh-OX-sob" secondAttribute="top" constant="29" id="Fb0-YT-w6J"/>
-                                            <constraint firstItem="vfK-0V-TBf" firstAttribute="top" secondItem="jhh-OX-sob" secondAttribute="top" constant="29" id="Gmo-ZU-YM9"/>
-                                            <constraint firstAttribute="bottom" secondItem="pJi-e2-rok" secondAttribute="bottom" constant="30" id="GoD-e3-6sG"/>
-                                            <constraint firstItem="R2R-NN-sS8" firstAttribute="leading" secondItem="Vn4-aa-S8P" secondAttribute="trailing" constant="22" id="Hnw-au-Qxj"/>
-                                            <constraint firstItem="9kB-Vb-uUf" firstAttribute="top" secondItem="jhh-OX-sob" secondAttribute="top" constant="29" id="IqL-eQ-KXI"/>
-                                            <constraint firstAttribute="bottom" secondItem="R2R-NN-sS8" secondAttribute="bottom" constant="30" id="Nc8-Np-oMM"/>
-                                            <constraint firstItem="Vn4-aa-S8P" firstAttribute="leading" secondItem="jhh-OX-sob" secondAttribute="leading" constant="44" id="OST-pf-NAM"/>
-                                            <constraint firstItem="R2R-NN-sS8" firstAttribute="leading" secondItem="Vn4-aa-S8P" secondAttribute="trailing" constant="22" id="Pde-Ue-UlK"/>
-                                            <constraint firstItem="9kB-Vb-uUf" firstAttribute="leading" secondItem="R2R-NN-sS8" secondAttribute="trailing" constant="22" id="PrE-pP-l33"/>
-                                            <constraint firstItem="vfK-0V-TBf" firstAttribute="leading" secondItem="jhh-OX-sob" secondAttribute="leading" constant="998" id="Qhf-RZ-gu0"/>
-                                            <constraint firstItem="UEs-D9-h9k" firstAttribute="leading" secondItem="jhh-OX-sob" secondAttribute="leading" constant="610" id="Tcp-Tb-8ba"/>
-                                            <constraint firstItem="UEs-D9-h9k" firstAttribute="leading" secondItem="9kB-Vb-uUf" secondAttribute="trailing" constant="24" id="Vkg-f5-IQ5"/>
-                                            <constraint firstAttribute="trailing" secondItem="vfK-0V-TBf" secondAttribute="trailing" constant="20" id="YPs-CO-1Xj"/>
-                                            <constraint firstItem="9kB-Vb-uUf" firstAttribute="leading" secondItem="jhh-OX-sob" secondAttribute="leading" constant="420" id="YZj-w5-The"/>
-                                            <constraint firstItem="UEs-D9-h9k" firstAttribute="top" secondItem="jhh-OX-sob" secondAttribute="top" constant="29" id="b60-fP-bqP"/>
-                                            <constraint firstAttribute="bottom" secondItem="9kB-Vb-uUf" secondAttribute="bottom" constant="30" id="bXd-3d-EOl"/>
-                                            <constraint firstAttribute="bottom" secondItem="vfK-0V-TBf" secondAttribute="bottom" constant="30" id="bfa-11-bqg"/>
-                                            <constraint firstItem="vfK-0V-TBf" firstAttribute="leading" secondItem="pJi-e2-rok" secondAttribute="trailing" constant="33" id="bwh-4C-32o"/>
-                                            <constraint firstAttribute="bottom" secondItem="UEs-D9-h9k" secondAttribute="bottom" constant="30" id="cF6-zy-ZXb"/>
-                                            <constraint firstItem="pJi-e2-rok" firstAttribute="leading" secondItem="UEs-D9-h9k" secondAttribute="trailing" constant="23" id="tCN-9o-Eiv"/>
-                                            <constraint firstItem="Vn4-aa-S8P" firstAttribute="top" secondItem="jhh-OX-sob" secondAttribute="top" constant="29" id="tuk-HX-QRr"/>
-                                            <constraint firstItem="pJi-e2-rok" firstAttribute="leading" secondItem="jhh-OX-sob" secondAttribute="leading" constant="799" id="z7j-UI-NGh"/>
-                                            <constraint firstItem="pJi-e2-rok" firstAttribute="leading" secondItem="UEs-D9-h9k" secondAttribute="trailing" constant="23" id="zGd-vF-EVo"/>
+                                            <constraint firstAttribute="bottom" secondItem="UEs-D9-h9k" secondAttribute="bottom" constant="30" id="0Yl-2l-qnt"/>
+                                            <constraint firstAttribute="bottom" secondItem="Vn4-aa-S8P" secondAttribute="bottom" constant="30" id="8w8-jy-MQN"/>
+                                            <constraint firstItem="vfK-0V-TBf" firstAttribute="top" secondItem="jhh-OX-sob" secondAttribute="top" constant="29" id="9mL-kH-66P"/>
+                                            <constraint firstItem="UEs-D9-h9k" firstAttribute="leading" secondItem="9kB-Vb-uUf" secondAttribute="trailing" constant="22" id="9oQ-um-CQX"/>
+                                            <constraint firstItem="Vn4-aa-S8P" firstAttribute="top" secondItem="jhh-OX-sob" secondAttribute="top" constant="29" id="B0O-Gr-Uae"/>
+                                            <constraint firstItem="UEs-D9-h9k" firstAttribute="leading" secondItem="9kB-Vb-uUf" secondAttribute="trailing" constant="22" id="BPt-Mt-lcA"/>
+                                            <constraint firstItem="R2R-NN-sS8" firstAttribute="leading" secondItem="Vn4-aa-S8P" secondAttribute="trailing" constant="22" id="BoA-rv-cuG"/>
+                                            <constraint firstItem="9kB-Vb-uUf" firstAttribute="leading" secondItem="R2R-NN-sS8" secondAttribute="trailing" constant="22" id="Cqv-Zu-y7P"/>
+                                            <constraint firstItem="vfK-0V-TBf" firstAttribute="leading" secondItem="pJi-e2-rok" secondAttribute="trailing" constant="22" id="Moa-SQ-Uyk"/>
+                                            <constraint firstItem="Vn4-aa-S8P" firstAttribute="leading" secondItem="jhh-OX-sob" secondAttribute="leading" constant="30" id="Mpd-Yc-T3r"/>
+                                            <constraint firstItem="R2R-NN-sS8" firstAttribute="top" secondItem="jhh-OX-sob" secondAttribute="top" constant="29" id="Opv-vZ-CN8"/>
+                                            <constraint firstAttribute="bottom" secondItem="R2R-NN-sS8" secondAttribute="bottom" constant="30" id="OtB-iU-cXh"/>
+                                            <constraint firstItem="UEs-D9-h9k" firstAttribute="top" secondItem="jhh-OX-sob" secondAttribute="top" constant="29" id="QSp-cZ-06N"/>
+                                            <constraint firstAttribute="bottom" secondItem="pJi-e2-rok" secondAttribute="bottom" constant="30" id="Qje-eY-eqC"/>
+                                            <constraint firstAttribute="bottom" secondItem="9kB-Vb-uUf" secondAttribute="bottom" constant="30" id="T7E-As-8h5"/>
+                                            <constraint firstItem="pJi-e2-rok" firstAttribute="top" secondItem="jhh-OX-sob" secondAttribute="top" constant="29" id="USH-8X-g3M"/>
+                                            <constraint firstAttribute="trailing" secondItem="vfK-0V-TBf" secondAttribute="trailing" constant="23" id="VjF-sc-0dl"/>
+                                            <constraint firstItem="pJi-e2-rok" firstAttribute="leading" secondItem="UEs-D9-h9k" secondAttribute="trailing" constant="22" id="W1W-dQ-qD6"/>
+                                            <constraint firstItem="vfK-0V-TBf" firstAttribute="leading" secondItem="pJi-e2-rok" secondAttribute="trailing" constant="22" id="cXx-De-lNK"/>
+                                            <constraint firstItem="9kB-Vb-uUf" firstAttribute="top" secondItem="jhh-OX-sob" secondAttribute="top" constant="29" id="chi-Vq-dVy"/>
+                                            <constraint firstItem="9kB-Vb-uUf" firstAttribute="leading" secondItem="R2R-NN-sS8" secondAttribute="trailing" constant="22" id="dTW-5d-tfQ"/>
+                                            <constraint firstAttribute="bottom" secondItem="vfK-0V-TBf" secondAttribute="bottom" constant="30" id="ghc-fk-Hbf"/>
+                                            <constraint firstItem="R2R-NN-sS8" firstAttribute="leading" secondItem="Vn4-aa-S8P" secondAttribute="trailing" constant="22" id="sxv-f9-Bbl"/>
+                                            <constraint firstItem="pJi-e2-rok" firstAttribute="leading" secondItem="UEs-D9-h9k" secondAttribute="trailing" constant="22" id="uu7-II-QR0"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -128,7 +141,7 @@
                     <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" id="mmo-XP-eUv">
                         <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="0.0"/>
                     </tabBarItem>
-                    <size key="freeformSize" width="1184" height="896"/>
+                    <size key="freeformSize" width="1159" height="896"/>
                     <connections>
                         <outlet property="UpcomingLaunch" destination="waM-qQ-kTW" id="6Uo-aF-BQW"/>
                     </connections>
