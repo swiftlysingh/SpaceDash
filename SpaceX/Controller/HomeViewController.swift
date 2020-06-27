@@ -10,20 +10,7 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
-    
-    @IBOutlet weak var UpcomingLaunch: UIView!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        setUpcomingLaunchView()
-
     }
-    func setUpcomingLaunchView(){
-        UpcomingLaunch.translatesAutoresizingMaskIntoConstraints = false
-           UpcomingLaunch.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.width).isActive = true
-           UpcomingLaunch.layer.cornerRadius = CGFloat(35)
-           UpcomingLaunch.clipsToBounds = true
-           UpcomingLaunch.layer.maskedCorners = [.layerMinXMaxYCorner,.layerMaxXMaxYCorner]
-    }
-
 }

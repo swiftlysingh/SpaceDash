@@ -282,7 +282,7 @@
                                 <viewLayoutGuide key="contentLayoutGuide" id="JN1-r1-O49"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="vD2-OO-oiv"/>
                             </scrollView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="waM-qQ-kTW" userLabel="Upcoming Launch">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="waM-qQ-kTW" userLabel="Upcoming Launch" customClass="UpcomingView" customModule="SpaceX" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="1159" height="480"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="download" translatesAutoresizingMaskIntoConstraints="NO" id="SmH-WE-Rx5">
@@ -425,9 +425,6 @@
                         <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="0.0"/>
                     </tabBarItem>
                     <size key="freeformSize" width="1159" height="896"/>
-                    <connections>
-                        <outlet property="UpcomingLaunch" destination="waM-qQ-kTW" id="6Uo-aF-BQW"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e7Z-RO-pza" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
