@@ -10,10 +10,13 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
+    
     @IBOutlet weak var UpcomingLaunch: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpcomingLaunchView()
+
     }
     func setUpcomingLaunchView(){
         UpcomingLaunch.translatesAutoresizingMaskIntoConstraints = false

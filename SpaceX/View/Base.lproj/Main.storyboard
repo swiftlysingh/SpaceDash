@@ -298,7 +298,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rqp-Aw-vz1" userLabel="Launch Date">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rqp-Aw-vz1" userLabel="Launch Date" customClass="InfoPanelView" customModule="SpaceX" customModuleProvider="target">
                                         <rect key="frame" x="8" y="137" width="227" height="64"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Launch Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AL1-qq-UIj">
@@ -314,10 +314,10 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="backgroundColor" red="0.90588837860000004" green="0.90587145089999999" blue="0.90588295460000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstItem="5Gk-Ro-p3A" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Rqp-Aw-vz1" secondAttribute="leading" constant="20" symbolic="YES" id="B5J-pz-0pg"/>
-                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="AL1-qq-UIj" secondAttribute="trailing" symbolic="YES" id="Bnz-yn-RmM"/>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="AL1-qq-UIj" secondAttribute="trailing" constant="20" symbolic="YES" id="Bnz-yn-RmM"/>
                                             <constraint firstAttribute="bottom" secondItem="5Gk-Ro-p3A" secondAttribute="bottom" constant="8" id="Ln9-k1-K21"/>
                                             <constraint firstAttribute="trailing" secondItem="5Gk-Ro-p3A" secondAttribute="trailing" constant="8" id="NcC-tC-7JU"/>
                                             <constraint firstAttribute="width" constant="227" id="PAy-bP-7xD"/>
@@ -327,7 +327,7 @@
                                             <constraint firstItem="5Gk-Ro-p3A" firstAttribute="top" secondItem="AL1-qq-UIj" secondAttribute="bottom" constant="6" id="pCl-Nm-02E"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dE6-Uv-HSR" userLabel="Launch Site">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dE6-Uv-HSR" userLabel="Launch Site" customClass="InfoPanelView" customModule="SpaceX" customModuleProvider="target">
                                         <rect key="frame" x="8" y="230" width="227" height="64"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Launch Site" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cYy-Uy-aAB">
@@ -343,7 +343,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="backgroundColor" red="0.90588837860000004" green="0.90587145089999999" blue="0.90588295460000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstItem="cYy-Uy-aAB" firstAttribute="top" secondItem="dE6-Uv-HSR" secondAttribute="top" constant="8" id="04o-Ip-Vob"/>
                                             <constraint firstAttribute="bottom" secondItem="cYy-Uy-aAB" secondAttribute="bottom" constant="35" id="0IE-u3-1Cz"/>
@@ -356,7 +356,7 @@
                                             <constraint firstItem="o2Z-bp-yMi" firstAttribute="top" secondItem="dE6-Uv-HSR" secondAttribute="top" constant="35" id="z3J-aP-SDn"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AGZ-B3-Fbx" userLabel="Payload&amp;Type">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AGZ-B3-Fbx" userLabel="Payload&amp;Type" customClass="InfoPanelView" customModule="SpaceX" customModuleProvider="target">
                                         <rect key="frame" x="8" y="322" width="227" height="64"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payload &amp; Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0F4-kc-63G">
@@ -372,7 +372,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="backgroundColor" red="0.90588837860000004" green="0.90587145089999999" blue="0.90588295460000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="c7l-ks-VE4" secondAttribute="trailing" constant="8" id="8VM-8q-dc0"/>
                                             <constraint firstItem="c7l-ks-VE4" firstAttribute="top" secondItem="0F4-kc-63G" secondAttribute="bottom" constant="6" id="GEw-7p-yJf"/>
@@ -387,7 +387,7 @@
                                         </constraints>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" red="0.84706455469999997" green="0.84704858059999999" blue="0.84705936910000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.90588837860000004" green="0.90587145089999999" blue="0.90588295460000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="AGZ-B3-Fbx" secondAttribute="bottom" constant="94" id="33N-BD-JAv"/>
                                     <constraint firstItem="SmH-WE-Rx5" firstAttribute="top" secondItem="waM-qQ-kTW" secondAttribute="top" constant="52" id="3W3-du-oaD"/>
