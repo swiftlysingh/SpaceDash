@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		455FC6E54628FC7C6880AD5A /* Pods_SpaceX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D43B3BBFA153F9F5FEB5B7F1 /* Pods_SpaceX.framework */; };
+		FFC259E724A772150019E354 /* CALayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC259E624A772150019E354 /* CALayer.swift */; };
 		FFF716D6249D3E1C0043EB81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF716D5249D3E1C0043EB81 /* AppDelegate.swift */; };
 		FFF716D8249D3E1C0043EB81 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF716D7249D3E1C0043EB81 /* SceneDelegate.swift */; };
 		FFF716DD249D3E1C0043EB81 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFF716DB249D3E1C0043EB81 /* Main.storyboard */; };
@@ -32,6 +33,7 @@
 		B5A11B9FE2BFCA5CB1A21EC0 /* Pods-SpaceX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceX.debug.xcconfig"; path = "Target Support Files/Pods-SpaceX/Pods-SpaceX.debug.xcconfig"; sourceTree = "<group>"; };
 		D43B3BBFA153F9F5FEB5B7F1 /* Pods_SpaceX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpaceX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAD33DEB1658F9122221595A /* Pods-SpaceX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceX.release.xcconfig"; path = "Target Support Files/Pods-SpaceX/Pods-SpaceX.release.xcconfig"; sourceTree = "<group>"; };
+		FFC259E624A772150019E354 /* CALayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CALayer.swift; sourceTree = "<group>"; };
 		FFF716D2249D3E1C0043EB81 /* SpaceX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFF716D5249D3E1C0043EB81 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FFF716D7249D3E1C0043EB81 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -120,9 +122,16 @@
 			children = (
 				FFF716D5249D3E1C0043EB81 /* AppDelegate.swift */,
 				FFF716D7249D3E1C0043EB81 /* SceneDelegate.swift */,
-				FFF716E3249D3E210043EB81 /* Info.plist */,
 			);
 			path = Auto;
+			sourceTree = "<group>";
+		};
+		FFC259E524A7715A0019E354 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FFC259E624A772150019E354 /* CALayer.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		FFF716C9249D3E1C0043EB81 = {
@@ -148,11 +157,13 @@
 		FFF716D4249D3E1C0043EB81 /* SpaceX */ = {
 			isa = PBXGroup;
 			children = (
+				FFC259E524A7715A0019E354 /* Extensions */,
 				FFC259E024A76C860019E354 /* Model */,
 				FFC259DE24A76C5B0019E354 /* Controller */,
 				FFC259DF24A76C720019E354 /* View */,
 				FFC259E124A76CCA0019E354 /* Config */,
 				FFF716DE249D3E210043EB81 /* Assets.xcassets */,
+				FFF716E3249D3E210043EB81 /* Info.plist */,
 			);
 			path = SpaceX;
 			sourceTree = "<group>";
@@ -297,6 +308,7 @@
 				FFF716D8249D3E1C0043EB81 /* SceneDelegate.swift in Sources */,
 				FFF7171224A48F730043EB81 /* DetailScrollViews.swift in Sources */,
 				FFF7170C24A338D10043EB81 /* HomeViewController.swift in Sources */,
+				FFC259E724A772150019E354 /* CALayer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
