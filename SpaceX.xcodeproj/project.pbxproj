@@ -36,8 +36,8 @@
 		D43B3BBFA153F9F5FEB5B7F1 /* Pods_SpaceX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpaceX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAD33DEB1658F9122221595A /* Pods-SpaceX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceX.release.xcconfig"; path = "Target Support Files/Pods-SpaceX/Pods-SpaceX.release.xcconfig"; sourceTree = "<group>"; };
 		FFC259E624A772150019E354 /* CALayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CALayer.swift; sourceTree = "<group>"; };
-		FFC259E824A7A9C10019E354 /* InfoPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoPanelView.swift; sourceTree = "<group>"; };
-		FFC259EA24A7AB3C0019E354 /* UpcomingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingView.swift; sourceTree = "<group>"; };
+		FFC259E824A7A9C10019E354 /* InfoPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InfoPanelView.swift; path = ../Config/InfoPanelView.swift; sourceTree = "<group>"; };
+		FFC259EA24A7AB3C0019E354 /* UpcomingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UpcomingView.swift; path = ../Config/UpcomingView.swift; sourceTree = "<group>"; };
 		FFF716D2249D3E1C0043EB81 /* SpaceX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFF716D5249D3E1C0043EB81 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FFF716D7249D3E1C0043EB81 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,7 +49,7 @@
 		FFF7170324A1ADE30043EB81 /* SpaceXDummyTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceXDummyTest.swift; sourceTree = "<group>"; };
 		FFF7170524A1ADE30043EB81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FFF7170B24A338D10043EB81 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		FFF7171124A48F730043EB81 /* DetailScrollViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailScrollViews.swift; sourceTree = "<group>"; };
+		FFF7171124A48F730043EB81 /* DetailScrollViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailScrollViews.swift; path = ../Config/DetailScrollViews.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +91,9 @@
 		FFC259DE24A76C5B0019E354 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				FFF7171124A48F730043EB81 /* DetailScrollViews.swift */,
+				FFC259E824A7A9C10019E354 /* InfoPanelView.swift */,
+				FFC259EA24A7AB3C0019E354 /* UpcomingView.swift */,
 				FFF7170B24A338D10043EB81 /* HomeViewController.swift */,
 			);
 			path = Controller;
@@ -115,21 +118,10 @@
 		FFC259E124A76CCA0019E354 /* Config */ = {
 			isa = PBXGroup;
 			children = (
-				FFC259E224A76D000019E354 /* Auto */,
-				FFF7171124A48F730043EB81 /* DetailScrollViews.swift */,
-				FFC259E824A7A9C10019E354 /* InfoPanelView.swift */,
-				FFC259EA24A7AB3C0019E354 /* UpcomingView.swift */,
-			);
-			path = Config;
-			sourceTree = "<group>";
-		};
-		FFC259E224A76D000019E354 /* Auto */ = {
-			isa = PBXGroup;
-			children = (
 				FFF716D5249D3E1C0043EB81 /* AppDelegate.swift */,
 				FFF716D7249D3E1C0043EB81 /* SceneDelegate.swift */,
 			);
-			path = Auto;
+			path = Config;
 			sourceTree = "<group>";
 		};
 		FFC259E524A7715A0019E354 /* Extensions */ = {
