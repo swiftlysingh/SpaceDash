@@ -286,10 +286,9 @@
                                 <rect key="frame" x="0.0" y="0.0" width="1159" height="480"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="download" translatesAutoresizingMaskIntoConstraints="NO" id="SmH-WE-Rx5">
-                                        <rect key="frame" x="1001" y="52" width="150" height="420"/>
+                                        <rect key="frame" x="1067" y="52" width="84" height="420"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" secondItem="SmH-WE-Rx5" secondAttribute="height" multiplier="223:420" constant="-73" id="2zh-pB-RhV"/>
-                                            <constraint firstAttribute="width" constant="150" id="JYq-Lu-U7K"/>
+                                            <constraint firstAttribute="width" constant="84" id="JYq-Lu-U7K"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Upcoming Launch" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dqi-lY-WjY">
@@ -379,7 +378,6 @@
                                             <constraint firstItem="c7l-ks-VE4" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="AGZ-B3-Fbx" secondAttribute="leading" constant="20" symbolic="YES" id="IkV-YE-RI4"/>
                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="0F4-kc-63G" secondAttribute="trailing" symbolic="YES" id="Lzd-Ry-H5H"/>
                                             <constraint firstAttribute="width" constant="227" id="Qak-mW-CoC"/>
-                                            <constraint firstAttribute="height" constant="64" id="byH-SS-XQV"/>
                                             <constraint firstItem="c7l-ks-VE4" firstAttribute="top" secondItem="0F4-kc-63G" secondAttribute="bottom" constant="6" id="cDJ-Pm-xmg"/>
                                             <constraint firstItem="0F4-kc-63G" firstAttribute="leading" secondItem="AGZ-B3-Fbx" secondAttribute="leading" constant="8" id="fdD-GB-T8b"/>
                                             <constraint firstItem="0F4-kc-63G" firstAttribute="top" secondItem="AGZ-B3-Fbx" secondAttribute="top" constant="8" id="qYm-bt-rfS"/>
@@ -389,21 +387,20 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.90588837860000004" green="0.90587145089999999" blue="0.90588295460000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="AGZ-B3-Fbx" secondAttribute="bottom" constant="94" id="33N-BD-JAv"/>
                                     <constraint firstItem="SmH-WE-Rx5" firstAttribute="top" secondItem="waM-qQ-kTW" secondAttribute="top" constant="52" id="3W3-du-oaD"/>
                                     <constraint firstItem="Rqp-Aw-vz1" firstAttribute="centerX" secondItem="dqi-lY-WjY" secondAttribute="centerX" id="7Wg-01-C93"/>
-                                    <constraint firstItem="dE6-Uv-HSR" firstAttribute="centerY" secondItem="SmH-WE-Rx5" secondAttribute="centerY" id="9DR-vY-zN8"/>
+                                    <constraint firstAttribute="bottom" secondItem="AGZ-B3-Fbx" secondAttribute="bottom" priority="250" constant="94" id="99i-dz-HNM"/>
                                     <constraint firstItem="dE6-Uv-HSR" firstAttribute="leading" secondItem="waM-qQ-kTW" secondAttribute="leading" constant="8" id="ApZ-Nh-znx"/>
-                                    <constraint firstItem="Rqp-Aw-vz1" firstAttribute="top" secondItem="dqi-lY-WjY" secondAttribute="bottom" constant="54" id="BKY-R5-n85"/>
-                                    <constraint firstAttribute="bottom" secondItem="SmH-WE-Rx5" secondAttribute="bottom" constant="8" id="Env-B3-L3M"/>
                                     <constraint firstItem="dE6-Uv-HSR" firstAttribute="top" secondItem="Rqp-Aw-vz1" secondAttribute="bottom" constant="29" id="F17-XE-geF"/>
                                     <constraint firstItem="dE6-Uv-HSR" firstAttribute="top" secondItem="Rqp-Aw-vz1" secondAttribute="bottom" constant="29" id="JZm-I5-QvJ"/>
                                     <constraint firstItem="dqi-lY-WjY" firstAttribute="top" secondItem="waM-qQ-kTW" secondAttribute="top" constant="52" id="JvR-5l-J9f"/>
                                     <constraint firstItem="Rqp-Aw-vz1" firstAttribute="leading" secondItem="waM-qQ-kTW" secondAttribute="leading" constant="8" id="VPH-wR-fD6"/>
-                                    <constraint firstItem="SmH-WE-Rx5" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="dqi-lY-WjY" secondAttribute="trailing" constant="8" symbolic="YES" id="ats-PQ-ERW"/>
                                     <constraint firstAttribute="trailing" secondItem="SmH-WE-Rx5" secondAttribute="trailing" constant="8" id="enw-kJ-5Br"/>
+                                    <constraint firstItem="Rqp-Aw-vz1" firstAttribute="top" relation="lessThanOrEqual" secondItem="dqi-lY-WjY" secondAttribute="bottom" constant="54" id="m8o-dB-pLq"/>
                                     <constraint firstItem="AGZ-B3-Fbx" firstAttribute="leading" secondItem="waM-qQ-kTW" secondAttribute="leading" constant="8" id="o91-LY-7MI"/>
+                                    <constraint firstAttribute="bottom" secondItem="SmH-WE-Rx5" secondAttribute="bottom" constant="8" id="oaD-ea-zVY"/>
                                     <constraint firstItem="dqi-lY-WjY" firstAttribute="leading" secondItem="waM-qQ-kTW" secondAttribute="leading" constant="8" id="u1P-Ph-crp"/>
+                                    <constraint firstAttribute="height" constant="480" id="uGV-M4-ZfR"/>
                                     <constraint firstItem="AGZ-B3-Fbx" firstAttribute="top" secondItem="dE6-Uv-HSR" secondAttribute="bottom" constant="28" id="xdR-8r-Ukz"/>
                                 </constraints>
                             </view>
@@ -411,7 +408,6 @@
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="6rF-J0-zFb" firstAttribute="top" secondItem="waM-qQ-kTW" secondAttribute="bottom" constant="8" id="CE9-OU-jbu"/>
-                            <constraint firstItem="6rF-J0-zFb" firstAttribute="top" secondItem="nU2-Np-Sti" secondAttribute="top" constant="488" id="DkO-gE-j5D"/>
                             <constraint firstItem="6rF-J0-zFb" firstAttribute="leading" secondItem="FWa-wi-cq3" secondAttribute="leading" id="Eh9-QM-2LH"/>
                             <constraint firstItem="waM-qQ-kTW" firstAttribute="trailing" secondItem="FWa-wi-cq3" secondAttribute="trailing" priority="250" id="NZj-Kb-JD6"/>
                             <constraint firstItem="6rF-J0-zFb" firstAttribute="trailing" secondItem="FWa-wi-cq3" secondAttribute="trailing" id="VlI-cB-90u"/>
@@ -425,6 +421,14 @@
                         <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="0.0"/>
                     </tabBarItem>
                     <size key="freeformSize" width="1159" height="896"/>
+                    <connections>
+                        <outlet property="upcomingLaunchHeight" destination="uGV-M4-ZfR" id="gAd-bC-ovB"/>
+                        <outlet property="upcomingPanel" destination="m8o-dB-pLq" id="b1r-pC-IIR"/>
+                        <outletCollection property="panelConstraints" destination="F17-XE-geF" collectionClass="NSMutableArray" id="4oD-im-gmT"/>
+                        <outletCollection property="panelConstraints" destination="JZm-I5-QvJ" collectionClass="NSMutableArray" id="rKN-ba-9j5"/>
+                        <outletCollection property="panelConstraints" destination="xdR-8r-Ukz" collectionClass="NSMutableArray" id="j9R-Dl-xaY"/>
+                        <outletCollection property="panelConstraints" destination="99i-dz-HNM" collectionClass="NSMutableArray" id="GjP-Ez-bD6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e7Z-RO-pza" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
