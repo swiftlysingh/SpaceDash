@@ -32,22 +32,22 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6rF-J0-zFb">
-                                <rect key="frame" x="0.0" y="488" width="1159" height="305"/>
+                                <rect key="frame" x="0.0" y="558" width="1159" height="235"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jhh-OX-sob" userLabel="Content View">
-                                        <rect key="frame" x="0.0" y="0.0" width="1159" height="305"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="1159" height="235"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vn4-aa-S8P" userLabel="Rockets" customClass="DetailScrollViews" customModule="SpaceX" customModuleProvider="target">
-                                                <rect key="frame" x="30" y="29" width="166" height="246"/>
+                                                <rect key="frame" x="30" y="29" width="166" height="176"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="szk-PP-f6D">
-                                                        <rect key="frame" x="0.0" y="0.0" width="166" height="246"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="166" height="176"/>
                                                     </button>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="spaceship" translatesAutoresizingMaskIntoConstraints="NO" id="hix-FR-9Ho">
-                                                        <rect key="frame" x="48" y="58" width="70" height="70"/>
+                                                        <rect key="frame" x="48" y="58" width="70" height="0.0"/>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rockets" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rcv-MQ-4br">
-                                                        <rect key="frame" x="48" y="166" width="71" height="24"/>
+                                                        <rect key="frame" x="48" y="96" width="71" height="24"/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -70,10 +70,10 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R2R-NN-sS8" userLabel="All Launches" customClass="DetailScrollViews" customModule="SpaceX" customModuleProvider="target">
-                                                <rect key="frame" x="218" y="29" width="166" height="246"/>
+                                                <rect key="frame" x="218" y="29" width="166" height="176"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rfr-UE-yom">
-                                                        <rect key="frame" x="0.0" y="0.0" width="166" height="246"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="166" height="176"/>
                                                     </button>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="fast" translatesAutoresizingMaskIntoConstraints="NO" id="oeG-u9-EKK">
                                                         <rect key="frame" x="48" y="57" width="70" height="70"/>
@@ -104,10 +104,10 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UEs-D9-h9k" userLabel="Ships" customClass="DetailScrollViews" customModule="SpaceX" customModuleProvider="target">
-                                                <rect key="frame" x="594" y="29" width="166" height="246"/>
+                                                <rect key="frame" x="594" y="29" width="166" height="176"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xLt-9L-lDE">
-                                                        <rect key="frame" x="0.0" y="0.0" width="166" height="246"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="166" height="176"/>
                                                     </button>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="cargo-ship" translatesAutoresizingMaskIntoConstraints="NO" id="Qm0-Ej-YJN">
                                                         <rect key="frame" x="48" y="57" width="70" height="70"/>
@@ -138,19 +138,19 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pJi-e2-rok" userLabel="Capsules" customClass="DetailScrollViews" customModule="SpaceX" customModuleProvider="target">
-                                                <rect key="frame" x="782" y="29" width="166" height="246"/>
+                                                <rect key="frame" x="782" y="29" width="166" height="176"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YFp-Dd-If6">
-                                                        <rect key="frame" x="0.0" y="0.0" width="166" height="246"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="166" height="176"/>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Capsules" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vSX-oH-eYe">
-                                                        <rect key="frame" x="43" y="165" width="80" height="24"/>
+                                                        <rect key="frame" x="43" y="95" width="80" height="24"/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="space-capsule (1)" translatesAutoresizingMaskIntoConstraints="NO" id="Uzl-Z0-32r">
-                                                        <rect key="frame" x="37" y="56" width="92" height="70"/>
+                                                        <rect key="frame" x="37" y="56" width="92" height="0.0"/>
                                                     </imageView>
                                                 </subviews>
                                                 <color key="backgroundColor" red="0.84515935180000001" green="0.84528148169999995" blue="0.84513264889999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -171,10 +171,10 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vfK-0V-TBf" userLabel="Land Pads" customClass="DetailScrollViews" customModule="SpaceX" customModuleProvider="target">
-                                                <rect key="frame" x="970" y="29" width="166" height="246"/>
+                                                <rect key="frame" x="970" y="29" width="166" height="176"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RPJ-hh-ap2">
-                                                        <rect key="frame" x="0.0" y="0.0" width="166" height="246"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="166" height="176"/>
                                                     </button>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="helipad (1)" translatesAutoresizingMaskIntoConstraints="NO" id="yUt-aC-BeL">
                                                         <rect key="frame" x="48" y="57" width="70" height="70"/>
@@ -205,10 +205,10 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9kB-Vb-uUf" userLabel="Launch Sites" customClass="DetailScrollViews" customModule="SpaceX" customModuleProvider="target">
-                                                <rect key="frame" x="406" y="29" width="166" height="246"/>
+                                                <rect key="frame" x="406" y="29" width="166" height="176"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xI7-7E-iLS">
-                                                        <rect key="frame" x="0.0" y="0.0" width="166" height="246"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="166" height="176"/>
                                                     </button>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="launch" translatesAutoresizingMaskIntoConstraints="NO" id="4Gg-gs-RYJ">
                                                         <rect key="frame" x="48" y="57" width="70" height="70"/>
@@ -283,10 +283,10 @@
                                 <viewLayoutGuide key="frameLayoutGuide" id="vD2-OO-oiv"/>
                             </scrollView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="waM-qQ-kTW" userLabel="Upcoming Launch" customClass="UpcomingView" customModule="SpaceX" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="1159" height="480"/>
+                                <rect key="frame" x="0.0" y="0.0" width="1159" height="550"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="download" translatesAutoresizingMaskIntoConstraints="NO" id="SmH-WE-Rx5">
-                                        <rect key="frame" x="1067" y="52" width="84" height="420"/>
+                                        <rect key="frame" x="1067" y="52" width="84" height="490"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="84" id="JYq-Lu-U7K"/>
                                         </constraints>
@@ -400,7 +400,6 @@
                                     <constraint firstItem="AGZ-B3-Fbx" firstAttribute="leading" secondItem="waM-qQ-kTW" secondAttribute="leading" constant="8" id="o91-LY-7MI"/>
                                     <constraint firstAttribute="bottom" secondItem="SmH-WE-Rx5" secondAttribute="bottom" constant="8" id="oaD-ea-zVY"/>
                                     <constraint firstItem="dqi-lY-WjY" firstAttribute="leading" secondItem="waM-qQ-kTW" secondAttribute="leading" constant="8" id="u1P-Ph-crp"/>
-                                    <constraint firstAttribute="height" constant="480" id="uGV-M4-ZfR"/>
                                     <constraint firstItem="AGZ-B3-Fbx" firstAttribute="top" secondItem="dE6-Uv-HSR" secondAttribute="bottom" constant="28" id="xdR-8r-Ukz"/>
                                 </constraints>
                             </view>
@@ -422,7 +421,6 @@
                     </tabBarItem>
                     <size key="freeformSize" width="1159" height="896"/>
                     <connections>
-                        <outlet property="upcomingLaunchHeight" destination="uGV-M4-ZfR" id="gAd-bC-ovB"/>
                         <outlet property="upcomingPanel" destination="m8o-dB-pLq" id="b1r-pC-IIR"/>
                         <outletCollection property="panelConstraints" destination="F17-XE-geF" collectionClass="NSMutableArray" id="4oD-im-gmT"/>
                         <outletCollection property="panelConstraints" destination="JZm-I5-QvJ" collectionClass="NSMutableArray" id="rKN-ba-9j5"/>
