@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		455FC6E54628FC7C6880AD5A /* Pods_SpaceX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D43B3BBFA153F9F5FEB5B7F1 /* Pods_SpaceX.framework */; };
 		FF95542C24BF586A008C489B /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF95542B24BF586A008C489B /* NetworkManager.swift */; };
+		FF95542E24BF5FCF008C489B /* UpcomingLaunchData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF95542D24BF5FCF008C489B /* UpcomingLaunchData.swift */; };
 		FF9C185224B5EB2500E3D66C /* SpaceXUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9C185124B5EB2500E3D66C /* SpaceXUITests.swift */; };
 		FFC259E724A772150019E354 /* CALayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC259E624A772150019E354 /* CALayer.swift */; };
 		FFC259E924A7A9C10019E354 /* InfoPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC259E824A7A9C10019E354 /* InfoPanelView.swift */; };
@@ -37,6 +38,7 @@
 		D43B3BBFA153F9F5FEB5B7F1 /* Pods_SpaceX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpaceX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAD33DEB1658F9122221595A /* Pods-SpaceX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceX.release.xcconfig"; path = "Target Support Files/Pods-SpaceX/Pods-SpaceX.release.xcconfig"; sourceTree = "<group>"; };
 		FF95542B24BF586A008C489B /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = SOURCE_ROOT; };
+		FF95542D24BF5FCF008C489B /* UpcomingLaunchData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingLaunchData.swift; sourceTree = SOURCE_ROOT; };
 		FF9C184F24B5EB2500E3D66C /* SpaceXUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpaceXUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF9C185124B5EB2500E3D66C /* SpaceXUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceXUITests.swift; sourceTree = "<group>"; };
 		FF9C185324B5EB2500E3D66C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				FF95542B24BF586A008C489B /* NetworkManager.swift */,
+				FF95542D24BF5FCF008C489B /* UpcomingLaunchData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -315,6 +318,7 @@
 			files = (
 				FFC259EB24A7AB3C0019E354 /* UpcomingView.swift in Sources */,
 				FFF716D6249D3E1C0043EB81 /* AppDelegate.swift in Sources */,
+				FF95542E24BF5FCF008C489B /* UpcomingLaunchData.swift in Sources */,
 				FFF716D8249D3E1C0043EB81 /* SceneDelegate.swift in Sources */,
 				FFF7171224A48F730043EB81 /* DetailScrollViews.swift in Sources */,
 				FF95542C24BF586A008C489B /* NetworkManager.swift in Sources */,
