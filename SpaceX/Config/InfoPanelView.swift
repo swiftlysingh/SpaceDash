@@ -11,8 +11,9 @@ import UIKit
 class InfoPanelView: UIView {
 
     required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-      self.layer.applySketchShadow(
+     super.init(coder: aDecoder)
+    //Adding Shadow
+    self.layer.applySketchShadow(
       color: .black,
       alpha: 0.2,
       x: 0,
