@@ -21,6 +21,7 @@ class HomeViewController: UIViewController {
         }
     }
     
+    /// Making the Height of Upcoming Panel Dynamic
     func resizeForSmallScreen(){
         upcomingPanel.constant = UIScreen.main.bounds.height*0.045
         
