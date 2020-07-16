@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		455FC6E54628FC7C6880AD5A /* Pods_SpaceX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D43B3BBFA153F9F5FEB5B7F1 /* Pods_SpaceX.framework */; };
+		2086C60A16283D2DB5341A79 /* Pods_SpaceDash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DE2958EE217DA2AEF4E463F /* Pods_SpaceDash.framework */; };
 		FF9C185224B5EB2500E3D66C /* SpaceDashUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9C185124B5EB2500E3D66C /* SpaceDashUITests.swift */; };
 		FFA9CA5824C0CA31006FA5DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFA9CA5724C0CA31006FA5DE /* Assets.xcassets */; };
 		FFA9CA5C24C0CCCA006FA5DE /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA9CA5A24C0CCCA006FA5DE /* NetworkManager.swift */; };
@@ -34,8 +34,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5DE2958EE217DA2AEF4E463F /* Pods_SpaceDash.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpaceDash.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B15257ADD46DBE38C7F17D09 /* Pods-SpaceDash.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceDash.release.xcconfig"; path = "Target Support Files/Pods-SpaceDash/Pods-SpaceDash.release.xcconfig"; sourceTree = "<group>"; };
 		B5A11B9FE2BFCA5CB1A21EC0 /* Pods-SpaceX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceX.debug.xcconfig"; path = "Target Support Files/Pods-SpaceX/Pods-SpaceX.debug.xcconfig"; sourceTree = "<group>"; };
-		D43B3BBFA153F9F5FEB5B7F1 /* Pods_SpaceX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpaceX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE287257CFAD34D9CC4A81A2 /* Pods-SpaceDash.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceDash.debug.xcconfig"; path = "Target Support Files/Pods-SpaceDash/Pods-SpaceDash.debug.xcconfig"; sourceTree = "<group>"; };
 		EAD33DEB1658F9122221595A /* Pods-SpaceX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceX.release.xcconfig"; path = "Target Support Files/Pods-SpaceX/Pods-SpaceX.release.xcconfig"; sourceTree = "<group>"; };
 		FF9C184F24B5EB2500E3D66C /* SpaceDashUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpaceDashUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF9C185124B5EB2500E3D66C /* SpaceDashUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceDashUITests.swift; sourceTree = "<group>"; };
@@ -68,7 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				455FC6E54628FC7C6880AD5A /* Pods_SpaceX.framework in Frameworks */,
+				2086C60A16283D2DB5341A79 /* Pods_SpaceDash.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,7 +80,7 @@
 		9E7BE7660A5996338B49D647 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D43B3BBFA153F9F5FEB5B7F1 /* Pods_SpaceX.framework */,
+				5DE2958EE217DA2AEF4E463F /* Pods_SpaceDash.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -88,6 +90,8 @@
 			children = (
 				B5A11B9FE2BFCA5CB1A21EC0 /* Pods-SpaceX.debug.xcconfig */,
 				EAD33DEB1658F9122221595A /* Pods-SpaceX.release.xcconfig */,
+				CE287257CFAD34D9CC4A81A2 /* Pods-SpaceDash.debug.xcconfig */,
+				B15257ADD46DBE38C7F17D09 /* Pods-SpaceDash.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -294,7 +298,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SpaceX-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-SpaceDash-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -512,7 +516,7 @@
 		};
 		FFF716E7249D3E210043EB81 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B5A11B9FE2BFCA5CB1A21EC0 /* Pods-SpaceX.debug.xcconfig */;
+			baseConfigurationReference = CE287257CFAD34D9CC4A81A2 /* Pods-SpaceDash.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4WMQY24R33;
@@ -530,7 +534,7 @@
 		};
 		FFF716E8249D3E210043EB81 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EAD33DEB1658F9122221595A /* Pods-SpaceX.release.xcconfig */;
+			baseConfigurationReference = B15257ADD46DBE38C7F17D09 /* Pods-SpaceDash.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4WMQY24R33;
