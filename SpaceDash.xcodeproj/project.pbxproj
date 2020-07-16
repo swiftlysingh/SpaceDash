@@ -175,9 +175,9 @@
 			isa = PBXGroup;
 			children = (
 				FFA9CA5924C0CCCA006FA5DE /* Model */,
-				FFC259E524A7715A0019E354 /* Extensions */,
 				FFC259DE24A76C5B0019E354 /* Controller */,
 				FFC259DF24A76C720019E354 /* View */,
+				FFC259E524A7715A0019E354 /* Extensions */,
 				FFC259E124A76CCA0019E354 /* Config */,
 				FFF716E3249D3E210043EB81 /* Info.plist */,
 				FFA9CA5724C0CA31006FA5DE /* Assets.xcassets */,

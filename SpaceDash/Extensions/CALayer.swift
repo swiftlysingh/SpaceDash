@@ -9,6 +9,15 @@
 import UIKit
 
 extension CALayer {
+    
+    /// Function to add Shadow
+    /// - Parameters:
+    ///   - color: The Colour of the Shadow
+    ///   - alpha: Transparency Value
+    ///   - x: X axis of shadow
+    ///   - y: y axis of shadow
+    ///   - blur: blur of the shadow
+    ///   - spread: spread of the shadow
   func applySketchShadow(
     color: UIColor = .black,
     alpha: Float = 0.5,
