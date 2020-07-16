@@ -26,7 +26,7 @@
         <!--Home-->
         <scene sceneID="2oh-if-cUN">
             <objects>
-                <viewController id="ZKl-d6-ple" customClass="HomeViewController" customModule="SpaceX" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ZKl-d6-ple" customClass="HomeViewController" customModule="SpaceDash" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nU2-Np-Sti">
                         <rect key="frame" x="0.0" y="0.0" width="1159" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -37,7 +37,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jhh-OX-sob" userLabel="Content View">
                                         <rect key="frame" x="0.0" y="0.0" width="1159" height="89"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vn4-aa-S8P" userLabel="Rockets" customClass="DetailScrollViews" customModule="SpaceX" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vn4-aa-S8P" userLabel="Rockets" customClass="DetailScrollViews" customModule="SpaceDash" customModuleProvider="target">
                                                 <rect key="frame" x="30" y="29" width="166" height="30"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="szk-PP-f6D">
@@ -85,7 +85,7 @@
                                                     <constraint firstItem="Ocr-kZ-tmB" firstAttribute="centerY" secondItem="Vn4-aa-S8P" secondAttribute="centerY" id="scc-q8-neN"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R2R-NN-sS8" userLabel="All Launches" customClass="DetailScrollViews" customModule="SpaceX" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R2R-NN-sS8" userLabel="All Launches" customClass="DetailScrollViews" customModule="SpaceDash" customModuleProvider="target">
                                                 <rect key="frame" x="218" y="29" width="166" height="30"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rfr-UE-yom">
@@ -134,7 +134,7 @@
                                                     <constraint firstAttribute="trailing" secondItem="rfr-UE-yom" secondAttribute="trailing" id="sTL-S8-jOy"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UEs-D9-h9k" userLabel="Ships" customClass="DetailScrollViews" customModule="SpaceX" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UEs-D9-h9k" userLabel="Ships" customClass="DetailScrollViews" customModule="SpaceDash" customModuleProvider="target">
                                                 <rect key="frame" x="594" y="29" width="166" height="30"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xLt-9L-lDE">
@@ -184,7 +184,7 @@
                                                     <constraint firstItem="41A-NP-38D" firstAttribute="centerY" secondItem="UEs-D9-h9k" secondAttribute="centerY" id="vTl-9r-fWe"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pJi-e2-rok" userLabel="Capsules" customClass="DetailScrollViews" customModule="SpaceX" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pJi-e2-rok" userLabel="Capsules" customClass="DetailScrollViews" customModule="SpaceDash" customModuleProvider="target">
                                                 <rect key="frame" x="782" y="29" width="166" height="30"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YFp-Dd-If6">
@@ -234,7 +234,7 @@
                                                     <constraint firstItem="ImQ-dr-I5m" firstAttribute="centerX" secondItem="pJi-e2-rok" secondAttribute="centerX" id="xAB-Ww-rr9"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vfK-0V-TBf" userLabel="Land Pads" customClass="DetailScrollViews" customModule="SpaceX" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vfK-0V-TBf" userLabel="Land Pads" customClass="DetailScrollViews" customModule="SpaceDash" customModuleProvider="target">
                                                 <rect key="frame" x="970" y="29" width="166" height="30"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RPJ-hh-ap2">
@@ -284,7 +284,7 @@
                                                     <constraint firstAttribute="bottom" secondItem="RPJ-hh-ap2" secondAttribute="bottom" id="z7w-iJ-fQY"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9kB-Vb-uUf" userLabel="Launch Sites" customClass="DetailScrollViews" customModule="SpaceX" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9kB-Vb-uUf" userLabel="Launch Sites" customClass="DetailScrollViews" customModule="SpaceDash" customModuleProvider="target">
                                                 <rect key="frame" x="406" y="29" width="166" height="30"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xI7-7E-iLS">
@@ -375,7 +375,7 @@
                                 <viewLayoutGuide key="contentLayoutGuide" id="JN1-r1-O49"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="vD2-OO-oiv"/>
                             </scrollView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="waM-qQ-kTW" userLabel="Upcoming Launch" customClass="UpcomingView" customModule="SpaceX" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="waM-qQ-kTW" userLabel="Upcoming Launch" customClass="UpcomingView" customModule="SpaceDash" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="1159" height="696"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="download" translatesAutoresizingMaskIntoConstraints="NO" id="SmH-WE-Rx5">
@@ -390,7 +390,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rqp-Aw-vz1" userLabel="Launch Date" customClass="InfoPanelView" customModule="SpaceX" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rqp-Aw-vz1" userLabel="Launch Date" customClass="InfoPanelView" customModule="SpaceDash" customModuleProvider="target">
                                         <rect key="frame" x="8" y="137" width="227" height="64"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Launch Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AL1-qq-UIj">
@@ -419,7 +419,7 @@
                                             <constraint firstItem="5Gk-Ro-p3A" firstAttribute="top" secondItem="AL1-qq-UIj" secondAttribute="bottom" constant="6" id="pCl-Nm-02E"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dE6-Uv-HSR" userLabel="Launch Site" customClass="InfoPanelView" customModule="SpaceX" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dE6-Uv-HSR" userLabel="Launch Site" customClass="InfoPanelView" customModule="SpaceDash" customModuleProvider="target">
                                         <rect key="frame" x="8" y="230" width="227" height="64"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Launch Site" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cYy-Uy-aAB">
@@ -448,7 +448,7 @@
                                             <constraint firstItem="o2Z-bp-yMi" firstAttribute="top" secondItem="dE6-Uv-HSR" secondAttribute="top" constant="35" id="z3J-aP-SDn"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AGZ-B3-Fbx" userLabel="Payload&amp;Type" customClass="InfoPanelView" customModule="SpaceX" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AGZ-B3-Fbx" userLabel="Payload&amp;Type" customClass="InfoPanelView" customModule="SpaceDash" customModuleProvider="target">
                                         <rect key="frame" x="8" y="322" width="227" height="64"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payload &amp; Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0F4-kc-63G">
@@ -478,7 +478,7 @@
                                         </constraints>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" red="0.90588837860000004" green="0.90587145089999999" blue="0.90588295460000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.90588235294117647" green="0.90588235294117647" blue="0.90588235294117647" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstItem="SmH-WE-Rx5" firstAttribute="top" secondItem="waM-qQ-kTW" secondAttribute="top" constant="52" id="3W3-du-oaD"/>
                                     <constraint firstItem="Rqp-Aw-vz1" firstAttribute="centerX" secondItem="dqi-lY-WjY" secondAttribute="centerX" id="7Wg-01-C93"/>
