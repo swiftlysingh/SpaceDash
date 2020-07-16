@@ -48,6 +48,16 @@
                ReferencedContainer = "container:SpaceX.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "FFA9CA6624C0D9A8006FA5DE"
+               BuildableName = "SpaceDashUITests.xctest"
+               BlueprintName = "SpaceDashUITests"
+               ReferencedContainer = "container:SpaceDash.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
