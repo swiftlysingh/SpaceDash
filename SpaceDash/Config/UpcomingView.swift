@@ -15,6 +15,7 @@ class UpcomingView: UIView {
         configUpcomingLaunchPanel()
     }
     
+    /// Adding Curves to Upcoming Launch Panel
     func configUpcomingLaunchPanel(){
         self.translatesAutoresizingMaskIntoConstraints = false
         self.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.width).isActive = true

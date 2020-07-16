@@ -10,6 +10,8 @@
 		455FC6E54628FC7C6880AD5A /* Pods_SpaceX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D43B3BBFA153F9F5FEB5B7F1 /* Pods_SpaceX.framework */; };
 		FF9C185224B5EB2500E3D66C /* SpaceDashUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9C185124B5EB2500E3D66C /* SpaceDashUITests.swift */; };
 		FFA9CA5824C0CA31006FA5DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFA9CA5724C0CA31006FA5DE /* Assets.xcassets */; };
+		FFA9CA5C24C0CCCA006FA5DE /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA9CA5A24C0CCCA006FA5DE /* NetworkManager.swift */; };
+		FFA9CA5D24C0CCCA006FA5DE /* UpcomingLaunchData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA9CA5B24C0CCCA006FA5DE /* UpcomingLaunchData.swift */; };
 		FFC259E724A772150019E354 /* CALayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC259E624A772150019E354 /* CALayer.swift */; };
 		FFC259E924A7A9C10019E354 /* InfoPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC259E824A7A9C10019E354 /* InfoPanelView.swift */; };
 		FFC259EB24A7AB3C0019E354 /* UpcomingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC259EA24A7AB3C0019E354 /* UpcomingView.swift */; };
@@ -39,6 +41,8 @@
 		FF9C185124B5EB2500E3D66C /* SpaceDashUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceDashUITests.swift; sourceTree = "<group>"; };
 		FF9C185324B5EB2500E3D66C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FFA9CA5724C0CA31006FA5DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FFA9CA5A24C0CCCA006FA5DE /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		FFA9CA5B24C0CCCA006FA5DE /* UpcomingLaunchData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpcomingLaunchData.swift; sourceTree = "<group>"; };
 		FFC259E624A772150019E354 /* CALayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CALayer.swift; sourceTree = "<group>"; };
 		FFC259E824A7A9C10019E354 /* InfoPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InfoPanelView.swift; path = ../Config/InfoPanelView.swift; sourceTree = "<group>"; };
 		FFC259EA24A7AB3C0019E354 /* UpcomingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UpcomingView.swift; path = ../Config/UpcomingView.swift; sourceTree = "<group>"; };
@@ -97,6 +101,15 @@
 			path = SpaceDashUITests;
 			sourceTree = "<group>";
 		};
+		FFA9CA5924C0CCCA006FA5DE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FFA9CA5A24C0CCCA006FA5DE /* NetworkManager.swift */,
+				FFA9CA5B24C0CCCA006FA5DE /* UpcomingLaunchData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		FFC259DE24A76C5B0019E354 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -115,13 +128,6 @@
 				FFF716E0249D3E210043EB81 /* LaunchScreen.storyboard */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		FFC259E024A76C860019E354 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		FFC259E124A76CCA0019E354 /* Config */ = {
@@ -164,8 +170,8 @@
 		FFF716D4249D3E1C0043EB81 /* SpaceDash */ = {
 			isa = PBXGroup;
 			children = (
+				FFA9CA5924C0CCCA006FA5DE /* Model */,
 				FFC259E524A7715A0019E354 /* Extensions */,
-				FFC259E024A76C860019E354 /* Model */,
 				FFC259DE24A76C5B0019E354 /* Controller */,
 				FFC259DF24A76C720019E354 /* View */,
 				FFC259E124A76CCA0019E354 /* Config */,
@@ -312,8 +318,10 @@
 			files = (
 				FFC259EB24A7AB3C0019E354 /* UpcomingView.swift in Sources */,
 				FFF716D6249D3E1C0043EB81 /* AppDelegate.swift in Sources */,
+				FFA9CA5D24C0CCCA006FA5DE /* UpcomingLaunchData.swift in Sources */,
 				FFF716D8249D3E1C0043EB81 /* SceneDelegate.swift in Sources */,
 				FFF7171224A48F730043EB81 /* DetailScrollViews.swift in Sources */,
+				FFA9CA5C24C0CCCA006FA5DE /* NetworkManager.swift in Sources */,
 				FFF7170C24A338D10043EB81 /* HomeViewController.swift in Sources */,
 				FFC259E724A772150019E354 /* CALayer.swift in Sources */,
 				FFC259E924A7A9C10019E354 /* InfoPanelView.swift in Sources */,

@@ -13,14 +13,18 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var upcomingPanel: NSLayoutConstraint!
     @IBOutlet var panelConstraints: [NSLayoutConstraint]!
     
+    let networkObject = NetworkManager()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         if(UIScreen.main.bounds.height<896){
             resizeForSmallScreen()
         }
+        networkObject.fetchData(demand: "launches/upcoming")
     }
     
+    /// Making the Height of Upcoming Panel Dynamic
     func resizeForSmallScreen(){
         upcomingPanel.constant = UIScreen.main.bounds.height*0.045
         
