@@ -47,7 +47,7 @@ struct NetworkManager{
     func parseJSON(data: Data){
         let decoder = JSONDecoder()
         let upcomingLaunches = [UpcomingLaunchData].self
-        var upcoming = UpcomingLaunchModel()
+        let upcoming = UpcomingLaunchModel()
         do{
             upcoming.inputData(decodedDataSet: try decoder.decode(upcomingLaunches.self, from: data))
         } catch{

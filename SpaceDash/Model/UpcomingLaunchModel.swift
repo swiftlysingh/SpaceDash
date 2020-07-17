@@ -8,11 +8,11 @@
 
 import Foundation
 
-struct UpcomingLaunchModel{
+final class UpcomingLaunchModel{
     
     var data : UpcomingLaunchData? = nil
     
-    mutating func inputData(decodedDataSet:[UpcomingLaunchData]){
+    func inputData(decodedDataSet:[UpcomingLaunchData]){
         for decodedData in decodedDataSet{
             if !decodedData.is_tentative{
                 data = decodedData

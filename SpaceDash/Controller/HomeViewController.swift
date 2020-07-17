@@ -23,6 +23,7 @@ class HomeViewController: UIViewController {
             resizeForSmallScreen()
         }
         networkObject.fetchData(demand: "launches/upcoming")
+        upcomingLaunch.getDate()
     }
     
     /// Making the Height of Upcoming Panel Dynamic
