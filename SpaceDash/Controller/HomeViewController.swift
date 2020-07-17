@@ -14,6 +14,7 @@ class HomeViewController: UIViewController {
     @IBOutlet var panelConstraints: [NSLayoutConstraint]!
     
     let networkObject = NetworkManager()
+    let upcomingLaunch = UpcomingLaunchModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
