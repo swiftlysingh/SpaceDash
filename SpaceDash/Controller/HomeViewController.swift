@@ -14,29 +14,36 @@ class HomeViewController: UIViewController,NetworkManagerDelegate {
     @IBOutlet var panelConstraints: [NSLayoutConstraint]!
     
     var networkObject = NetworkManager()
+    var upcomingLaunch : UpcomingLaunchModel?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         networkObject.delegate = self
-        if(UIScreen.main.bounds.height<896){
-            resizeForSmallScreen()
-        }
-        networkObject.fetchData(demand: "launches/upcoming")
-    }
-    
-    func updateData() {
-        DispatchQueue.main.async {
-            print(self.upcomingLaunch.getDate())
-        }
+        networkObject.fetchData(key: "launches/Upcoming")
+        resizeForSmallScreen()
     }
     
     /// Making the Height of Upcoming Panel Dynamic
     func resizeForSmallScreen(){
-        upcomingPanel.constant = UIScreen.main.bounds.height*0.045
-        
-        for panels in panelConstraints{
-            panels.constant = UIScreen.main.bounds.height*0.03
+        if UIScreen.main.bounds.height<896 {
+            upcomingPanel.constant = UIScreen.main.bounds.height*0.045
+            
+            for panels in panelConstraints{
+                panels.constant = UIScreen.main.bounds.height*0.03
+            }
         }
     }
     
+    func updateFromAPI(data: Any) {
+        upcomingLaunch = (data as! UpcomingLaunchModel)
+        DispatchQueue.main.async {
+            print(self.upcomingLaunch!.decodedData?.launch_site.site_name)
+        }
+    }
+    
+    func error(error: Error) {
+        print(error)
+    }
 }
+

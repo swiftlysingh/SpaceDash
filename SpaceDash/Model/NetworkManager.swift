@@ -9,19 +9,21 @@
 import Foundation
 
 protocol NetworkManagerDelegate {
-    func updateData()
+    func updateFromAPI( data: Any)
+    func error( error: Error)
 }
 
 struct NetworkManager{
-    let spaceXURL = "https://api.spacexdata.com/v3/"
     
     var delegate:NetworkManagerDelegate?
+    let spaceXURL = "https://api.spacexdata.com/v3/"
+
     
 /// This function will create the URL of the data demanded by any controllers
 /// - Parameter demand: the additional string that will be appended to the spaceXURL
     
-    func fetchData(demand: String){
-        let urlString = "\(spaceXURL)\(demand)"
+     func fetchData(key: String){
+        let urlString = "\(spaceXURL)\(key)"
         performRequest(urlString: urlString)
     }
     
@@ -50,15 +52,16 @@ struct NetworkManager{
         }
     }
     
-    /// This function will parse the JSON of the data it is sent
-    /// - Parameter data: The data that need to be parsed
+/// This function will parse the JSON of the data it is sent
+/// - Parameter data: The data that need to be parsed
+
     func parseJSON(data: Data){
         let decoder = JSONDecoder()
-        let upcomingLaunches = [UpcomingLaunchData].self
-        let upcoming = UpcomingLaunchModel()
         do{
-            upcoming.inputData(decodedDataSet: try decoder.decode(upcomingLaunches.self, from: data))
-            delegate?.updateData()
+            var upcomingLaunch = UpcomingLaunchModel(decodedDataSet : try decoder.decode([UpcomingLaunchData].self, from: data))
+            upcomingLaunch.cleanData()
+            delegate?.updateFromAPI(data: upcomingLaunch)
+            
         } catch{
             print(error)
         }

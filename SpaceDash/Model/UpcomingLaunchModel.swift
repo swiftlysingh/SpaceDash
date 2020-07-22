@@ -8,23 +8,17 @@
 
 import Foundation
 
-final class UpcomingLaunchModel{
+struct UpcomingLaunchModel{
+    var decodedDataSet : [UpcomingLaunchData]
+    var decodedData: UpcomingLaunchData?
     
-    var data : UpcomingLaunchData? = nil
-    
-    func inputData(decodedDataSet:[UpcomingLaunchData]){
-        for decodedData in decodedDataSet{
-            if !decodedData.is_tentative{
-                data = decodedData
+    mutating func cleanData(){
+        for data in decodedDataSet {
+            if !data.is_tentative{
+                decodedData = data
                 break
             }
         }
+        decodedData = decodedDataSet[0]
     }
-    
-    
-    func getDate()->Date{
-        return Date(timeIntervalSince1970: TimeInterval(data!.launch_date_unix))
-    }
-    
-    
 }
