@@ -12,6 +12,9 @@ class HomeViewController: UIViewController,NetworkManagerDelegate {
     
     @IBOutlet weak var upcomingPanel: NSLayoutConstraint!
     @IBOutlet var panelConstraints: [NSLayoutConstraint]!
+    @IBOutlet weak var launchDate: UILabel!
+    @IBOutlet weak var launchSite: UILabel!
+    @IBOutlet weak var payloadAndType: UILabel!
     
     var networkObject = NetworkManager()
     var upcomingLaunch : UpcomingLaunchModel?
@@ -21,11 +24,11 @@ class HomeViewController: UIViewController,NetworkManagerDelegate {
         
         networkObject.delegate = self
         networkObject.fetchData(key: "launches/Upcoming")
-        resizeForSmallScreen()
+        adjustSize()
     }
     
     /// Making the Height of Upcoming Panel Dynamic
-    func resizeForSmallScreen(){
+    func adjustSize(){
         if UIScreen.main.bounds.height<896 {
             upcomingPanel.constant = UIScreen.main.bounds.height*0.045
             
@@ -38,7 +41,10 @@ class HomeViewController: UIViewController,NetworkManagerDelegate {
     func updateFromAPI(data: Any) {
         DispatchQueue.main.async {
             self.upcomingLaunch = (data as! UpcomingLaunchModel)
-            print(self.upcomingLaunch!.decodedData?.launch_site.site_name)
+            self.launchSite.text = self.upcomingLaunch?.decodedData?.launch_site.site_name ?? "Launch Site Not Declared"
+            self.payloadAndType.text = "\(self.upcomingLaunch?.decodedData?.rocket.second_stage.payloads[0].payload_id ?? "NA"), \(self.upcomingLaunch?.decodedData?.rocket.second_stage.payloads[0].payload_type ?? "NA")"
+//            self.launchDate.text = "\(NSDate(timeIntervalSince1970: (self.upcomingLaunch?.decodedData!.launch_date_local)!))"
+            print(self.upcomingLaunch?.decodedData?.launch_date_local)
         }
     }
     

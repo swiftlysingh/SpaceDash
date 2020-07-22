@@ -11,7 +11,7 @@ import Foundation
 /// This struct will successfully decode the JSON file sent by SpaceX API
 struct UpcomingLaunchData: Decodable{
     let mission_name : String
-    let launch_date_unix : Int32
+    let launch_date_local : String
     let is_tentative : Bool
     let rocket : Rocket
     let launch_site: LaunchSite

@@ -15,10 +15,11 @@ struct UpcomingLaunchModel{
     mutating func cleanData(){
         for data in decodedDataSet {
             if !data.is_tentative{
+                print(data.is_tentative)
                 decodedData = data
                 break
             }
         }
-        decodedData = decodedDataSet[0]
+//        decodedData = decodedDataSet[0]
     }
 }
