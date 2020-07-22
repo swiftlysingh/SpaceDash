@@ -36,8 +36,8 @@ class HomeViewController: UIViewController,NetworkManagerDelegate {
     }
     
     func updateFromAPI(data: Any) {
-        upcomingLaunch = (data as! UpcomingLaunchModel)
         DispatchQueue.main.async {
+            self.upcomingLaunch = (data as! UpcomingLaunchModel)
             print(self.upcomingLaunch!.decodedData?.launch_site.site_name)
         }
     }
