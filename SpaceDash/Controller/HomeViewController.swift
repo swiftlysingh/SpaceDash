@@ -8,22 +8,26 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class HomeViewController: UIViewController,NetworkManagerDelegate {
     
     @IBOutlet weak var upcomingPanel: NSLayoutConstraint!
     @IBOutlet var panelConstraints: [NSLayoutConstraint]!
     
-    let networkObject = NetworkManager()
-    let upcomingLaunch = UpcomingLaunchModel()
+    var networkObject = NetworkManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        networkObject.delegate = self
         if(UIScreen.main.bounds.height<896){
             resizeForSmallScreen()
         }
         networkObject.fetchData(demand: "launches/upcoming")
-        upcomingLaunch.getDate()
+    }
+    
+    func updateData() {
+        DispatchQueue.main.async {
+            print(self.upcomingLaunch.getDate())
+        }
     }
     
     /// Making the Height of Upcoming Panel Dynamic

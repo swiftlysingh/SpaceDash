@@ -8,19 +8,27 @@
 
 import Foundation
 
+protocol NetworkManagerDelegate {
+    func updateData()
+}
+
 struct NetworkManager{
     let spaceXURL = "https://api.spacexdata.com/v3/"
     
-    /// This function will create the URL of the data demanded by any controllers
-    /// - Parameter demand: the additional string that will be appended to the spaceXURL
+    var delegate:NetworkManagerDelegate?
+    
+/// This function will create the URL of the data demanded by any controllers
+/// - Parameter demand: the additional string that will be appended to the spaceXURL
+    
     func fetchData(demand: String){
         let urlString = "\(spaceXURL)\(demand)"
         performRequest(urlString: urlString)
     }
     
     
-    /// This will function will call the API and bring back the JSON data and will call parseJSON function to parse the data
-    /// - Parameter urlString: URL created by fetchData
+/// This will function will call the API and bring back the JSON data and will call parseJSON function to parse the data
+/// - Parameter urlString: URL created by fetchData
+    
     func performRequest(urlString: String){
         
         if let url = URL(string: urlString){
@@ -50,6 +58,7 @@ struct NetworkManager{
         let upcoming = UpcomingLaunchModel()
         do{
             upcoming.inputData(decodedDataSet: try decoder.decode(upcomingLaunches.self, from: data))
+            delegate?.updateData()
         } catch{
             print(error)
         }
