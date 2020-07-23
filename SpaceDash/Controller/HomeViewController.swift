@@ -15,6 +15,7 @@ class HomeViewController: UIViewController,NetworkManagerDelegate {
     @IBOutlet weak var launchDate: UILabel!
     @IBOutlet weak var launchSite: UILabel!
     @IBOutlet weak var payloadAndType: UILabel!
+    @IBOutlet weak var isTentative: UILabel!
     
     var networkObject = NetworkManager()
     var upcomingLaunch : UpcomingLaunchModel?
@@ -44,6 +45,7 @@ class HomeViewController: UIViewController,NetworkManagerDelegate {
             self.launchSite.text = self.upcomingLaunch?.decodedData?.launch_site.site_name ?? "Launch Site Not Declared"
             self.payloadAndType.text = "\(self.upcomingLaunch?.decodedData?.rocket.second_stage.payloads[0].payload_id ?? "NA"), \(self.upcomingLaunch?.decodedData?.rocket.second_stage.payloads[0].payload_type ?? "NA")"
             self.launchDate.text =  self.upcomingLaunch?.getDate()
+            self.isTentative.isHidden = !(self.upcomingLaunch?.decodedData!.is_tentative)!
         }
     }
     
