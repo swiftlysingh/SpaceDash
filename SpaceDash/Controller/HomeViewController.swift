@@ -43,8 +43,7 @@ class HomeViewController: UIViewController,NetworkManagerDelegate {
             self.upcomingLaunch = (data as! UpcomingLaunchModel)
             self.launchSite.text = self.upcomingLaunch?.decodedData?.launch_site.site_name ?? "Launch Site Not Declared"
             self.payloadAndType.text = "\(self.upcomingLaunch?.decodedData?.rocket.second_stage.payloads[0].payload_id ?? "NA"), \(self.upcomingLaunch?.decodedData?.rocket.second_stage.payloads[0].payload_type ?? "NA")"
-//            self.launchDate.text = "\(NSDate(timeIntervalSince1970: (self.upcomingLaunch?.decodedData!.launch_date_local)!))"
-            print(self.upcomingLaunch?.decodedData?.launch_date_local)
+            self.launchDate.text =  self.upcomingLaunch?.getDate()
         }
     }
     

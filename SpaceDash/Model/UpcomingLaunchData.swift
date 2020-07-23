@@ -12,6 +12,7 @@ import Foundation
 struct UpcomingLaunchData: Decodable{
     let mission_name : String
     let launch_date_local : String
+    let launch_date_unix : TimeInterval
     let is_tentative : Bool
     let rocket : Rocket
     let launch_site: LaunchSite
