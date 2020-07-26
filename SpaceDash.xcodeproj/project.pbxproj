@@ -10,6 +10,7 @@
 		2086C60A16283D2DB5341A79 /* Pods_SpaceDash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DE2958EE217DA2AEF4E463F /* Pods_SpaceDash.framework */; };
 		FF42E94E24CD8CA5003E8DFE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF42E94D24CD8CA5003E8DFE /* Constants.swift */; };
 		FF42E95624CD8F1B003E8DFE /* SpaceDashConstantsCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF42E95524CD8F1B003E8DFE /* SpaceDashConstantsCheck.swift */; };
+		FF42E96424CD9254003E8DFE /* SpaceDashAPITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF42E96324CD9254003E8DFE /* SpaceDashAPITest.swift */; };
 		FFA9CA5824C0CA31006FA5DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFA9CA5724C0CA31006FA5DE /* Assets.xcassets */; };
 		FFA9CA5C24C0CCCA006FA5DE /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA9CA5A24C0CCCA006FA5DE /* NetworkManager.swift */; };
 		FFA9CA5D24C0CCCA006FA5DE /* UpcomingLaunchData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA9CA5B24C0CCCA006FA5DE /* UpcomingLaunchData.swift */; };
@@ -28,6 +29,13 @@
 
 /* Begin PBXContainerItemProxy section */
 		FF42E95824CD8F1B003E8DFE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFF716CA249D3E1C0043EB81 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FFF716D1249D3E1C0043EB81;
+			remoteInfo = SpaceDash;
+		};
+		FF42E96624CD9254003E8DFE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = FFF716CA249D3E1C0043EB81 /* Project object */;
 			proxyType = 1;
@@ -53,6 +61,9 @@
 		FF42E95324CD8F1B003E8DFE /* SpaceDashConstantsCheck.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpaceDashConstantsCheck.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF42E95524CD8F1B003E8DFE /* SpaceDashConstantsCheck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceDashConstantsCheck.swift; sourceTree = "<group>"; };
 		FF42E95724CD8F1B003E8DFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF42E96124CD9254003E8DFE /* SpaceDashAPITest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpaceDashAPITest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF42E96324CD9254003E8DFE /* SpaceDashAPITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceDashAPITest.swift; sourceTree = "<group>"; };
+		FF42E96524CD9254003E8DFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FFA9CA5724C0CA31006FA5DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FFA9CA5A24C0CCCA006FA5DE /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		FFA9CA5B24C0CCCA006FA5DE /* UpcomingLaunchData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpcomingLaunchData.swift; sourceTree = "<group>"; };
@@ -75,6 +86,13 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		FF42E95024CD8F1B003E8DFE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF42E95E24CD9254003E8DFE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -125,6 +143,15 @@
 				FF42E95724CD8F1B003E8DFE /* Info.plist */,
 			);
 			path = SpaceDashConstantsCheck;
+			sourceTree = "<group>";
+		};
+		FF42E96224CD9254003E8DFE /* SpaceDashAPITest */ = {
+			isa = PBXGroup;
+			children = (
+				FF42E96324CD9254003E8DFE /* SpaceDashAPITest.swift */,
+				FF42E96524CD9254003E8DFE /* Info.plist */,
+			);
+			path = SpaceDashAPITest;
 			sourceTree = "<group>";
 		};
 		FFA9CA5924C0CCCA006FA5DE /* Model */ = {
@@ -190,6 +217,7 @@
 				FFF716D4249D3E1C0043EB81 /* SpaceDash */,
 				FFA9CA7624C0D9D3006FA5DE /* SpaceDashUITests */,
 				FF42E95424CD8F1B003E8DFE /* SpaceDashConstantsCheck */,
+				FF42E96224CD9254003E8DFE /* SpaceDashAPITest */,
 				FFF716D3249D3E1C0043EB81 /* Products */,
 				E0C438289B70FCE13EB1B665 /* Pods */,
 				9E7BE7660A5996338B49D647 /* Frameworks */,
@@ -202,6 +230,7 @@
 				FFF716D2249D3E1C0043EB81 /* SpaceDash.app */,
 				FFA9CA7524C0D9D3006FA5DE /* SpaceDashUITests.xctest */,
 				FF42E95324CD8F1B003E8DFE /* SpaceDashConstantsCheck.xctest */,
+				FF42E96124CD9254003E8DFE /* SpaceDashAPITest.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -239,6 +268,24 @@
 			name = SpaceDashConstantsCheck;
 			productName = SpaceDashConstantsCheck;
 			productReference = FF42E95324CD8F1B003E8DFE /* SpaceDashConstantsCheck.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FF42E96024CD9254003E8DFE /* SpaceDashAPITest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF42E96824CD9254003E8DFE /* Build configuration list for PBXNativeTarget "SpaceDashAPITest" */;
+			buildPhases = (
+				FF42E95D24CD9254003E8DFE /* Sources */,
+				FF42E95E24CD9254003E8DFE /* Frameworks */,
+				FF42E95F24CD9254003E8DFE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF42E96724CD9254003E8DFE /* PBXTargetDependency */,
+			);
+			name = SpaceDashAPITest;
+			productName = SpaceDashAPITest;
+			productReference = FF42E96124CD9254003E8DFE /* SpaceDashAPITest.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		FFA9CA7424C0D9D3006FA5DE /* SpaceDashUITests */ = {
@@ -291,6 +338,10 @@
 						CreatedOnToolsVersion = 11.6;
 						TestTargetID = FFF716D1249D3E1C0043EB81;
 					};
+					FF42E96024CD9254003E8DFE = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = FFF716D1249D3E1C0043EB81;
+					};
 					FFA9CA7424C0D9D3006FA5DE = {
 						CreatedOnToolsVersion = 11.5;
 						TestTargetID = FFF716D1249D3E1C0043EB81;
@@ -316,12 +367,20 @@
 				FFF716D1249D3E1C0043EB81 /* SpaceDash */,
 				FFA9CA7424C0D9D3006FA5DE /* SpaceDashUITests */,
 				FF42E95224CD8F1B003E8DFE /* SpaceDashConstantsCheck */,
+				FF42E96024CD9254003E8DFE /* SpaceDashAPITest */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		FF42E95124CD8F1B003E8DFE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF42E95F24CD9254003E8DFE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -381,6 +440,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FF42E95D24CD9254003E8DFE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF42E96424CD9254003E8DFE /* SpaceDashAPITest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FFA9CA7124C0D9D3006FA5DE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -414,6 +481,11 @@
 			isa = PBXTargetDependency;
 			target = FFF716D1249D3E1C0043EB81 /* SpaceDash */;
 			targetProxy = FF42E95824CD8F1B003E8DFE /* PBXContainerItemProxy */;
+		};
+		FF42E96724CD9254003E8DFE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FFF716D1249D3E1C0043EB81 /* SpaceDash */;
+			targetProxy = FF42E96624CD9254003E8DFE /* PBXContainerItemProxy */;
 		};
 		FFA9CA7B24C0D9D3006FA5DE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -477,6 +549,48 @@
 					"@loader_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.pushpinderpalsingh.SpaceDashConstantsCheck;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpaceDash.app/SpaceDash";
+			};
+			name = Release;
+		};
+		FF42E96924CD9254003E8DFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4WMQY24R33;
+				INFOPLIST_FILE = SpaceDashAPITest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pushpinderpalsingh.SpaceDashAPITest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpaceDash.app/SpaceDash";
+			};
+			name = Debug;
+		};
+		FF42E96A24CD9254003E8DFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4WMQY24R33;
+				INFOPLIST_FILE = SpaceDashAPITest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pushpinderpalsingh.SpaceDashAPITest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -682,6 +796,15 @@
 			buildConfigurations = (
 				FF42E95B24CD8F1B003E8DFE /* Debug */,
 				FF42E95C24CD8F1B003E8DFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF42E96824CD9254003E8DFE /* Build configuration list for PBXNativeTarget "SpaceDashAPITest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF42E96924CD9254003E8DFE /* Debug */,
+				FF42E96A24CD9254003E8DFE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
