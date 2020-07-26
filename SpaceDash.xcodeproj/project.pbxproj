@@ -314,6 +314,7 @@
 				FFF716CE249D3E1C0043EB81 /* Sources */,
 				FFF716CF249D3E1C0043EB81 /* Frameworks */,
 				FFF716D0249D3E1C0043EB81 /* Resources */,
+				1382AF86B06FE539EB329E8C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -407,6 +408,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1382AF86B06FE539EB329E8C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SpaceDash/Pods-SpaceDash-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SpaceDash/Pods-SpaceDash-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SpaceDash/Pods-SpaceDash-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		FF34AA6549F25DCB2A8C1348 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

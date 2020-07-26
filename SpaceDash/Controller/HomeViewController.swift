@@ -43,7 +43,7 @@ class HomeViewController: UIViewController,NetworkManagerDelegate {
         DispatchQueue.main.async {
             
             self.upcomingLaunch = (data as! UpcomingLaunchModel)
-            self.launchSite.text = self.upcomingLaunch?.decodedData?.launch_site.site_name ?? Constants.defaultArgs.launchSite
+            self.launchSite.text = self.upcomingLaunch?.decodedData?.launch_site.site_name_long ?? Constants.defaultArgs.launchSite
             self.payloadAndType.text = "\(self.upcomingLaunch?.decodedData?.rocket.second_stage.payloads[0].payload_id ?? Constants.defaultArgs.noData ), \(self.upcomingLaunch?.decodedData?.rocket.second_stage.payloads[0].payload_type ?? Constants.defaultArgs.noData)"
             self.launchDate.text =  self.upcomingLaunch?.getDate()
             self.isTentative.isHidden = !(self.upcomingLaunch?.decodedData!.is_tentative)!
