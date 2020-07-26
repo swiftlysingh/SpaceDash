@@ -52,9 +52,19 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "FFA9CA6624C0D9A8006FA5DE"
+               BlueprintIdentifier = "FFA9CA7424C0D9D3006FA5DE"
                BuildableName = "SpaceDashUITests.xctest"
                BlueprintName = "SpaceDashUITests"
+               ReferencedContainer = "container:SpaceDash.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "FF42E95224CD8F1B003E8DFE"
+               BuildableName = "SpaceDashConstantsCheck.xctest"
+               BlueprintName = "SpaceDashConstantsCheck"
                ReferencedContainer = "container:SpaceDash.xcodeproj">
             </BuildableReference>
          </TestableReference>
