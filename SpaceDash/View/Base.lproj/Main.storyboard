@@ -447,7 +447,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CCAFS SLC 40" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o2Z-bp-yMi" customClass="MarqueeLabel" customModule="MarqueeLabel">
-                                                <rect key="frame" x="15" y="35" width="123.5" height="21"/>
+                                                <rect key="frame" x="15" y="35" width="118.5" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -556,6 +556,7 @@
                         <outlet property="launchDate" destination="5Gk-Ro-p3A" id="iaX-vD-JXx"/>
                         <outlet property="launchSite" destination="o2Z-bp-yMi" id="WGN-DD-cyv"/>
                         <outlet property="payloadAndType" destination="c7l-ks-VE4" id="fPx-5m-EBd"/>
+                        <outlet property="rocketImage" destination="SmH-WE-Rx5" id="cdq-rO-ghH"/>
                         <outlet property="upcomingPanel" destination="m8o-dB-pLq" id="b1r-pC-IIR"/>
                         <outletCollection property="panelConstraints" destination="F17-XE-geF" collectionClass="NSMutableArray" id="4oD-im-gmT"/>
                         <outletCollection property="panelConstraints" destination="JZm-I5-QvJ" collectionClass="NSMutableArray" id="rKN-ba-9j5"/>

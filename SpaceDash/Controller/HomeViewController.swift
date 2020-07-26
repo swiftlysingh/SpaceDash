@@ -16,9 +16,11 @@ class HomeViewController: UIViewController,NetworkManagerDelegate {
     @IBOutlet weak var launchSite: UILabel!
     @IBOutlet weak var payloadAndType: UILabel!
     @IBOutlet weak var isTentative: UILabel!
+    @IBOutlet weak var rocketImage: UIImageView!
     
     var networkObject = NetworkManager()
     var upcomingLaunch : UpcomingLaunchModel?
+    var constants : Constants.HomeView?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,19 +41,33 @@ class HomeViewController: UIViewController,NetworkManagerDelegate {
         }
     }
     
+    func error(error: Error) {
+        print(error)
+    }
+    
     func updateFromAPI(data: Any) {
         DispatchQueue.main.async {
             
             self.upcomingLaunch = (data as! UpcomingLaunchModel)
-            self.launchSite.text = self.upcomingLaunch?.decodedData?.launch_site.site_name_long ?? Constants.defaultArgs.launchSite
-            self.payloadAndType.text = "\(self.upcomingLaunch?.decodedData?.rocket.second_stage.payloads[0].payload_id ?? Constants.defaultArgs.noData ), \(self.upcomingLaunch?.decodedData?.rocket.second_stage.payloads[0].payload_type ?? Constants.defaultArgs.noData)"
-            self.launchDate.text =  self.upcomingLaunch?.getDate()
-            self.isTentative.isHidden = !(self.upcomingLaunch?.decodedData!.is_tentative)!
+    
+            self.constants = Constants.HomeView(upcomingLaunch: self.upcomingLaunch!)
+            
+            self.updateUI()
         }
     }
     
-    func error(error: Error) {
-        print(error)
+    func updateUI(){
+        
+        launchSite.text = constants?.launchSite
+        payloadAndType.text = constants?.payloadAndType
+        launchDate.text =  upcomingLaunch?.getDate()
+        
+        self.isTentative.isHidden = !(self.upcomingLaunch?.decodedData!.is_tentative)!
+        
+        if(!(constants?.rocket=="Falcon 9")){
+            rocketImage.image = UIImage(named: "f_heavy")
+        }
     }
+    
 }
 
