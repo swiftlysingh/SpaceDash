@@ -6,5 +6,5 @@ target 'SpaceDash' do
   use_frameworks!
 
 # Pods for SpaceX
-pod 'MarqueeLabel'
+	pod 'MarqueeLabel'
 end
