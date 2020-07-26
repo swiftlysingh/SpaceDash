@@ -456,7 +456,7 @@
                                                         <real key="value" value="1.5"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="scrollDuration">
-                                                        <real key="value" value="20"/>
+                                                        <real key="value" value="18"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="leadingBuffer">
                                                         <real key="value" value="5"/>
