@@ -30,7 +30,6 @@ struct UpcomingLaunchModel{
             dateFormatter.dateStyle = DateFormatter.Style.medium
             dateFormatter.timeZone = .current
             let localDate = dateFormatter.string(from: date)
-            print(localDate)
             return localDate
         }
         return "TBD"

@@ -16,14 +16,13 @@ protocol NetworkManagerDelegate {
 struct NetworkManager{
     
     var delegate:NetworkManagerDelegate?
-    let spaceXURL = "https://api.spacexdata.com/v3/"
 
     
 /// This function will create the URL of the data demanded by any controllers
 /// - Parameter demand: the additional string that will be appended to the spaceXURL
     
      func fetchData(key: String){
-        let urlString = "\(spaceXURL)\(key)"
+        let urlString = "\(Constants.Networking.baseURL)\(key)"
         performRequest(urlString: urlString)
     }
     

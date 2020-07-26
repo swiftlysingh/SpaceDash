@@ -24,7 +24,7 @@ class HomeViewController: UIViewController,NetworkManagerDelegate {
         super.viewDidLoad()
         
         networkObject.delegate = self
-        networkObject.fetchData(key: "launches/Upcoming")
+        networkObject.fetchData(key: Constants.Networking.upcomingLaunchURL)
         adjustSize()
     }
     
@@ -41,9 +41,10 @@ class HomeViewController: UIViewController,NetworkManagerDelegate {
     
     func updateFromAPI(data: Any) {
         DispatchQueue.main.async {
+            
             self.upcomingLaunch = (data as! UpcomingLaunchModel)
-            self.launchSite.text = self.upcomingLaunch?.decodedData?.launch_site.site_name ?? "Launch Site Not Declared"
-            self.payloadAndType.text = "\(self.upcomingLaunch?.decodedData?.rocket.second_stage.payloads[0].payload_id ?? "NA"), \(self.upcomingLaunch?.decodedData?.rocket.second_stage.payloads[0].payload_type ?? "NA")"
+            self.launchSite.text = self.upcomingLaunch?.decodedData?.launch_site.site_name ?? Constants.defaultArgs.launchSite
+            self.payloadAndType.text = "\(self.upcomingLaunch?.decodedData?.rocket.second_stage.payloads[0].payload_id ?? Constants.defaultArgs.noData ), \(self.upcomingLaunch?.decodedData?.rocket.second_stage.payloads[0].payload_type ?? Constants.defaultArgs.noData)"
             self.launchDate.text =  self.upcomingLaunch?.getDate()
             self.isTentative.isHidden = !(self.upcomingLaunch?.decodedData!.is_tentative)!
         }
