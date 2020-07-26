@@ -41,10 +41,15 @@ class HomeViewController: UIViewController,NetworkManagerDelegate {
         }
     }
     
+    /// This will print error in network call
+    /// - Parameter error: error
     func error(error: Error) {
         print(error)
     }
     
+    
+    /// This will bring decoded and cleaned data from the Network Manger
+    /// - Parameter data: data
     func updateFromAPI(data: Any) {
         DispatchQueue.main.async {
             
@@ -55,6 +60,9 @@ class HomeViewController: UIViewController,NetworkManagerDelegate {
             self.updateUI()
         }
     }
+    
+    
+    /// This function will update the UI once updateFromAPI updates the data for HomeViewController
     
     func updateUI(){
         
