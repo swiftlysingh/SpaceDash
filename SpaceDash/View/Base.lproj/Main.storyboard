@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -10,18 +11,71 @@
         <!--About-->
         <scene sceneID="ofz-mg-3An">
             <objects>
-                <viewController id="tFj-sZ-DS6" sceneMemberID="viewController">
+                <viewController id="tFj-sZ-DS6" customClass="AboutViewController" customModule="SpaceDash" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sh5-df-8jF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EJi-mX-Uv4" customClass="DetailScrollViews" customModule="SpaceDash" customModuleProvider="target">
+                                <rect key="frame" x="20" y="74" width="374" height="212"/>
+                                <color key="backgroundColor" name="DashCream"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="212" id="pMw-Y5-LNr"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kfb-df-F9N" customClass="DetailScrollViews" customModule="SpaceDash" customModuleProvider="target">
+                                <rect key="frame" x="20" y="335" width="374" height="212"/>
+                                <color key="backgroundColor" name="DashCream"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="212" id="udg-L6-UZR"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GQe-lI-h6a">
+                                <rect key="frame" x="177.5" y="741" width="59" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="DhM-Sr-boO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="License">
+                                    <color key="titleColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f9x-2A-JJL">
+                                <rect key="frame" x="154" y="700" width="106" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="9sq-zr-hyW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Privacy Policy">
+                                    <color key="titleColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Kfb-df-F9N" firstAttribute="top" secondItem="EJi-mX-Uv4" secondAttribute="bottom" constant="49" id="9OV-cL-ReV"/>
+                            <constraint firstItem="Kfb-df-F9N" firstAttribute="leading" secondItem="WqM-e0-9Qd" secondAttribute="leading" constant="20" id="Hq4-7o-bfF"/>
+                            <constraint firstItem="WqM-e0-9Qd" firstAttribute="bottom" secondItem="GQe-lI-h6a" secondAttribute="bottom" constant="39" id="Ze1-f4-1om"/>
+                            <constraint firstItem="f9x-2A-JJL" firstAttribute="centerX" secondItem="sh5-df-8jF" secondAttribute="centerX" id="aP3-cr-khx"/>
+                            <constraint firstItem="GQe-lI-h6a" firstAttribute="top" secondItem="f9x-2A-JJL" secondAttribute="bottom" constant="8" id="aSE-QV-gOk"/>
+                            <constraint firstItem="GQe-lI-h6a" firstAttribute="centerX" secondItem="sh5-df-8jF" secondAttribute="centerX" id="dUD-gi-wev"/>
+                            <constraint firstItem="WqM-e0-9Qd" firstAttribute="trailing" secondItem="Kfb-df-F9N" secondAttribute="trailing" constant="20" id="db7-1O-nBk"/>
+                            <constraint firstItem="WqM-e0-9Qd" firstAttribute="trailing" secondItem="EJi-mX-Uv4" secondAttribute="trailing" constant="20" id="eZ5-X6-0Cm"/>
+                            <constraint firstItem="EJi-mX-Uv4" firstAttribute="top" secondItem="WqM-e0-9Qd" secondAttribute="top" constant="30" id="ji7-6U-5Tu"/>
+                            <constraint firstItem="EJi-mX-Uv4" firstAttribute="leading" secondItem="WqM-e0-9Qd" secondAttribute="leading" constant="20" id="npn-cK-mjl"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="WqM-e0-9Qd"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="About" image="info.circle" catalog="system" id="1Wb-kc-AhX"/>
+                    <connections>
+                        <outlet property="aboutSpaceConstraint" destination="9OV-cL-ReV" id="HiV-i9-mzf"/>
+                        <outlet property="aboutSpaceTopConstraint" destination="ji7-6U-5Tu" id="V2H-FF-JaH"/>
+                        <outlet property="licenseBottomConstraint" destination="Ze1-f4-1om" id="uJ8-sT-fqf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K0b-20-2Q0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-165" y="344"/>
+            <point key="canvasLocation" x="-165.21739130434784" y="343.52678571428572"/>
         </scene>
         <!--Home-->
         <scene sceneID="2oh-if-cUN">
@@ -74,7 +128,7 @@
                                                         </constraints>
                                                     </view>
                                                 </subviews>
-                                                <color key="backgroundColor" red="0.84515935180000001" green="0.84528148169999995" blue="0.84513264889999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" name="DashCream"/>
                                                 <constraints>
                                                     <constraint firstAttribute="bottom" secondItem="szk-PP-f6D" secondAttribute="bottom" id="1DD-PF-VPk"/>
                                                     <constraint firstItem="Ocr-kZ-tmB" firstAttribute="centerX" secondItem="Vn4-aa-S8P" secondAttribute="centerX" id="ATl-Dn-A2M"/>
@@ -122,7 +176,7 @@
                                                         </constraints>
                                                     </view>
                                                 </subviews>
-                                                <color key="backgroundColor" red="0.84515935180000001" green="0.84528148169999995" blue="0.84513264889999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" name="DashCream"/>
                                                 <constraints>
                                                     <constraint firstItem="iQD-Si-E3A" firstAttribute="width" secondItem="iQD-Si-E3A" secondAttribute="height" multiplier="119:127" id="6up-0K-zCD"/>
                                                     <constraint firstItem="rfr-UE-yom" firstAttribute="top" secondItem="R2R-NN-sS8" secondAttribute="top" id="8Xg-hJ-FOE"/>
@@ -171,7 +225,7 @@
                                                         </constraints>
                                                     </view>
                                                 </subviews>
-                                                <color key="backgroundColor" red="0.84515935180000001" green="0.84528148169999995" blue="0.84513264889999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" name="DashCream"/>
                                                 <constraints>
                                                     <constraint firstItem="xLt-9L-lDE" firstAttribute="leading" secondItem="UEs-D9-h9k" secondAttribute="leading" id="4Uc-7C-Eel"/>
                                                     <constraint firstAttribute="width" constant="166" id="HRY-6L-9HG"/>
@@ -221,7 +275,7 @@
                                                         </constraints>
                                                     </view>
                                                 </subviews>
-                                                <color key="backgroundColor" red="0.84515935180000001" green="0.84528148169999995" blue="0.84513264889999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" name="DashCream"/>
                                                 <constraints>
                                                     <constraint firstItem="ImQ-dr-I5m" firstAttribute="width" secondItem="ImQ-dr-I5m" secondAttribute="height" multiplier="119:127" id="4oM-pP-mVG"/>
                                                     <constraint firstAttribute="bottom" secondItem="YFp-Dd-If6" secondAttribute="bottom" id="WfC-v5-cWM"/>
@@ -271,7 +325,7 @@
                                                         </constraints>
                                                     </view>
                                                 </subviews>
-                                                <color key="backgroundColor" red="0.84515935180000001" green="0.84528148169999995" blue="0.84513264889999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" name="DashCream"/>
                                                 <constraints>
                                                     <constraint firstAttribute="trailing" secondItem="RPJ-hh-ap2" secondAttribute="trailing" id="7Ls-3U-kPA"/>
                                                     <constraint firstItem="Psp-6q-UPj" firstAttribute="centerY" secondItem="vfK-0V-TBf" secondAttribute="centerY" id="Jfg-vW-XRu"/>
@@ -321,7 +375,7 @@
                                                         </constraints>
                                                     </view>
                                                 </subviews>
-                                                <color key="backgroundColor" red="0.84515935180000001" green="0.84528148169999995" blue="0.84513264889999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" name="DashCream"/>
                                                 <constraints>
                                                     <constraint firstItem="eWJ-gk-UBu" firstAttribute="centerX" secondItem="9kB-Vb-uUf" secondAttribute="centerX" id="03U-gi-TZA"/>
                                                     <constraint firstAttribute="width" constant="166" id="4C3-db-6xm"/>
@@ -447,7 +501,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CCAFS SLC 40" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o2Z-bp-yMi" customClass="MarqueeLabel" customModule="MarqueeLabel">
-                                                <rect key="frame" x="15" y="35" width="118.5" height="21"/>
+                                                <rect key="frame" x="15" y="35" width="123.5" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -516,7 +570,7 @@
                                         </constraints>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" red="0.90588235294117647" green="0.90588235294117647" blue="0.90588235294117647" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" name="DashCream"/>
                                 <constraints>
                                     <constraint firstItem="SmH-WE-Rx5" firstAttribute="top" secondItem="waM-qQ-kTW" secondAttribute="top" constant="52" id="3W3-du-oaD"/>
                                     <constraint firstItem="Rqp-Aw-vz1" firstAttribute="centerX" secondItem="dqi-lY-WjY" secondAttribute="centerX" id="7Wg-01-C93"/>
@@ -576,7 +630,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.84706455469999997" green="0.84704858059999999" blue="0.84705936910000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        <color key="barTintColor" red="0.84706455469999997" green="0.84704858059999999" blue="0.84705936910000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="barTintColor" name="DashCream"/>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
                                 <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -604,5 +658,8 @@
         <image name="launch" width="512" height="512"/>
         <image name="space-capsule (1)" width="512" height="512"/>
         <image name="spaceship" width="512" height="512"/>
+        <namedColor name="DashCream">
+            <color red="0.90588837860000004" green="0.90587145089999999" blue="0.90588295460000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
     </resources>
 </document>

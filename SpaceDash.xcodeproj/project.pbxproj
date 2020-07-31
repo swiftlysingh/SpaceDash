@@ -11,6 +11,7 @@
 		FF42E94E24CD8CA5003E8DFE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF42E94D24CD8CA5003E8DFE /* Constants.swift */; };
 		FF42E95624CD8F1B003E8DFE /* SpaceDashConstantsCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF42E95524CD8F1B003E8DFE /* SpaceDashConstantsCheck.swift */; };
 		FF42E96424CD9254003E8DFE /* SpaceDashAPITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF42E96324CD9254003E8DFE /* SpaceDashAPITest.swift */; };
+		FF60A64A24D47B4E0030F5AE /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF60A64924D47B4E0030F5AE /* AboutViewController.swift */; };
 		FFA9CA5824C0CA31006FA5DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFA9CA5724C0CA31006FA5DE /* Assets.xcassets */; };
 		FFA9CA5C24C0CCCA006FA5DE /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA9CA5A24C0CCCA006FA5DE /* NetworkManager.swift */; };
 		FFA9CA5D24C0CCCA006FA5DE /* UpcomingLaunchData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA9CA5B24C0CCCA006FA5DE /* UpcomingLaunchData.swift */; };
@@ -64,6 +65,7 @@
 		FF42E96124CD9254003E8DFE /* SpaceDashAPITest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpaceDashAPITest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF42E96324CD9254003E8DFE /* SpaceDashAPITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceDashAPITest.swift; sourceTree = "<group>"; };
 		FF42E96524CD9254003E8DFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF60A64924D47B4E0030F5AE /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		FFA9CA5724C0CA31006FA5DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FFA9CA5A24C0CCCA006FA5DE /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		FFA9CA5B24C0CCCA006FA5DE /* UpcomingLaunchData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpcomingLaunchData.swift; sourceTree = "<group>"; };
@@ -180,6 +182,7 @@
 				FFC259E824A7A9C10019E354 /* InfoPanelView.swift */,
 				FFC259EA24A7AB3C0019E354 /* UpcomingView.swift */,
 				FFF7170B24A338D10043EB81 /* HomeViewController.swift */,
+				FF60A64924D47B4E0030F5AE /* AboutViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -484,6 +487,7 @@
 				FFF716D6249D3E1C0043EB81 /* AppDelegate.swift in Sources */,
 				FFA9CA5D24C0CCCA006FA5DE /* UpcomingLaunchData.swift in Sources */,
 				FFF716D8249D3E1C0043EB81 /* SceneDelegate.swift in Sources */,
+				FF60A64A24D47B4E0030F5AE /* AboutViewController.swift in Sources */,
 				FFF7171224A48F730043EB81 /* DetailScrollViews.swift in Sources */,
 				FFA9CA5C24C0CCCA006FA5DE /* NetworkManager.swift in Sources */,
 				FFF7170C24A338D10043EB81 /* HomeViewController.swift in Sources */,
