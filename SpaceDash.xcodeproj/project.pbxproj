@@ -162,6 +162,7 @@
 				FFA9CA5A24C0CCCA006FA5DE /* NetworkManager.swift */,
 				FFA9CA5B24C0CCCA006FA5DE /* UpcomingLaunchData.swift */,
 				FFA9CA7F24C1B838006FA5DE /* UpcomingLaunchModel.swift */,
+				FF42E94D24CD8CA5003E8DFE /* Constants.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -201,7 +202,6 @@
 			children = (
 				FFF716D5249D3E1C0043EB81 /* AppDelegate.swift */,
 				FFF716D7249D3E1C0043EB81 /* SceneDelegate.swift */,
-				FF42E94D24CD8CA5003E8DFE /* Constants.swift */,
 			);
 			path = Config;
 			sourceTree = "<group>";
