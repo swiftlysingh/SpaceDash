@@ -57,5 +57,26 @@ class SpaceXUITests: XCTestCase {
             XCTAssertTrue(ships.exists)
         }
     }
+    func testAboutUI() throws {
+        
+        let app = XCUIApplication()
+        app.tabBars.buttons["About"].twoFingerTap()
+        
+        let aboutSpaceXTitle = app.staticTexts["About SpaceX"]
+        let aboutSpaceXPred = NSPredicate(format: "label like 'Space Exploration Technologies Corp., trading as SpaceX, is an American aerospace manufacturer and space transportation services company headquartered in Hawthorne, California. It was founded in 2002 by Elon Musk with the goal of reducing space transportation costs to enable the colonization of Mars.'")
+        let aboutSpaceXDesc = app.staticTexts.element(matching: aboutSpaceXPred)
+        
+        let aboutSpaceDashTitle = app.staticTexts["About SpaceDash"]
+        let aboutSpaceDashPred = NSPredicate(format: "label like'SpaceDash is dashboard for all SpaceX stuff. This app will be a Dashboard for all the updates you desire from SpaceX.  This app is still under active development. I have plans of adding some AR stuff and integrating some other API’s that will help me to diversify for different Space Agencies. I hope you are as excited as me to see what’s next for this app!'")
+        let aboutSpaceDashDesc = app.staticTexts.element(matching: aboutSpaceDashPred)
+        
+        if app.tabBars.buttons["About"].isSelected {
+            XCTAssertTrue(aboutSpaceXDesc.exists)
+            XCTAssertTrue(aboutSpaceXTitle.exists)
+            XCTAssertTrue(aboutSpaceDashDesc.exists)
+            XCTAssertTrue(aboutSpaceDashTitle.exists)
+        }
+        
+    }
 }
 
