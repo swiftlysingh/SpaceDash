@@ -13,20 +13,57 @@
             <objects>
                 <viewController id="tFj-sZ-DS6" customClass="AboutViewController" customModule="SpaceDash" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sh5-df-8jF">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EJi-mX-Uv4" customClass="DetailScrollViews" customModule="SpaceDash" customModuleProvider="target">
                                 <rect key="frame" x="20" y="74" width="374" height="212"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About SpaceX" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y8r-xe-97A">
+                                        <rect key="frame" x="8" y="8" width="151" height="29.5"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" textAlignment="justified" lineBreakMode="headTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="pS3-x4-4M9">
+                                        <rect key="frame" x="8" y="41.5" width="358" height="162.5"/>
+                                        <string key="text">Space Exploration Technologies Corp., trading as SpaceX, is an American aerospace manufacturer and space transportation services company headquartered in Hawthorne, California. It was founded in 2002 by Elon Musk with the goal of reducing space transportation costs to enable the colonization of Mars.</string>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <color key="backgroundColor" name="DashCream"/>
                                 <constraints>
+                                    <constraint firstItem="pS3-x4-4M9" firstAttribute="top" secondItem="y8r-xe-97A" secondAttribute="bottom" constant="4" id="DG6-Py-G4M"/>
+                                    <constraint firstItem="y8r-xe-97A" firstAttribute="top" secondItem="EJi-mX-Uv4" secondAttribute="top" constant="8" id="ZoS-8l-Bda"/>
+                                    <constraint firstAttribute="bottom" secondItem="pS3-x4-4M9" secondAttribute="bottom" constant="8" id="amF-mn-ynC"/>
+                                    <constraint firstItem="y8r-xe-97A" firstAttribute="leading" secondItem="EJi-mX-Uv4" secondAttribute="leading" constant="8" id="cJ2-1U-Wc3"/>
+                                    <constraint firstItem="pS3-x4-4M9" firstAttribute="leading" secondItem="EJi-mX-Uv4" secondAttribute="leading" constant="8" id="h3f-Jc-h0k"/>
+                                    <constraint firstAttribute="trailing" secondItem="pS3-x4-4M9" secondAttribute="trailing" constant="8" id="lig-LR-6Xq"/>
+                                    <constraint firstItem="pS3-x4-4M9" firstAttribute="top" secondItem="y8r-xe-97A" secondAttribute="bottom" constant="4" id="lsb-Rf-lBv"/>
                                     <constraint firstAttribute="height" constant="212" id="pMw-Y5-LNr"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="y8r-xe-97A" secondAttribute="trailing" symbolic="YES" id="twN-jA-eI4"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kfb-df-F9N" customClass="DetailScrollViews" customModule="SpaceDash" customModuleProvider="target">
                                 <rect key="frame" x="20" y="335" width="374" height="212"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About SpaceDash" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GzA-gZ-yYT">
+                                        <rect key="frame" x="8" y="8" width="191" height="36"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="36" id="tYv-W0-6AF"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <color key="backgroundColor" name="DashCream"/>
                                 <constraints>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="GzA-gZ-yYT" secondAttribute="trailing" constant="20" symbolic="YES" id="5jx-06-MgL"/>
+                                    <constraint firstItem="GzA-gZ-yYT" firstAttribute="leading" secondItem="Kfb-df-F9N" secondAttribute="leadingMargin" id="L4n-O6-g6x"/>
+                                    <constraint firstItem="GzA-gZ-yYT" firstAttribute="top" secondItem="Kfb-df-F9N" secondAttribute="topMargin" id="Ro7-Xu-ydu"/>
                                     <constraint firstAttribute="height" constant="212" id="udg-L6-UZR"/>
                                 </constraints>
                             </view>
@@ -82,7 +119,7 @@
             <objects>
                 <viewController id="ZKl-d6-ple" customClass="HomeViewController" customModule="SpaceDash" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nU2-Np-Sti">
-                        <rect key="frame" x="0.0" y="0.0" width="1159" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1159" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6rF-J0-zFb">

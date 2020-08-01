@@ -9,7 +9,7 @@
 import UIKit
 
 class AboutViewController: UIViewController {
-
+    
     @IBOutlet weak var aboutSpaceConstraint: NSLayoutConstraint!
     @IBOutlet weak var licenseBottomConstraint: NSLayoutConstraint!
     @IBOutlet weak var aboutSpaceTopConstraint: NSLayoutConstraint!
@@ -22,10 +22,8 @@ class AboutViewController: UIViewController {
     }
     
     func adjustSize(){
-        if UIScreen.main.bounds.height<896 {
-            aboutSpaceConstraint.constant = UIScreen.main.bounds.height*0.03
-            licenseBottomConstraint.constant = UIScreen.main.bounds.height*0.03
-            aboutSpaceTopConstraint.constant = UIScreen.main.bounds.height*0.005
-        }
+        aboutSpaceConstraint.constant = UIScreen.main.bounds.height*0.03
+        licenseBottomConstraint.constant = UIScreen.main.bounds.height*0.03
+        aboutSpaceTopConstraint.constant = UIScreen.main.bounds.height*0.01
     }
 }
