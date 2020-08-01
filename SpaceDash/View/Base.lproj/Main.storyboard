@@ -25,8 +25,8 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" textAlignment="justified" lineBreakMode="headTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="pS3-x4-4M9">
-                                        <rect key="frame" x="8" y="41.5" width="358" height="162.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" textAlignment="justified" lineBreakMode="headTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="pS3-x4-4M9">
+                                        <rect key="frame" x="8" y="39.5" width="358" height="144.5"/>
                                         <string key="text">Space Exploration Technologies Corp., trading as SpaceX, is an American aerospace manufacturer and space transportation services company headquartered in Hawthorne, California. It was founded in 2002 by Elon Musk with the goal of reducing space transportation costs to enable the colonization of Mars.</string>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
                                         <nil key="textColor"/>
@@ -35,13 +35,13 @@
                                 </subviews>
                                 <color key="backgroundColor" name="DashCream"/>
                                 <constraints>
-                                    <constraint firstItem="pS3-x4-4M9" firstAttribute="top" secondItem="y8r-xe-97A" secondAttribute="bottom" constant="4" id="DG6-Py-G4M"/>
+                                    <constraint firstItem="pS3-x4-4M9" firstAttribute="top" secondItem="y8r-xe-97A" secondAttribute="bottom" constant="2" id="DG6-Py-G4M"/>
                                     <constraint firstItem="y8r-xe-97A" firstAttribute="top" secondItem="EJi-mX-Uv4" secondAttribute="top" constant="8" id="ZoS-8l-Bda"/>
-                                    <constraint firstAttribute="bottom" secondItem="pS3-x4-4M9" secondAttribute="bottom" constant="8" id="amF-mn-ynC"/>
+                                    <constraint firstAttribute="bottom" secondItem="pS3-x4-4M9" secondAttribute="bottom" constant="28" id="amF-mn-ynC"/>
                                     <constraint firstItem="y8r-xe-97A" firstAttribute="leading" secondItem="EJi-mX-Uv4" secondAttribute="leading" constant="8" id="cJ2-1U-Wc3"/>
                                     <constraint firstItem="pS3-x4-4M9" firstAttribute="leading" secondItem="EJi-mX-Uv4" secondAttribute="leading" constant="8" id="h3f-Jc-h0k"/>
                                     <constraint firstAttribute="trailing" secondItem="pS3-x4-4M9" secondAttribute="trailing" constant="8" id="lig-LR-6Xq"/>
-                                    <constraint firstItem="pS3-x4-4M9" firstAttribute="top" secondItem="y8r-xe-97A" secondAttribute="bottom" constant="4" id="lsb-Rf-lBv"/>
+                                    <constraint firstItem="pS3-x4-4M9" firstAttribute="top" secondItem="y8r-xe-97A" secondAttribute="bottom" constant="2" id="lsb-Rf-lBv"/>
                                     <constraint firstAttribute="height" constant="212" id="pMw-Y5-LNr"/>
                                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="y8r-xe-97A" secondAttribute="trailing" symbolic="YES" id="twN-jA-eI4"/>
                                 </constraints>
@@ -58,16 +58,28 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="EV8-EB-CFC">
+                                        <rect key="frame" x="8" y="44" width="358" height="152"/>
+                                        <string key="text">SpaceDash is dashboard for all SpaceX stuff. This app will be a Dashboard for all the updates you desire from SpaceX.  This app is still under active development. I have plans of adding some AR stuff and integerating some other API’s that will help me to diversify for different Space Agencies. I hope you are as excited as me to see what’s next for this app!</string>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" name="DashCream"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="GzA-gZ-yYT" secondAttribute="trailing" constant="20" symbolic="YES" id="5jx-06-MgL"/>
+                                    <constraint firstAttribute="bottom" secondItem="EV8-EB-CFC" secondAttribute="bottom" constant="16" id="8hR-Jl-LGH"/>
+                                    <constraint firstItem="EV8-EB-CFC" firstAttribute="top" secondItem="GzA-gZ-yYT" secondAttribute="bottom" id="CJ2-aP-RA9"/>
                                     <constraint firstItem="GzA-gZ-yYT" firstAttribute="leading" secondItem="Kfb-df-F9N" secondAttribute="leadingMargin" id="L4n-O6-g6x"/>
                                     <constraint firstItem="GzA-gZ-yYT" firstAttribute="top" secondItem="Kfb-df-F9N" secondAttribute="topMargin" id="Ro7-Xu-ydu"/>
+                                    <constraint firstItem="EV8-EB-CFC" firstAttribute="leading" secondItem="Kfb-df-F9N" secondAttribute="leading" constant="8" id="TUP-YC-uqv"/>
+                                    <constraint firstItem="EV8-EB-CFC" firstAttribute="top" secondItem="GzA-gZ-yYT" secondAttribute="bottom" id="tDg-s2-guX"/>
                                     <constraint firstAttribute="height" constant="212" id="udg-L6-UZR"/>
+                                    <constraint firstAttribute="trailing" secondItem="EV8-EB-CFC" secondAttribute="trailing" constant="8" id="xqd-4s-fBk"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GQe-lI-h6a">
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GQe-lI-h6a">
                                 <rect key="frame" x="177.5" y="741" width="59" height="33"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="33" id="DhM-Sr-boO"/>
@@ -77,7 +89,7 @@
                                     <color key="titleColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f9x-2A-JJL">
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f9x-2A-JJL">
                                 <rect key="frame" x="154" y="700" width="106" height="33"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="33" id="9sq-zr-hyW"/>
