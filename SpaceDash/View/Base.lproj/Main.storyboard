@@ -13,7 +13,7 @@
             <objects>
                 <viewController id="tFj-sZ-DS6" customClass="AboutViewController" customModule="SpaceDash" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sh5-df-8jF">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EJi-mX-Uv4" customClass="DetailScrollViews" customModule="SpaceDash" customModuleProvider="target">
@@ -131,7 +131,7 @@
             <objects>
                 <viewController id="ZKl-d6-ple" customClass="HomeViewController" customModule="SpaceDash" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nU2-Np-Sti">
-                        <rect key="frame" x="0.0" y="0.0" width="1159" height="813"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1159" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6rF-J0-zFb">
@@ -680,7 +680,7 @@
             <objects>
                 <tableViewController id="8Cl-Wi-Ijc" customClass="DetailsTableViewController" customModule="SpaceDash" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="ka3-4B-yF9">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" name="DashBlack"/>
                         <sections/>
