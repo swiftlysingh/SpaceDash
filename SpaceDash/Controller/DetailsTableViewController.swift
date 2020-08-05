@@ -39,7 +39,7 @@ class DetailsTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
         let view = UIView(frame:CGRect (x: 0, y: 0, width: 320, height: 20) ) as UIView
-        view.backgroundColor = UIColor.clear
+        view.backgroundColor = UIColor.init(named: "DashCream")
         return view
     }
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {

@@ -100,7 +100,7 @@
                                 </state>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" name="DashBlack"/>
                         <constraints>
                             <constraint firstItem="Kfb-df-F9N" firstAttribute="top" secondItem="EJi-mX-Uv4" secondAttribute="bottom" constant="49" id="9OV-cL-ReV"/>
                             <constraint firstItem="Kfb-df-F9N" firstAttribute="leading" secondItem="WqM-e0-9Qd" secondAttribute="leading" constant="20" id="Hq4-7o-bfF"/>
@@ -441,7 +441,7 @@
                                                 </constraints>
                                             </view>
                                         </subviews>
-                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" name="DashBlack"/>
                                         <constraints>
                                             <constraint firstAttribute="bottom" secondItem="UEs-D9-h9k" secondAttribute="bottom" constant="30" id="0Yl-2l-qnt"/>
                                             <constraint firstAttribute="bottom" secondItem="Vn4-aa-S8P" secondAttribute="bottom" constant="30" id="8w8-jy-MQN"/>
@@ -641,7 +641,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" name="DashBlack"/>
                         <constraints>
                             <constraint firstItem="6rF-J0-zFb" firstAttribute="top" secondItem="waM-qQ-kTW" secondAttribute="bottom" constant="8" id="CE9-OU-jbu"/>
                             <constraint firstItem="6rF-J0-zFb" firstAttribute="leading" secondItem="FWa-wi-cq3" secondAttribute="leading" id="Eh9-QM-2LH"/>
@@ -682,7 +682,7 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="ka3-4B-yF9">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" name="DashBlack"/>
                         <sections/>
                         <connections>
                             <outlet property="dataSource" destination="8Cl-Wi-Ijc" id="b4h-Wm-aZE"/>
@@ -747,6 +747,9 @@
         <image name="launch" width="512" height="512"/>
         <image name="space-capsule (1)" width="512" height="512"/>
         <image name="spaceship" width="512" height="512"/>
+        <namedColor name="DashBlack">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="DashCream">
             <color red="0.90600001811981201" green="0.90600001811981201" blue="0.90600001811981201" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
