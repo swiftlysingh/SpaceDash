@@ -92,6 +92,8 @@
             <connections>
                 <outlet property="details" destination="hav-qc-x2n" id="WYE-sL-ifd"/>
                 <outlet property="photo" destination="3pc-Ab-ZaV" id="0jv-oy-MQk"/>
+                <outlet property="subTitle" destination="gvq-Vt-fjO" id="j2M-by-zOb"/>
+                <outlet property="title" destination="Ot5-xm-h0k" id="FSd-F7-O9L"/>
             </connections>
             <point key="canvasLocation" x="354" y="343"/>
         </tableViewCell>
