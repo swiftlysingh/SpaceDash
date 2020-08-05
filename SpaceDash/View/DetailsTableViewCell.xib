@@ -5,6 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -30,29 +31,43 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hav-qc-x2n">
-                                        <rect key="frame" x="8" y="311" width="526" height="126"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <rect key="frame" x="8" y="311" width="526" height="118"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="06h-zP-iqb">
-                                        <rect key="frame" x="8" y="22" width="526" height="55"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="W3M-r0-QVz">
+                                        <rect key="frame" x="8" y="8" width="526" height="287"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Mission Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ot5-xm-h0k">
+                                                <rect key="frame" x="0.0" y="0.0" width="526" height="33.5"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="28"/>
+                                                <color key="textColor" name="DashCream"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2020/06/13 9:21 am" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gvq-Vt-fjO">
+                                                <rect key="frame" x="0.0" y="265.5" width="526" height="21.5"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                                <color key="textColor" name="DashCream"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
                                 <color key="backgroundColor" name="DashCream"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="3pc-Ab-ZaV" secondAttribute="trailing" id="4g4-mS-ib6"/>
                                     <constraint firstItem="3pc-Ab-ZaV" firstAttribute="top" secondItem="SVN-rV-yX6" secondAttribute="top" id="6rK-z1-z1C"/>
+                                    <constraint firstAttribute="trailing" secondItem="W3M-r0-QVz" secondAttribute="trailing" constant="8" id="7vV-D6-Jvq"/>
                                     <constraint firstItem="hav-qc-x2n" firstAttribute="top" secondItem="3pc-Ab-ZaV" secondAttribute="bottom" constant="8" id="CY2-Yz-HU1"/>
+                                    <constraint firstItem="hav-qc-x2n" firstAttribute="top" secondItem="W3M-r0-QVz" secondAttribute="bottom" constant="16" id="JMV-jj-vKA"/>
                                     <constraint firstAttribute="trailing" secondItem="hav-qc-x2n" secondAttribute="trailing" constant="8" id="JX0-oZ-DMM"/>
+                                    <constraint firstItem="W3M-r0-QVz" firstAttribute="top" secondItem="SVN-rV-yX6" secondAttribute="top" constant="8" id="LZf-GR-MW7"/>
                                     <constraint firstItem="hav-qc-x2n" firstAttribute="leading" secondItem="SVN-rV-yX6" secondAttribute="leading" constant="8" id="OkK-yf-B2B"/>
                                     <constraint firstItem="3pc-Ab-ZaV" firstAttribute="leading" secondItem="SVN-rV-yX6" secondAttribute="leading" id="XjC-07-QhA"/>
-                                    <constraint firstAttribute="bottom" secondItem="hav-qc-x2n" secondAttribute="bottom" constant="8" id="glM-2n-1Bw"/>
+                                    <constraint firstItem="W3M-r0-QVz" firstAttribute="leading" secondItem="SVN-rV-yX6" secondAttribute="leading" constant="8" id="YKM-YH-efb"/>
+                                    <constraint firstAttribute="bottom" secondItem="hav-qc-x2n" secondAttribute="bottom" constant="16" id="glM-2n-1Bw"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -78,7 +93,7 @@
                 <outlet property="details" destination="hav-qc-x2n" id="WYE-sL-ifd"/>
                 <outlet property="photo" destination="3pc-Ab-ZaV" id="0jv-oy-MQk"/>
             </connections>
-            <point key="canvasLocation" x="349.27536231884062" y="341.85267857142856"/>
+            <point key="canvasLocation" x="354" y="343"/>
         </tableViewCell>
     </objects>
     <resources>
