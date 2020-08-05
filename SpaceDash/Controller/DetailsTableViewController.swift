@@ -20,17 +20,37 @@ class DetailsTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        return 1
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! DetailsTableViewCell
         
-        cell.title.text = "Yeah"
-        cell.subTitle.text = "SUb"
-        cell.details.text = "Detals"
+//        cell.title.text = "Yeah"
+//        cell.subTitle.text = "SUb"
+//        cell.details.text = "Detals"
 
         return cell
     }
-
+    
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        return 3
+    }
+    
+    override func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        let view = UIView(frame:CGRect (x: 0, y: 0, width: 320, height: 20) ) as UIView
+        view.backgroundColor = UIColor.clear
+        return view
+    }
+    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let view = UIView(frame:CGRect (x: 0, y: 0, width: 320, height: 20) ) as UIView
+        view.backgroundColor = UIColor.clear
+        return view
+    }
+    override func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return 20
+    }
+    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 20
+    }
 }
