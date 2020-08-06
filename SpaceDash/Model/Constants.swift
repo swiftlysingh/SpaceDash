@@ -30,4 +30,8 @@ struct Constants {
         
         lazy var rocket = upcomingLaunch.decodedData?.rocket.rocket_name ?? "Falcon 9"
     }
+    
+    struct segue {
+        static let detailViewSegue = "DetailView"
+    }
 }

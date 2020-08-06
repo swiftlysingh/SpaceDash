@@ -27,6 +27,7 @@ class SpaceDashConstantsCheck: XCTestCase {
         XCTAssertEqual("launches/Upcoming", sut.Networking.upcomingLaunchURL)
         XCTAssertEqual("Launch Site Not Declared", sut.defaultArgs.launchSite)
         XCTAssertEqual("Not Available", sut.defaultArgs.noData)
+        XCTAssertEqual("DetailView", sut.segue.detailViewSegue)
     }
 
 }

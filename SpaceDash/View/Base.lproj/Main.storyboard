@@ -175,9 +175,6 @@
                                                     </view>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="szk-PP-f6D">
                                                         <rect key="frame" x="0.0" y="0.0" width="166" height="30"/>
-                                                        <connections>
-                                                            <segue destination="8Cl-Wi-Ijc" kind="show" id="uOf-cw-T5M"/>
-                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" name="DashCream"/>
@@ -669,6 +666,7 @@
                         <outletCollection property="panelConstraints" destination="JZm-I5-QvJ" collectionClass="NSMutableArray" id="rKN-ba-9j5"/>
                         <outletCollection property="panelConstraints" destination="xdR-8r-Ukz" collectionClass="NSMutableArray" id="j9R-Dl-xaY"/>
                         <outletCollection property="panelConstraints" destination="99i-dz-HNM" collectionClass="NSMutableArray" id="GjP-Ez-bD6"/>
+                        <segue destination="8Cl-Wi-Ijc" kind="show" identifier="DetailView" id="Dgs-Dt-cfp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e7Z-RO-pza" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
