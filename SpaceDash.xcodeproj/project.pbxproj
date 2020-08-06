@@ -216,8 +216,8 @@
 			isa = PBXGroup;
 			children = (
 				FFBEA64424DC6D7400A22F9F /* UIView */,
-				FFBEA64524DC6D8200A22F9F /* ViewControllers */,
 				FFBEA64624DC6D8D00A22F9F /* ImageView */,
+				FFBEA64524DC6D8200A22F9F /* ViewControllers */,
 			);
 			path = Controller;
 			sourceTree = "<group>";

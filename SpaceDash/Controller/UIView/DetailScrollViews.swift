@@ -12,8 +12,7 @@ class DetailScrollViews: UIView {
     
      required init?(coder aDecoder: NSCoder) {
           super.init(coder: aDecoder)
-        self.layer.cornerRadius = CGFloat(12)
-      }
+        self.layer.cornerRadius = CGFloat(12)      }
 
     
 }
