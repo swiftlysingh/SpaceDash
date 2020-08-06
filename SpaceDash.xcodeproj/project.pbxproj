@@ -80,8 +80,8 @@
 		FFB734B924DB2B2B006C1518 /* DetailsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsTableViewController.swift; sourceTree = "<group>"; };
 		FFBEA64224DC6C3B00A22F9F /* DetailCellImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCellImageView.swift; sourceTree = "<group>"; };
 		FFC259E624A772150019E354 /* CALayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CALayer.swift; sourceTree = "<group>"; };
-		FFC259E824A7A9C10019E354 /* InfoPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InfoPanelView.swift; path = ../Config/InfoPanelView.swift; sourceTree = "<group>"; };
-		FFC259EA24A7AB3C0019E354 /* UpcomingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UpcomingView.swift; path = ../Config/UpcomingView.swift; sourceTree = "<group>"; };
+		FFC259E824A7A9C10019E354 /* InfoPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoPanelView.swift; sourceTree = "<group>"; };
+		FFC259EA24A7AB3C0019E354 /* UpcomingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingView.swift; sourceTree = "<group>"; };
 		FFF25C6624D871EF00D0E1FF /* DetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsTableViewCell.swift; sourceTree = "<group>"; };
 		FFF25C6724D871EF00D0E1FF /* DetailsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsTableViewCell.xib; sourceTree = "<group>"; };
 		FFF716D2249D3E1C0043EB81 /* SpaceDash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceDash.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -91,7 +91,7 @@
 		FFF716E1249D3E210043EB81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FFF716E3249D3E210043EB81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FFF7170B24A338D10043EB81 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		FFF7171124A48F730043EB81 /* DetailScrollViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailScrollViews.swift; path = ../Config/DetailScrollViews.swift; sourceTree = "<group>"; };
+		FFF7171124A48F730043EB81 /* DetailScrollViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailScrollViews.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,16 +184,40 @@
 			path = SpaceDashUITests;
 			sourceTree = "<group>";
 		};
-		FFC259DE24A76C5B0019E354 /* Controller */ = {
+		FFBEA64424DC6D7400A22F9F /* UIView */ = {
 			isa = PBXGroup;
 			children = (
 				FFF7171124A48F730043EB81 /* DetailScrollViews.swift */,
 				FFC259E824A7A9C10019E354 /* InfoPanelView.swift */,
 				FFC259EA24A7AB3C0019E354 /* UpcomingView.swift */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		FFBEA64524DC6D8200A22F9F /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
 				FFF7170B24A338D10043EB81 /* HomeViewController.swift */,
 				FF60A64924D47B4E0030F5AE /* AboutViewController.swift */,
 				FFB734B924DB2B2B006C1518 /* DetailsTableViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		FFBEA64624DC6D8D00A22F9F /* ImageView */ = {
+			isa = PBXGroup;
+			children = (
 				FFBEA64224DC6C3B00A22F9F /* DetailCellImageView.swift */,
+			);
+			path = ImageView;
+			sourceTree = "<group>";
+		};
+		FFC259DE24A76C5B0019E354 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FFBEA64424DC6D7400A22F9F /* UIView */,
+				FFBEA64524DC6D8200A22F9F /* ViewControllers */,
+				FFBEA64624DC6D8D00A22F9F /* ImageView */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
