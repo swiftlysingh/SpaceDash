@@ -17,13 +17,6 @@ class DetailsTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        photo.layer.cornerRadius = 12
-        let blurEffect = UIBlurEffect(style: UIBlurEffect.Style.dark)
-        let blurEffectView = UIVisualEffectView(effect: blurEffect)
-        blurEffectView.alpha = 0.4
-        blurEffectView.frame = photo.bounds
-        blurEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-        photo.addSubview(blurEffectView)
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

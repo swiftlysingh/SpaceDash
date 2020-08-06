@@ -18,6 +18,7 @@
 		FFA9CA7824C0D9D3006FA5DE /* SpaceDashUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA9CA7724C0D9D3006FA5DE /* SpaceDashUITests.swift */; };
 		FFA9CA8024C1B838006FA5DE /* UpcomingLaunchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA9CA7F24C1B838006FA5DE /* UpcomingLaunchModel.swift */; };
 		FFB734BA24DB2B2B006C1518 /* DetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB734B924DB2B2B006C1518 /* DetailsTableViewController.swift */; };
+		FFBEA64324DC6C3B00A22F9F /* DetailCellImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBEA64224DC6C3B00A22F9F /* DetailCellImageView.swift */; };
 		FFC259E724A772150019E354 /* CALayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC259E624A772150019E354 /* CALayer.swift */; };
 		FFC259E924A7A9C10019E354 /* InfoPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC259E824A7A9C10019E354 /* InfoPanelView.swift */; };
 		FFC259EB24A7AB3C0019E354 /* UpcomingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC259EA24A7AB3C0019E354 /* UpcomingView.swift */; };
@@ -77,6 +78,7 @@
 		FFA9CA7924C0D9D3006FA5DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FFA9CA7F24C1B838006FA5DE /* UpcomingLaunchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingLaunchModel.swift; sourceTree = "<group>"; };
 		FFB734B924DB2B2B006C1518 /* DetailsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsTableViewController.swift; sourceTree = "<group>"; };
+		FFBEA64224DC6C3B00A22F9F /* DetailCellImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCellImageView.swift; sourceTree = "<group>"; };
 		FFC259E624A772150019E354 /* CALayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CALayer.swift; sourceTree = "<group>"; };
 		FFC259E824A7A9C10019E354 /* InfoPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InfoPanelView.swift; path = ../Config/InfoPanelView.swift; sourceTree = "<group>"; };
 		FFC259EA24A7AB3C0019E354 /* UpcomingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UpcomingView.swift; path = ../Config/UpcomingView.swift; sourceTree = "<group>"; };
@@ -191,6 +193,7 @@
 				FFF7170B24A338D10043EB81 /* HomeViewController.swift */,
 				FF60A64924D47B4E0030F5AE /* AboutViewController.swift */,
 				FFB734B924DB2B2B006C1518 /* DetailsTableViewController.swift */,
+				FFBEA64224DC6C3B00A22F9F /* DetailCellImageView.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -504,6 +507,7 @@
 				FFF7170C24A338D10043EB81 /* HomeViewController.swift in Sources */,
 				FFC259E724A772150019E354 /* CALayer.swift in Sources */,
 				FFB734BA24DB2B2B006C1518 /* DetailsTableViewController.swift in Sources */,
+				FFBEA64324DC6C3B00A22F9F /* DetailCellImageView.swift in Sources */,
 				FFC259E924A7A9C10019E354 /* InfoPanelView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
