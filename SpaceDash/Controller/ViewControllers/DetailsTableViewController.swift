@@ -56,7 +56,8 @@ class DetailsTableViewController: UITableViewController,NetworkManagerDelegate {
         
         cell.title.text = decodedData?.rocket![indexPath.row].rocket_name
         cell.details.text = decodedData?.rocket![indexPath.row].description
-
+        let image_num = Int.random(in: 0..<(decodedData?.rocket![indexPath.row].flickr_images.count)!)
+        cell.photo.downloadImage(from: (decodedData?.rocket![indexPath.row].flickr_images[image_num])!)
         return cell
     }
     

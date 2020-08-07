@@ -14,7 +14,7 @@ struct RocketData: Decodable {
     let description : String
     let wikipedia : String
     
-    let flickr_images : [String]
+    let flickr_images : [URL]
     
 }
 
