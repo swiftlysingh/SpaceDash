@@ -60,10 +60,16 @@ struct NetworkManager{
         let decoder = JSONDecoder()
         do{
             switch key {
+            
             case Constants.NetworkManager.upcomingLaunchURL:
                 var upcomingLaunch = UpcomingLaunchModel(decodedDataSet : try decoder.decode([UpcomingLaunchData].self, from: data))
                 upcomingLaunch.cleanData()
                 delegate?.updateFromAPI(data: upcomingLaunch)
+                break
+            
+            case Constants.NetworkManager.rocketsURL:
+                print(try decoder.decode([RocketData].self, from: data))
+                
                 break
             default:
                 return

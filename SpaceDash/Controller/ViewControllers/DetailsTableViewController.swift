@@ -11,12 +11,15 @@ import UIKit
 class DetailsTableViewController: UITableViewController {
     
     var senderView : String = ""
-
+    var networkObject = NetworkManager()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         tableView.dataSource = self
         tableView.register(UINib(nibName: "DetailsTableViewCell", bundle: nil), forCellReuseIdentifier: "cell")
+        
+        networkObject.fetchData(demand: Constants.NetworkManager.rocketsURL)
     }
 
     // MARK: - Table view data source
@@ -29,8 +32,6 @@ class DetailsTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! DetailsTableViewCell
         
         cell.title.text = senderView
-//        cell.subTitle.text = "SUb"
-//        cell.details.text = "Detals"
 
         return cell
     }
