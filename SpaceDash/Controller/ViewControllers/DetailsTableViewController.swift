@@ -47,8 +47,9 @@ class DetailsTableViewController: UITableViewController,NetworkManagerDelegate {
 
 // MARK: - Table view data source
     extension DetailsTableViewController {
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return decodedData?.rocket?.count ?? 0
+        return cellNumber ?? 0
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
