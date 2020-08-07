@@ -55,6 +55,7 @@ class DetailsTableViewController: UITableViewController,NetworkManagerDelegate {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! DetailsTableViewCell
         
         cell.title.text = decodedData?.rocket![indexPath.row].rocket_name
+        cell.details.text = decodedData?.rocket![indexPath.row].description
 
         return cell
     }
