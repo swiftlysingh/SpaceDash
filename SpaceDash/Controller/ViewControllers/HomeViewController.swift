@@ -27,7 +27,7 @@ class HomeViewController: UIViewController,NetworkManagerDelegate {
         super.viewDidLoad()
         
         networkObject.delegate = self
-        networkObject.fetchData(key: Constants.Networking.upcomingLaunchURL)
+        networkObject.fetchData(demand: Constants.NetworkManager.upcomingLaunchURL)
         adjustSize()
     }
     
@@ -85,29 +85,29 @@ class HomeViewController: UIViewController,NetworkManagerDelegate {
 extension HomeViewController {
     
     @IBAction func rocketsButton(_ sender: UIButton) {
-        senderView = Constants.segueManager.senderValues.rocket
-        performSegue(withIdentifier: Constants.segueManager.detailViewSegue, sender: self)
+        senderView = Constants.SegueManager.SenderValues.rocket
+        performSegue(withIdentifier: Constants.SegueManager.detailViewSegue, sender: self)
     }
     
     @IBAction func launchSitesButton(_ sender: UIButton) {
-        senderView = Constants.segueManager.senderValues.launchSite
-        performSegue(withIdentifier: Constants.segueManager.detailViewSegue, sender: self)
+        senderView = Constants.SegueManager.SenderValues.launchSite
+        performSegue(withIdentifier: Constants.SegueManager.detailViewSegue, sender: self)
     }
     @IBAction func landpadsButton(_ sender: UIButton) {
-        senderView = Constants.segueManager.senderValues.landpads
-        performSegue(withIdentifier: Constants.segueManager.detailViewSegue, sender: self)
+        senderView = Constants.SegueManager.SenderValues.landpads
+        performSegue(withIdentifier: Constants.SegueManager.detailViewSegue, sender: self)
     }
     @IBAction func capsulesButton(_ sender: UIButton) {
-        senderView = Constants.segueManager.senderValues.capsules
-        performSegue(withIdentifier: Constants.segueManager.detailViewSegue, sender: self)
+        senderView = Constants.SegueManager.SenderValues.capsules
+        performSegue(withIdentifier: Constants.SegueManager.detailViewSegue, sender: self)
     }
     @IBAction func shipsButton(_ sender: UIButton) {
-        senderView = Constants.segueManager.senderValues.ships
-        performSegue(withIdentifier: Constants.segueManager.detailViewSegue, sender: self)
+        senderView = Constants.SegueManager.SenderValues.ships
+        performSegue(withIdentifier: Constants.SegueManager.detailViewSegue, sender: self)
     }
     @IBAction func launchesButton(_ sender: UIButton) {
-       senderView = Constants.segueManager.senderValues.launches
-        performSegue(withIdentifier: Constants.segueManager.detailViewSegue, sender: self)
+       senderView = Constants.SegueManager.SenderValues.launches
+        performSegue(withIdentifier: Constants.SegueManager.detailViewSegue, sender: self)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

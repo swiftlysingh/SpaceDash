@@ -16,19 +16,21 @@ protocol NetworkManagerDelegate {
 struct NetworkManager{
     
     var delegate:NetworkManagerDelegate?
-
+    var key : String = " "
     
-/// This function will create the URL of the data demanded by any controllers
-/// - Parameter demand: the additional string that will be appended to the spaceXURL
     
-     func fetchData(key: String){
-        let urlString = "\(Constants.Networking.baseURL)\(key)"
+    /// This function will create the URL of the data demanded by any controllers
+    /// - Parameter demand: the additional string that will be appended to the spaceXURL
+    
+    mutating func fetchData(demand: String){
+        let urlString = "\(Constants.NetworkManager.baseURL)\(demand)"
+        key = demand
         performRequest(urlString: urlString)
     }
     
     
-/// This will function will call the API and bring back the JSON data and will call parseJSON function to parse the data
-/// - Parameter urlString: URL created by fetchData
+    /// This will function will call the API and bring back the JSON data and will call parseJSON function to parse the data
+    /// - Parameter urlString: URL created by fetchData
     
     func performRequest(urlString: String){
         
@@ -51,15 +53,21 @@ struct NetworkManager{
         }
     }
     
-/// This function will parse the JSON of the data it is sent
-/// - Parameter data: The data that need to be parsed
-
+    /// This function will parse the JSON of the data it is sent
+    /// - Parameter data: The data that need to be parsed
+    
     func parseJSON(data: Data){
         let decoder = JSONDecoder()
         do{
-            var upcomingLaunch = UpcomingLaunchModel(decodedDataSet : try decoder.decode([UpcomingLaunchData].self, from: data))
-            upcomingLaunch.cleanData()
-            delegate?.updateFromAPI(data: upcomingLaunch)
+            switch key {
+            case Constants.NetworkManager.upcomingLaunchURL:
+                var upcomingLaunch = UpcomingLaunchModel(decodedDataSet : try decoder.decode([UpcomingLaunchData].self, from: data))
+                upcomingLaunch.cleanData()
+                delegate?.updateFromAPI(data: upcomingLaunch)
+                break
+            default:
+                return
+            }
             
         } catch{
             print(error)

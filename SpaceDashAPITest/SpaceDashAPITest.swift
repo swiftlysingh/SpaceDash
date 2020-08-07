@@ -29,7 +29,7 @@ class SpaceDashAPITest: XCTestCase {
         var statusCode: Int?
         var responseError: Error?
         
-        let dataTask = sut.dataTask(with:URL(string: Constants.Networking.baseURL)!) { data, response, error in
+        let dataTask = sut.dataTask(with:URL(string: Constants.NetworkManager.baseURL)!) { data, response, error in
             statusCode = (response as? HTTPURLResponse)?.statusCode
             responseError = error
             promise.fulfill()

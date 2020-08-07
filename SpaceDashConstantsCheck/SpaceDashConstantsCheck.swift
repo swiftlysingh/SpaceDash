@@ -23,17 +23,18 @@ class SpaceDashConstantsCheck: XCTestCase {
     }
 
     func testConstant() throws {
-        XCTAssertEqual("https://api.spacexdata.com/v3/", sut.Networking.baseURL)
-        XCTAssertEqual("launches/Upcoming", sut.Networking.upcomingLaunchURL)
-        XCTAssertEqual("Launch Site Not Declared", sut.defaultArgs.launchSite)
-        XCTAssertEqual("Not Available", sut.defaultArgs.noData)
-        XCTAssertEqual("DetailView", sut.segueManager.detailViewSegue)
-        XCTAssertEqual("rocket", Constants.segueManager.senderValues.rocket)
-        XCTAssertEqual("launchSite", Constants.segueManager.senderValues.launchSite)
-        XCTAssertEqual("landpads", Constants.segueManager.senderValues.landpads)
-        XCTAssertEqual("capsules", Constants.segueManager.senderValues.capsules)
-        XCTAssertEqual("ships", Constants.segueManager.senderValues.ships)
-        XCTAssertEqual("launches", Constants.segueManager.senderValues.launches)
+        XCTAssertEqual("https://api.spacexdata.com/v3/", sut.NetworkManager.baseURL)
+        XCTAssertEqual("launches/Upcoming", sut.NetworkManager.upcomingLaunchURL)
+        XCTAssertEqual("Launch Site Not Declared", sut.DefaultArgs.launchSite)
+        XCTAssertEqual("Not Available", sut.DefaultArgs.noData)
+        XCTAssertEqual("DetailView", sut.SegueManager.detailViewSegue)
+        XCTAssertEqual("rocket", Constants.SegueManager.SenderValues.rocket)
+        XCTAssertEqual("launchSite", Constants.SegueManager.SenderValues.launchSite)
+        XCTAssertEqual("landpads", Constants.SegueManager.SenderValues.landpads)
+        XCTAssertEqual("capsules", Constants.SegueManager.SenderValues.capsules)
+        XCTAssertEqual("ships", Constants.SegueManager.SenderValues.ships)
+        XCTAssertEqual("launches", Constants.SegueManager.SenderValues.launches)
+        XCTAssertEqual("rockets", Constants.NetworkManager.rocketsURL)
     }
 
 }
