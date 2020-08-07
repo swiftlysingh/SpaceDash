@@ -27,7 +27,13 @@ class SpaceDashConstantsCheck: XCTestCase {
         XCTAssertEqual("launches/Upcoming", sut.Networking.upcomingLaunchURL)
         XCTAssertEqual("Launch Site Not Declared", sut.defaultArgs.launchSite)
         XCTAssertEqual("Not Available", sut.defaultArgs.noData)
-        XCTAssertEqual("DetailView", sut.segue.detailViewSegue)
+        XCTAssertEqual("DetailView", sut.segueManager.detailViewSegue)
+        XCTAssertEqual("rocket", Constants.segueManager.senderValues.rocket)
+        XCTAssertEqual("launchSite", Constants.segueManager.senderValues.launchSite)
+        XCTAssertEqual("landpads", Constants.segueManager.senderValues.landpads)
+        XCTAssertEqual("capsules", Constants.segueManager.senderValues.capsules)
+        XCTAssertEqual("ships", Constants.segueManager.senderValues.ships)
+        XCTAssertEqual("launches", Constants.segueManager.senderValues.launches)
     }
 
 }

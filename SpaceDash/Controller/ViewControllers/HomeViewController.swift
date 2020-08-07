@@ -85,29 +85,29 @@ class HomeViewController: UIViewController,NetworkManagerDelegate {
 extension HomeViewController {
     
     @IBAction func rocketsButton(_ sender: UIButton) {
-        senderView = "rocket"
-        performSegue(withIdentifier: Constants.segue.detailViewSegue, sender: self)
+        senderView = Constants.segueManager.senderValues.rocket
+        performSegue(withIdentifier: Constants.segueManager.detailViewSegue, sender: self)
     }
     
     @IBAction func launchSitesButton(_ sender: UIButton) {
-        senderView = "launchSite"
-        performSegue(withIdentifier: Constants.segue.detailViewSegue, sender: self)
+        senderView = Constants.segueManager.senderValues.launchSite
+        performSegue(withIdentifier: Constants.segueManager.detailViewSegue, sender: self)
     }
     @IBAction func landpadsButton(_ sender: UIButton) {
-        senderView = "landpads"
-        performSegue(withIdentifier: Constants.segue.detailViewSegue, sender: self)
+        senderView = Constants.segueManager.senderValues.landpads
+        performSegue(withIdentifier: Constants.segueManager.detailViewSegue, sender: self)
     }
     @IBAction func capsulesButton(_ sender: UIButton) {
-       senderView = "capsules"
-        performSegue(withIdentifier: Constants.segue.detailViewSegue, sender: self)
+        senderView = Constants.segueManager.senderValues.capsules
+        performSegue(withIdentifier: Constants.segueManager.detailViewSegue, sender: self)
     }
     @IBAction func shipsButton(_ sender: UIButton) {
-        senderView = "ships"
-        performSegue(withIdentifier: Constants.segue.detailViewSegue, sender: self)
+        senderView = Constants.segueManager.senderValues.ships
+        performSegue(withIdentifier: Constants.segueManager.detailViewSegue, sender: self)
     }
     @IBAction func launchesButton(_ sender: UIButton) {
-       senderView = "launches"
-        performSegue(withIdentifier: Constants.segue.detailViewSegue, sender: self)
+       senderView = Constants.segueManager.senderValues.launches
+        performSegue(withIdentifier: Constants.segueManager.detailViewSegue, sender: self)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
