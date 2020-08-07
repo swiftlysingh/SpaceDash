@@ -21,6 +21,7 @@ class HomeViewController: UIViewController,NetworkManagerDelegate {
     var networkObject = NetworkManager()
     var upcomingLaunch : UpcomingLaunchModel?
     var constants : Constants.HomeView?
+    var senderView : String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -61,7 +62,6 @@ class HomeViewController: UIViewController,NetworkManagerDelegate {
         }
     }
     
-    
     /// This function will update the UI once updateFromAPI updates the data for HomeViewController
     
     func updateUI(){
@@ -77,5 +77,43 @@ class HomeViewController: UIViewController,NetworkManagerDelegate {
         }
     }
     
+}
+
+
+//MARK: - IBOutlets
+
+extension HomeViewController {
+    
+    @IBAction func rocketsButton(_ sender: UIButton) {
+        senderView = "rocket"
+        performSegue(withIdentifier: Constants.segue.detailViewSegue, sender: self)
+    }
+    
+    @IBAction func launchSitesButton(_ sender: UIButton) {
+        senderView = "launchSite"
+        performSegue(withIdentifier: Constants.segue.detailViewSegue, sender: self)
+    }
+    @IBAction func landpadsButton(_ sender: UIButton) {
+        senderView = "landpads"
+        performSegue(withIdentifier: Constants.segue.detailViewSegue, sender: self)
+    }
+    @IBAction func capsulesButton(_ sender: UIButton) {
+       senderView = "capsules"
+        performSegue(withIdentifier: Constants.segue.detailViewSegue, sender: self)
+    }
+    @IBAction func shipsButton(_ sender: UIButton) {
+        senderView = "ships"
+        performSegue(withIdentifier: Constants.segue.detailViewSegue, sender: self)
+    }
+    @IBAction func launchesButton(_ sender: UIButton) {
+       senderView = "launches"
+        performSegue(withIdentifier: Constants.segue.detailViewSegue, sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let target = segue.destination as? DetailsTableViewController {
+            target.senderView = senderView
+        }
+    }
 }
 

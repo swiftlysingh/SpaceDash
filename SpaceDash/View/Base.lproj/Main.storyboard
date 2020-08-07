@@ -175,6 +175,9 @@
                                                     </view>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="szk-PP-f6D">
                                                         <rect key="frame" x="0.0" y="0.0" width="166" height="30"/>
+                                                        <connections>
+                                                            <action selector="rocketsButton:" destination="ZKl-d6-ple" eventType="touchUpInside" id="fPN-eK-R75"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" name="DashCream"/>
@@ -223,6 +226,9 @@
                                                     </view>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rfr-UE-yom">
                                                         <rect key="frame" x="0.0" y="0.0" width="166" height="30"/>
+                                                        <connections>
+                                                            <action selector="launchesButton:" destination="ZKl-d6-ple" eventType="touchUpInside" id="k2A-ID-BYZ"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" name="DashCream"/>
@@ -272,6 +278,9 @@
                                                     </view>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xLt-9L-lDE">
                                                         <rect key="frame" x="0.0" y="0.0" width="166" height="30"/>
+                                                        <connections>
+                                                            <action selector="shipsButton:" destination="ZKl-d6-ple" eventType="touchUpInside" id="ikT-8d-yht"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" name="DashCream"/>
@@ -322,6 +331,9 @@
                                                     </view>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YFp-Dd-If6">
                                                         <rect key="frame" x="0.0" y="0.0" width="166" height="30"/>
+                                                        <connections>
+                                                            <action selector="capsulesButton:" destination="ZKl-d6-ple" eventType="touchUpInside" id="PYP-kz-dUE"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" name="DashCream"/>
@@ -372,6 +384,9 @@
                                                     </view>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RPJ-hh-ap2">
                                                         <rect key="frame" x="0.0" y="0.0" width="166" height="30"/>
+                                                        <connections>
+                                                            <action selector="landpadsButton:" destination="ZKl-d6-ple" eventType="touchUpInside" id="RPG-O5-CDE"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" name="DashCream"/>
@@ -422,6 +437,9 @@
                                                     </view>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xI7-7E-iLS">
                                                         <rect key="frame" x="0.0" y="0.0" width="166" height="30"/>
+                                                        <connections>
+                                                            <action selector="launchSitesButton:" destination="ZKl-d6-ple" eventType="touchUpInside" id="aSg-v2-hiz"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" name="DashCream"/>

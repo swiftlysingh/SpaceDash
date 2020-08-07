@@ -9,6 +9,8 @@
 import UIKit
 
 class DetailsTableViewController: UITableViewController {
+    
+    var senderView : String = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +28,7 @@ class DetailsTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! DetailsTableViewCell
         
-//        cell.title.text = "Yeah"
+        cell.title.text = senderView
 //        cell.subTitle.text = "SUb"
 //        cell.details.text = "Detals"
 
