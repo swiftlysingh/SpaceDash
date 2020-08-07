@@ -8,36 +8,55 @@
 
 import UIKit
 
-class DetailsTableViewController: UITableViewController {
+class DetailsTableViewController: UITableViewController,NetworkManagerDelegate {
     
     var senderView : String = ""
     var networkObject = NetworkManager()
+    
+    var decodedData : DetailsViewModel?
+    var cellNumber : Int?
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         tableView.dataSource = self
         tableView.register(UINib(nibName: "DetailsTableViewCell", bundle: nil), forCellReuseIdentifier: "cell")
-        
+        networkObject.delegate = self
         networkObject.fetchData(demand: Constants.NetworkManager.rocketsURL)
     }
+    
+    func updateFromAPI(data: Any) {
+        DispatchQueue.main.async {
+            
+            self.decodedData = (data as! DetailsViewModel)
+            self.cellNumber = self.decodedData?.rocket?.count
+            self.tableView.reloadData()
+            
+        }
+    }
+    
+    func error(error: Error) {
+        print(error)
+    }
+    
+}
+  
 
-    // MARK: - Table view data source
 
+
+
+// MARK: - Table view data source
+    extension DetailsTableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return decodedData?.rocket?.count ?? 0
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! DetailsTableViewCell
         
-        cell.title.text = senderView
+        cell.title.text = decodedData?.rocket![indexPath.row].rocket_name
 
         return cell
-    }
-    
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        return 3
     }
     
     override func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {

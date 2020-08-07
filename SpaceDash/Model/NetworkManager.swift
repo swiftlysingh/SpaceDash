@@ -68,8 +68,8 @@ struct NetworkManager{
                 break
             
             case Constants.NetworkManager.rocketsURL:
-                print(try decoder.decode([RocketData].self, from: data))
-                
+                let rocket = DetailsViewModel(rocket: try decoder.decode([RocketData].self, from: data))
+                delegate?.updateFromAPI(data: rocket)
                 break
             default:
                 return

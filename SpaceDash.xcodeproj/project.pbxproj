@@ -18,6 +18,7 @@
 		FFA9CA7824C0D9D3006FA5DE /* SpaceDashUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA9CA7724C0D9D3006FA5DE /* SpaceDashUITests.swift */; };
 		FFA9CA8024C1B838006FA5DE /* UpcomingLaunchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA9CA7F24C1B838006FA5DE /* UpcomingLaunchModel.swift */; };
 		FFB398F424DDD025001D4EA1 /* RocketsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB398F324DDD025001D4EA1 /* RocketsData.swift */; };
+		FFB398F724DDD2F8001D4EA1 /* DetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB398F624DDD2F8001D4EA1 /* DetailsViewModel.swift */; };
 		FFB734BA24DB2B2B006C1518 /* DetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB734B924DB2B2B006C1518 /* DetailsTableViewController.swift */; };
 		FFBEA64324DC6C3B00A22F9F /* DetailCellImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBEA64224DC6C3B00A22F9F /* DetailCellImageView.swift */; };
 		FFC259E724A772150019E354 /* CALayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC259E624A772150019E354 /* CALayer.swift */; };
@@ -79,6 +80,7 @@
 		FFA9CA7924C0D9D3006FA5DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FFA9CA7F24C1B838006FA5DE /* UpcomingLaunchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingLaunchModel.swift; sourceTree = "<group>"; };
 		FFB398F324DDD025001D4EA1 /* RocketsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketsData.swift; sourceTree = "<group>"; };
+		FFB398F624DDD2F8001D4EA1 /* DetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewModel.swift; sourceTree = "<group>"; };
 		FFB734B924DB2B2B006C1518 /* DetailsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsTableViewController.swift; sourceTree = "<group>"; };
 		FFBEA64224DC6C3B00A22F9F /* DetailCellImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCellImageView.swift; sourceTree = "<group>"; };
 		FFC259E624A772150019E354 /* CALayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CALayer.swift; sourceTree = "<group>"; };
@@ -172,7 +174,7 @@
 				FFA9CA5A24C0CCCA006FA5DE /* NetworkManager.swift */,
 				FF42E94D24CD8CA5003E8DFE /* Constants.swift */,
 				FFB398F524DDD037001D4EA1 /* JsonDecoders */,
-				FFA9CA7F24C1B838006FA5DE /* UpcomingLaunchModel.swift */,
+				FFB398F824DDD306001D4EA1 /* DataModels */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -193,6 +195,15 @@
 				FFB398F324DDD025001D4EA1 /* RocketsData.swift */,
 			);
 			path = JsonDecoders;
+			sourceTree = "<group>";
+		};
+		FFB398F824DDD306001D4EA1 /* DataModels */ = {
+			isa = PBXGroup;
+			children = (
+				FFA9CA7F24C1B838006FA5DE /* UpcomingLaunchModel.swift */,
+				FFB398F624DDD2F8001D4EA1 /* DetailsViewModel.swift */,
+			);
+			path = DataModels;
 			sourceTree = "<group>";
 		};
 		FFBEA64424DC6D7400A22F9F /* UIView */ = {
@@ -540,6 +551,7 @@
 				FF60A64A24D47B4E0030F5AE /* AboutViewController.swift in Sources */,
 				FFF7171224A48F730043EB81 /* DetailScrollViews.swift in Sources */,
 				FFA9CA5C24C0CCCA006FA5DE /* NetworkManager.swift in Sources */,
+				FFB398F724DDD2F8001D4EA1 /* DetailsViewModel.swift in Sources */,
 				FFF7170C24A338D10043EB81 /* HomeViewController.swift in Sources */,
 				FFC259E724A772150019E354 /* CALayer.swift in Sources */,
 				FFB734BA24DB2B2B006C1518 /* DetailsTableViewController.swift in Sources */,
