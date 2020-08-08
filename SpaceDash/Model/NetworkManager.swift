@@ -74,7 +74,8 @@ struct NetworkManager{
                 break
                 
             case Constants.SegueManager.SenderValues.landpads:
-                let landpads = DetailsViewModel(landpads: try decoder.decode([LandpadsData].self, from: data))
+                var landpads = DetailsViewModel(landpads: try decoder.decode([LandpadsData].self, from: data))
+                landpads.fillData(key: Constants.SegueManager.SenderValues.landpads)
                 delegate?.updateFromAPI(data: landpads)
                 break
                 

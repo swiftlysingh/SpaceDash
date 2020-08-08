@@ -78,8 +78,12 @@ extension DetailsTableViewController {
         
         cell.title.text = decodedData?.title[indexPath.row]
         cell.details.text = decodedData?.details[indexPath.row]
-        cell.photo.downloadImage(from: (decodedData?.image[indexPath.row])!)
-        
+        if !(decodedData?.image.isEmpty)! {
+            cell.photo.downloadImage(from: (decodedData?.image[indexPath.row])!)
+        }
+        if !(decodedData?.subTitle.isEmpty)!{
+            cell.subTitle.text = decodedData?.subTitle[indexPath.row]
+        }
         return cell
     }
     
