@@ -40,12 +40,26 @@ class DetailsTableViewController: UITableViewController,NetworkManagerDelegate {
 }
 
 
-// MARK: - Table view delegate
+// MARK: - Table view data source
 
 extension DetailsTableViewController {
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return decodedData?.count ?? 0
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! DetailsTableViewCell
+        
+        cell.title.text = decodedData?.title[indexPath.row]
+        cell.details.text = decodedData?.details[indexPath.row]
+        if !(decodedData?.image.isEmpty)! {
+            cell.photo.downloadImage(from: (decodedData?.image[indexPath.row])!)
+        }
+        if !(decodedData?.subTitle.isEmpty)!{
+            cell.subTitle.text = decodedData?.subTitle[indexPath.row]
+        }
+        return cell
     }
     
     override func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
@@ -67,28 +81,6 @@ extension DetailsTableViewController {
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 20
     }
-}
-
-//MARK: - Table View Data Manager
-
-extension DetailsTableViewController {
-    
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! DetailsTableViewCell
-        
-        cell.title.text = decodedData?.title[indexPath.row]
-        cell.details.text = decodedData?.details[indexPath.row]
-        if !(decodedData?.image.isEmpty)! {
-            cell.photo.downloadImage(from: (decodedData?.image[indexPath.row])!)
-        }
-        if !(decodedData?.subTitle.isEmpty)!{
-            cell.subTitle.text = decodedData?.subTitle[indexPath.row]
-        }
-        return cell
-    }
-    
-    
-    
 }
 
 
