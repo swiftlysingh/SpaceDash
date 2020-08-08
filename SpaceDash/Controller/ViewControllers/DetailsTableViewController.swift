@@ -27,9 +27,22 @@ class DetailsTableViewController: UITableViewController,NetworkManagerDelegate {
     
     func updateFromAPI(data: Any) {
         DispatchQueue.main.async {
-            
+        
             self.decodedData = (data as! DetailsViewModel)
-            self.cellNumber = self.decodedData?.rocket?.count ?? 0
+            
+            switch self.senderView{
+            case Constants.SegueManager.SenderValues.rocket :
+                self.cellNumber = self.decodedData?.rocket?.count ?? 0
+                break
+                
+            case Constants.SegueManager.SenderValues.landpads :
+                self.cellNumber = self.decodedData?.landpads?.count ?? 0
+                
+            default:
+                break
+            }
+            
+            
             self.tableView.reloadData()
             
         }
@@ -46,7 +59,8 @@ class DetailsTableViewController: UITableViewController,NetworkManagerDelegate {
 
 
 // MARK: - Table view data source
-    extension DetailsTableViewController {
+    
+extension DetailsTableViewController {
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return cellNumber
@@ -56,13 +70,20 @@ class DetailsTableViewController: UITableViewController,NetworkManagerDelegate {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! DetailsTableViewCell
         
         switch senderView {
+        
         case Constants.SegueManager.SenderValues.rocket:
             cell.title.text = decodedData?.rocket![indexPath.row].rocket_name
             cell.details.text = decodedData?.rocket![indexPath.row].description
             let image_num = Int.random(in: 0..<(decodedData?.rocket![indexPath.row].flickr_images.count)!)
             cell.photo.downloadImage(from: (decodedData?.rocket![indexPath.row].flickr_images[image_num])!)
-            
             break
+        
+        case Constants.SegueManager.SenderValues.landpads:
+            cell.title.text = decodedData?.landpads![indexPath.row].full_name
+            cell.details.text = decodedData?.landpads![indexPath.row].details
+            cell.subTitle.text = "\( decodedData?.landpads![indexPath.row].location.name ?? ""), \( decodedData?.landpads![indexPath.row].location.region ?? "")"
+            break
+            
         default:
             break
         }

@@ -71,6 +71,12 @@ struct NetworkManager{
                 let rocket = DetailsViewModel(rocket: try decoder.decode([RocketData].self, from: data))
                 delegate?.updateFromAPI(data: rocket)
                 break
+                
+            case Constants.SegueManager.SenderValues.landpads:
+                let landpads = DetailsViewModel(landpads: try decoder.decode([LandpadsData].self, from: data))
+                delegate?.updateFromAPI(data: landpads)
+                break
+                
             default:
                 return
             }

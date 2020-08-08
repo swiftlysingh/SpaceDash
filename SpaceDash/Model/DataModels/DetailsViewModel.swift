@@ -10,4 +10,5 @@ import Foundation
 
 struct DetailsViewModel {
     var rocket : [RocketData]?
+    var landpads : [LandpadsData]?
 }

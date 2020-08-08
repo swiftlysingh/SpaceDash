@@ -7,3 +7,16 @@
 //
 
 import Foundation
+
+struct LandpadsData : Decodable {
+    let full_name : String
+    let status : String
+    let location : Location
+    let wikipedia : URL
+    let details : String
+    
+    struct Location : Decodable {
+        let name : String
+        let region : String
+    }
+}
