@@ -28,13 +28,12 @@ class SpaceDashConstantsCheck: XCTestCase {
         XCTAssertEqual("Launch Site Not Declared", sut.DefaultArgs.launchSite)
         XCTAssertEqual("Not Available", sut.DefaultArgs.noData)
         XCTAssertEqual("DetailView", sut.SegueManager.detailViewSegue)
-        XCTAssertEqual("rocket", Constants.SegueManager.SenderValues.rocket)
-        XCTAssertEqual("launchSite", Constants.SegueManager.SenderValues.launchSite)
+        XCTAssertEqual("rockets", Constants.SegueManager.SenderValues.rocket)
+        XCTAssertEqual("launchpads", Constants.SegueManager.SenderValues.launchSite)
         XCTAssertEqual("landpads", Constants.SegueManager.SenderValues.landpads)
         XCTAssertEqual("capsules", Constants.SegueManager.SenderValues.capsules)
         XCTAssertEqual("ships", Constants.SegueManager.SenderValues.ships)
         XCTAssertEqual("launches", Constants.SegueManager.SenderValues.launches)
-        XCTAssertEqual("rockets", Constants.NetworkManager.rocketsURL)
     }
 
 }

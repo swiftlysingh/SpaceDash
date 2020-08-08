@@ -13,7 +13,6 @@ struct Constants {
     struct NetworkManager {
         static let baseURL = "https://api.spacexdata.com/v3/"
         static let upcomingLaunchURL = "launches/Upcoming"
-        static let rocketsURL = "rockets"
         
     }
     
@@ -21,8 +20,8 @@ struct Constants {
         static let detailViewSegue = "DetailView"
         
         struct SenderValues {
-            static let rocket = "rocket"
-            static let launchSite = "launchSite"
+            static let rocket = "rockets"
+            static let launchSite = "launchpads"
             static let landpads = "landpads"
             static let capsules = "capsules"
             static let ships = "ships"

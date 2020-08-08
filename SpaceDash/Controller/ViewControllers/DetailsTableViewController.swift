@@ -14,7 +14,7 @@ class DetailsTableViewController: UITableViewController,NetworkManagerDelegate {
     var networkObject = NetworkManager()
     
     var decodedData : DetailsViewModel?
-    var cellNumber : Int?
+    var cellNumber : Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,14 +22,14 @@ class DetailsTableViewController: UITableViewController,NetworkManagerDelegate {
         tableView.dataSource = self
         tableView.register(UINib(nibName: "DetailsTableViewCell", bundle: nil), forCellReuseIdentifier: "cell")
         networkObject.delegate = self
-        networkObject.fetchData(demand: Constants.NetworkManager.rocketsURL)
+        networkObject.fetchData(demand: senderView)
     }
     
     func updateFromAPI(data: Any) {
         DispatchQueue.main.async {
             
             self.decodedData = (data as! DetailsViewModel)
-            self.cellNumber = self.decodedData?.rocket?.count
+            self.cellNumber = self.decodedData?.rocket?.count ?? 0
             self.tableView.reloadData()
             
         }
@@ -49,16 +49,24 @@ class DetailsTableViewController: UITableViewController,NetworkManagerDelegate {
     extension DetailsTableViewController {
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return cellNumber ?? 0
+        return cellNumber
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! DetailsTableViewCell
         
-        cell.title.text = decodedData?.rocket![indexPath.row].rocket_name
-        cell.details.text = decodedData?.rocket![indexPath.row].description
-        let image_num = Int.random(in: 0..<(decodedData?.rocket![indexPath.row].flickr_images.count)!)
-        cell.photo.downloadImage(from: (decodedData?.rocket![indexPath.row].flickr_images[image_num])!)
+        switch senderView {
+        case Constants.SegueManager.SenderValues.rocket:
+            cell.title.text = decodedData?.rocket![indexPath.row].rocket_name
+            cell.details.text = decodedData?.rocket![indexPath.row].description
+            let image_num = Int.random(in: 0..<(decodedData?.rocket![indexPath.row].flickr_images.count)!)
+            cell.photo.downloadImage(from: (decodedData?.rocket![indexPath.row].flickr_images[image_num])!)
+            
+            break
+        default:
+            break
+        }
+        
         return cell
     }
     

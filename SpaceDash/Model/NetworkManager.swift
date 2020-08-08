@@ -67,7 +67,7 @@ struct NetworkManager{
                 delegate?.updateFromAPI(data: upcomingLaunch)
                 break
             
-            case Constants.NetworkManager.rocketsURL:
+            case Constants.SegueManager.SenderValues.rocket:
                 let rocket = DetailsViewModel(rocket: try decoder.decode([RocketData].self, from: data))
                 delegate?.updateFromAPI(data: rocket)
                 break
@@ -76,7 +76,7 @@ struct NetworkManager{
             }
             
         } catch{
-            print(error)
+            delegate?.error(error: error)
         }
     }
 }
