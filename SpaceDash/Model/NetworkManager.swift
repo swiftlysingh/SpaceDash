@@ -68,7 +68,8 @@ struct NetworkManager{
                 break
             
             case Constants.SegueManager.SenderValues.rocket:
-                let rocket = DetailsViewModel(rocket: try decoder.decode([RocketData].self, from: data))
+                var rocket = DetailsViewModel(rockets: try decoder.decode([RocketData].self, from: data))
+                rocket.fillData(key: Constants.SegueManager.SenderValues.rocket)
                 delegate?.updateFromAPI(data: rocket)
                 break
                 
