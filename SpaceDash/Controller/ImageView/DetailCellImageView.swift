@@ -15,7 +15,7 @@ class DetailCellImageView: UIImageView {
         self.layer.cornerRadius = 12
         let blurEffect = UIBlurEffect(style: UIBlurEffect.Style.dark)
         let blurEffectView = UIVisualEffectView(effect: blurEffect)
-        blurEffectView.alpha = 0.4
+        blurEffectView.alpha = 0.6
         blurEffectView.frame = self.bounds
         blurEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         self.addSubview(blurEffectView)

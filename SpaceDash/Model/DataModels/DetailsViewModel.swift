@@ -13,6 +13,7 @@ struct DetailsViewModel {
     var landpads : [LandpadsData]?
     var capsules : [CapsulesData]?
     var ships : [ShipsData]?
+    var launchPads : [LaunchPadData]?
     
     var title : [String] = [""]
     var subTitle : [String] = [""]
@@ -69,7 +70,16 @@ struct DetailsViewModel {
                 }
             }
             break
-            
+        
+        case Constants.SegueManager.SenderValues.launchSite:
+            if let data = launchPads {
+                count = data.count
+                for ship in data {
+                    title.append(ship.name)
+                    subTitle.append("\(ship.site_name_long), \(ship.location.region)")
+                    details.append(ship.details)
+                }
+            }
         default:
             return
         }
