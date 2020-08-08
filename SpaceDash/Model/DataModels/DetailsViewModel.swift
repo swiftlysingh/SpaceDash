@@ -14,6 +14,7 @@ struct DetailsViewModel {
     var capsules : [CapsulesData]?
     var ships : [ShipsData]?
     var launchPads : [LaunchPadData]?
+    var launches : [LaunchesData]?
     
     var title : [String] = [""]
     var subTitle : [String] = [""]
@@ -35,7 +36,7 @@ struct DetailsViewModel {
                 }
             }
             break
-        
+            
         case Constants.SegueManager.SenderValues.landpads:
             if let data = landpads {
                 count = data.count
@@ -46,7 +47,7 @@ struct DetailsViewModel {
                 }
             }
             break
-        
+            
         case Constants.SegueManager.SenderValues.capsules:
             if let data = capsules {
                 count = data.count
@@ -70,7 +71,7 @@ struct DetailsViewModel {
                 }
             }
             break
-        
+            
         case Constants.SegueManager.SenderValues.launchSite:
             if let data = launchPads {
                 count = data.count
@@ -78,6 +79,19 @@ struct DetailsViewModel {
                     title.append(ship.name)
                     subTitle.append("\(ship.site_name_long), \(ship.location.region)")
                     details.append(ship.details)
+                }
+            }
+            break
+            
+        case Constants.SegueManager.SenderValues.launches:
+            if var data = launches{
+                count = data.count
+                data.sort(by: { $0.launch_date_unix > $1.launch_date_unix  })
+                
+                for launch in data {
+                    title.append(launch.mission_name)
+                    details.append(launch.details ?? Constants.DefaultArgs.noData)
+                    subTitle.append(getDate(timeInUnix: launch.launch_date_unix))
                 }
             }
         default:
@@ -88,5 +102,15 @@ struct DetailsViewModel {
         subTitle.remove(at: 0)
         details.remove(at: 0)
         image.remove(at: 0)
+    }
+    
+    func getDate(timeInUnix: TimeInterval)-> String{
+        let date = Date(timeIntervalSince1970: timeInUnix)
+        let dateFormatter = DateFormatter()
+        dateFormatter.timeStyle = DateFormatter.Style.short
+        dateFormatter.dateStyle = DateFormatter.Style.medium
+        dateFormatter.timeZone = .current
+        let localDate = dateFormatter.string(from: date)
+        return localDate
     }
 }

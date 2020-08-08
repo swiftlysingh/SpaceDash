@@ -96,6 +96,11 @@ struct NetworkManager{
                 launchPads.fillData(key: Constants.SegueManager.SenderValues.launchSite)
                 delegate?.updateFromAPI(data: launchPads)
                 break
+                
+            case Constants.SegueManager.SenderValues.launches:
+                var launches = DetailsViewModel(launches: try decoder.decode([LaunchesData].self, from: data))
+                launches.fillData(key: Constants.SegueManager.SenderValues.launches)
+                delegate?.updateFromAPI(data: launches)
             default:
                 return
             }
