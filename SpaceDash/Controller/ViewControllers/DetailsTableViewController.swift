@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DetailsTableViewController: UITableViewController,NetworkManagerDelegate {
+class DetailsTableViewController: UITableViewController {
     
     var senderView : String = ""
     var networkObject = NetworkManager()
@@ -23,13 +23,16 @@ class DetailsTableViewController: UITableViewController,NetworkManagerDelegate {
         networkObject.delegate = self
         networkObject.fetchData(demand: senderView)
     }
+}
+
+//MARK: - Network Manager
+
+extension DetailsTableViewController:NetworkManagerDelegate {
     
     func updateFromAPI(data: Any) {
         DispatchQueue.main.async {
-            
             self.decodedData = (data as! DetailsViewModel)
             self.tableView.reloadData()
-            
         }
     }
     
