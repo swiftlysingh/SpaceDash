@@ -78,7 +78,17 @@ struct NetworkManager{
                 landpads.fillData(key: Constants.SegueManager.SenderValues.landpads)
                 delegate?.updateFromAPI(data: landpads)
                 break
+            
+            case Constants.SegueManager.SenderValues.capsules:
+                var capsules = DetailsViewModel(capsules:try decoder.decode([CapsulesData].self, from: data))
+                capsules.fillData(key: Constants.SegueManager.SenderValues.capsules)
+                delegate?.updateFromAPI(data: capsules)
+                break
                 
+            case Constants.SegueManager.SenderValues.ships:
+                var ships = DetailsViewModel(ships: try decoder.decode([ShipsData].self, from: data))
+                ships.fillData(key: Constants.SegueManager.SenderValues.ships)
+                delegate?.updateFromAPI(data: ships)
             default:
                 return
             }

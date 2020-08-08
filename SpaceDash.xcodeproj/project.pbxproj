@@ -12,6 +12,7 @@
 		FF42E95624CD8F1B003E8DFE /* SpaceDashConstantsCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF42E95524CD8F1B003E8DFE /* SpaceDashConstantsCheck.swift */; };
 		FF42E96424CD9254003E8DFE /* SpaceDashAPITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF42E96324CD9254003E8DFE /* SpaceDashAPITest.swift */; };
 		FF60A64A24D47B4E0030F5AE /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF60A64924D47B4E0030F5AE /* AboutViewController.swift */; };
+		FF8E3EDC24DF003300077DE3 /* ShipsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8E3EDB24DF003300077DE3 /* ShipsData.swift */; };
 		FFA9CA5824C0CA31006FA5DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFA9CA5724C0CA31006FA5DE /* Assets.xcassets */; };
 		FFA9CA5C24C0CCCA006FA5DE /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA9CA5A24C0CCCA006FA5DE /* NetworkManager.swift */; };
 		FFA9CA5D24C0CCCA006FA5DE /* UpcomingLaunchData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA9CA5B24C0CCCA006FA5DE /* UpcomingLaunchData.swift */; };
@@ -28,6 +29,7 @@
 		FFF25C6824D871EF00D0E1FF /* DetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF25C6624D871EF00D0E1FF /* DetailsTableViewCell.swift */; };
 		FFF25C6924D871EF00D0E1FF /* DetailsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFF25C6724D871EF00D0E1FF /* DetailsTableViewCell.xib */; };
 		FFF266B224DEAF7400BA5C28 /* LandpadsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF266B124DEAF7400BA5C28 /* LandpadsData.swift */; };
+		FFF266B424DEF93800BA5C28 /* CapsulesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF266B324DEF93800BA5C28 /* CapsulesData.swift */; };
 		FFF716D6249D3E1C0043EB81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF716D5249D3E1C0043EB81 /* AppDelegate.swift */; };
 		FFF716D8249D3E1C0043EB81 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF716D7249D3E1C0043EB81 /* SceneDelegate.swift */; };
 		FFF716DD249D3E1C0043EB81 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFF716DB249D3E1C0043EB81 /* Main.storyboard */; };
@@ -74,6 +76,7 @@
 		FF42E96324CD9254003E8DFE /* SpaceDashAPITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceDashAPITest.swift; sourceTree = "<group>"; };
 		FF42E96524CD9254003E8DFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF60A64924D47B4E0030F5AE /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		FF8E3EDB24DF003300077DE3 /* ShipsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipsData.swift; sourceTree = "<group>"; };
 		FFA9CA5724C0CA31006FA5DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FFA9CA5A24C0CCCA006FA5DE /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		FFA9CA5B24C0CCCA006FA5DE /* UpcomingLaunchData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpcomingLaunchData.swift; sourceTree = "<group>"; };
@@ -92,6 +95,7 @@
 		FFF25C6624D871EF00D0E1FF /* DetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsTableViewCell.swift; sourceTree = "<group>"; };
 		FFF25C6724D871EF00D0E1FF /* DetailsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsTableViewCell.xib; sourceTree = "<group>"; };
 		FFF266B124DEAF7400BA5C28 /* LandpadsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandpadsData.swift; sourceTree = "<group>"; };
+		FFF266B324DEF93800BA5C28 /* CapsulesData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapsulesData.swift; sourceTree = "<group>"; };
 		FFF716D2249D3E1C0043EB81 /* SpaceDash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceDash.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFF716D5249D3E1C0043EB81 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FFF716D7249D3E1C0043EB81 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -198,6 +202,8 @@
 				FFA9CA5B24C0CCCA006FA5DE /* UpcomingLaunchData.swift */,
 				FFB398F324DDD025001D4EA1 /* RocketsData.swift */,
 				FFF266B124DEAF7400BA5C28 /* LandpadsData.swift */,
+				FFF266B324DEF93800BA5C28 /* CapsulesData.swift */,
+				FF8E3EDB24DF003300077DE3 /* ShipsData.swift */,
 			);
 			path = JsonDecoders;
 			sourceTree = "<group>";
@@ -552,9 +558,11 @@
 				FFF25C6824D871EF00D0E1FF /* DetailsTableViewCell.swift in Sources */,
 				FFC259EB24A7AB3C0019E354 /* UpcomingView.swift in Sources */,
 				FFF716D6249D3E1C0043EB81 /* AppDelegate.swift in Sources */,
+				FF8E3EDC24DF003300077DE3 /* ShipsData.swift in Sources */,
 				FFA9CA5D24C0CCCA006FA5DE /* UpcomingLaunchData.swift in Sources */,
 				FFF716D8249D3E1C0043EB81 /* SceneDelegate.swift in Sources */,
 				FF60A64A24D47B4E0030F5AE /* AboutViewController.swift in Sources */,
+				FFF266B424DEF93800BA5C28 /* CapsulesData.swift in Sources */,
 				FFF7171224A48F730043EB81 /* DetailScrollViews.swift in Sources */,
 				FFA9CA5C24C0CCCA006FA5DE /* NetworkManager.swift in Sources */,
 				FFB398F724DDD2F8001D4EA1 /* DetailsViewModel.swift in Sources */,
