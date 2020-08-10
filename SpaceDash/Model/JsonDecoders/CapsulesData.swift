@@ -13,7 +13,7 @@ struct CapsulesData : Decodable {
     let capsule_serial : String
     let capsule_id : String
     let status : String
-    let original_launch : String?
+    let original_launch_unix : TimeInterval?
     let missions : [Missions]
     let details : String?
     let reuse_count : Int

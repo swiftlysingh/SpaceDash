@@ -49,12 +49,13 @@ struct DetailsViewModel {
             break
             
         case Constants.SegueManager.SenderValues.capsules:
-            if let data = capsules {
+            if var data = capsules {
                 count = data.count
+                data.sort(by: { $0.capsule_serial > $1.capsule_serial  })
                 for capsule in data {
                     title.append("\(capsule.type) : \(capsule.capsule_serial)")
                     for mission in capsule.missions {
-                        details.append(" \(capsule.details ?? "") \n \n Missions: \(mission.name) \n Original Launch: \(capsule.original_launch ?? Constants.DefaultArgs.noData)")
+                        details.append("\(capsule.details ?? "") \n \nMissions: \(mission.name) \n Original Launch: \(getDate(capsule.original_launch_unix) )")
                     }
                 }
             }
@@ -91,7 +92,7 @@ struct DetailsViewModel {
                 for launch in data {
                     title.append(launch.mission_name)
                     details.append(launch.details ?? Constants.DefaultArgs.noData)
-                    subTitle.append(getDate(timeInUnix: launch.launch_date_unix))
+                    subTitle.append(getDate(launch.launch_date_unix))
                 }
             }
         default:
@@ -104,13 +105,16 @@ struct DetailsViewModel {
         image.remove(at: 0)
     }
     
-    func getDate(timeInUnix: TimeInterval)-> String{
-        let date = Date(timeIntervalSince1970: timeInUnix)
-        let dateFormatter = DateFormatter()
-        dateFormatter.timeStyle = DateFormatter.Style.short
-        dateFormatter.dateStyle = DateFormatter.Style.medium
-        dateFormatter.timeZone = .current
-        let localDate = dateFormatter.string(from: date)
-        return localDate
+    func getDate(_ time: TimeInterval?)-> String{
+        if let timeInUnix = time{
+            let date = Date(timeIntervalSince1970: timeInUnix)
+            let dateFormatter = DateFormatter()
+            dateFormatter.timeStyle = DateFormatter.Style.short
+            dateFormatter.dateStyle = DateFormatter.Style.medium
+            dateFormatter.timeZone = .current
+            let localDate = dateFormatter.string(from: date)
+            return localDate
+        }
+            return Constants.DefaultArgs.noData
     }
 }
