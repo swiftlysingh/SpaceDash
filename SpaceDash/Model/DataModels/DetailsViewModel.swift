@@ -21,18 +21,21 @@ struct DetailsViewModel {
     var details : [String] = [""]
     var image : [URL] = [URL(string:Constants.NetworkManager.baseURL)!]
     var count : Int = 0
+    var isActive : [Bool] = [false]
     
     mutating func fillData(key: String){
         
         switch key {
         case Constants.SegueManager.SenderValues.rocket:
-            if let data = rockets {
+            if var data = rockets {
                 count = data.count
+                data.sort(by: { $0.id > $1.id})
                 for rocket in data {
                     title.append(rocket.rocket_name)
                     details.append(rocket.description)
                     let image_num = Int.random(in: 0..<rocket.flickr_images.count)
                     image.append(rocket.flickr_images[image_num])
+                    isActive.append(rocket.active)
                 }
             }
             break
@@ -44,6 +47,7 @@ struct DetailsViewModel {
                     title.append(landpads.full_name)
                     details.append(landpads.details)
                     subTitle.append("\(landpads.location.name), \(landpads.location.region)")
+                    isActive.append(false)
                 }
             }
             break
@@ -57,6 +61,7 @@ struct DetailsViewModel {
                     for mission in capsule.missions {
                         details.append("\(capsule.details ?? "") \n \nMissions: \(mission.name) \n Original Launch: \(getDate(capsule.original_launch_unix) )")
                     }
+                    isActive.append(false)
                 }
             }
             break
@@ -69,6 +74,7 @@ struct DetailsViewModel {
                     subTitle.append("Home Port: \(ship.home_port)")
                     details.append("Year Built: \(ship.year_built ?? 0) \n Type : \(ship.ship_type) \n Successful Landings: \(ship.successful_landings ?? 0)")
                     image.append((ship.image ?? URL(string: "https://i.imgur.com/28dCx6G.jpg"))!)
+                    isActive.append(false)
                 }
             }
             break
@@ -80,6 +86,7 @@ struct DetailsViewModel {
                     title.append(ship.name)
                     subTitle.append("\(ship.site_name_long), \(ship.location.region)")
                     details.append(ship.details)
+                    isActive.append(false)
                 }
             }
             break
@@ -93,12 +100,14 @@ struct DetailsViewModel {
                     title.append(launch.mission_name)
                     details.append(launch.details ?? Constants.DefaultArgs.noData)
                     subTitle.append(getDate(launch.launch_date_unix))
+                    isActive.append(false)
                 }
             }
         default:
             return
         }
         
+        isActive.remove(at: 0)
         title.remove(at: 0)
         subTitle.remove(at: 0)
         details.remove(at: 0)

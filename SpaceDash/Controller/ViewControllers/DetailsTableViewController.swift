@@ -62,6 +62,7 @@ extension DetailsTableViewController {
         if !(decodedData?.subTitle.isEmpty)!{
             cell.subTitle.text = decodedData?.subTitle[indexPath.row]
         }
+        cell.isActive.isHidden = !decodedData!.isActive[indexPath.row]
         return cell
     }
     

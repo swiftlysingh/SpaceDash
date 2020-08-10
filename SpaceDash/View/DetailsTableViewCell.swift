@@ -14,6 +14,7 @@ class DetailsTableViewCell: UITableViewCell {
     @IBOutlet weak var subTitle: UILabel!
     @IBOutlet weak var details: UILabel!
     @IBOutlet weak var photo: UIImageView!
+    @IBOutlet weak var isActive: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

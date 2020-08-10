@@ -39,12 +39,24 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="W3M-r0-QVz">
                                         <rect key="frame" x="8" y="8" width="498" height="271.5"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Mission Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ot5-xm-h0k">
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="2sd-w1-ZLF">
                                                 <rect key="frame" x="0.0" y="0.0" width="498" height="33.5"/>
-                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="28"/>
-                                                <color key="textColor" name="DashCream"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Mission Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ot5-xm-h0k">
+                                                        <rect key="frame" x="0.0" y="0.0" width="178.5" height="33.5"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="28"/>
+                                                        <color key="textColor" name="DashCream"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Active " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ceb-Zq-MBn">
+                                                        <rect key="frame" x="441.5" y="0.0" width="56.5" height="33.5"/>
+                                                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <color key="highlightedColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gvq-Vt-fjO">
                                                 <rect key="frame" x="0.0" y="271.5" width="498" height="0.0"/>
                                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
@@ -91,6 +103,7 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="details" destination="hav-qc-x2n" id="WYE-sL-ifd"/>
+                <outlet property="isActive" destination="ceb-Zq-MBn" id="yEB-xi-gA7"/>
                 <outlet property="photo" destination="3pc-Ab-ZaV" id="0jv-oy-MQk"/>
                 <outlet property="subTitle" destination="gvq-Vt-fjO" id="j2M-by-zOb"/>
                 <outlet property="title" destination="Ot5-xm-h0k" id="FSd-F7-O9L"/>

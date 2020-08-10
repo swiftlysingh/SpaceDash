@@ -9,6 +9,8 @@
 import Foundation
 
 struct RocketData: Decodable {
+    let id : Int
+    let active : Bool
     let rocket_name : String
     let rocket_type : String
     let description : String
