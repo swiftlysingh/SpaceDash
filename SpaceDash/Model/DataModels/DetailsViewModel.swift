@@ -47,7 +47,7 @@ struct DetailsViewModel {
                     title.append(landpads.full_name)
                     details.append(landpads.details)
                     subTitle.append("\(landpads.location.name), \(landpads.location.region)")
-                    isActive.append(false)
+                    isActive.append((landpads.status=="active"))
                 }
             }
             break
@@ -74,19 +74,20 @@ struct DetailsViewModel {
                     subTitle.append("Home Port: \(ship.home_port)")
                     details.append("Year Built: \(ship.year_built ?? 0) \n Type : \(ship.ship_type) \n Successful Landings: \(ship.successful_landings ?? 0)")
                     image.append((ship.image ?? URL(string: "https://i.imgur.com/28dCx6G.jpg"))!)
-                    isActive.append(false)
+                    isActive.append(ship.active)
                 }
             }
             break
             
         case Constants.SegueManager.SenderValues.launchSite:
-            if let data = launchPads {
+            if var data = launchPads {
                 count = data.count
+                data.sort(by: {$0.id > $1.id})
                 for ship in data {
                     title.append(ship.name)
                     subTitle.append("\(ship.site_name_long), \(ship.location.region)")
                     details.append(ship.details)
-                    isActive.append(false)
+                    isActive.append(ship.status=="active")
                 }
             }
             break
