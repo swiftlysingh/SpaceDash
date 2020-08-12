@@ -1,7 +1,7 @@
-## SpaceDash
+# SpaceDash
 SpaceDash is an app that will provide information of all the present, past and future Launches and Vehicles of SpaceX. This app will be deployed to App Store soon. Currently, the app is in developement. I am following Test-Driven Agile Development for this app. The future scope of this app includes an AR view of various vehicles of SpaceX and latest position of Roadster in space on a virtual Solar System.
 
-# Getting Started
+## Getting Started for Development
 
 ## Requirements for Development
 - iOS 13.0+
