@@ -1,3 +1,6 @@
+layout: page
+title: "License"
+permalink: /License/
 MIT License
 
 Copyright (c) 2020 Pushpinder Pal Singh
