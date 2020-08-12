@@ -3,12 +3,13 @@ SpaceDash is an app that will provide information of all the present, past and f
 
 ## Getting Started for Development
 
-## Requirements for Development
+
+### Requirements for Development
 - iOS 13.0+
 - Xcode 11.0+
 - Macos Catalina or above
 
-## Setup
+### Setup
 
 - Fork this project.
 - Clone the forked project to your machine.
