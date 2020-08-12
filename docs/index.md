@@ -37,3 +37,5 @@ Please help us follow the best practices to make it easy for the reviewer as wel
 
 ## Author
 * [Pushpinder Pal Singh](https://github.com/pushpinderpalsingh)
+
+<a href="/license.md" target="_top">License</a>
