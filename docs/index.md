@@ -9,16 +9,14 @@ SpaceDash is an app that will provide information of all the present, past and f
 - Macos Catalina or above
 
 ### Setup
-
 - Fork this project.
 - Clone the forked project to your machine.
 - In your project directory open Terminal and Run `$ pod install` and `$ pod update`
 -  Open .xcworkspace file in Xcode to start working on the App
 
 ### Branch Policy
-
-We have the following branches
- * **development** All development goes on in this branch. If you're contributing, you are supposed to make a pull request to _development_. PRs to development branch must pass a build check and a unit-test check on Circle CI.
+I have the following branches
+ * **development** All development goes on in this branch. If you're contributing, you are supposed to make a pull request to _development_. PRs to development branch must pass a build check and a unit-test check on Github Actions.
  * **master** This contains shipped code. After significant features/bugfixes are accumulated on development, we make a version update and make a release.
  
 ### Code practices
