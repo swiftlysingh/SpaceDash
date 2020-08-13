@@ -19,7 +19,7 @@ class DetailsTableViewController: UITableViewController {
         super.viewDidLoad()
         
         tableView.dataSource = self
-        tableView.register(UINib(nibName: "DetailsTableViewCell", bundle: nil), forCellReuseIdentifier: "cell")
+        tableView.register(UINib(nibName: Constants.DetailsView.nibName, bundle: nil), forCellReuseIdentifier: Constants.DetailsView.reuseId)
         networkObject.delegate = self
         networkObject.fetchData(demand: senderView)
     }
@@ -52,7 +52,7 @@ extension DetailsTableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! DetailsTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: Constants.DetailsView.reuseId, for: indexPath) as! DetailsTableViewCell
         
         cell.title.text = decodedData?.title[indexPath.row]
         cell.details.text = decodedData?.details[indexPath.row]

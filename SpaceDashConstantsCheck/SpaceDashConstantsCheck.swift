@@ -34,6 +34,8 @@ class SpaceDashConstantsCheck: XCTestCase {
         XCTAssertEqual("capsules", Constants.SegueManager.SenderValues.capsules)
         XCTAssertEqual("ships", Constants.SegueManager.SenderValues.ships)
         XCTAssertEqual("launches", Constants.SegueManager.SenderValues.launches)
+        XCTAssertEqual("DetailsTableViewCell", Constants.DetailsView.nibName)
+        XCTAssertEqual("cell", Constants.DetailsView.reuseId)
     }
 
 }

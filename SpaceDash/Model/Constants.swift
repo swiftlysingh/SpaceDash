@@ -43,4 +43,9 @@ struct Constants {
         
         lazy var rocket = upcomingLaunch.decodedData?.rocket.rocket_name ?? "Falcon 9"
     }
+    
+    struct DetailsView {
+        static let nibName = "DetailsTableViewCell"
+        static let reuseId = "cell"
+    }
 }
