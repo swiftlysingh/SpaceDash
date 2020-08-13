@@ -23,6 +23,7 @@ struct DetailsViewModel {
     var count : Int = 0
     var isActive : [Bool] = [false]
     
+    /// This function will fill in all the important data to data variables.
     mutating func fillData(key: String){
         
         switch key {
