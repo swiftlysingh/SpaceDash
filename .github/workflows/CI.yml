@@ -25,4 +25,34 @@ jobs:
  
     - name: Running Tests
       run: fastlane tests
-      
+  CD:
+    runs-on: macOS-latest
+    steps:
+    - uses: actions/checkout@master
+
+    - name: Fastlane Building
+      run: 
+       fastlane beta
+
+    - uses: Apple-Actions/import-codesign-certs@v1
+      with:
+        p12-file-base64: ${{ secrets.CERTIFICATES_FILE_BASE64 }}
+        p12-password: ${{ secrets.CERTIFICATES_PASSWORD }}
+    - uses: Apple-Actions/download-provisioning-profiles@v1
+      with:
+        bundle-id: com.pushpinderpalsingh.SpaceDash
+        issuer-id: ${{ secrets.APPSTORE_ISSUER_ID }}
+        api-key-id: ${{ secrets.APPSTORE_KEY_ID }}
+        api-private-key: ${{ secrets.APPSTORE_PRIVATE_KEY }}
+    - name: "#️⃣ Generate Build Number"
+      id: buildnumber
+      uses: einaregilsson/build-number@v2
+      with:
+        token: ${{ secrets.github_token }}
+    - run: ./Build
+    - uses: Apple-Actions/upload-testflight-build@master
+      with:
+        app-path: ./SpaceDash.ipa
+        issuer-id: ${{ secrets.APPSTORE_ISSUER_ID }}
+        api-key-id: ${{ secrets.APPSTORE_KEY_ID }}
+        api-private-key: ${{ secrets.APPSTORE_PRIVATE_KEY }}     
