@@ -40,7 +40,7 @@ jobs:
       run: gem install fastlane
     - name: Fastlane Building
       run: 
-       fastlane beta
+       fastlane gym
 
     - uses: Apple-Actions/import-codesign-certs@v1
       with:
