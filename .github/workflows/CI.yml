@@ -10,7 +10,7 @@ on:
     - develop 
 
 jobs:
-  test:
+  CI:
     runs-on: macOS-latest
     steps:
     - uses: actions/checkout@master
@@ -26,10 +26,18 @@ jobs:
     - name: Running Tests
       run: fastlane tests
   CD:
+    needs: [CI]
     runs-on: macOS-latest
     steps:
     - uses: actions/checkout@master
 
+    - name: Installing Cocoapods
+      run: |
+       pod install
+       pod update
+
+    - name: Installing and Updating FastLane
+      run: gem install fastlane
     - name: Fastlane Building
       run: 
        fastlane beta
