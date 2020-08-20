@@ -21,6 +21,13 @@ platform :ios do
   run_tests(workspace: "SpaceDash.xcworkspace",devices: ["iPhone 11", "iPhone 8","iPad Pro (12.9-inch) (3rd generation)"],scheme: "SpaceDash")
 end
 lane :beta do
+  ensure_git_status_clean
+  increment_build_number(xcodeproj: "SpaceDash.xcodeproj")
+  commit_version_bump(xcodeproj: "SpaceDash.xcodeproj")
+  add_git_tag
+  push_to_git_remote
+ 
   build_app(scheme: "SpaceDash")
+  upload_to_testflight
 end
 end
