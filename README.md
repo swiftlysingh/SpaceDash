@@ -1,12 +1,13 @@
-# SpaceX iOS App
-This is an iOS App that uses SpaceX API from r/SpaceX. This app will show the status of various SpaceX launches and Vehicles. I have plan to integerate AR in future version of this app.
+# SpaceDash
+### A Dashboard for Space
+SpaceDash is an app that will provide information on all the present past and future Launches and Vehicles of SpaceX. Currently, the app is in developement. I am following Test-Driven Agile Development for this app. The future scope of this app includes an AR view of various vehicles of SpaceX, and event updates from even more Space Agencies!
 
 ## Screenshots
 ![alt text](https://github.com/pushpinderpalsingh/SpaceX/blob/master/Screenshots/collage.png "Screen Shots")
 
-# Getting Started
+# Getting Started for Development
 
-## Requirements for Development
+## Requirements
 - iOS 13.0+
 - Xcode 11.0+
 - Macos Catalina or above
