@@ -20,24 +20,8 @@ jobs:
        pod install
        pod update
 
-    - name: Installing and Updating FastLane
-      run: gem install fastlane
+    - name: Installing FastLane
+      run: bundle install
  
     - name: Running Tests
-      run: fastlane tests
-  CD:
-    needs: [CI]
-    runs-on: macOS-latest
-    steps:
-    - uses: actions/checkout@master
-
-    - name: Installing Cocoapods
-      run: |
-       pod install
-       pod update
-
-    - name: Installing and Updating FastLane
-      run: gem install fastlane
-    - name: Fastlane Build and Deploy
-      run: 
-       fastlane beta     
+      run: bundle exec fastlane tests    
