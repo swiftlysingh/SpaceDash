@@ -27,7 +27,7 @@ lane :beta do
   add_git_tag(
   grouping: "fastlane-builds",
   postfix: "_fr" )
-  push_to_git_remote
+  push_to_git_remote(local_branch: "HEAD")
  
   get_certificates
   get_provisioning_profile
