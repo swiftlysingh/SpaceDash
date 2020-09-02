@@ -14,5 +14,5 @@ jobs:
        pod install
        pod update
  
-    - name: Running Tests
+    - name: Deploying Beta
       run: fastlane beta
