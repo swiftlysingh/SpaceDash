@@ -18,7 +18,9 @@ jobs:
       run: | 
        bundle install
        bundle update fastlane
- 
+
+    - name: Installing FastLane
+      run: git add . && git stash
     - name: Increasing Build Number 
       run: bundle exec fastlane build_version    
   
