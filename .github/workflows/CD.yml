@@ -1,7 +1,6 @@
 name: CD
 on:
-  release:
-    push:
+   push:
       branches:  
       - master
 jobs:
