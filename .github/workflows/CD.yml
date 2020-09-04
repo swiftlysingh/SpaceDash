@@ -23,6 +23,7 @@ jobs:
       run: bundle exec fastlane build_version    
   
   Delpoying_to_Testflight:
+    needs: Increasing_Build_Number 
     runs-on: self-hosted
     steps:
     - uses: actions/checkout@master
