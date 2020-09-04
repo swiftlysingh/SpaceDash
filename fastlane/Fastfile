@@ -21,6 +21,7 @@ platform :ios do
   run_tests(workspace: "SpaceDash.xcworkspace",devices: ["iPhone 11", "iPhone 8","iPad Pro (12.9-inch) (3rd generation)"],scheme: "SpaceDash")
 end
 lane :beta do
+  git_pull
   get_certificates
   get_provisioning_profile
   build_app(scheme: "SpaceDash")
