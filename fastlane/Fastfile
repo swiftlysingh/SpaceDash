@@ -11,7 +11,7 @@
 #
 
 # Uncomment the line if you want fastlane to automatically update itself
-update_fastlane
+#update_fastlane
 
 default_platform(:ios)
 
@@ -25,5 +25,13 @@ lane :beta do
   get_provisioning_profile
   build_app(scheme: "SpaceDash")
   upload_to_testflight
+end
+
+lane :build_version do
+  ensure_git_status_clean
+  increment_build_number(xcodeproj: "SpaceDash.xcodeproj")
+  commit_version_bump(xcodeproj: "SpaceDash.xcodeproj")
+  add_git_tag( grouping: "fastlane-builds" )
+  push_to_git_remote
 end
 end
