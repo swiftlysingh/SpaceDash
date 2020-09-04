@@ -1,0 +1,37 @@
+name: CD
+on:
+  release:
+    push:
+      branches:  
+      - master
+jobs:
+  Increasing Build Number:
+    runs-on: macOS-latest
+    steps:
+    - uses: actions/checkout@master
+    
+    - name: Installing Cocoapods
+      run: |
+       pod install
+       pod update
+       
+    - name: Installing FastLane
+      run: | 
+       bundle install
+       bundle update fastlane
+ 
+    - name: Increasing Build Number 
+      run: bundle exec fastlane build_version    
+  
+  Delpoying to Testflight:
+    runs-on: self-hosted
+    steps:
+    - uses: actions/checkout@master
+    
+    - name: Installing Cocoapods
+      run: |
+       pod install
+       pod update
+ 
+    - name: Deploying Beta
+      run: fastlane beta

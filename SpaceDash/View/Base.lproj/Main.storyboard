@@ -13,7 +13,7 @@
             <objects>
                 <viewController id="tFj-sZ-DS6" customClass="AboutViewController" customModule="SpaceDash" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sh5-df-8jF">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EJi-mX-Uv4" customClass="DetailScrollViews" customModule="SpaceDash" customModuleProvider="target">
@@ -100,7 +100,7 @@
                                 </state>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" name="DashBlack"/>
                         <constraints>
                             <constraint firstItem="Kfb-df-F9N" firstAttribute="top" secondItem="EJi-mX-Uv4" secondAttribute="bottom" constant="49" id="9OV-cL-ReV"/>
                             <constraint firstItem="Kfb-df-F9N" firstAttribute="leading" secondItem="WqM-e0-9Qd" secondAttribute="leading" constant="20" id="Hq4-7o-bfF"/>
@@ -131,7 +131,7 @@
             <objects>
                 <viewController id="ZKl-d6-ple" customClass="HomeViewController" customModule="SpaceDash" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nU2-Np-Sti">
-                        <rect key="frame" x="0.0" y="0.0" width="1159" height="813"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1159" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6rF-J0-zFb">
@@ -143,9 +143,6 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vn4-aa-S8P" userLabel="Rockets" customClass="DetailScrollViews" customModule="SpaceDash" customModuleProvider="target">
                                                 <rect key="frame" x="30" y="29" width="166" height="30"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="szk-PP-f6D">
-                                                        <rect key="frame" x="0.0" y="0.0" width="166" height="30"/>
-                                                    </button>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ocr-kZ-tmB">
                                                         <rect key="frame" x="23.5" y="-48.5" width="119" height="127"/>
                                                         <subviews>
@@ -176,6 +173,12 @@
                                                             <constraint firstItem="DW7-MM-Lho" firstAttribute="leading" secondItem="Ocr-kZ-tmB" secondAttribute="leading" constant="32" id="geR-UM-2fU"/>
                                                         </constraints>
                                                     </view>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="szk-PP-f6D">
+                                                        <rect key="frame" x="0.0" y="0.0" width="166" height="30"/>
+                                                        <connections>
+                                                            <action selector="rocketsButton:" destination="ZKl-d6-ple" eventType="touchUpInside" id="fPN-eK-R75"/>
+                                                        </connections>
+                                                    </button>
                                                 </subviews>
                                                 <color key="backgroundColor" name="DashCream"/>
                                                 <constraints>
@@ -191,9 +194,6 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R2R-NN-sS8" userLabel="All Launches" customClass="DetailScrollViews" customModule="SpaceDash" customModuleProvider="target">
                                                 <rect key="frame" x="218" y="29" width="166" height="30"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rfr-UE-yom">
-                                                        <rect key="frame" x="0.0" y="0.0" width="166" height="30"/>
-                                                    </button>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iQD-Si-E3A">
                                                         <rect key="frame" x="23.5" y="-48.5" width="119" height="127"/>
                                                         <subviews>
@@ -224,6 +224,12 @@
                                                             <constraint firstItem="3XN-DS-0g2" firstAttribute="centerX" secondItem="iQD-Si-E3A" secondAttribute="centerX" id="mY5-UJ-cou"/>
                                                         </constraints>
                                                     </view>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rfr-UE-yom">
+                                                        <rect key="frame" x="0.0" y="0.0" width="166" height="30"/>
+                                                        <connections>
+                                                            <action selector="launchesButton:" destination="ZKl-d6-ple" eventType="touchUpInside" id="k2A-ID-BYZ"/>
+                                                        </connections>
+                                                    </button>
                                                 </subviews>
                                                 <color key="backgroundColor" name="DashCream"/>
                                                 <constraints>
@@ -240,9 +246,6 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UEs-D9-h9k" userLabel="Ships" customClass="DetailScrollViews" customModule="SpaceDash" customModuleProvider="target">
                                                 <rect key="frame" x="594" y="29" width="166" height="30"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xLt-9L-lDE">
-                                                        <rect key="frame" x="0.0" y="0.0" width="166" height="30"/>
-                                                    </button>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="41A-NP-38D">
                                                         <rect key="frame" x="23.5" y="-48.5" width="119" height="127"/>
                                                         <subviews>
@@ -273,6 +276,12 @@
                                                             <constraint firstItem="v78-Vz-acT" firstAttribute="centerX" secondItem="41A-NP-38D" secondAttribute="centerX" id="jwK-ld-PTO"/>
                                                         </constraints>
                                                     </view>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xLt-9L-lDE">
+                                                        <rect key="frame" x="0.0" y="0.0" width="166" height="30"/>
+                                                        <connections>
+                                                            <action selector="shipsButton:" destination="ZKl-d6-ple" eventType="touchUpInside" id="ikT-8d-yht"/>
+                                                        </connections>
+                                                    </button>
                                                 </subviews>
                                                 <color key="backgroundColor" name="DashCream"/>
                                                 <constraints>
@@ -290,9 +299,6 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pJi-e2-rok" userLabel="Capsules" customClass="DetailScrollViews" customModule="SpaceDash" customModuleProvider="target">
                                                 <rect key="frame" x="782" y="29" width="166" height="30"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YFp-Dd-If6">
-                                                        <rect key="frame" x="0.0" y="0.0" width="166" height="30"/>
-                                                    </button>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ImQ-dr-I5m">
                                                         <rect key="frame" x="23.5" y="-48.5" width="119" height="127"/>
                                                         <subviews>
@@ -323,6 +329,12 @@
                                                             <constraint firstAttribute="bottom" secondItem="yvp-dk-Iom" secondAttribute="bottom" constant="20" id="wr5-jD-8HL"/>
                                                         </constraints>
                                                     </view>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YFp-Dd-If6">
+                                                        <rect key="frame" x="0.0" y="0.0" width="166" height="30"/>
+                                                        <connections>
+                                                            <action selector="capsulesButton:" destination="ZKl-d6-ple" eventType="touchUpInside" id="PYP-kz-dUE"/>
+                                                        </connections>
+                                                    </button>
                                                 </subviews>
                                                 <color key="backgroundColor" name="DashCream"/>
                                                 <constraints>
@@ -340,9 +352,6 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vfK-0V-TBf" userLabel="Land Pads" customClass="DetailScrollViews" customModule="SpaceDash" customModuleProvider="target">
                                                 <rect key="frame" x="970" y="29" width="166" height="30"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RPJ-hh-ap2">
-                                                        <rect key="frame" x="0.0" y="0.0" width="166" height="30"/>
-                                                    </button>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Psp-6q-UPj">
                                                         <rect key="frame" x="23.5" y="-48.5" width="119" height="127"/>
                                                         <subviews>
@@ -373,6 +382,12 @@
                                                             <constraint firstAttribute="width" secondItem="Psp-6q-UPj" secondAttribute="height" multiplier="119:127" id="wd9-tJ-M7G"/>
                                                         </constraints>
                                                     </view>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RPJ-hh-ap2">
+                                                        <rect key="frame" x="0.0" y="0.0" width="166" height="30"/>
+                                                        <connections>
+                                                            <action selector="landpadsButton:" destination="ZKl-d6-ple" eventType="touchUpInside" id="RPG-O5-CDE"/>
+                                                        </connections>
+                                                    </button>
                                                 </subviews>
                                                 <color key="backgroundColor" name="DashCream"/>
                                                 <constraints>
@@ -390,9 +405,6 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9kB-Vb-uUf" userLabel="Launch Sites" customClass="DetailScrollViews" customModule="SpaceDash" customModuleProvider="target">
                                                 <rect key="frame" x="406" y="29" width="166" height="30"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xI7-7E-iLS">
-                                                        <rect key="frame" x="0.0" y="0.0" width="166" height="30"/>
-                                                    </button>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eWJ-gk-UBu">
                                                         <rect key="frame" x="23.5" y="-48.5" width="119" height="127"/>
                                                         <subviews>
@@ -423,6 +435,12 @@
                                                             <constraint firstAttribute="trailing" secondItem="iR9-wI-Fkv" secondAttribute="trailing" constant="32" id="nRn-sB-U8G"/>
                                                         </constraints>
                                                     </view>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xI7-7E-iLS">
+                                                        <rect key="frame" x="0.0" y="0.0" width="166" height="30"/>
+                                                        <connections>
+                                                            <action selector="launchSitesButton:" destination="ZKl-d6-ple" eventType="touchUpInside" id="aSg-v2-hiz"/>
+                                                        </connections>
+                                                    </button>
                                                 </subviews>
                                                 <color key="backgroundColor" name="DashCream"/>
                                                 <constraints>
@@ -438,7 +456,7 @@
                                                 </constraints>
                                             </view>
                                         </subviews>
-                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" name="DashBlack"/>
                                         <constraints>
                                             <constraint firstAttribute="bottom" secondItem="UEs-D9-h9k" secondAttribute="bottom" constant="30" id="0Yl-2l-qnt"/>
                                             <constraint firstAttribute="bottom" secondItem="Vn4-aa-S8P" secondAttribute="bottom" constant="30" id="8w8-jy-MQN"/>
@@ -638,7 +656,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" name="DashBlack"/>
                         <constraints>
                             <constraint firstItem="6rF-J0-zFb" firstAttribute="top" secondItem="waM-qQ-kTW" secondAttribute="bottom" constant="8" id="CE9-OU-jbu"/>
                             <constraint firstItem="6rF-J0-zFb" firstAttribute="leading" secondItem="FWa-wi-cq3" secondAttribute="leading" id="Eh9-QM-2LH"/>
@@ -653,6 +671,7 @@
                     <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" id="mmo-XP-eUv">
                         <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="0.0"/>
                     </tabBarItem>
+                    <navigationItem key="navigationItem" id="bN1-N9-1Kj"/>
                     <size key="freeformSize" width="1159" height="896"/>
                     <connections>
                         <outlet property="isTentative" destination="8Wf-rF-y5V" id="BZF-nT-SJs"/>
@@ -665,11 +684,32 @@
                         <outletCollection property="panelConstraints" destination="JZm-I5-QvJ" collectionClass="NSMutableArray" id="rKN-ba-9j5"/>
                         <outletCollection property="panelConstraints" destination="xdR-8r-Ukz" collectionClass="NSMutableArray" id="j9R-Dl-xaY"/>
                         <outletCollection property="panelConstraints" destination="99i-dz-HNM" collectionClass="NSMutableArray" id="GjP-Ez-bD6"/>
+                        <segue destination="8Cl-Wi-Ijc" kind="show" identifier="DetailView" id="Dgs-Dt-cfp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e7Z-RO-pza" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="390.57971014492756" y="-349.55357142857139"/>
+            <point key="canvasLocation" x="1493" y="-409"/>
+        </scene>
+        <!--Details Table View Controller-->
+        <scene sceneID="NlX-uP-9bM">
+            <objects>
+                <tableViewController id="8Cl-Wi-Ijc" customClass="DetailsTableViewController" customModule="SpaceDash" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="ka3-4B-yF9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" name="DashBlack"/>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="8Cl-Wi-Ijc" id="b4h-Wm-aZE"/>
+                            <outlet property="delegate" destination="8Cl-Wi-Ijc" id="aEz-yJ-1oV"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="92U-Dp-Mgi"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nTx-9w-O6C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1491" y="344"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="c1W-Ht-28c">
@@ -687,13 +727,29 @@
                         </userDefinedRuntimeAttributes>
                     </tabBar>
                     <connections>
-                        <segue destination="ZKl-d6-ple" kind="relationship" relationship="viewControllers" id="3At-Dv-H7s"/>
-                        <segue destination="tFj-sZ-DS6" kind="relationship" relationship="viewControllers" id="XWf-8B-RFa"/>
+                        <segue destination="ZLd-ne-N0j" kind="relationship" relationship="viewControllers" id="uhm-PQ-LtA"/>
+                        <segue destination="tFj-sZ-DS6" kind="relationship" relationship="viewControllers" id="tya-TO-c71"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dcx-RN-tQE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1082" y="-28"/>
+            <point key="canvasLocation" x="-1133" y="38"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="caf-uW-xIa">
+            <objects>
+                <navigationController navigationBarHidden="YES" id="ZLd-ne-N0j" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="UUy-db-lUk"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="WAV-ev-fSj">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="ZKl-d6-ple" kind="relationship" relationship="rootViewController" id="M5p-oP-PHu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WBj-y8-iy7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-165" y="-408"/>
         </scene>
     </scenes>
     <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -707,6 +763,9 @@
         <image name="launch" width="512" height="512"/>
         <image name="space-capsule (1)" width="512" height="512"/>
         <image name="spaceship" width="512" height="512"/>
+        <namedColor name="DashBlack">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="DashCream">
             <color red="0.90600001811981201" green="0.90600001811981201" blue="0.90600001811981201" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>

@@ -12,14 +12,26 @@
 		FF42E95624CD8F1B003E8DFE /* SpaceDashConstantsCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF42E95524CD8F1B003E8DFE /* SpaceDashConstantsCheck.swift */; };
 		FF42E96424CD9254003E8DFE /* SpaceDashAPITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF42E96324CD9254003E8DFE /* SpaceDashAPITest.swift */; };
 		FF60A64A24D47B4E0030F5AE /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF60A64924D47B4E0030F5AE /* AboutViewController.swift */; };
+		FF8E3EDC24DF003300077DE3 /* ShipsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8E3EDB24DF003300077DE3 /* ShipsData.swift */; };
+		FF8E3EDE24DF066E00077DE3 /* LaunchPadsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8E3EDD24DF066E00077DE3 /* LaunchPadsData.swift */; };
+		FF8E3EE224DF14EB00077DE3 /* LaunchesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8E3EE124DF14EB00077DE3 /* LaunchesData.swift */; };
 		FFA9CA5824C0CA31006FA5DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFA9CA5724C0CA31006FA5DE /* Assets.xcassets */; };
 		FFA9CA5C24C0CCCA006FA5DE /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA9CA5A24C0CCCA006FA5DE /* NetworkManager.swift */; };
 		FFA9CA5D24C0CCCA006FA5DE /* UpcomingLaunchData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA9CA5B24C0CCCA006FA5DE /* UpcomingLaunchData.swift */; };
 		FFA9CA7824C0D9D3006FA5DE /* SpaceDashUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA9CA7724C0D9D3006FA5DE /* SpaceDashUITests.swift */; };
 		FFA9CA8024C1B838006FA5DE /* UpcomingLaunchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA9CA7F24C1B838006FA5DE /* UpcomingLaunchModel.swift */; };
+		FFB398F424DDD025001D4EA1 /* RocketsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB398F324DDD025001D4EA1 /* RocketsData.swift */; };
+		FFB398F724DDD2F8001D4EA1 /* DetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB398F624DDD2F8001D4EA1 /* DetailsViewModel.swift */; };
+		FFB398FA24DDDBDC001D4EA1 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB398F924DDDBDC001D4EA1 /* UIImageView.swift */; };
+		FFB734BA24DB2B2B006C1518 /* DetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB734B924DB2B2B006C1518 /* DetailsTableViewController.swift */; };
+		FFBEA64324DC6C3B00A22F9F /* DetailCellImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBEA64224DC6C3B00A22F9F /* DetailCellImageView.swift */; };
 		FFC259E724A772150019E354 /* CALayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC259E624A772150019E354 /* CALayer.swift */; };
 		FFC259E924A7A9C10019E354 /* InfoPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC259E824A7A9C10019E354 /* InfoPanelView.swift */; };
 		FFC259EB24A7AB3C0019E354 /* UpcomingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC259EA24A7AB3C0019E354 /* UpcomingView.swift */; };
+		FFF25C6824D871EF00D0E1FF /* DetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF25C6624D871EF00D0E1FF /* DetailsTableViewCell.swift */; };
+		FFF25C6924D871EF00D0E1FF /* DetailsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFF25C6724D871EF00D0E1FF /* DetailsTableViewCell.xib */; };
+		FFF266B224DEAF7400BA5C28 /* LandpadsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF266B124DEAF7400BA5C28 /* LandpadsData.swift */; };
+		FFF266B424DEF93800BA5C28 /* CapsulesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF266B324DEF93800BA5C28 /* CapsulesData.swift */; };
 		FFF716D6249D3E1C0043EB81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF716D5249D3E1C0043EB81 /* AppDelegate.swift */; };
 		FFF716D8249D3E1C0043EB81 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF716D7249D3E1C0043EB81 /* SceneDelegate.swift */; };
 		FFF716DD249D3E1C0043EB81 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFF716DB249D3E1C0043EB81 /* Main.storyboard */; };
@@ -66,6 +78,9 @@
 		FF42E96324CD9254003E8DFE /* SpaceDashAPITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceDashAPITest.swift; sourceTree = "<group>"; };
 		FF42E96524CD9254003E8DFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF60A64924D47B4E0030F5AE /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		FF8E3EDB24DF003300077DE3 /* ShipsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipsData.swift; sourceTree = "<group>"; };
+		FF8E3EDD24DF066E00077DE3 /* LaunchPadsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchPadsData.swift; sourceTree = "<group>"; };
+		FF8E3EE124DF14EB00077DE3 /* LaunchesData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesData.swift; sourceTree = "<group>"; };
 		FFA9CA5724C0CA31006FA5DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FFA9CA5A24C0CCCA006FA5DE /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		FFA9CA5B24C0CCCA006FA5DE /* UpcomingLaunchData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpcomingLaunchData.swift; sourceTree = "<group>"; };
@@ -73,9 +88,18 @@
 		FFA9CA7724C0D9D3006FA5DE /* SpaceDashUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceDashUITests.swift; sourceTree = "<group>"; };
 		FFA9CA7924C0D9D3006FA5DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FFA9CA7F24C1B838006FA5DE /* UpcomingLaunchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingLaunchModel.swift; sourceTree = "<group>"; };
+		FFB398F324DDD025001D4EA1 /* RocketsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketsData.swift; sourceTree = "<group>"; };
+		FFB398F624DDD2F8001D4EA1 /* DetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewModel.swift; sourceTree = "<group>"; };
+		FFB398F924DDDBDC001D4EA1 /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
+		FFB734B924DB2B2B006C1518 /* DetailsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsTableViewController.swift; sourceTree = "<group>"; };
+		FFBEA64224DC6C3B00A22F9F /* DetailCellImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCellImageView.swift; sourceTree = "<group>"; };
 		FFC259E624A772150019E354 /* CALayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CALayer.swift; sourceTree = "<group>"; };
-		FFC259E824A7A9C10019E354 /* InfoPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InfoPanelView.swift; path = ../Config/InfoPanelView.swift; sourceTree = "<group>"; };
-		FFC259EA24A7AB3C0019E354 /* UpcomingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UpcomingView.swift; path = ../Config/UpcomingView.swift; sourceTree = "<group>"; };
+		FFC259E824A7A9C10019E354 /* InfoPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoPanelView.swift; sourceTree = "<group>"; };
+		FFC259EA24A7AB3C0019E354 /* UpcomingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingView.swift; sourceTree = "<group>"; };
+		FFF25C6624D871EF00D0E1FF /* DetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsTableViewCell.swift; sourceTree = "<group>"; };
+		FFF25C6724D871EF00D0E1FF /* DetailsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsTableViewCell.xib; sourceTree = "<group>"; };
+		FFF266B124DEAF7400BA5C28 /* LandpadsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandpadsData.swift; sourceTree = "<group>"; };
+		FFF266B324DEF93800BA5C28 /* CapsulesData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapsulesData.swift; sourceTree = "<group>"; };
 		FFF716D2249D3E1C0043EB81 /* SpaceDash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceDash.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFF716D5249D3E1C0043EB81 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FFF716D7249D3E1C0043EB81 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -83,7 +107,7 @@
 		FFF716E1249D3E210043EB81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FFF716E3249D3E210043EB81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FFF7170B24A338D10043EB81 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		FFF7171124A48F730043EB81 /* DetailScrollViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailScrollViews.swift; path = ../Config/DetailScrollViews.swift; sourceTree = "<group>"; };
+		FFF7171124A48F730043EB81 /* DetailScrollViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailScrollViews.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,9 +184,9 @@
 			isa = PBXGroup;
 			children = (
 				FFA9CA5A24C0CCCA006FA5DE /* NetworkManager.swift */,
-				FFA9CA5B24C0CCCA006FA5DE /* UpcomingLaunchData.swift */,
-				FFA9CA7F24C1B838006FA5DE /* UpcomingLaunchModel.swift */,
 				FF42E94D24CD8CA5003E8DFE /* Constants.swift */,
+				FFB398F524DDD037001D4EA1 /* JsonDecoders */,
+				FFB398F824DDD306001D4EA1 /* DataModels */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -176,14 +200,63 @@
 			path = SpaceDashUITests;
 			sourceTree = "<group>";
 		};
-		FFC259DE24A76C5B0019E354 /* Controller */ = {
+		FFB398F524DDD037001D4EA1 /* JsonDecoders */ = {
+			isa = PBXGroup;
+			children = (
+				FFA9CA5B24C0CCCA006FA5DE /* UpcomingLaunchData.swift */,
+				FFB398F324DDD025001D4EA1 /* RocketsData.swift */,
+				FFF266B124DEAF7400BA5C28 /* LandpadsData.swift */,
+				FFF266B324DEF93800BA5C28 /* CapsulesData.swift */,
+				FF8E3EDB24DF003300077DE3 /* ShipsData.swift */,
+				FF8E3EDD24DF066E00077DE3 /* LaunchPadsData.swift */,
+				FF8E3EE124DF14EB00077DE3 /* LaunchesData.swift */,
+			);
+			path = JsonDecoders;
+			sourceTree = "<group>";
+		};
+		FFB398F824DDD306001D4EA1 /* DataModels */ = {
+			isa = PBXGroup;
+			children = (
+				FFA9CA7F24C1B838006FA5DE /* UpcomingLaunchModel.swift */,
+				FFB398F624DDD2F8001D4EA1 /* DetailsViewModel.swift */,
+			);
+			path = DataModels;
+			sourceTree = "<group>";
+		};
+		FFBEA64424DC6D7400A22F9F /* UIView */ = {
 			isa = PBXGroup;
 			children = (
 				FFF7171124A48F730043EB81 /* DetailScrollViews.swift */,
 				FFC259E824A7A9C10019E354 /* InfoPanelView.swift */,
 				FFC259EA24A7AB3C0019E354 /* UpcomingView.swift */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		FFBEA64524DC6D8200A22F9F /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
 				FFF7170B24A338D10043EB81 /* HomeViewController.swift */,
 				FF60A64924D47B4E0030F5AE /* AboutViewController.swift */,
+				FFB734B924DB2B2B006C1518 /* DetailsTableViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		FFBEA64624DC6D8D00A22F9F /* ImageView */ = {
+			isa = PBXGroup;
+			children = (
+				FFBEA64224DC6C3B00A22F9F /* DetailCellImageView.swift */,
+			);
+			path = ImageView;
+			sourceTree = "<group>";
+		};
+		FFC259DE24A76C5B0019E354 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FFBEA64424DC6D7400A22F9F /* UIView */,
+				FFBEA64624DC6D8D00A22F9F /* ImageView */,
+				FFBEA64524DC6D8200A22F9F /* ViewControllers */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -193,6 +266,8 @@
 			children = (
 				FFF716DB249D3E1C0043EB81 /* Main.storyboard */,
 				FFF716E0249D3E210043EB81 /* LaunchScreen.storyboard */,
+				FFF25C6624D871EF00D0E1FF /* DetailsTableViewCell.swift */,
+				FFF25C6724D871EF00D0E1FF /* DetailsTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -210,6 +285,7 @@
 			isa = PBXGroup;
 			children = (
 				FFC259E624A772150019E354 /* CALayer.swift */,
+				FFB398F924DDDBDC001D4EA1 /* UIImageView.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -404,6 +480,7 @@
 			files = (
 				FFF716E2249D3E210043EB81 /* LaunchScreen.storyboard in Resources */,
 				FFA9CA5824C0CA31006FA5DE /* Assets.xcassets in Resources */,
+				FFF25C6924D871EF00D0E1FF /* DetailsTableViewCell.xib in Resources */,
 				FFF716DD249D3E1C0043EB81 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -482,17 +559,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				FFA9CA8024C1B838006FA5DE /* UpcomingLaunchModel.swift in Sources */,
+				FFB398F424DDD025001D4EA1 /* RocketsData.swift in Sources */,
 				FF42E94E24CD8CA5003E8DFE /* Constants.swift in Sources */,
+				FFF25C6824D871EF00D0E1FF /* DetailsTableViewCell.swift in Sources */,
 				FFC259EB24A7AB3C0019E354 /* UpcomingView.swift in Sources */,
 				FFF716D6249D3E1C0043EB81 /* AppDelegate.swift in Sources */,
+				FF8E3EDE24DF066E00077DE3 /* LaunchPadsData.swift in Sources */,
+				FF8E3EDC24DF003300077DE3 /* ShipsData.swift in Sources */,
 				FFA9CA5D24C0CCCA006FA5DE /* UpcomingLaunchData.swift in Sources */,
 				FFF716D8249D3E1C0043EB81 /* SceneDelegate.swift in Sources */,
 				FF60A64A24D47B4E0030F5AE /* AboutViewController.swift in Sources */,
+				FFF266B424DEF93800BA5C28 /* CapsulesData.swift in Sources */,
 				FFF7171224A48F730043EB81 /* DetailScrollViews.swift in Sources */,
 				FFA9CA5C24C0CCCA006FA5DE /* NetworkManager.swift in Sources */,
+				FFB398F724DDD2F8001D4EA1 /* DetailsViewModel.swift in Sources */,
+				FFF266B224DEAF7400BA5C28 /* LandpadsData.swift in Sources */,
 				FFF7170C24A338D10043EB81 /* HomeViewController.swift in Sources */,
 				FFC259E724A772150019E354 /* CALayer.swift in Sources */,
+				FFB734BA24DB2B2B006C1518 /* DetailsTableViewController.swift in Sources */,
+				FFB398FA24DDDBDC001D4EA1 /* UIImageView.swift in Sources */,
+				FFBEA64324DC6C3B00A22F9F /* DetailCellImageView.swift in Sources */,
 				FFC259E924A7A9C10019E354 /* InfoPanelView.swift in Sources */,
+				FF8E3EE224DF14EB00077DE3 /* LaunchesData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -778,12 +866,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = 4WMQY24R33;
 				INFOPLIST_FILE = "$(SRCROOT)/SpaceDash/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pushpinderpalsingh.SpaceDash;
 				PRODUCT_NAME = SpaceDash;
 				SWIFT_VERSION = 5.0;
@@ -797,12 +887,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = 4WMQY24R33;
 				INFOPLIST_FILE = "$(SRCROOT)/SpaceDash/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pushpinderpalsingh.SpaceDash;
 				PRODUCT_NAME = SpaceDash;
 				SWIFT_VERSION = 5.0;
