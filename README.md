@@ -1,34 +1,34 @@
-# SpaceX iOS App
-This is an iOS App that uses SpaceX API from r/SpaceX. This app will show the status of various SpaceX launches and Vehicles. I have plan to integerate AR in future version of this app.
+# ![CD](https://github.com/pushpinderpalsingh/SpaceDash/workflows/CD/badge.svg?branch=master) ![CI](https://github.com/pushpinderpalsingh/SpaceDash/workflows/CI/badge.svg)
+# SpaceDash
+SpaceDash is an app that will provide information on all the present past and future Launches and Vehicles of SpaceX. Currently, the app is in developement. I am following Test-Driven Agile Development for this app. The future scope of this app includes an AR view of various vehicles of SpaceX, and event updates from even more Space Agencies!
 
 ## Screenshots
 ![alt text](https://github.com/pushpinderpalsingh/SpaceX/blob/master/Screenshots/collage.png "Screen Shots")
 
-# Getting Started
+## Getting Started for Development
 
-## Requirements for Development
+### Requirements
 - iOS 13.0+
 - Xcode 11.0+
 - Macos Catalina or above
 
-## Setup
+### Setup
 
 - Fork this project.
 - Clone the forked project to your machine.
-- In your project directory open Terminal and Run `$ pod install` and `$ pod update`
--  Open .xcworkspace file in Xcode to start working on the App
+- In your project directory open Terminal and Run `$ pod install` and `$ pod update`.
+-  Open .xcworkspace file in Xcode to start working on the App.
 
 ### Branch Policy
 
-We have the following branches
- * **development** All development goes on in this branch. If you're contributing, you are supposed to make a pull request to _development_. PRs to development branch must pass a build check and a unit-test check on Circle CI.
- * **master** This contains shipped code. After significant features/bugfixes are accumulated on development, we make a version update and make a release.
- 
+I have the following branches
+ * **develop** All development goes on in this branch. If you're contributing, you are supposed to make a pull request to _development_. PRs to development branch must pass a build check and a unit-test check on Github Actions.
+ * **master** This branch contains code which is deployed to Testflight and/or App Store. After significant features/bugfixes are accumulated on development, I will make a version update and make a beta release on Testflight for testing. After a brief testing period, I will make a final public release.
+
 ### Code practices
 Please help us follow the best practices to make it easy for the reviewer as well as the contributor. We want to focus on the code quality more than on managing pull request ethics.
 
  * Single commit per pull request
- * For writing commit messages please read the COMMITSTYLE carefully. Kindly adhere to the guidelines.
  * Follow uniform design practices. The design language must be consistent throughout the app.
  * The pull request will not get merged until and unless the commits are squashed. In case there are multiple commits on the PR, the commit author needs to squash them and not the maintainers cherrypicking and merging squashes.
  * If the PR is related to any front end change, please attach relevant screenshots in the pull request description.
