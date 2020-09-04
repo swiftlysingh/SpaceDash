@@ -4,7 +4,7 @@ on:
       branches:  
       - master
 jobs:
-  Increasing Build Number:
+  Increasing_Build_Number:
     runs-on: macOS-latest
     steps:
     - uses: actions/checkout@master
@@ -22,7 +22,7 @@ jobs:
     - name: Increasing Build Number 
       run: bundle exec fastlane build_version    
   
-  Delpoying to Testflight:
+  Delpoying_to_Testflight:
     runs-on: self-hosted
     steps:
     - uses: actions/checkout@master
