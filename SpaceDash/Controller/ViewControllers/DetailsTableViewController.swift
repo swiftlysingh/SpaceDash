@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Lottie
 
 class DetailsTableViewController: UITableViewController {
     
@@ -15,13 +16,30 @@ class DetailsTableViewController: UITableViewController {
     
     var decodedData : DetailsViewModel?
     
+
+    @IBOutlet var loadingAnimation: AnimationView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.navigationController?.navigationBar.barTintColor = UIColor.init(named: Constants.Colors.DashCream)
+        self.navigationController?.navigationBar.tintColor = UIColor.init(named: Constants.Colors.DashBlack)
+        
+        loadingAnimationView()
         
         tableView.dataSource = self
         tableView.register(UINib(nibName: Constants.DetailsView.nibName, bundle: nil), forCellReuseIdentifier: Constants.DetailsView.reuseId)
         networkObject.delegate = self
         networkObject.fetchData(demand: senderView)
+    }
+
+    /// Add loading Animation before the Details View. The type of animation is in Interface Builder
+    func loadingAnimationView(){
+        loadingAnimation.backgroundColor = .black
+        loadingAnimation.contentMode = .scaleAspectFit
+        loadingAnimation.loopMode = .loop
+        loadingAnimation.play()
     }
 }
 
@@ -32,6 +50,8 @@ extension DetailsTableViewController:NetworkManagerDelegate {
     func updateFromAPI(data: Any) {
         DispatchQueue.main.async {
             self.decodedData = (data as! DetailsViewModel)
+            self.loadingAnimation.stop()
+            self.loadingAnimation.isHidden = true
             self.tableView.reloadData()
         }
     }
@@ -52,6 +72,8 @@ extension DetailsTableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        self.navigationController?.setNavigationBarHidden(false, animated: false) //Enable Navigation Bar
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: Constants.DetailsView.reuseId, for: indexPath) as! DetailsTableViewCell
         
         cell.title.text = decodedData?.title[indexPath.row]

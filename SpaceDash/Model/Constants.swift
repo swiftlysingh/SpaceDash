@@ -15,7 +15,10 @@ struct Constants {
         static let upcomingLaunchURL = "launches/Upcoming"
         
     }
-    
+    struct  Colors {
+        static let DashCream = "DashCream"
+        static let DashBlack = "DashBlack"
+    }
     struct SegueManager {
         static let detailViewSegue = "DetailView"
         

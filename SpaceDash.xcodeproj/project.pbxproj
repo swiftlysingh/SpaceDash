@@ -11,6 +11,7 @@
 		FF42E94E24CD8CA5003E8DFE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF42E94D24CD8CA5003E8DFE /* Constants.swift */; };
 		FF42E95624CD8F1B003E8DFE /* SpaceDashConstantsCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF42E95524CD8F1B003E8DFE /* SpaceDashConstantsCheck.swift */; };
 		FF42E96424CD9254003E8DFE /* SpaceDashAPITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF42E96324CD9254003E8DFE /* SpaceDashAPITest.swift */; };
+		FF4C3944250565AE00279A39 /* space.json in Resources */ = {isa = PBXBuildFile; fileRef = FF4C3943250565AE00279A39 /* space.json */; };
 		FF60A64A24D47B4E0030F5AE /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF60A64924D47B4E0030F5AE /* AboutViewController.swift */; };
 		FF8E3EDC24DF003300077DE3 /* ShipsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8E3EDB24DF003300077DE3 /* ShipsData.swift */; };
 		FF8E3EDE24DF066E00077DE3 /* LaunchPadsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8E3EDD24DF066E00077DE3 /* LaunchPadsData.swift */; };
@@ -77,6 +78,7 @@
 		FF42E96124CD9254003E8DFE /* SpaceDashAPITest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpaceDashAPITest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF42E96324CD9254003E8DFE /* SpaceDashAPITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceDashAPITest.swift; sourceTree = "<group>"; };
 		FF42E96524CD9254003E8DFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF4C3943250565AE00279A39 /* space.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = space.json; sourceTree = "<group>"; };
 		FF60A64924D47B4E0030F5AE /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		FF8E3EDB24DF003300077DE3 /* ShipsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipsData.swift; sourceTree = "<group>"; };
 		FF8E3EDD24DF066E00077DE3 /* LaunchPadsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchPadsData.swift; sourceTree = "<group>"; };
@@ -264,6 +266,7 @@
 		FFC259DF24A76C720019E354 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				FFD549E325055F8200F49DC0 /* Animations */,
 				FFF716DB249D3E1C0043EB81 /* Main.storyboard */,
 				FFF716E0249D3E210043EB81 /* LaunchScreen.storyboard */,
 				FFF25C6624D871EF00D0E1FF /* DetailsTableViewCell.swift */,
@@ -288,6 +291,14 @@
 				FFB398F924DDDBDC001D4EA1 /* UIImageView.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FFD549E325055F8200F49DC0 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				FF4C3943250565AE00279A39 /* space.json */,
+			);
+			path = Animations;
 			sourceTree = "<group>";
 		};
 		FFF716C9249D3E1C0043EB81 = {
@@ -478,6 +489,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF4C3944250565AE00279A39 /* space.json in Resources */,
 				FFF716E2249D3E210043EB81 /* LaunchScreen.storyboard in Resources */,
 				FFA9CA5824C0CA31006FA5DE /* Assets.xcassets in Resources */,
 				FFF25C6924D871EF00D0E1FF /* DetailsTableViewCell.xib in Resources */,
