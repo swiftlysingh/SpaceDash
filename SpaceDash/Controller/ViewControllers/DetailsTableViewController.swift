@@ -33,11 +33,7 @@ class DetailsTableViewController: UITableViewController {
         networkObject.delegate = self
         networkObject.fetchData(demand: senderView)
     }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        self.navigationController?.setNavigationBarHidden(false, animated: true)
-    }
-    
+
     /// Add loading Animation before the Details View. The type of animation is in Interface Builder
     func loadingAnimationView(){
         loadingAnimation.backgroundColor = .black
@@ -76,6 +72,8 @@ extension DetailsTableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        self.navigationController?.setNavigationBarHidden(false, animated: false) //Enable Navigation Bar
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: Constants.DetailsView.reuseId, for: indexPath) as! DetailsTableViewCell
         
         cell.title.text = decodedData?.title[indexPath.row]
