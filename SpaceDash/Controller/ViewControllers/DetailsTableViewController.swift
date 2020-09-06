@@ -18,10 +18,17 @@ class DetailsTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.navigationController?.navigationBar.barTintColor = UIColor.init(named: Constants.Colors.DashCream)
+        self.navigationController?.navigationBar.tintColor = UIColor.init(named: Constants.Colors.DashBlack)
+        
         tableView.dataSource = self
         tableView.register(UINib(nibName: Constants.DetailsView.nibName, bundle: nil), forCellReuseIdentifier: Constants.DetailsView.reuseId)
         networkObject.delegate = self
         networkObject.fetchData(demand: senderView)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.setNavigationBarHidden(false, animated: true)
     }
 }
 

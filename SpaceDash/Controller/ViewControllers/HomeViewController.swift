@@ -25,7 +25,6 @@ class HomeViewController: UIViewController,NetworkManagerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         networkObject.delegate = self
         networkObject.fetchData(demand: Constants.NetworkManager.upcomingLaunchURL)
         adjustSize()
@@ -40,6 +39,10 @@ class HomeViewController: UIViewController,NetworkManagerDelegate {
                 panels.constant = UIScreen.main.bounds.height*0.03
             }
         }
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
     }
     
     /// This will print error in network call

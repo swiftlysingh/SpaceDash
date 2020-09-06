@@ -706,6 +706,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="92U-Dp-Mgi"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nTx-9w-O6C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -740,6 +741,7 @@
             <objects>
                 <navigationController navigationBarHidden="YES" id="ZLd-ne-N0j" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="UUy-db-lUk"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="WAV-ev-fSj">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

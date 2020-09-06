@@ -36,6 +36,8 @@ class SpaceDashConstantsCheck: XCTestCase {
         XCTAssertEqual("launches", Constants.SegueManager.SenderValues.launches)
         XCTAssertEqual("DetailsTableViewCell", Constants.DetailsView.nibName)
         XCTAssertEqual("cell", Constants.DetailsView.reuseId)
+        XCTAssertEqual("DashBlack", Constants.Colors.DashBlack)
+        XCTAssertEqual("DashCream", Constants.Colors.DashCream)
     }
 
 }
