@@ -26,10 +26,7 @@ class DetailsTableViewController: UITableViewController {
         self.navigationController?.navigationBar.barTintColor = UIColor.init(named: Constants.Colors.DashCream)
         self.navigationController?.navigationBar.tintColor = UIColor.init(named: Constants.Colors.DashBlack)
         
-        loadingAnimation.backgroundColor = .black
-        loadingAnimation.contentMode = .scaleAspectFit
-        loadingAnimation.loopMode = .loop
-        loadingAnimation.play()
+        loadingAnimationView()
         
         tableView.dataSource = self
         tableView.register(UINib(nibName: Constants.DetailsView.nibName, bundle: nil), forCellReuseIdentifier: Constants.DetailsView.reuseId)
@@ -39,6 +36,14 @@ class DetailsTableViewController: UITableViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.setNavigationBarHidden(false, animated: true)
+    }
+    
+    /// Add loading Animation before the Details View. The type of animation is in Interface Builder
+    func loadingAnimationView(){
+        loadingAnimation.backgroundColor = .black
+        loadingAnimation.contentMode = .scaleAspectFit
+        loadingAnimation.loopMode = .loop
+        loadingAnimation.play()
     }
 }
 
