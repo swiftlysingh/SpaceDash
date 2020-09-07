@@ -16,16 +16,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchScreen" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="m49-3o-r4L">
-                                <rect key="frame" x="14" y="313.5" width="386" height="269"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="NQQ-Oz-31S">
+                                <rect key="frame" x="57" y="298" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="23H-Q4-fhn"/>
+                                    <constraint firstAttribute="width" constant="300" id="k5E-l5-ZlV"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" name="DashBlack"/>
                         <constraints>
-                            <constraint firstItem="m49-3o-r4L" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="7ev-Gb-dzR"/>
-                            <constraint firstItem="m49-3o-r4L" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="JLq-YH-NsR"/>
-                            <constraint firstItem="m49-3o-r4L" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="14" id="dvF-2R-t8h"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="m49-3o-r4L" secondAttribute="trailing" constant="14" id="urC-Ob-hso"/>
+                            <constraint firstItem="NQQ-Oz-31S" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="VQz-on-jAl"/>
+                            <constraint firstItem="NQQ-Oz-31S" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="hfK-db-Lfo"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -36,7 +38,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="launchScreen" width="1242" height="269"/>
+        <image name="logo" width="1024" height="1024"/>
         <namedColor name="DashBlack">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
