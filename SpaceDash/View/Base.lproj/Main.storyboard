@@ -22,7 +22,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About SpaceX" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y8r-xe-97A">
                                         <rect key="frame" x="8" y="8" width="151" height="29.5"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="25"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" name="DashBlack"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" textAlignment="justified" lineBreakMode="headTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="pS3-x4-4M9">
@@ -43,7 +43,7 @@
                                     <constraint firstAttribute="trailing" secondItem="pS3-x4-4M9" secondAttribute="trailing" constant="8" id="lig-LR-6Xq"/>
                                     <constraint firstItem="pS3-x4-4M9" firstAttribute="top" secondItem="y8r-xe-97A" secondAttribute="bottom" constant="2" id="lsb-Rf-lBv"/>
                                     <constraint firstAttribute="height" constant="212" id="pMw-Y5-LNr"/>
-                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="y8r-xe-97A" secondAttribute="trailing" symbolic="YES" id="twN-jA-eI4"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="y8r-xe-97A" secondAttribute="trailing" constant="20" symbolic="YES" id="twN-jA-eI4"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kfb-df-F9N" customClass="DetailScrollViews" customModule="SpaceDash" customModuleProvider="target">
@@ -564,7 +564,7 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Launch Site" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cYy-Uy-aAB">
                                                 <rect key="frame" x="15" y="8" width="87" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
-                                                <nil key="textColor"/>
+                                                <color key="textColor" name="DashBlack"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CCAFS SLC 40" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o2Z-bp-yMi" customClass="MarqueeLabel" customModule="MarqueeLabel">
@@ -613,7 +613,7 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payload &amp; Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0F4-kc-63G">
                                                 <rect key="frame" x="15" y="8" width="115" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
-                                                <nil key="textColor"/>
+                                                <color key="textColor" name="DashBlack"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ANASIS-II, Satellite" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c7l-ks-VE4">
