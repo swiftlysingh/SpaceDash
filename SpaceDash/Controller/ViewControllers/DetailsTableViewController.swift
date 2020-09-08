@@ -52,7 +52,7 @@ extension DetailsTableViewController:NetworkManagerDelegate {
         DispatchQueue.main.async {
             self.decodedData = (data as! DetailsViewModel)
             self.loadingAnimation.stop()
-            self.loadingAnimation.isHidden = true
+            self.loadingAnimation.removeFromSuperview()
             self.tableView.reloadData()
         }
     }
