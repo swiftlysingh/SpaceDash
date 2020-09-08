@@ -1,9 +1,8 @@
 # ![CD](https://github.com/pushpinderpalsingh/SpaceDash/workflows/CD/badge.svg?branch=master) ![CI](https://github.com/pushpinderpalsingh/SpaceDash/workflows/CI/badge.svg)
 
-SpaceDash is an app that will provide information on all the present past and future Launches and Vehicles of SpaceX. Currently, the app is in developement. I am following Test-Driven Agile Development for this app. The future scope of this app includes an AR view of various vehicles of SpaceX, and event updates from even more Space Agencies!
+SpaceDash will be Dashboard for all things Space. It is a beautiful app with simple but informative UI. You will be able to simply  glance at the upcoming launches for various space agency. And even watch it live if there is a live stream happening (Coming in the future version of the app). Currently the app supports launches, missions, rockets etc for SpaceX but  more space agencies will be added soon.
 
-## Screenshots
-![alt text](https://github.com/pushpinderpalsingh/SpaceX/blob/master/Screenshots/collage.png "Screen Shots")
+**If you have any questions or feedback, please get in touch. SpaceDash was create by an incredibly small team of one and I’d love to hear your thoughts. I’m available through twitter *@pushpinderpal_***
 
 ## Getting Started for Development
 
@@ -45,6 +44,7 @@ Please help us follow the best practices to make it easy for the reviewer as wel
 * [Pushpinder Pal Singh](https://github.com/pushpinderpalsingh)
 
 
+#
+>**[License](./license.html)**    
 
-[License] (./license.html)
-[Privacy Policy] (./policy.html)
+>**[Privacy Policy](./policy.html)**
