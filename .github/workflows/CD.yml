@@ -25,8 +25,8 @@ jobs:
     - name: Increasing Build Number 
       run: bundle exec fastlane build_version
 
-    - name: Making develop even with master
-      run: git checkout develop && git merge master    
+
+   
   
   Delpoying_to_Testflight:
     needs: Increasing_Build_Number 
