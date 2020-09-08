@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2086C60A16283D2DB5341A79 /* Pods_SpaceDash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DE2958EE217DA2AEF4E463F /* Pods_SpaceDash.framework */; };
+		FF3043D42507E5D0005F8EE6 /* FastlaneSnapshots.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3043D32507E5D0005F8EE6 /* FastlaneSnapshots.swift */; };
+		FF3043DC2507E615005F8EE6 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3043DB2507E615005F8EE6 /* SnapshotHelper.swift */; };
 		FF42E94E24CD8CA5003E8DFE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF42E94D24CD8CA5003E8DFE /* Constants.swift */; };
 		FF42E95624CD8F1B003E8DFE /* SpaceDashConstantsCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF42E95524CD8F1B003E8DFE /* SpaceDashConstantsCheck.swift */; };
 		FF42E96424CD9254003E8DFE /* SpaceDashAPITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF42E96324CD9254003E8DFE /* SpaceDashAPITest.swift */; };
@@ -42,6 +44,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		FF3043D62507E5D0005F8EE6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFF716CA249D3E1C0043EB81 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FFF716D1249D3E1C0043EB81;
+			remoteInfo = SpaceDash;
+		};
 		FF42E95824CD8F1B003E8DFE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = FFF716CA249D3E1C0043EB81 /* Project object */;
@@ -71,6 +80,10 @@
 		B5A11B9FE2BFCA5CB1A21EC0 /* Pods-SpaceX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceX.debug.xcconfig"; path = "Target Support Files/Pods-SpaceX/Pods-SpaceX.debug.xcconfig"; sourceTree = "<group>"; };
 		CE287257CFAD34D9CC4A81A2 /* Pods-SpaceDash.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceDash.debug.xcconfig"; path = "Target Support Files/Pods-SpaceDash/Pods-SpaceDash.debug.xcconfig"; sourceTree = "<group>"; };
 		EAD33DEB1658F9122221595A /* Pods-SpaceX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceX.release.xcconfig"; path = "Target Support Files/Pods-SpaceX/Pods-SpaceX.release.xcconfig"; sourceTree = "<group>"; };
+		FF3043D12507E5D0005F8EE6 /* FastlaneSnapshots.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FastlaneSnapshots.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF3043D32507E5D0005F8EE6 /* FastlaneSnapshots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastlaneSnapshots.swift; sourceTree = "<group>"; };
+		FF3043D52507E5D0005F8EE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF3043DB2507E615005F8EE6 /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnapshotHelper.swift; path = fastlane/SnapshotHelper.swift; sourceTree = SOURCE_ROOT; };
 		FF42E94D24CD8CA5003E8DFE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		FF42E95324CD8F1B003E8DFE /* SpaceDashConstantsCheck.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpaceDashConstantsCheck.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF42E95524CD8F1B003E8DFE /* SpaceDashConstantsCheck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceDashConstantsCheck.swift; sourceTree = "<group>"; };
@@ -113,6 +126,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		FF3043CE2507E5D0005F8EE6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FF42E95024CD8F1B003E8DFE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -162,6 +182,16 @@
 				B15257ADD46DBE38C7F17D09 /* Pods-SpaceDash.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		FF3043D22507E5D0005F8EE6 /* FastlaneSnapshots */ = {
+			isa = PBXGroup;
+			children = (
+				FF3043D32507E5D0005F8EE6 /* FastlaneSnapshots.swift */,
+				FF3043DB2507E615005F8EE6 /* SnapshotHelper.swift */,
+				FF3043D52507E5D0005F8EE6 /* Info.plist */,
+			);
+			path = FastlaneSnapshots;
 			sourceTree = "<group>";
 		};
 		FF42E95424CD8F1B003E8DFE /* SpaceDashConstantsCheck */ = {
@@ -308,6 +338,7 @@
 				FFA9CA7624C0D9D3006FA5DE /* SpaceDashUITests */,
 				FF42E95424CD8F1B003E8DFE /* SpaceDashConstantsCheck */,
 				FF42E96224CD9254003E8DFE /* SpaceDashAPITest */,
+				FF3043D22507E5D0005F8EE6 /* FastlaneSnapshots */,
 				FFF716D3249D3E1C0043EB81 /* Products */,
 				E0C438289B70FCE13EB1B665 /* Pods */,
 				9E7BE7660A5996338B49D647 /* Frameworks */,
@@ -321,6 +352,7 @@
 				FFA9CA7524C0D9D3006FA5DE /* SpaceDashUITests.xctest */,
 				FF42E95324CD8F1B003E8DFE /* SpaceDashConstantsCheck.xctest */,
 				FF42E96124CD9254003E8DFE /* SpaceDashAPITest.xctest */,
+				FF3043D12507E5D0005F8EE6 /* FastlaneSnapshots.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -342,6 +374,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		FF3043D02507E5D0005F8EE6 /* FastlaneSnapshots */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF3043D82507E5D0005F8EE6 /* Build configuration list for PBXNativeTarget "FastlaneSnapshots" */;
+			buildPhases = (
+				FF3043CD2507E5D0005F8EE6 /* Sources */,
+				FF3043CE2507E5D0005F8EE6 /* Frameworks */,
+				FF3043CF2507E5D0005F8EE6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF3043D72507E5D0005F8EE6 /* PBXTargetDependency */,
+			);
+			name = FastlaneSnapshots;
+			productName = FastlaneSnapshots;
+			productReference = FF3043D12507E5D0005F8EE6 /* FastlaneSnapshots.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		FF42E95224CD8F1B003E8DFE /* SpaceDashConstantsCheck */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = FF42E95A24CD8F1B003E8DFE /* Build configuration list for PBXNativeTarget "SpaceDashConstantsCheck" */;
@@ -425,6 +475,10 @@
 				LastUpgradeCheck = 1150;
 				ORGANIZATIONNAME = "Pushpinder Pal Singh";
 				TargetAttributes = {
+					FF3043D02507E5D0005F8EE6 = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = FFF716D1249D3E1C0043EB81;
+					};
 					FF42E95224CD8F1B003E8DFE = {
 						CreatedOnToolsVersion = 11.6;
 						TestTargetID = FFF716D1249D3E1C0043EB81;
@@ -459,11 +513,19 @@
 				FFA9CA7424C0D9D3006FA5DE /* SpaceDashUITests */,
 				FF42E95224CD8F1B003E8DFE /* SpaceDashConstantsCheck */,
 				FF42E96024CD9254003E8DFE /* SpaceDashAPITest */,
+				FF3043D02507E5D0005F8EE6 /* FastlaneSnapshots */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		FF3043CF2507E5D0005F8EE6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FF42E95124CD8F1B003E8DFE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -542,6 +604,15 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		FF3043CD2507E5D0005F8EE6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF3043D42507E5D0005F8EE6 /* FastlaneSnapshots.swift in Sources */,
+				FF3043DC2507E615005F8EE6 /* SnapshotHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FF42E94F24CD8F1B003E8DFE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -599,6 +670,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		FF3043D72507E5D0005F8EE6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FFF716D1249D3E1C0043EB81 /* SpaceDash */;
+			targetProxy = FF3043D62507E5D0005F8EE6 /* PBXContainerItemProxy */;
+		};
 		FF42E95924CD8F1B003E8DFE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = FFF716D1249D3E1C0043EB81 /* SpaceDash */;
@@ -636,6 +712,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		FF3043D92507E5D0005F8EE6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4WMQY24R33;
+				INFOPLIST_FILE = FastlaneSnapshots/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pushpinderpalsingh.FastlaneSnapshots;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SpaceDash;
+			};
+			name = Debug;
+		};
+		FF3043DA2507E5D0005F8EE6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4WMQY24R33;
+				INFOPLIST_FILE = FastlaneSnapshots/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pushpinderpalsingh.FastlaneSnapshots;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SpaceDash;
+			};
+			name = Release;
+		};
 		FF42E95B24CD8F1B003E8DFE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -917,6 +1033,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		FF3043D82507E5D0005F8EE6 /* Build configuration list for PBXNativeTarget "FastlaneSnapshots" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF3043D92507E5D0005F8EE6 /* Debug */,
+				FF3043DA2507E5D0005F8EE6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		FF42E95A24CD8F1B003E8DFE /* Build configuration list for PBXNativeTarget "SpaceDashConstantsCheck" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

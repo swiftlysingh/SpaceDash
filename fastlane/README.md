@@ -21,6 +21,21 @@ or alternatively using `brew install fastlane`
 fastlane ios tests
 ```
 Testing App
+### ios beta
+```
+fastlane ios beta
+```
+
+### ios build_version
+```
+fastlane ios build_version
+```
+
+### ios screenshots
+```
+fastlane ios screenshots
+```
+
 
 ----
 
