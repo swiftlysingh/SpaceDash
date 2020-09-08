@@ -19,10 +19,14 @@ jobs:
        bundle install
        bundle update fastlane
 
-    - name: Installing FastLane
+    - name: Cleaning git repo
       run: git add . && git stash
+
     - name: Increasing Build Number 
-      run: bundle exec fastlane build_version    
+      run: bundle exec fastlane build_version
+
+    - name: Making develop even with master
+      run: git checkout develop && git merge master    
   
   Delpoying_to_Testflight:
     needs: Increasing_Build_Number 
