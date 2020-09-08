@@ -43,8 +43,9 @@ Please help us follow the best practices to make it easy for the reviewer as wel
 
 * [Pushpinder Pal Singh](https://github.com/pushpinderpalsingh)
 
+## License
 
-#
->**[License](./license.html)**    
+This project is licensed under the MIT License - see the [LICENSE.md] on Github file for details
 
->**[Privacy Policy](./policy.html)**
+
+**[Privacy Policy](./policy.html)**

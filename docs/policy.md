@@ -54,3 +54,5 @@ This policy is effective as of 2020-08-20
 ## **Contact Us**
 
 If you have any questions or suggestions about my Privacy Policy, do not hesitate to contact me at pushpinderpal19@gmail.com.
+
+**[Back](./)**
