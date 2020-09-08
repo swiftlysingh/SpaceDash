@@ -14,6 +14,10 @@ class AboutViewController: UIViewController {
     @IBOutlet weak var licenseBottomConstraint: NSLayoutConstraint!
     @IBOutlet weak var aboutSpaceTopConstraint: NSLayoutConstraint!
     
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

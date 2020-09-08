@@ -13,12 +13,13 @@ class DetailsTableViewController: UITableViewController {
     
     var senderView : String = ""
     var networkObject = NetworkManager()
-    
     var decodedData : DetailsViewModel?
     
-
     @IBOutlet var loadingAnimation: AnimationView!
     
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .darkContent
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -23,6 +23,10 @@ class HomeViewController: UIViewController,NetworkManagerDelegate {
     var constants : Constants.HomeView?
     var senderView : String = ""
     
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .darkContent
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         networkObject.delegate = self
