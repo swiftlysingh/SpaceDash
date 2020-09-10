@@ -60,7 +60,7 @@
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="EV8-EB-CFC">
                                         <rect key="frame" x="8" y="44" width="358" height="152"/>
-                                        <string key="text">SpaceDash is dashboard for all SpaceX stuff. This app will be a Dashboard for all the updates you desire from SpaceX.  This app is still under active development. I have plans of adding some AR stuff and integrating some other API’s that will help me to diversify for different Space Agencies. I hope you are as excited as me to see what’s next for this app!</string>
+                                        <string key="text">SpaceDash will be Dashboard for all things Space. It is a beautiful app with simple but informative UI. You will be able to simply glance at the upcoming launches for various space agency. And even watch it live if there is a live stream happening (Coming in the future version of the app). Currently the app supports launches, missions, rockets etc for SpaceX but more space agencies will be added soon.</string>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
                                         <color key="textColor" name="DashBlack"/>
                                         <nil key="highlightedColor"/>
