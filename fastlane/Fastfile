@@ -39,5 +39,6 @@ end
 
 lane :screenshots do
  capture_screenshots(scheme: "FastlaneSnapshots")
+ frameit
 end
 end
