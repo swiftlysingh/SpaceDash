@@ -67,7 +67,7 @@ class SpaceXUITests: XCTestCase {
         let aboutSpaceXDesc = app.staticTexts.element(matching: aboutSpaceXPred)
         
         let aboutSpaceDashTitle = app.staticTexts["About SpaceDash"]
-        let aboutSpaceDashPred = NSPredicate(format: "label like'SpaceDash is dashboard for all SpaceX stuff. This app will be a Dashboard for all the updates you desire from SpaceX.  This app is still under active development. I have plans of adding some AR stuff and integrating some other API’s that will help me to diversify for different Space Agencies. I hope you are as excited as me to see what’s next for this app!'")
+        let aboutSpaceDashPred = NSPredicate(format: "label like'SpaceDash will be Dashboard for all things Space. It is a beautiful app with simple but informative UI. You will be able to simply glance at the upcoming launches for various space agency. And even watch it live if there is a live stream happening (Coming in the future version of the app). Currently the app supports launches, missions, rockets etc for SpaceX but more space agencies will be added soon.'")
         let aboutSpaceDashDesc = app.staticTexts.element(matching: aboutSpaceDashPred)
         
         if app.tabBars.buttons["About"].isSelected {
