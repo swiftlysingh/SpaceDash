@@ -1,17 +1,17 @@
 //
-//  DetailSrcollViews.swift
-//  SpaceX
+//  DetailView.swift
+//  SpaceDash
 //
-//  Created by Pushpinder Pal Singh on 25/06/20.
+//  Created by Pushpinder Pal Singh on 16/09/20.
 //  Copyright © 2020 Pushpinder Pal Singh. All rights reserved.
 //
 
 import UIKit
 
-class DetailScrollViews: UIView {
+class DetailView: UIView {
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        self.layer.cornerRadius = CGFloat(12)
+        self.layer.cornerRadius = CGFloat(23)
     }
 }
