@@ -3,8 +3,9 @@
 ### A Dashboard for Space...
 SpaceDash is an app that will provide information on all the present past and future Launches and Vehicles of SpaceX. Currently, the app is in developement. I am following Test-Driven Agile Development for this app. The future scope of this app includes an AR view of various vehicles of SpaceX, and event updates from even more Space Agencies!
 
+[<img src="https://github.com/pushpinderpalsingh/SpaceDash/blob/develop/Screenshots/Download_on_the_App_.png"  width=25%>](https://apps.apple.com/in/app/space-dash/id1527766640)
 ## Screenshots
-![alt text](https://github.com/pushpinderpalsingh/SpaceX/blob/master/Screenshots/collage.png "Screen Shots")
+![alt text](https://github.com/pushpinderpalsingh/SpaceX/blob/develop/Screenshots/collage.png "Screen Shots")
 
 ## Getting Started for Development
 
