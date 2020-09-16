@@ -9,12 +9,13 @@
 import UIKit
 import Lottie
 
-class DetailsTableViewController: UITableViewController {
+class DetailsViewController: UIViewController {
     
     var senderView : String = ""
     var networkObject = NetworkManager()
     var decodedData : DetailsViewModel?
     
+    @IBOutlet var DetailTableView: UITableView!
     @IBOutlet var loadingAnimation: AnimationView!
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
@@ -29,12 +30,13 @@ class DetailsTableViewController: UITableViewController {
         
         loadingAnimationView()
         
-        tableView.dataSource = self
-        tableView.register(UINib(nibName: Constants.DetailsView.nibName, bundle: nil), forCellReuseIdentifier: Constants.DetailsView.reuseId)
+        DetailTableView.dataSource = self
+        DetailTableView.register(UINib(nibName: Constants.DetailsView.nibName, bundle: nil), forCellReuseIdentifier: Constants.DetailsView.reuseId)
+        
         networkObject.delegate = self
         networkObject.fetchData(demand: senderView)
     }
-
+    
     /// Add loading Animation before the Details View. The type of animation is in Interface Builder
     func loadingAnimationView(){
         loadingAnimation.backgroundColor = .black
@@ -46,14 +48,14 @@ class DetailsTableViewController: UITableViewController {
 
 //MARK: - Network Manager
 
-extension DetailsTableViewController:NetworkManagerDelegate {
+extension DetailsViewController:NetworkManagerDelegate {
     
     func updateFromAPI(data: Any) {
         DispatchQueue.main.async {
             self.decodedData = (data as! DetailsViewModel)
             self.loadingAnimation.stop()
             self.loadingAnimation.removeFromSuperview()
-            self.tableView.reloadData()
+            self.DetailTableView.reloadData()
         }
     }
     
@@ -66,13 +68,13 @@ extension DetailsTableViewController:NetworkManagerDelegate {
 
 // MARK: - Table view data source
 
-extension DetailsTableViewController {
+extension DetailsViewController:UITableViewDelegate, UITableViewDataSource {
     
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return decodedData?.count ?? 0
     }
     
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         self.navigationController?.setNavigationBarHidden(false, animated: false) //Enable Navigation Bar
         
         let cell = tableView.dequeueReusableCell(withIdentifier: Constants.DetailsView.reuseId, for: indexPath) as! DetailsTableViewCell
@@ -89,23 +91,23 @@ extension DetailsTableViewController {
         return cell
     }
     
-    override func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
         let view = UIView(frame:CGRect (x: 0, y: 0, width: 320, height: 20) ) as UIView
         view.backgroundColor = UIColor.clear
         return view
     }
     
-    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let view = UIView(frame:CGRect (x: 0, y: 0, width: 320, height: 20) ) as UIView
         view.backgroundColor = UIColor.clear
         return view
     }
     
-    override func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
         return 20
     }
     
-    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 20
     }
 }

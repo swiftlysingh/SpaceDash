@@ -118,7 +118,7 @@ extension HomeViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let target = segue.destination as? DetailsTableViewController {
+        if let target = segue.destination as? DetailsViewController {
             target.senderView = senderView
         }
     }
