@@ -18,6 +18,8 @@ class DetailsTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        isActive.layer.cornerRadius = 5
+        isActive.layer.masksToBounds = true
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vOc-32-Bel">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vOc-32-Bel">
     <device id="retina6_1" orientation="portrait" appearance="dark"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -13,7 +13,7 @@
             <objects>
                 <viewController id="tFj-sZ-DS6" customClass="AboutViewController" customModule="SpaceDash" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sh5-df-8jF">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EJi-mX-Uv4" customClass="DetailScrollViews" customModule="SpaceDash" customModuleProvider="target">
@@ -25,10 +25,10 @@
                                         <color key="textColor" name="DashBlack"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" textAlignment="justified" lineBreakMode="headTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="pS3-x4-4M9">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" textAlignment="justified" lineBreakMode="headTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pS3-x4-4M9">
                                         <rect key="frame" x="8" y="39.5" width="358" height="144.5"/>
                                         <string key="text">Space Exploration Technologies Corp., trading as SpaceX, is an American aerospace manufacturer and space transportation services company headquartered in Hawthorne, California. It was founded in 2002 by Elon Musk with the goal of reducing space transportation costs to enable the colonization of Mars.</string>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="14"/>
                                         <color key="textColor" name="DashBlack"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -58,10 +58,10 @@
                                         <color key="textColor" name="DashBlack"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="EV8-EB-CFC">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EV8-EB-CFC">
                                         <rect key="frame" x="8" y="44" width="358" height="152"/>
                                         <string key="text">SpaceDash will be Dashboard for all things Space. It is a beautiful app with simple but informative UI. You will be able to simply glance at the upcoming launches for various space agency. And even watch it live if there is a live stream happening (Coming in the future version of the app). Currently the app supports launches, missions, rockets etc for SpaceX but more space agencies will be added soon.</string>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="14"/>
                                         <color key="textColor" name="DashBlack"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -131,7 +131,7 @@
             <objects>
                 <viewController id="ZKl-d6-ple" customClass="HomeViewController" customModule="SpaceDash" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nU2-Np-Sti">
-                        <rect key="frame" x="0.0" y="0.0" width="1159" height="813"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1159" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6rF-J0-zFb">
@@ -684,44 +684,63 @@
                         <outletCollection property="panelConstraints" destination="JZm-I5-QvJ" collectionClass="NSMutableArray" id="rKN-ba-9j5"/>
                         <outletCollection property="panelConstraints" destination="xdR-8r-Ukz" collectionClass="NSMutableArray" id="j9R-Dl-xaY"/>
                         <outletCollection property="panelConstraints" destination="99i-dz-HNM" collectionClass="NSMutableArray" id="GjP-Ez-bD6"/>
-                        <segue destination="8Cl-Wi-Ijc" kind="show" identifier="DetailView" id="Dgs-Dt-cfp"/>
+                        <segue destination="Kxv-BI-GwS" kind="show" identifier="DetailView" id="hcG-JB-apD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e7Z-RO-pza" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1493" y="-409"/>
         </scene>
-        <!--Details Table View Controller-->
-        <scene sceneID="NlX-uP-9bM">
+        <!--Details View Controller-->
+        <scene sceneID="u0b-FP-B5v">
             <objects>
-                <tableViewController id="8Cl-Wi-Ijc" customClass="DetailsTableViewController" customModule="SpaceDash" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="ka3-4B-yF9">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                <viewController id="Kxv-BI-GwS" customClass="DetailsViewController" customModule="SpaceDash" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FXZ-YE-bIA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Z7W-GD-Mqn">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <color key="backgroundColor" name="DashBlack"/>
+                                <color key="tintColor" name="DashBlack"/>
+                            </tableView>
+                            <view contentMode="scaleToFill" id="nr6-Wh-xN2" customClass="AnimationView" customModule="Lottie">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vgg-XA-SmI">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                        <color key="barTintColor" name="DashBlack"/>
+                                    </navigationBar>
+                                </subviews>
+                                <color key="backgroundColor" name="DashBlack"/>
+                                <constraints>
+                                    <constraint firstItem="vgg-XA-SmI" firstAttribute="leading" secondItem="nr6-Wh-xN2" secondAttribute="leading" id="b30-xv-dur"/>
+                                    <constraint firstItem="vgg-XA-SmI" firstAttribute="top" secondItem="nr6-Wh-xN2" secondAttribute="top" id="cRh-DI-T1V"/>
+                                    <constraint firstAttribute="trailing" secondItem="vgg-XA-SmI" secondAttribute="trailing" id="dOl-mC-CYX"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animationName" value="space"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" name="DashBlack"/>
-                        <view key="tableFooterView" contentMode="scaleToFill" id="wae-Nh-5ia" customClass="AnimationView" customModule="Lottie">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="728"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                            <userDefinedRuntimeAttributes>
-                                <userDefinedRuntimeAttribute type="string" keyPath="animationName" value="space"/>
-                            </userDefinedRuntimeAttributes>
-                        </view>
-                        <sections/>
-                        <connections>
-                            <outlet property="dataSource" destination="8Cl-Wi-Ijc" id="b4h-Wm-aZE"/>
-                            <outlet property="delegate" destination="8Cl-Wi-Ijc" id="aEz-yJ-1oV"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" id="92U-Dp-Mgi"/>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
+                        <constraints>
+                            <constraint firstItem="Z7W-GD-Mqn" firstAttribute="bottom" secondItem="bYL-ni-3Pl" secondAttribute="bottom" id="MH8-gh-Tvz"/>
+                            <constraint firstItem="Z7W-GD-Mqn" firstAttribute="top" secondItem="bYL-ni-3Pl" secondAttribute="top" id="ZB7-kx-7nQ"/>
+                            <constraint firstItem="bYL-ni-3Pl" firstAttribute="trailing" secondItem="Z7W-GD-Mqn" secondAttribute="trailing" id="cnF-nk-HRe"/>
+                            <constraint firstItem="Z7W-GD-Mqn" firstAttribute="leading" secondItem="bYL-ni-3Pl" secondAttribute="leading" id="ctQ-lh-7ju"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="bYL-ni-3Pl"/>
+                    </view>
                     <connections>
-                        <outlet property="loadingAnimation" destination="wae-Nh-5ia" id="ByK-kD-NHe"/>
+                        <outlet property="DetailTableView" destination="Z7W-GD-Mqn" id="OlQ-nr-qf4"/>
+                        <outlet property="loadingAnimation" destination="nr6-Wh-xN2" id="Vj2-JC-Jeu"/>
                     </connections>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="nTx-9w-O6C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bgX-qC-I6P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1489.8550724637682" y="343.52678571428572"/>
+            <point key="canvasLocation" x="2369.5652173913045" y="343.52678571428572"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="c1W-Ht-28c">

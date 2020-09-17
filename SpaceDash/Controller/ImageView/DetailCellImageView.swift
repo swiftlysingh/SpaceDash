@@ -12,7 +12,7 @@ class DetailCellImageView: UIImageView {
     
     required init?(coder: NSCoder) {
         super.init(coder:coder)
-        self.layer.cornerRadius = 12
+        self.layer.cornerRadius = 17
         let blurEffect = UIBlurEffect(style: UIBlurEffect.Style.dark)
         let blurEffectView = UIVisualEffectView(effect: blurEffect)
         blurEffectView.alpha = 0.6
