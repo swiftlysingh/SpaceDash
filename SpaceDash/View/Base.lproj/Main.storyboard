@@ -79,7 +79,7 @@
                                     <constraint firstAttribute="trailing" secondItem="EV8-EB-CFC" secondAttribute="trailing" constant="8" id="xqd-4s-fBk"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GQe-lI-h6a">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GQe-lI-h6a">
                                 <rect key="frame" x="177.5" y="741" width="59" height="33"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="33" id="DhM-Sr-boO"/>
@@ -88,8 +88,11 @@
                                 <state key="normal" title="License">
                                     <color key="titleColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="licenseButtonPressed:" destination="tFj-sZ-DS6" eventType="touchUpInside" id="enI-xU-Zbx"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f9x-2A-JJL">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f9x-2A-JJL">
                                 <rect key="frame" x="154" y="700" width="106" height="33"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="33" id="9sq-zr-hyW"/>
@@ -98,6 +101,9 @@
                                 <state key="normal" title="Privacy Policy">
                                     <color key="titleColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="privacyButtonPressed:" destination="tFj-sZ-DS6" eventType="touchUpInside" id="iET-bU-BRb"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" name="DashBlack"/>
