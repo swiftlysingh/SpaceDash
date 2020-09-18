@@ -1,0 +1,22 @@
+
+name: Security Test
+on:
+  pull_request:
+    
+jobs:
+  build:
+    runs-on: macos-latest
+
+    steps:
+       - uses: actions/checkout@v2
+        
+       - name: Get list of changed files
+         uses: ThiefMaster/changed-files-action@json-output
+         with:
+          repo-token: ${{ github.token }}
+      
+       - name: Checking for Security Vulnerabilities
+         run: |
+          if grep -q .github/workflows ~/files_{created,updated}.json; then
+              exit 1
+          fi 
