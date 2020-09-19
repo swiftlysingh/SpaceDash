@@ -51,4 +51,12 @@ struct Constants {
         static let nibName = "DetailsTableViewCell"
         static let reuseId = "cell"
     }
+    
+    struct AboutView {
+        static let licenseURLString = "https://github.com/pushpinderpalsingh/SpaceDash/blob/master/LICENSE"
+        static let privacyURLString = "https://pushpinderpalsingh.github.io/SpaceDash/policy.html"
+        static let alertMessage = "Unable to open due to some reasons please check back later"
+        static let okButtonTitle = "Ok"
+    }
+    
 }

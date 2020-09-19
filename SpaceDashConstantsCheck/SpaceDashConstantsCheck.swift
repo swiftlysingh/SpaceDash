@@ -38,6 +38,10 @@ class SpaceDashConstantsCheck: XCTestCase {
         XCTAssertEqual("cell", Constants.DetailsView.reuseId)
         XCTAssertEqual("DashBlack", Constants.Colors.DashBlack)
         XCTAssertEqual("DashCream", Constants.Colors.DashCream)
+        XCTAssertEqual("https://github.com/pushpinderpalsingh/SpaceDash/blob/master/LICENSE", Constants.AboutView.licenseURLString)
+        XCTAssertEqual("https://pushpinderpalsingh.github.io/SpaceDash/policy.html", Constants.AboutView.privacyURLString)
+        XCTAssertEqual("Unable to open due to some reasons please check back later", Constants.AboutView.alertMessage)
+         XCTAssertEqual("Ok", Constants.AboutView.okButtonTitle)
     }
 
 }
