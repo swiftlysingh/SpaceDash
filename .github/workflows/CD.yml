@@ -1,35 +1,10 @@
-name: CD
+name: Deploying_to_Testflight
 on:
    push:
       branches:  
-      - master
+      - develop
 jobs:
-  Increasing_Build_Number:
-    runs-on: macOS-latest
-    steps:
-    - uses: actions/checkout@master
-    
-    - name: Installing Cocoapods
-      run: |
-       pod install
-       pod update
-       
-    - name: Installing FastLane
-      run: | 
-       bundle install
-       bundle update fastlane
-
-    - name: Cleaning git repo
-      run: git add . && git stash
-
-    - name: Increasing Build Number 
-      run: bundle exec fastlane build_version
-
-
-   
-  
   Delpoying_to_Testflight:
-    needs: Increasing_Build_Number 
     runs-on: self-hosted
     steps:
     - uses: actions/checkout@master
@@ -41,3 +16,25 @@ jobs:
  
     - name: Deploying Beta
       run: fastlane beta
+
+Increasing_Build_Number:
+    runs-on: macOS-latest
+    needs: Delpoying_to_Testflight
+    steps:
+    - uses: actions/checkout@master
+
+    - name: Installing Cocoapods
+      run: |
+       pod install
+       pod update
+
+    - name: Installing FastLane
+      run: |
+       bundle install
+       bundle update fastlane
+
+    - name: Cleaning git repo
+      run: git add . && git stash
+
+    - name: Increasing Build Number
+      run: bundle exec fastlane build_version
