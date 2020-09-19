@@ -17,7 +17,7 @@ jobs:
     - name: Deploying Beta
       run: fastlane beta
 
-Increasing_Build_Number:
+  Increasing_Build_Number:
     runs-on: macOS-latest
     needs: Delpoying_to_Testflight
     steps:
