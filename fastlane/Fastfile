@@ -46,7 +46,7 @@ lane :screenshots do
  frameit
 end
 
-lane : release do
+lane :release do
  
  capture_screenshots(scheme: "FastlaneSnapshots")
  frameit
