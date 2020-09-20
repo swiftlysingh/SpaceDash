@@ -14,13 +14,7 @@ jobs:
     - name: Installing Cocoapods
       run: |
        pod install
-       pod update
-
-    - name: Installing FastLane
-      run: | 
-       bundle install
-       bundle update fastlane
-         
+       pod update  
  
-    - name: Running Tests
-      run: bundle exec fastlane release    
+    - name: Releasing my little app to the world
+      run: fastlane release
