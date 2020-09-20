@@ -50,9 +50,10 @@ lane :release do
  
  capture_screenshots(scheme: "FastlaneSnapshots")
  frameit
- sync_code_signing(type: "appstore")  # see code signing guide for more information
- build_app(scheme: "MyApp")
- 
+ get_certificates
+ get_provisioning_profile
+ build_app(scheme: "SpaceDash")
+  
  upload_to_app_store
  
  set_changelog
