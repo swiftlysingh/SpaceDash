@@ -2,11 +2,12 @@ name: Deploy_to_App_Store
 
 on:
   push:
-    -master 
+    branches:
+    - master 
 
 jobs:
-  CI:
-    runs-on: macOS-latest
+  Deploy_to_App_Store:
+    runs-on: self-hosted
     steps:
     - uses: actions/checkout@master
     
