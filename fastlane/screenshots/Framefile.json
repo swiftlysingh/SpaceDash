@@ -18,7 +18,7 @@
       ],
       "color":"#d8d8d8"
     },
-    "background": "./background.png",
+    "background": "../background.png",
     "padding": 50
   },
   "data": [
