@@ -27,7 +27,7 @@ lane :beta do
   get_provisioning_profile
   build_app(scheme: "SpaceDash")
 
-  changelog_from_git_commits(commits_count:2)
+  changelog_from_git_commits(commits_count:1)
  
   upload_to_testflight( 
    distribute_external: true,
@@ -44,5 +44,32 @@ end
 lane :screenshots do
  capture_screenshots(scheme: "FastlaneSnapshots")
  frameit
+end
+
+lane : release do
+ 
+ capture_screenshots(scheme: "FastlaneSnapshots")
+ frameit
+ sync_code_signing(type: "appstore")  # see code signing guide for more information
+ build_app(scheme: "MyApp")
+ 
+ upload_to_app_store
+ 
+ set_changelog
+
+ deliver(
+    submit_for_review: true,
+    automatic_release: true,
+    force: true, # Skip HTMl report verification
+    skip_metadata: true,
+    skip_screenshots: true,
+    skip_binary_upload: true
+  )
+
+ increment_version_number_in_plist(
+  bump_type:'minor',
+  version_source:'appstore',
+  target:'SpaceDash' 
+)
 end
 end
