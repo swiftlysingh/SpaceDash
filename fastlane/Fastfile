@@ -65,6 +65,10 @@ lane :release do
     skip_metadata: false,
     skip_screenshots: true,
     skip_binary_upload: true
+    submission_information: {
+    export_compliance_uses_encryption: false,
+    add_id_info_uses_idfa: false
+   }
   )
 
  increment_version_number_in_plist(
