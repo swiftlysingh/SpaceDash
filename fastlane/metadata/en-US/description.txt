@@ -1,0 +1,3 @@
+SpaceDash will be Dashboard for all things Space. It is a beautiful app with a simple but informative UI. You will be able to simply glance at the upcoming launches for the various space agencies. And even watch it live if there is a live stream happening (Coming in the future version of the app). Currently, the app supports launches, missions, rockets, etc for SpaceX but more space agencies will be added soon.
+
+If you have any questions or feedback, please get in touch. SpaceDash was created by an incredibly small team of one and I’d love to hear your thoughts. I’m available through twitter @pushpinderpal_
