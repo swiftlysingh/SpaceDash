@@ -15,6 +15,11 @@ jobs:
       run: |
        pod install
        pod update  
- 
+
+    - name: Adding Review Information
+      run: |
+       gpg --quiet --batch --yes --decrypt --passphrase="${{ secrets.key }}" --output fastlane/metadata/reviewInformation.tar.gz fastlane/metadata/reviewInformation.tar.gz.gpg
+       tar xzf fastlane/metadata/reviewInformation.tar.gz 
+       
     - name: Releasing my little app to the world
       run: fastlane release

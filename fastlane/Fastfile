@@ -54,7 +54,7 @@ lane :release do
  get_provisioning_profile
  build_app(scheme: "SpaceDash")
   
- upload_to_app_store(force: true)
+ upload_to_app_store(force: true, skip_metadata: true)
  
  set_changelog
 
@@ -62,7 +62,7 @@ lane :release do
     submit_for_review: true,
     automatic_release: true,
     force: true, # Skip HTMl report verification
-    skip_metadata: true,
+    skip_metadata: false,
     skip_screenshots: true,
     skip_binary_upload: true
   )
@@ -72,5 +72,7 @@ lane :release do
   version_source:'appstore',
   target:'SpaceDash' 
 )
+  commit_version_bump(xcodeproj: "SpaceDash.xcodeproj")
+  push_to_git_remote
 end
 end
