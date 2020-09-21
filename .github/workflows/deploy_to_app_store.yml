@@ -20,6 +20,7 @@ jobs:
       run: |
        gpg --quiet --batch --yes --decrypt --passphrase="${{ secrets.key }}" --output fastlane/metadata/reviewInformation.tar.gz fastlane/metadata/reviewInformation.tar.gz.gpg
        tar xzf fastlane/metadata/reviewInformation.tar.gz 
-       
+       ls fastlane/metadata/
+
     - name: Releasing my little app to the world
       run: fastlane release
