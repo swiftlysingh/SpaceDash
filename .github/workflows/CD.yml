@@ -61,29 +61,29 @@ jobs:
     - name: Releasing my little app to the world
       run: fastlane release
 
- Increasing_Build_Number:
-    runs-on: macOS-latest
-    needs: Delpoying_to_App_Store
-    steps:
-    - uses: actions/checkout@master
-
-    - name: Installing Cocoapods
-      run: |
-       pod install
-       pod update
-
-    - name: Installing FastLane
-      run: |
-       bundle install
-       bundle update fastlane
-
-    - name: Increasing Build Number
-      run: bundle exec fastlane minor_version
-
-    - name: Opening pull request
-       id: pull
+  Increasing_Minor_Number:
+     runs-on: macOS-latest
+     needs: Deploy_to_App_Store
+     steps:
+     - uses: actions/checkout@master
+   
+     - name: Installing Cocoapods
+       run: |
+        pod install
+        pod update
+    
+     - name: Installing FastLane
+       run: |
+        bundle install
+        bundle update fastlane
+    
+     - name: Increasing Build Number
+       run: bundle exec fastlane minor_version
+    
+     - name: Opening pull request
        uses: tretuna/sync-branches@1.2.0
        with:
-         GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
-         FROM_BRANCH: "master"
-         TO_BRANCH: "develop"
+        GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+        FROM_BRANCH: "master"
+        TO_BRANCH: "develop"
+  
