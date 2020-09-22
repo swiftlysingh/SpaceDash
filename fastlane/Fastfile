@@ -69,14 +69,16 @@ lane :release do
       export_compliance_uses_encryption: false,
       add_id_info_uses_idfa: false
    }
-  )
+  ) 
+end
 
- increment_version_number_in_plist(
+lane :minor_version do
+  increment_version_number_in_plist(
   bump_type:'minor',
   version_source:'appstore',
-  target:'SpaceDash' 
+  target:'SpaceDash'
 )
-  commit_version_bump(xcodeproj: "SpaceDash.xcodeproj")
+  commit_version_bump(force: true, xcodeproj: "SpaceDash.xcodeproj")
   push_to_git_remote
 end
 end

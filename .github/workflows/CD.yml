@@ -3,9 +3,11 @@ on:
    push:
       branches:  
       - develop
+      - master
 jobs:
   Delpoying_to_Testflight:
     runs-on: self-hosted
+    if: github.ref == 'refs/heads/develop'
     steps:
     - uses: actions/checkout@master
     
@@ -38,3 +40,50 @@ jobs:
 
     - name: Increasing Build Number
       run: bundle exec fastlane build_version
+
+  Deploy_to_App_Store:
+    runs-on: self-hosted
+    if: github.ref == 'refs/heads/master'
+    steps:
+    - uses: actions/checkout@master
+
+    - name: Installing Cocoapods
+      run: |
+       pod install
+       pod update
+
+    - name: Adding Review Information
+      run: |
+       gpg --quiet --batch --yes --decrypt --passphrase="${{ secrets.key }}" --output fastlane/metadata/reviewInformation.tar.gz fastlane/metadata/reviewInformation.tar.gz.gpg
+       tar xzf fastlane/metadata/reviewInformation.tar.gz -C fastlane/metadata
+       ls fastlane/metadata/
+
+    - name: Releasing my little app to the world
+      run: fastlane release
+
+ Increasing_Build_Number:
+    runs-on: macOS-latest
+    needs: Delpoying_to_App_Store
+    steps:
+    - uses: actions/checkout@master
+
+    - name: Installing Cocoapods
+      run: |
+       pod install
+       pod update
+
+    - name: Installing FastLane
+      run: |
+       bundle install
+       bundle update fastlane
+
+    - name: Increasing Build Number
+      run: bundle exec fastlane minor_version
+
+    - name: Opening pull request
+       id: pull
+       uses: tretuna/sync-branches@1.2.0
+       with:
+         GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+         FROM_BRANCH: "master"
+         TO_BRANCH: "develop"
