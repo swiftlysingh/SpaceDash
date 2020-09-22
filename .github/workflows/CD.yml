@@ -1,4 +1,4 @@
-name: Deploying_to_Testflight
+name: CD
 on:
    push:
       branches:  
