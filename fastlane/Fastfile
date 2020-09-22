@@ -46,14 +46,15 @@ lane :screenshots do
  frameit
 end
 
-lane : release do
+lane :release do
  
  capture_screenshots(scheme: "FastlaneSnapshots")
  frameit
- sync_code_signing(type: "appstore")  # see code signing guide for more information
- build_app(scheme: "MyApp")
- 
- upload_to_app_store
+ get_certificates
+ get_provisioning_profile
+ build_app(scheme: "SpaceDash")
+  
+ upload_to_app_store(force: true, overwrite_screenshots: true)
  
  set_changelog
 
@@ -61,9 +62,13 @@ lane : release do
     submit_for_review: true,
     automatic_release: true,
     force: true, # Skip HTMl report verification
-    skip_metadata: true,
+    skip_metadata: false,
     skip_screenshots: true,
-    skip_binary_upload: true
+    skip_binary_upload: true,
+    submission_information: {
+      export_compliance_uses_encryption: false,
+      add_id_info_uses_idfa: false
+   }
   )
 
  increment_version_number_in_plist(
@@ -71,5 +76,7 @@ lane : release do
   version_source:'appstore',
   target:'SpaceDash' 
 )
+  commit_version_bump(xcodeproj: "SpaceDash.xcodeproj")
+  push_to_git_remote
 end
 end
