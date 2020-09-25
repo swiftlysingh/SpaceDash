@@ -38,7 +38,6 @@ SpaceDash is an app that will provide information on all the present past and fu
 -   If you would like to work on an issue, drop in a comment at the issue. If it is already assigned to someone, but there is no sign of any work being done, please free to drop in a comment so that the issue can be assigned to you if the previous assignee has dropped it entirely.
 - Before you start to develop I suggest you should checkout [Contributing.md](https://github.com/pushpinderpalsingh/SpaceDash/blob/develop/Contributing.md) 
 
-#### This project won't be possible without our contributors. You may see [Contributors.md](https://github.com/pushpinderpalsingh/SpaceDash/blob/develop/Contributors.md) for details.
 
 ## [](https://github.com/pushpinderpalsingh/SpaceDash#license)License
 
@@ -46,3 +45,7 @@ This project is licensed under the MIT License - see the  [LICENSE.md](https://g
 
 ## Acknowledgement
 -  A huge shoutout to r/SpaceX  for there [API](https://github.com/r-spacex/SpaceX-API)
+
+#### This project won't be possible without our contributors. You may see [Contributors.md](https://github.com/pushpinderpalsingh/SpaceDash/blob/develop/Contributors.md) for details.
+
+#### [Join the conversation over on Slack.](https://join.slack.com/t/spacedashworkspace/shared_invite/zt-hhdotx13-5Hicy3hIrx7Rq5Bow72tfQ)
