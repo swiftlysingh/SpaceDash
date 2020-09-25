@@ -1,4 +1,7 @@
 # ![CD](https://github.com/pushpinderpalsingh/SpaceDash/workflows/CD/badge.svg?branch=master) ![CI](https://github.com/pushpinderpalsingh/SpaceDash/workflows/CI/badge.svg)
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
 # SpaceDash
 ### A Dashboard for Space...
 SpaceDash is an app that will provide information on all the present past and future Launches and Vehicles of SpaceX. Currently, the app is in developement. I am following Test-Driven Agile Development for this app. The future scope of this app includes an AR view of various vehicles of SpaceX, and event updates from even more Space Agencies!
@@ -49,3 +52,22 @@ Please help us follow the best practices to make it easy for the reviewer as wel
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+## Contributors ✨
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="http://pushpinderpalsingh.com"><img src="https://avatars3.githubusercontent.com/u/47032662?v=4" width="100px;" alt=""/><br /><sub><b>Pushpinder Pal Singh</b></sub></a><br /><a href="#projectManagement-pushpinderpalsingh" title="Project Management">📆</a></td>
+  </tr>
+</table>
+
+<!-- markdownlint-enable -->
+<!-- prettier-ignore-end -->
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
