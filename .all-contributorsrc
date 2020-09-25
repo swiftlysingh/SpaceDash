@@ -1,0 +1,15 @@
+{
+  "files": [
+    "Contributors.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [ 
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "SpaceDash",
+  "projectOwner": "pushpinderpalsingh",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
