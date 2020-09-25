@@ -1,6 +1,8 @@
 
 
-# [![CD](https://github.com/pushpinderpalsingh/SpaceDash/workflows/CD/badge.svg?branch=master)](https://github.com/pushpinderpalsingh/SpaceDash/workflows/CD/badge.svg?branch=master)  [![CI](https://github.com/pushpinderpalsingh/SpaceDash/workflows/CI/badge.svg)](https://github.com/pushpinderpalsingh/SpaceDash/workflows/CI/badge.svg) <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section --> [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors) <!-- ALL-CONTRIBUTORS-BADGE:END -->
+# [![CD](https://github.com/pushpinderpalsingh/SpaceDash/workflows/CD/badge.svg?branch=master)](https://github.com/pushpinderpalsingh/SpaceDash/workflows/CD/badge.svg?branch=master)  [![CI](https://github.com/pushpinderpalsingh/SpaceDash/workflows/CI/badge.svg)](https://github.com/pushpinderpalsingh/SpaceDash/workflows/CI/badge.svg) <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 # [](https://github.com/pushpinderpalsingh/SpaceDash#spacedash)SpaceDash
 
