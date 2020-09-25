@@ -4,7 +4,16 @@
   ],
   "imageSize": 100,
   "commit": false,
-  "contributors": [ 
+  "contributors": [
+    {
+      "login": "pushpinderpalsingh",
+      "name": "Pushpinder Pal Singh",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/47032662?v=4",
+      "profile": "http://pushpinderpalsingh.com",
+      "contributions": [
+        "maintenance"
+      ]
+    }
   ],
   "contributorsPerLine": 7,
   "projectName": "SpaceDash",
