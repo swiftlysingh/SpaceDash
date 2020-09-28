@@ -14,10 +14,7 @@ SpaceDash is an app that will provide information on all the present past and fu
 
 ## [](https://github.com/pushpinderpalsingh/SpaceDash#screenshots)Screenshots
 
-[![alt text](https://github.com/gokulkannan7/SpaceDash/blob/develop/Assets/re_pic1.png "Screen Shots")](https://github.com/gokulkannan7/SpaceDash/blob/develop/Assets/re_pic1.png)
-
-
-[![alt text](https://github.com/gokulkannan7/SpaceDash/blob/develop/Assets/re_pic2.png "Screen Shots")](https://github.com/gokulkannan7/SpaceDash/blob/develop/Assets/re_pic2.png)
+[![alt text](https://github.com/gokulkannan7/SpaceDash/blob/develop/Assets/updated_ss.png"Screen Shots")](https://github.com/gokulkannan7/SpaceDash/blob/develop/Assets/updated_ss.png)
 
 ## [](https://github.com/pushpinderpalsingh/SpaceDash#getting-started-for-development)Getting Started for Development
 
