@@ -23,6 +23,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "clarkeben",
+      "name": "Ben",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/40464267?v=4",
+      "profile": "https://github.com/clarkeben",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7,
