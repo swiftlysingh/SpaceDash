@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HJC-uf-Grf">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--About-->
+        <scene sceneID="0vy-6F-rrD">
+            <objects>
+                <viewController id="HJC-uf-Grf" customClass="AboutViewController" customModule="SpaceDash" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="g0C-GA-ELf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lOQ-Ml-F5n" customClass="DetailScrollViews" customModule="SpaceDash" customModuleProvider="target">
+                                <rect key="frame" x="20" y="74" width="374" height="212"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About SpaceX" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Pa-fh-jbr">
+                                        <rect key="frame" x="8" y="8" width="151" height="29.5"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="25"/>
+                                        <color key="textColor" name="DashBlack"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" textAlignment="justified" lineBreakMode="headTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fnc-BG-jJG">
+                                        <rect key="frame" x="8" y="39.5" width="358" height="144.5"/>
+                                        <string key="text">Space Exploration Technologies Corp., trading as SpaceX, is an American aerospace manufacturer and space transportation services company headquartered in Hawthorne, California. It was founded in 2002 by Elon Musk with the goal of reducing space transportation costs to enable the colonization of Mars.</string>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="14"/>
+                                        <color key="textColor" name="DashBlack"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="DashCream"/>
+                                <constraints>
+                                    <constraint firstItem="1Pa-fh-jbr" firstAttribute="top" secondItem="lOQ-Ml-F5n" secondAttribute="top" constant="8" id="5Tf-PE-koF"/>
+                                    <constraint firstItem="1Pa-fh-jbr" firstAttribute="leading" secondItem="lOQ-Ml-F5n" secondAttribute="leading" constant="8" id="Hu1-Sd-vaR"/>
+                                    <constraint firstItem="Fnc-BG-jJG" firstAttribute="top" secondItem="1Pa-fh-jbr" secondAttribute="bottom" constant="2" id="P76-pt-G1v"/>
+                                    <constraint firstAttribute="bottom" secondItem="Fnc-BG-jJG" secondAttribute="bottom" constant="28" id="YuQ-JD-vtK"/>
+                                    <constraint firstItem="Fnc-BG-jJG" firstAttribute="top" secondItem="1Pa-fh-jbr" secondAttribute="bottom" constant="2" id="ayy-aq-Gsx"/>
+                                    <constraint firstAttribute="trailing" secondItem="Fnc-BG-jJG" secondAttribute="trailing" constant="8" id="isR-Cn-uDx"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="1Pa-fh-jbr" secondAttribute="trailing" constant="20" symbolic="YES" id="jcf-52-7ng"/>
+                                    <constraint firstAttribute="height" constant="212" id="tLd-a1-XVR"/>
+                                    <constraint firstItem="Fnc-BG-jJG" firstAttribute="leading" secondItem="lOQ-Ml-F5n" secondAttribute="leading" constant="8" id="vvO-aT-HLR"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="55f-KN-h3n" customClass="DetailScrollViews" customModule="SpaceDash" customModuleProvider="target">
+                                <rect key="frame" x="20" y="335" width="374" height="212"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About SpaceDash" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AC6-S6-96i">
+                                        <rect key="frame" x="8" y="8" width="191" height="36"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="36" id="Sby-iE-1qP"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="25"/>
+                                        <color key="textColor" name="DashBlack"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tOy-w7-UZt">
+                                        <rect key="frame" x="8" y="44" width="358" height="152"/>
+                                        <string key="text">SpaceDash will be Dashboard for all things Space. It is a beautiful app with simple but informative UI. You will be able to simply glance at the upcoming launches for various space agency. And even watch it live if there is a live stream happening (Coming in the future version of the app). Currently the app supports launches, missions, rockets etc for SpaceX but more space agencies will be added soon.</string>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="14"/>
+                                        <color key="textColor" name="DashBlack"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="DashCream"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="tOy-w7-UZt" secondAttribute="trailing" constant="8" id="DUD-8Q-G7m"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="AC6-S6-96i" secondAttribute="trailing" constant="20" symbolic="YES" id="Mv7-hS-EpB"/>
+                                    <constraint firstItem="AC6-S6-96i" firstAttribute="top" secondItem="55f-KN-h3n" secondAttribute="topMargin" id="Pfh-9b-LdR"/>
+                                    <constraint firstItem="AC6-S6-96i" firstAttribute="leading" secondItem="55f-KN-h3n" secondAttribute="leadingMargin" id="PwB-d7-ekE"/>
+                                    <constraint firstAttribute="height" constant="212" id="gQv-kw-MSM"/>
+                                    <constraint firstItem="tOy-w7-UZt" firstAttribute="top" secondItem="AC6-S6-96i" secondAttribute="bottom" id="gkT-Rn-iir"/>
+                                    <constraint firstItem="tOy-w7-UZt" firstAttribute="leading" secondItem="55f-KN-h3n" secondAttribute="leading" constant="8" id="sDh-2Q-Ajd"/>
+                                    <constraint firstItem="tOy-w7-UZt" firstAttribute="top" secondItem="AC6-S6-96i" secondAttribute="bottom" id="scj-8V-tLb"/>
+                                    <constraint firstAttribute="bottom" secondItem="tOy-w7-UZt" secondAttribute="bottom" constant="16" id="uhy-Hr-xp2"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9r5-g2-K7u">
+                                <rect key="frame" x="177.5" y="741" width="59" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="MvD-ZR-2BD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="License">
+                                    <color key="titleColor" systemColor="linkColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="licenseButtonPressed:" destination="HJC-uf-Grf" eventType="touchUpInside" id="rAa-rh-3SE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fzZ-rl-ivC">
+                                <rect key="frame" x="154" y="700" width="106" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="VR2-A0-GZd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Privacy Policy">
+                                    <color key="titleColor" systemColor="linkColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="privacyButtonPressed:" destination="HJC-uf-Grf" eventType="touchUpInside" id="aZ1-hS-pvM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="pbJ-Kf-JAG"/>
+                        <color key="backgroundColor" name="DashBlack"/>
+                        <constraints>
+                            <constraint firstItem="9r5-g2-K7u" firstAttribute="centerX" secondItem="g0C-GA-ELf" secondAttribute="centerX" id="LP8-T2-mXf"/>
+                            <constraint firstItem="lOQ-Ml-F5n" firstAttribute="leading" secondItem="pbJ-Kf-JAG" secondAttribute="leading" constant="20" id="PmV-eQ-qpH"/>
+                            <constraint firstItem="fzZ-rl-ivC" firstAttribute="centerX" secondItem="g0C-GA-ELf" secondAttribute="centerX" id="U33-PL-5yi"/>
+                            <constraint firstItem="55f-KN-h3n" firstAttribute="leading" secondItem="pbJ-Kf-JAG" secondAttribute="leading" constant="20" id="UM2-QL-52c"/>
+                            <constraint firstItem="pbJ-Kf-JAG" firstAttribute="bottom" secondItem="9r5-g2-K7u" secondAttribute="bottom" constant="39" id="X6v-92-VoK"/>
+                            <constraint firstItem="pbJ-Kf-JAG" firstAttribute="trailing" secondItem="55f-KN-h3n" secondAttribute="trailing" constant="20" id="Zhe-jX-DM0"/>
+                            <constraint firstItem="lOQ-Ml-F5n" firstAttribute="top" secondItem="pbJ-Kf-JAG" secondAttribute="top" constant="30" id="ec3-cy-UEv"/>
+                            <constraint firstItem="55f-KN-h3n" firstAttribute="top" secondItem="lOQ-Ml-F5n" secondAttribute="bottom" constant="49" id="gDr-CN-uNw"/>
+                            <constraint firstItem="pbJ-Kf-JAG" firstAttribute="trailing" secondItem="lOQ-Ml-F5n" secondAttribute="trailing" constant="20" id="yHQ-0y-QgP"/>
+                            <constraint firstItem="9r5-g2-K7u" firstAttribute="top" secondItem="fzZ-rl-ivC" secondAttribute="bottom" constant="8" id="zgm-6t-90k"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="About" image="info.circle" catalog="system" id="L5a-LA-Fjt"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="aboutSpaceConstraint" destination="gDr-CN-uNw" id="NUM-dh-VJV"/>
+                        <outlet property="aboutSpaceTopConstraint" destination="ec3-cy-UEv" id="2vd-IS-7hN"/>
+                        <outlet property="licenseBottomConstraint" destination="X6v-92-VoK" id="EaX-vH-Yk2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rZe-ql-exh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-165.21739130434784" y="343.52678571428572"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="info.circle" catalog="system" width="128" height="121"/>
+        <namedColor name="DashBlack">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="DashCream">
+            <color red="0.90600001811981201" green="0.90600001811981201" blue="0.90600001811981201" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
