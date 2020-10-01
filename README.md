@@ -66,4 +66,4 @@ This project is licensed under the MIT License - see the  [LICENSE.md](https://g
 
 #### This project won't be possible without our contributors. You may see [Contributors.md](https://github.com/pushpinderpalsingh/SpaceDash/blob/develop/Contributors.md) for details.
 
-#### [Join the conversation on Slack.](https://join.slack.com/t/spacedashworkspace/shared_invite/zt-hhdotx13-5Hicy3hIrx7Rq5Bow72tfQ)
+#### [Join the conversation on Slack.](https://communityinviter.com/apps/spacedashworkspace/spacedash)
