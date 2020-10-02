@@ -14,10 +14,11 @@ class TentativeDetailsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        view.backgroundColor = UIColor(named: Constants.Colors.DashCream)
         view.addSubview(lblTentativeDetail)
         lblTentativeDetail.numberOfLines = 0
+        //inform the layout that this view uses autolayout constraint instead of resizing masks
         lblTentativeDetail.translatesAutoresizingMaskIntoConstraints = false
+        // add constraints, leading: 16, trailing: -16, top: 20, bottom: 0
         NSLayoutConstraint.activate([
             lblTentativeDetail.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
             lblTentativeDetail.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16),

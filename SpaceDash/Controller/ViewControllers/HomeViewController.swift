@@ -90,15 +90,19 @@ class HomeViewController: UIViewController,NetworkManagerDelegate {
     
     
     @objc func tentativeClicked(_ sender: UITapGestureRecognizer){
+        // we dont want to fill the popover to full width of the screen
         let standardWidth = self.view.frame.width - 60
-        let estimatedHeight = Constants.HomeView.tentativeDetail.height(ConstrainedWidth: standardWidth - 24) //12 + 12 leading trailing padding
+        //to dynamically resize the popover, we premature-ly calculate the height of the label using the text content
+        let estimatedHeight = Constants.HomeView.tentativeDetail.height(ConstrainedWidth: standardWidth - 24) //12 + 12 horizontal padding
         let tentativeDetailsVC = TentativeDetailsViewController()
         tentativeDetailsVC.lblTentativeDetail.text = Constants.HomeView.tentativeDetail
-        tentativeDetailsVC.modalPresentationStyle = .popover
-        tentativeDetailsVC.preferredContentSize = CGSize.init(width: standardWidth, height: estimatedHeight + 40) //40 is padding
+        tentativeDetailsVC.modalPresentationStyle = .popover //this tells that the presenting viewcontroller is an popover style
+        tentativeDetailsVC.preferredContentSize = CGSize.init(width: standardWidth, height: estimatedHeight + 40) //40 is vertical padding
         tentativeDetailsVC.overrideUserInterfaceStyle = .light //disabling dark mode
         if let popoverPresentationController = tentativeDetailsVC.popoverPresentationController {
+            //this option makes popover to preview below the "T" sign
             popoverPresentationController.permittedArrowDirections = .up
+            //source view and source rect is used by popover controller to determine where the triangle should be placed and present the popover relative to the source view
             popoverPresentationController.sourceView = self.isTentative
             popoverPresentationController.sourceRect = self.isTentative.bounds
             popoverPresentationController.delegate = self
@@ -148,15 +152,9 @@ extension HomeViewController {
 
 extension HomeViewController: UIPopoverPresentationControllerDelegate {
     func adaptivePresentationStyle(for controller: UIPresentationController) -> UIModalPresentationStyle {
+        // .none makes the viewcontroller to be present as popover always, no matter what trait changes
         return .none
     }
     
-    func popoverPresentationControllerDidDismissPopover(_ popoverPresentationController: UIPopoverPresentationController) {
-        
-    }
-    
-    func popoverPresentationControllerShouldDismissPopover(_ popoverPresentationController: UIPopoverPresentationController) -> Bool {
-        return true
-    }
 }
 
