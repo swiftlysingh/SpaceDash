@@ -23,7 +23,6 @@ class HomeViewController: UIViewController,NetworkManagerDelegate {
     var constants : Constants.HomeView?
     var senderView : String = ""
     
-    let tenativeDetail = "This is the tentative launch date and subjected to change"
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .darkContent
@@ -84,7 +83,6 @@ class HomeViewController: UIViewController,NetworkManagerDelegate {
         launchDate.text =  upcomingLaunch?.getDate()
         
         self.isTentative.isHidden = !(self.upcomingLaunch?.decodedData!.is_tentative)!
-        self.isTentative.isHidden = false
         if(!(constants?.rocket=="Falcon 9")){
             rocketImage.image = UIImage(named: "f_heavy")
         }
@@ -92,11 +90,10 @@ class HomeViewController: UIViewController,NetworkManagerDelegate {
     
     
     @objc func tentativeClicked(_ sender: UITapGestureRecognizer){
-
         let standardWidth = self.view.frame.width - 60
-        let estimatedHeight = tenativeDetail.height(ConstrainedWidth: standardWidth - 24) //12 + 12 leading trailing padding
+        let estimatedHeight = Constants.HomeView.tentativeDetail.height(ConstrainedWidth: standardWidth - 24) //12 + 12 leading trailing padding
         let tentativeDetailsVC = TentativeDetailsViewController()
-        tentativeDetailsVC.lblTentativeDetail.text = tenativeDetail
+        tentativeDetailsVC.lblTentativeDetail.text = Constants.HomeView.tentativeDetail
         tentativeDetailsVC.modalPresentationStyle = .popover
         tentativeDetailsVC.preferredContentSize = CGSize.init(width: standardWidth, height: estimatedHeight + 40) //40 is padding
         tentativeDetailsVC.overrideUserInterfaceStyle = .light //disabling dark mode
