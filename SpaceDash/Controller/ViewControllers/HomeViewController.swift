@@ -99,7 +99,7 @@ class HomeViewController: UIViewController,NetworkManagerDelegate {
         tentativeDetailsVC.lblTentativeDetail.text = tenativeDetail
         tentativeDetailsVC.modalPresentationStyle = .popover
         tentativeDetailsVC.preferredContentSize = CGSize.init(width: standardWidth, height: estimatedHeight + 40) //40 is padding
-        
+        tentativeDetailsVC.overrideUserInterfaceStyle = .light //disabling dark mode
         if let popoverPresentationController = tentativeDetailsVC.popoverPresentationController {
             popoverPresentationController.permittedArrowDirections = .up
             popoverPresentationController.sourceView = self.isTentative
