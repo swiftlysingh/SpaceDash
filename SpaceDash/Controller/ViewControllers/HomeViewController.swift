@@ -23,6 +23,8 @@ class HomeViewController: UIViewController,NetworkManagerDelegate {
     var constants : Constants.HomeView?
     var senderView : String = ""
     
+    let tenativeDetail = "This is the tentative launch date and subjected to change"
+    
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .darkContent
     }
@@ -32,6 +34,10 @@ class HomeViewController: UIViewController,NetworkManagerDelegate {
         networkObject.delegate = self
         networkObject.fetchData(demand: Constants.NetworkManager.upcomingLaunchURL)
         adjustSize()
+        
+        //tap gesture for tentative label
+        self.isTentative.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(tentativeClicked(_:))))
+        self.isTentative.isUserInteractionEnabled = true
     }
     
     /// Making the Height of Upcoming Panel Dynamic
@@ -78,10 +84,29 @@ class HomeViewController: UIViewController,NetworkManagerDelegate {
         launchDate.text =  upcomingLaunch?.getDate()
         
         self.isTentative.isHidden = !(self.upcomingLaunch?.decodedData!.is_tentative)!
-        
+        self.isTentative.isHidden = false
         if(!(constants?.rocket=="Falcon 9")){
             rocketImage.image = UIImage(named: "f_heavy")
         }
+    }
+    
+    
+    @objc func tentativeClicked(_ sender: UITapGestureRecognizer){
+
+        let standardWidth = self.view.frame.width - 60
+        let estimatedHeight = tenativeDetail.height(ConstrainedWidth: standardWidth - 24) //12 + 12 leading trailing padding
+        let tentativeDetailsVC = TentativeDetailsViewController()
+        tentativeDetailsVC.lblTentativeDetail.text = tenativeDetail
+        tentativeDetailsVC.modalPresentationStyle = .popover
+        tentativeDetailsVC.preferredContentSize = CGSize.init(width: standardWidth, height: estimatedHeight + 40) //40 is padding
+        
+        if let popoverPresentationController = tentativeDetailsVC.popoverPresentationController {
+            popoverPresentationController.permittedArrowDirections = .up
+            popoverPresentationController.sourceView = self.isTentative
+            popoverPresentationController.sourceRect = self.isTentative.bounds
+            popoverPresentationController.delegate = self
+        }
+        self.present(tentativeDetailsVC, animated: true, completion: nil)
     }
     
 }
@@ -121,6 +146,20 @@ extension HomeViewController {
         if let target = segue.destination as? DetailsViewController {
             target.senderView = senderView
         }
+    }
+}
+
+extension HomeViewController: UIPopoverPresentationControllerDelegate {
+    func adaptivePresentationStyle(for controller: UIPresentationController) -> UIModalPresentationStyle {
+        return .none
+    }
+    
+    func popoverPresentationControllerDidDismissPopover(_ popoverPresentationController: UIPopoverPresentationController) {
+        
+    }
+    
+    func popoverPresentationControllerShouldDismissPopover(_ popoverPresentationController: UIPopoverPresentationController) -> Bool {
+        return true
     }
 }
 
