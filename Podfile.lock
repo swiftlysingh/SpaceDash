@@ -7,8 +7,9 @@ DEPENDENCIES:
   - MarqueeLabel
 
 SPEC REPOS:
-  trunk:
+  https://github.com/CocoaPods/Specs.git:
     - lottie-ios
+  trunk:
     - MarqueeLabel
 
 SPEC CHECKSUMS:
@@ -17,4 +18,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: ceca5c3fa56ae640c1db8633568bd906f292243e
 
-COCOAPODS: 1.9.0.beta.3
+COCOAPODS: 1.8.0.beta.1
