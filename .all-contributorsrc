@@ -32,6 +32,15 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "devwaseem",
+      "name": "Waseem akram",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/12982964?v=4",
+      "profile": "https://dvlper.in",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
