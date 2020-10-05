@@ -7,6 +7,7 @@
     <td align="center"><a href="https://github.com/brainboxdeveloper"><img src="https://avatars3.githubusercontent.com/u/51957344?v=4" width="100px;" alt=""/><br /><sub><b>simplybenjamin</b></sub></a><br /><a href="https://github.com/pushpinderpalsingh/SpaceDash/commits?author=brainboxdeveloper" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/clarkeben"><img src="https://avatars1.githubusercontent.com/u/40464267?v=4" width="100px;" alt=""/><br /><sub><b>Ben</b></sub></a><br /><a href="https://github.com/pushpinderpalsingh/SpaceDash/commits?author=clarkeben" title="Documentation">📖</a></td>
     <td align="center"><a href="https://dvlper.in"><img src="https://avatars3.githubusercontent.com/u/12982964?v=4" width="100px;" alt=""/><br /><sub><b>Waseem akram</b></sub></a><br /><a href="https://github.com/pushpinderpalsingh/SpaceDash/commits?author=devwaseem" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/jamie-brannan"><img src="https://avatars1.githubusercontent.com/u/38720242?v=4" width="100px;" alt=""/><br /><sub><b>Jamie Brannan</b></sub></a><br /><a href="https://github.com/pushpinderpalsingh/SpaceDash/commits?author=jamie-brannan" title="Code">💻</a> <a href="https://github.com/pushpinderpalsingh/SpaceDash/commits?author=jamie-brannan" title="Documentation">📖</a></td>
   </tr>
 </table>
 
