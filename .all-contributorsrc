@@ -41,6 +41,16 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "jamie-brannan",
+      "name": "Jamie Brannan",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/38720242?v=4",
+      "profile": "https://github.com/jamie-brannan",
+      "contributions": [
+        "code",
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7,
