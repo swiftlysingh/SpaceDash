@@ -26,6 +26,8 @@
 		FFA9CA5D24C0CCCA006FA5DE /* UpcomingLaunchData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA9CA5B24C0CCCA006FA5DE /* UpcomingLaunchData.swift */; };
 		FFA9CA7824C0D9D3006FA5DE /* SpaceDashUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA9CA7724C0D9D3006FA5DE /* SpaceDashUITests.swift */; };
 		FFA9CA8024C1B838006FA5DE /* UpcomingLaunchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA9CA7F24C1B838006FA5DE /* UpcomingLaunchModel.swift */; };
+		FFAFD9CF252CE1FA0063A6BA /* About.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFAFD9CE252CE1FA0063A6BA /* About.storyboard */; };
+		FFAFD9D6252CE22A0063A6BA /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFAFD9D5252CE22A0063A6BA /* Home.storyboard */; };
 		FFB398F424DDD025001D4EA1 /* RocketsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB398F324DDD025001D4EA1 /* RocketsData.swift */; };
 		FFB398F724DDD2F8001D4EA1 /* DetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB398F624DDD2F8001D4EA1 /* DetailsViewModel.swift */; };
 		FFB398FA24DDDBDC001D4EA1 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB398F924DDDBDC001D4EA1 /* UIImageView.swift */; };
@@ -109,6 +111,8 @@
 		FFA9CA7724C0D9D3006FA5DE /* SpaceDashUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceDashUITests.swift; sourceTree = "<group>"; };
 		FFA9CA7924C0D9D3006FA5DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FFA9CA7F24C1B838006FA5DE /* UpcomingLaunchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingLaunchModel.swift; sourceTree = "<group>"; };
+		FFAFD9CE252CE1FA0063A6BA /* About.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = About.storyboard; sourceTree = "<group>"; };
+		FFAFD9D5252CE22A0063A6BA /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		FFB398F324DDD025001D4EA1 /* RocketsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketsData.swift; sourceTree = "<group>"; };
 		FFB398F624DDD2F8001D4EA1 /* DetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewModel.swift; sourceTree = "<group>"; };
 		FFB398F924DDDBDC001D4EA1 /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
@@ -238,6 +242,26 @@
 			path = SpaceDashUITests;
 			sourceTree = "<group>";
 		};
+		FFAFD9DC252CE4890063A6BA /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				FFF716DB249D3E1C0043EB81 /* Main.storyboard */,
+				FFAFD9D5252CE22A0063A6BA /* Home.storyboard */,
+				FFAFD9CE252CE1FA0063A6BA /* About.storyboard */,
+				FFF716E0249D3E210043EB81 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		FFAFD9E2252CE49B0063A6BA /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				FFF25C6624D871EF00D0E1FF /* DetailsTableViewCell.swift */,
+				FFF25C6724D871EF00D0E1FF /* DetailsTableViewCell.xib */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
 		FFB398F524DDD037001D4EA1 /* JsonDecoders */ = {
 			isa = PBXGroup;
 			children = (
@@ -305,10 +329,8 @@
 			isa = PBXGroup;
 			children = (
 				FFD549E325055F8200F49DC0 /* Animations */,
-				FFF716DB249D3E1C0043EB81 /* Main.storyboard */,
-				FFF716E0249D3E210043EB81 /* LaunchScreen.storyboard */,
-				FFF25C6624D871EF00D0E1FF /* DetailsTableViewCell.swift */,
-				FFF25C6724D871EF00D0E1FF /* DetailsTableViewCell.xib */,
+				FFAFD9DC252CE4890063A6BA /* Storyboards */,
+				FFAFD9E2252CE49B0063A6BA /* TableViewCell */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -560,8 +582,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFAFD9D6252CE22A0063A6BA /* Home.storyboard in Resources */,
 				FF4C3944250565AE00279A39 /* space.json in Resources */,
 				FFF716E2249D3E210043EB81 /* LaunchScreen.storyboard in Resources */,
+				FFAFD9CF252CE1FA0063A6BA /* About.storyboard in Resources */,
 				FFA9CA5824C0CA31006FA5DE /* Assets.xcassets in Resources */,
 				FFF25C6924D871EF00D0E1FF /* DetailsTableViewCell.xib in Resources */,
 				FFF716DD249D3E1C0043EB81 /* Main.storyboard in Resources */,
