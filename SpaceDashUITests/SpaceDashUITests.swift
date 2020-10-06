@@ -57,6 +57,16 @@ class SpaceXUITests: XCTestCase {
             XCTAssertTrue(ships.exists)
         }
     }
+    
+    func testTentativePopup() throws {
+        
+        let app = XCUIApplication()
+        if app.buttons["T"].exists {
+            app.buttons["T"].tap()
+            XCTAssert(app.popovers.staticTexts["This is the tentative launch date and subjected to change"].exists)
+        }
+    }
+    
     func testAboutUI() throws {
         
         let app = XCUIApplication()

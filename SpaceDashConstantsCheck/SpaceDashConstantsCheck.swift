@@ -41,7 +41,8 @@ class SpaceDashConstantsCheck: XCTestCase {
         XCTAssertEqual("https://github.com/pushpinderpalsingh/SpaceDash/blob/master/LICENSE", Constants.AboutView.licenseURLString)
         XCTAssertEqual("https://pushpinderpalsingh.github.io/SpaceDash/policy.html", Constants.AboutView.privacyURLString)
         XCTAssertEqual("Unable to open due to some reasons please check back later", Constants.AboutView.alertMessage)
-         XCTAssertEqual("Ok", Constants.AboutView.okButtonTitle)
+        XCTAssertEqual("Ok", Constants.AboutView.okButtonTitle)
+        XCTAssertEqual("This is the tentative launch date and subjected to change", Constants.HomeView.tentativeDetail)
     }
 
 }
