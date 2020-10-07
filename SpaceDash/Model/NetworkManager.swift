@@ -57,7 +57,10 @@ struct NetworkManager{
     /// - Parameter data: The data that need to be parsed
     
     func parseJSON(data: Data){
+        
         let decoder = JSONDecoder()
+        let detailModel = DetailsViewModel()
+        
         do{
             switch key {
             
@@ -68,39 +71,39 @@ struct NetworkManager{
                 break
             
             case Constants.SegueManager.SenderValues.rocket:
-                var rocket = DetailsViewModel(rockets: try decoder.decode([RocketData].self, from: data))
-                rocket.fillData(key: Constants.SegueManager.SenderValues.rocket)
-                delegate?.updateFromAPI(data: rocket)
+                detailModel.rockets = try decoder.decode([RocketData].self, from: data)
+                detailModel.fillData(key: Constants.SegueManager.SenderValues.rocket)
+                delegate?.updateFromAPI(data: detailModel)
                 break
                 
             case Constants.SegueManager.SenderValues.landpads:
-                var landpads = DetailsViewModel(landpads: try decoder.decode([LandpadsData].self, from: data))
-                landpads.fillData(key: Constants.SegueManager.SenderValues.landpads)
-                delegate?.updateFromAPI(data: landpads)
+                detailModel.landpads = try decoder.decode([LandpadsData].self, from: data)
+                detailModel.fillData(key: Constants.SegueManager.SenderValues.landpads)
+                delegate?.updateFromAPI(data: detailModel)
                 break
             
             case Constants.SegueManager.SenderValues.capsules:
-                var capsules = DetailsViewModel(capsules:try decoder.decode([CapsulesData].self, from: data))
-                capsules.fillData(key: Constants.SegueManager.SenderValues.capsules)
-                delegate?.updateFromAPI(data: capsules)
+                detailModel.capsules = try decoder.decode([CapsulesData].self, from: data)
+                detailModel.fillData(key: Constants.SegueManager.SenderValues.capsules)
+                delegate?.updateFromAPI(data: detailModel)
                 break
                 
             case Constants.SegueManager.SenderValues.ships:
-                var ships = DetailsViewModel(ships: try decoder.decode([ShipsData].self, from: data))
-                ships.fillData(key: Constants.SegueManager.SenderValues.ships)
-                delegate?.updateFromAPI(data: ships)
+                detailModel.ships =  try decoder.decode([ShipsData].self, from: data)
+                detailModel.fillData(key: Constants.SegueManager.SenderValues.ships)
+                delegate?.updateFromAPI(data: detailModel)
                 break
                 
             case Constants.SegueManager.SenderValues.launchSite:
-                var launchPads = DetailsViewModel(launchPads: try decoder.decode([LaunchPadData].self, from: data))
-                launchPads.fillData(key: Constants.SegueManager.SenderValues.launchSite)
-                delegate?.updateFromAPI(data: launchPads)
+                detailModel.launchPads = try decoder.decode([LaunchPadData].self, from: data)
+                detailModel.fillData(key: Constants.SegueManager.SenderValues.launchSite)
+                delegate?.updateFromAPI(data: detailModel)
                 break
                 
             case Constants.SegueManager.SenderValues.launches:
-                var launches = DetailsViewModel(launches: try decoder.decode([LaunchesData].self, from: data))
-                launches.fillData(key: Constants.SegueManager.SenderValues.launches)
-                delegate?.updateFromAPI(data: launches)
+                detailModel.launches = try decoder.decode([LaunchesData].self, from: data)
+                detailModel.fillData(key: Constants.SegueManager.SenderValues.launches)
+                delegate?.updateFromAPI(data: detailModel)
             default:
                 return
             }

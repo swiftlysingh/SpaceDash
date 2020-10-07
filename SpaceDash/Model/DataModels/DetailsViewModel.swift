@@ -8,7 +8,8 @@
 
 import Foundation
 
-struct DetailsViewModel {
+class DetailsViewModel {
+    
     var rockets : [RocketData]?
     var landpads : [LandpadsData]?
     var capsules : [CapsulesData]?
@@ -24,7 +25,7 @@ struct DetailsViewModel {
     var isActive : [Bool] = [false]
     
     /// This function will fill in all the important data to data variables.
-    mutating func fillData(key: String){
+    func fillData(key: String){
         
         switch key {
         case Constants.SegueManager.SenderValues.rocket:
@@ -37,7 +38,7 @@ struct DetailsViewModel {
                     let image_num = Int.random(in: 0..<rocket.flickr_images.count)
                     image.append(rocket.flickr_images[image_num])
                     isActive.append(rocket.active)
-                }
+                 }
             }
             break
             
