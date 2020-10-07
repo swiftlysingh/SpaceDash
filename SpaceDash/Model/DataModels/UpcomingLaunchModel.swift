@@ -12,6 +12,7 @@ struct UpcomingLaunchModel{
     var decodedDataSet : [UpcomingLaunchData]
     var decodedData: UpcomingLaunchData?
     
+    /// Will return the first Launch if no future launch is found
     mutating func cleanData(){
         for data in decodedDataSet {
                 if data.launch_date_unix>=NSDate().timeIntervalSince1970 {
