@@ -113,7 +113,7 @@
             BlueprintIdentifier = "FFF716D1249D3E1C0043EB81"
             BuildableName = "SpaceDash.app"
             BlueprintName = "SpaceDash"
-            ReferencedContainer = "container:SpaceX.xcodeproj">
+            ReferencedContainer = "container:SpaceDash.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

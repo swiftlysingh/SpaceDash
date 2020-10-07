@@ -1,11 +1,11 @@
 PODS:
   - lottie-ios (3.1.8)
-  - MarqueeLabel (4.0.3)
-  - Realm (5.4.7):
-    - Realm/Headers (= 5.4.7)
-  - Realm/Headers (5.4.7)
-  - RealmSwift (5.4.7):
-    - Realm (= 5.4.7)
+  - MarqueeLabel (4.0.5)
+  - Realm (5.4.8):
+    - Realm/Headers (= 5.4.8)
+  - Realm/Headers (5.4.8)
+  - RealmSwift (5.4.8):
+    - Realm (= 5.4.8)
 
 DEPENDENCIES:
   - lottie-ios
@@ -21,9 +21,9 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   lottie-ios: 48fac6be217c76937e36e340e2d09cf7b10b7f5f
-  MarqueeLabel: a1ea597e347506640a5b00fda9c07b572753f45e
-  Realm: 4bfc08e376b2e30c84ec3200ebe715574da05cc0
-  RealmSwift: ed40f371b62e8677141939e05b44a0c1a0a2d965
+  MarqueeLabel: 00cc0bcd087111dca575878b3531af980559707d
+  Realm: 042bbb59227a0159eda397b8a5a49fbd67495ce7
+  RealmSwift: 15ddd6b3398ebfc99810811c44f095df1313adb3
 
 PODFILE CHECKSUM: 31212c1587a054627996238b8117e71dd57df0e6
 

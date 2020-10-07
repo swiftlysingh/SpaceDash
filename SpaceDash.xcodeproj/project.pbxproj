@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2086C60A16283D2DB5341A79 /* Pods_SpaceDash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DE2958EE217DA2AEF4E463F /* Pods_SpaceDash.framework */; };
+		750F3DF5252703830030ED19 /* TentativeDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750F3DF3252703830030ED19 /* TentativeDetailsViewController.swift */; };
+		750F3DFD252708500030ED19 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750F3DFC252708500030ED19 /* String.swift */; };
 		FF3043D42507E5D0005F8EE6 /* FastlaneSnapshots.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3043D32507E5D0005F8EE6 /* FastlaneSnapshots.swift */; };
 		FF3043DC2507E615005F8EE6 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3043DB2507E615005F8EE6 /* SnapshotHelper.swift */; };
 		FF42E94E24CD8CA5003E8DFE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF42E94D24CD8CA5003E8DFE /* Constants.swift */; };
@@ -24,6 +26,8 @@
 		FFA9CA5D24C0CCCA006FA5DE /* UpcomingLaunchData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA9CA5B24C0CCCA006FA5DE /* UpcomingLaunchData.swift */; };
 		FFA9CA7824C0D9D3006FA5DE /* SpaceDashUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA9CA7724C0D9D3006FA5DE /* SpaceDashUITests.swift */; };
 		FFA9CA8024C1B838006FA5DE /* UpcomingLaunchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA9CA7F24C1B838006FA5DE /* UpcomingLaunchModel.swift */; };
+		FFAFD9CF252CE1FA0063A6BA /* About.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFAFD9CE252CE1FA0063A6BA /* About.storyboard */; };
+		FFAFD9D6252CE22A0063A6BA /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFAFD9D5252CE22A0063A6BA /* Home.storyboard */; };
 		FFB398F424DDD025001D4EA1 /* RocketsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB398F324DDD025001D4EA1 /* RocketsData.swift */; };
 		FFB398F724DDD2F8001D4EA1 /* DetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB398F624DDD2F8001D4EA1 /* DetailsViewModel.swift */; };
 		FFB398FA24DDDBDC001D4EA1 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB398F924DDDBDC001D4EA1 /* UIImageView.swift */; };
@@ -77,6 +81,8 @@
 
 /* Begin PBXFileReference section */
 		5DE2958EE217DA2AEF4E463F /* Pods_SpaceDash.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpaceDash.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		750F3DF3252703830030ED19 /* TentativeDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TentativeDetailsViewController.swift; sourceTree = "<group>"; };
+		750F3DFC252708500030ED19 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		B15257ADD46DBE38C7F17D09 /* Pods-SpaceDash.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceDash.release.xcconfig"; path = "Target Support Files/Pods-SpaceDash/Pods-SpaceDash.release.xcconfig"; sourceTree = "<group>"; };
 		B5A11B9FE2BFCA5CB1A21EC0 /* Pods-SpaceX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceX.debug.xcconfig"; path = "Target Support Files/Pods-SpaceX/Pods-SpaceX.debug.xcconfig"; sourceTree = "<group>"; };
 		CE287257CFAD34D9CC4A81A2 /* Pods-SpaceDash.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceDash.debug.xcconfig"; path = "Target Support Files/Pods-SpaceDash/Pods-SpaceDash.debug.xcconfig"; sourceTree = "<group>"; };
@@ -105,6 +111,8 @@
 		FFA9CA7724C0D9D3006FA5DE /* SpaceDashUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceDashUITests.swift; sourceTree = "<group>"; };
 		FFA9CA7924C0D9D3006FA5DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FFA9CA7F24C1B838006FA5DE /* UpcomingLaunchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingLaunchModel.swift; sourceTree = "<group>"; };
+		FFAFD9CE252CE1FA0063A6BA /* About.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = About.storyboard; sourceTree = "<group>"; };
+		FFAFD9D5252CE22A0063A6BA /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		FFB398F324DDD025001D4EA1 /* RocketsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketsData.swift; sourceTree = "<group>"; };
 		FFB398F624DDD2F8001D4EA1 /* DetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewModel.swift; sourceTree = "<group>"; };
 		FFB398F924DDDBDC001D4EA1 /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
@@ -234,6 +242,26 @@
 			path = SpaceDashUITests;
 			sourceTree = "<group>";
 		};
+		FFAFD9DC252CE4890063A6BA /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				FFF716DB249D3E1C0043EB81 /* Main.storyboard */,
+				FFAFD9D5252CE22A0063A6BA /* Home.storyboard */,
+				FFAFD9CE252CE1FA0063A6BA /* About.storyboard */,
+				FFF716E0249D3E210043EB81 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		FFAFD9E2252CE49B0063A6BA /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				FFF25C6624D871EF00D0E1FF /* DetailsTableViewCell.swift */,
+				FFF25C6724D871EF00D0E1FF /* DetailsTableViewCell.xib */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
 		FFB398F524DDD037001D4EA1 /* JsonDecoders */ = {
 			isa = PBXGroup;
 			children = (
@@ -274,6 +302,7 @@
 				FFF7170B24A338D10043EB81 /* HomeViewController.swift */,
 				FF60A64924D47B4E0030F5AE /* AboutViewController.swift */,
 				FFB734B924DB2B2B006C1518 /* DetailsViewController.swift */,
+				750F3DF3252703830030ED19 /* TentativeDetailsViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -300,10 +329,8 @@
 			isa = PBXGroup;
 			children = (
 				FFD549E325055F8200F49DC0 /* Animations */,
-				FFF716DB249D3E1C0043EB81 /* Main.storyboard */,
-				FFF716E0249D3E210043EB81 /* LaunchScreen.storyboard */,
-				FFF25C6624D871EF00D0E1FF /* DetailsTableViewCell.swift */,
-				FFF25C6724D871EF00D0E1FF /* DetailsTableViewCell.xib */,
+				FFAFD9DC252CE4890063A6BA /* Storyboards */,
+				FFAFD9E2252CE49B0063A6BA /* TableViewCell */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -322,6 +349,7 @@
 			children = (
 				FFC259E624A772150019E354 /* CALayer.swift */,
 				FFB398F924DDDBDC001D4EA1 /* UIImageView.swift */,
+				750F3DFC252708500030ED19 /* String.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -554,8 +582,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFAFD9D6252CE22A0063A6BA /* Home.storyboard in Resources */,
 				FF4C3944250565AE00279A39 /* space.json in Resources */,
 				FFF716E2249D3E210043EB81 /* LaunchScreen.storyboard in Resources */,
+				FFAFD9CF252CE1FA0063A6BA /* About.storyboard in Resources */,
 				FFA9CA5824C0CA31006FA5DE /* Assets.xcassets in Resources */,
 				FFF25C6924D871EF00D0E1FF /* DetailsTableViewCell.xib in Resources */,
 				FFF716DD249D3E1C0043EB81 /* Main.storyboard in Resources */,
@@ -654,6 +684,7 @@
 				FF8E3EDE24DF066E00077DE3 /* LaunchPadsData.swift in Sources */,
 				FF8E3EDC24DF003300077DE3 /* ShipsData.swift in Sources */,
 				FFA9CA5D24C0CCCA006FA5DE /* UpcomingLaunchData.swift in Sources */,
+				750F3DFD252708500030ED19 /* String.swift in Sources */,
 				FFF716D8249D3E1C0043EB81 /* SceneDelegate.swift in Sources */,
 				FF60A64A24D47B4E0030F5AE /* AboutViewController.swift in Sources */,
 				FFF266B424DEF93800BA5C28 /* CapsulesData.swift in Sources */,
@@ -664,6 +695,7 @@
 				FFF7170C24A338D10043EB81 /* HomeViewController.swift in Sources */,
 				FFC259E724A772150019E354 /* CALayer.swift in Sources */,
 				FFB734BA24DB2B2B006C1518 /* DetailsViewController.swift in Sources */,
+				750F3DF5252703830030ED19 /* TentativeDetailsViewController.swift in Sources */,
 				FFB398FA24DDDBDC001D4EA1 /* UIImageView.swift in Sources */,
 				FFBEA64324DC6C3B00A22F9F /* DetailCellImageView.swift in Sources */,
 				FFC259E924A7A9C10019E354 /* InfoPanelView.swift in Sources */,
@@ -1000,7 +1032,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 0;
+				CURRENT_PROJECT_VERSION = 7;
 				DEVELOPMENT_TEAM = 4WMQY24R33;
 				INFOPLIST_FILE = "$(SRCROOT)/SpaceDash/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1021,7 +1053,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 0;
+				CURRENT_PROJECT_VERSION = 7;
 				DEVELOPMENT_TEAM = 4WMQY24R33;
 				INFOPLIST_FILE = "$(SRCROOT)/SpaceDash/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (

@@ -8,14 +8,14 @@
 
 import Foundation
 
-protocol NetworkManagerDelegate {
+protocol NetworkManagerDelegate: AnyObject {
     func updateFromAPI( data: Any)
     func error( error: Error)
 }
 
 struct NetworkManager{
     
-    var delegate:NetworkManagerDelegate?
+    weak var delegate:NetworkManagerDelegate?
     var key : String = " "
     
     

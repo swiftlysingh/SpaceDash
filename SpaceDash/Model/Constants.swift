@@ -45,6 +45,7 @@ struct Constants {
         lazy var launchSite = self.upcomingLaunch.decodedData?.launch_site.site_name_long ?? Constants.DefaultArgs.launchSite
         
         lazy var rocket = upcomingLaunch.decodedData?.rocket.rocket_name ?? "Falcon 9"
+        static let tentativeDetail = "This is the tentative launch date and subjected to change"
     }
     
     struct DetailsView {
