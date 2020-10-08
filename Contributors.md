@@ -11,6 +11,9 @@
     <td align="center"><a href="https://shubham0812.github.io"><img src="https://avatars3.githubusercontent.com/u/19903539?v=4" width="100px;" alt=""/><br /><sub><b>Shubham Kr. Singh</b></sub></a><br /><a href="#design-Shubham0812" title="Design">🎨</a></td>
     <td align="center"><a href="https://www.linkedin.com/in/archit-gupta-2a7859193/"><img src="https://avatars0.githubusercontent.com/u/52240360?v=4" width="100px;" alt=""/><br /><sub><b>Archit Gupta</b></sub></a><br /><a href="https://github.com/pushpinderpalsingh/SpaceDash/commits?author=rarchitgupta" title="Documentation">📖</a></td>
   </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/M1zz"><img src="https://avatars3.githubusercontent.com/u/12761948?v=4" width="100px;" alt=""/><br /><sub><b>Leeo</b></sub></a><br /><a href="#design-M1zz" title="Design">🎨</a></td>
+  </tr>
 </table>
 
 <!-- markdownlint-enable -->
