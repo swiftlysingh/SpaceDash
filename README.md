@@ -31,7 +31,7 @@ The project uses test-drive agile development processes, where requirements are 
 ## [](https://github.com/pushpinderpalsingh/SpaceDash#getting-started-for-development)Getting Started With Development ⚙️
 
 ### [](https://github.com/pushpinderpalsingh/SpaceDash#resources)Resources
-* Architecure.md [work-in-progress]
+* [Architecure.md](https://github.com/pushpinderpalsingh/SpaceDash/blob/develop/Architecture.md)
 * [Contributing.md](https://github.com/pushpinderpalsingh/SpaceDash/blob/develop/Contributing.md)
 * [SpaceX API](https://github.com/r-spacex/SpaceX-API)
 
