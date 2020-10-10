@@ -1,18 +1,18 @@
 
 
 [![CD](https://github.com/pushpinderpalsingh/SpaceDash/workflows/CD/badge.svg?)](https://github.com/pushpinderpalsingh/SpaceDash/workflows/CD/badge.svg?branch=master)  [![CI](https://github.com/pushpinderpalsingh/SpaceDash/workflows/CI/badge.svg)](https://github.com/pushpinderpalsingh/SpaceDash/workflows/CI/badge.svg) <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-6-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-8-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 # [](https://github.com/pushpinderpalsingh/SpaceDash#spacedash)SpaceDash
 
 ### [](https://github.com/pushpinderpalsingh/SpaceDash#a-dashboard-for-space)A Dashboard for Space...🚀🚀🚀 
 
-SpaceDash is an app that **provides information** on all the present, past, and future **Launches and Vehicles of SpaceX**. The SpaceDash app also includes news and updates regarding vehicles and missions.
+SpaceDash is an app that provides information on all the present, past, and future **launches and vehicles of SpaceX**. The SpaceDash app also includes news and updates regarding all vehicles and missions.
 
-The app is currently in the second stage of development, and several new features are being scoped/built. These features include an AR view of various vehicles of SpaceX and event updates from even more Space Agencies!
+The app is currently in the second stage of development and several new features are being scoped/built. These features include an AR view of various vehicles of SpaceX and event updates from even more Space Agencies!
 
-The project uses test-drive agile development processes, where requirements are turned into test cases, and code is approved upon. 
+The project uses test-drive agile development processes, where requirements are turned into test cases, and code is improved upon. 
 
 [<img src="https://github.com/pushpinderpalsingh/SpaceDash/blob/develop/Screenshots/Download_on_the_App_.png"  width=25%>](https://apps.apple.com/in/app/space-dash/id1527766640)
 
@@ -20,7 +20,7 @@ The project uses test-drive agile development processes, where requirements are 
 > To help scale development this app is built using the MVC design pattern, changes made by contributors subsequently do not affect the entire model
 * Fetches and renders JSON from the SpaceX API
 * Intuitive error handling
-* Animations via Lottie framework
+* Animations via the Lottie framework
 * Unit testing using XCTests framework
 
 
@@ -59,7 +59,7 @@ The project uses test-drive agile development processes, where requirements are 
 
 ## [](https://github.com/pushpinderpalsingh/SpaceDash#license)License
 
-This project is licensed under the MIT License - see the  [LICENSE.md](https://github.com/pushpinderpalsingh/SpaceDash/blob/develop/LICENSE.md)  file for details
+This project is licensed under the MIT License - see [LICENSE.md](https://github.com/pushpinderpalsingh/SpaceDash/blob/develop/LICENSE.md) for details
 
 ## Acknowledgement
 -  A huge shoutout to r/SpaceX for their [API](https://github.com/r-spacex/SpaceX-API)
