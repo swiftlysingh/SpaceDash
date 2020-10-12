@@ -20,7 +20,6 @@ struct NetworkManager{
     }
     
     /// This will function will call the API and bring back the JSON data and will call parseJSON function to parse the data
-    /// - Parameter urlString: URL created by fetchData
     
     func performRequest(){
         
