@@ -67,7 +67,7 @@ class RocketViewController: UIViewController {
         let btn = UIButton()
         btn.translatesAutoresizingMaskIntoConstraints = false
         btn.setTitle("ReadMore", for: .normal)
-        btn.setTitleColor(.white, for: .normal)
+        btn.setTitleColor(UIColor.init(named: Constants.Colors.DashCream), for: .normal)
         btn.titleLabel?.font = UIFont.systemFont(ofSize: 14, weight: .bold)
         btn.backgroundColor = .black
         btn.layer.cornerRadius = CGFloat(15)
@@ -85,7 +85,7 @@ class RocketViewController: UIViewController {
     let pathView:UIView = {
         let v  = UIView()
         v.translatesAutoresizingMaskIntoConstraints = false
-        v.backgroundColor = .white
+        v.backgroundColor = UIColor.init(named: Constants.Colors.DashCream)
         v.layer.cornerRadius = 35
         v.layer.maskedCorners = [.layerMinXMaxYCorner, .layerMaxXMaxYCorner]
         return v
@@ -114,7 +114,7 @@ class RocketViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .white
+        view.backgroundColor = UIColor.init(named: Constants.Colors.DashCream)
         setCustomNavBar()
         
         view.addSubview(bottomBlackView)
@@ -202,7 +202,7 @@ class RocketViewController: UIViewController {
     private func setCustomNavBar(){
         navigationItem.title = "Rockets"
         navigationController?.navigationBar.isTranslucent = false
-        navigationController?.navigationBar.barTintColor = .white
+        navigationController?.navigationBar.barTintColor = UIColor.init(named: Constants.Colors.DashCream)
         navigationController?.navigationBar.tintColor = .black
     }
     

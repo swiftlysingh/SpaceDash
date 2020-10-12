@@ -31,7 +31,7 @@ class CustomPopUpView: UIView {
         cv.delegate = self
         cv.dataSource = self
         cv.isPagingEnabled = true
-        cv.backgroundColor = .white
+        cv.backgroundColor = UIColor.init(named: Constants.Colors.DashCream)
         cv.bounces = false
         return cv
     }()
@@ -58,7 +58,7 @@ class CustomPopUpView: UIView {
     private let closeBtn:UIButton = {
         let btn = UIButton()
         btn.setBackgroundImage(UIImage(systemName: "xmark.circle.fill")?.withRenderingMode(.alwaysTemplate), for: .normal)
-        btn.tintColor = .white
+        btn.tintColor = UIColor.init(named: Constants.Colors.DashCream)
         btn.translatesAutoresizingMaskIntoConstraints = false
         return btn
     }()
@@ -83,7 +83,7 @@ class CustomPopUpView: UIView {
     
     override init(frame: CGRect) {
         super.init(frame:frame)
-        backgroundColor = .white
+        backgroundColor = UIColor.init(named: Constants.Colors.DashCream)
         layer.cornerRadius = 25
         layer.maskedCorners = [.layerMinXMinYCorner , .layerMaxXMinYCorner]
         addSubview(collectionView)

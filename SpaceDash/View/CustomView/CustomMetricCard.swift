@@ -29,7 +29,7 @@ class CustomMetricCard: UIView {
     override init(frame: CGRect) {
         super.init(frame:frame)
         translatesAutoresizingMaskIntoConstraints = false
-        backgroundColor = .white
+        backgroundColor = UIColor.init(named: Constants.Colors.DashCream)
         layer.cornerRadius = CGFloat(10)
         addSubview(title)
         addSubview(subTitle)
