@@ -16,23 +16,18 @@ protocol NetworkManagerDelegate: AnyObject {
 struct NetworkManager{
     
     weak var delegate:NetworkManagerDelegate?
-    var key : String = " "
+    private let key : String
+    private let urlString : String
     
-    
-    /// This function will create the URL of the data demanded by any controllers
-    /// - Parameter demand: the additional string that will be appended to the spaceXURL
-    
-    mutating func fetchData(demand: String){
-        let urlString = "\(Constants.NetworkManager.baseURL)\(demand)"
-        key = demand
-        performRequest(urlString: urlString)
+    init(key: String) {
+        self.key = key
+        self.urlString = "\(Constants.NetworkManager.baseURL)\(key)"
     }
-    
     
     /// This will function will call the API and bring back the JSON data and will call parseJSON function to parse the data
     /// - Parameter urlString: URL created by fetchData
     
-    func performRequest(urlString: String){
+    func performRequest(){
         
         if let url = URL(string: urlString){
             
@@ -45,6 +40,7 @@ struct NetworkManager{
                 }
                 if let safeData = data {
                     self.parseJSON(data: safeData)
+                    
                 }
             }
             

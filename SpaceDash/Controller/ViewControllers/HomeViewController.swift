@@ -18,7 +18,7 @@ class HomeViewController: UIViewController,NetworkManagerDelegate {
     @IBOutlet weak var isTentative: UILabel!
     @IBOutlet weak var rocketImage: UIImageView!
     
-    var networkObject = NetworkManager()
+    var networkObject = NetworkManager(key: Constants.NetworkManager.upcomingLaunchURL)
     var upcomingLaunch : UpcomingLaunchModel?
     var constants : Constants.HomeView?
     var senderView : String = ""
@@ -31,7 +31,7 @@ class HomeViewController: UIViewController,NetworkManagerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         networkObject.delegate = self
-        networkObject.fetchData(demand: Constants.NetworkManager.upcomingLaunchURL)
+        networkObject.performRequest()
         adjustSize()
         
         //tap gesture for tentative label

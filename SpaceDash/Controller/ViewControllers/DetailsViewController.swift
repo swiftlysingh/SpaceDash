@@ -12,7 +12,7 @@ import Lottie
 class DetailsViewController: UIViewController {
     
     var senderView : String = ""
-    var networkObject = NetworkManager()
+//    var networkObject = NetworkManager(key: " ")
     var decodedData : DetailsViewModel?
     
     @IBOutlet var DetailTableView: UITableView!
@@ -33,8 +33,8 @@ class DetailsViewController: UIViewController {
         DetailTableView.dataSource = self
         DetailTableView.register(UINib(nibName: Constants.DetailsView.nibName, bundle: nil), forCellReuseIdentifier: Constants.DetailsView.reuseId)
         
-        networkObject.delegate = self
-        networkObject.fetchData(demand: senderView)
+//        networkObject.delegate = self
+//        networkObject.fetchData(demand: senderView)
     }
     
     /// Add loading Animation before the Details View. The type of animation is in Interface Builder
