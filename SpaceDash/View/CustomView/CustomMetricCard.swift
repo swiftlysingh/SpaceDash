@@ -13,15 +13,15 @@ class CustomMetricCard: UIView {
     let title:UILabel = {
         let l = UILabel()
         l.font = UIFont.systemFont(ofSize: 17, weight: .thin)
-        l.textColor = .black
+        l.textColor = UIColor.init(named: Constants.Colors.DashBlack)
         l.translatesAutoresizingMaskIntoConstraints = false
         return l
     }()
     
     let subTitle:UILabel = {
         let l = UILabel()
-        l.font = UIFont.systemFont(ofSize: 17, weight: .bold)
-        l.textColor = .black
+        l.font = UIFont.systemFont(ofSize: 17, weight: .semibold)
+        l.textColor = UIColor.init(named: Constants.Colors.DashBlack)
         l.translatesAutoresizingMaskIntoConstraints = false
         return l
     }()
@@ -30,7 +30,7 @@ class CustomMetricCard: UIView {
         super.init(frame:frame)
         translatesAutoresizingMaskIntoConstraints = false
         backgroundColor = UIColor.init(named: Constants.Colors.DashCream)
-        layer.cornerRadius = CGFloat(10)
+        layer.cornerRadius = CGFloat(15)
         addSubview(title)
         addSubview(subTitle)
         setUpConstraints()
@@ -45,10 +45,10 @@ class CustomMetricCard: UIView {
     
     func setUpConstraints(){
         NSLayoutConstraint.activate([
-            title.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 10),
+            title.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 15),
             title.topAnchor.constraint(equalTo: topAnchor, constant: 8),
-            title.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -10),
-            subTitle.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 10),
+            title.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -15),
+            subTitle.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 15),
             subTitle.topAnchor.constraint(equalTo: title.bottomAnchor, constant: 5),
             subTitle.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -10),
             subTitle.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -10)

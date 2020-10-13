@@ -15,7 +15,7 @@ class RocketViewController: UIViewController {
         l.translatesAutoresizingMaskIntoConstraints = false
         l.text = "Falcon9"
         l.font = UIFont.systemFont(ofSize: 26, weight: .bold)
-        l.textColor = .black
+        l.textColor = UIColor.init(named: Constants.Colors.DashBlack)
         return l
     }()
     
@@ -69,7 +69,7 @@ class RocketViewController: UIViewController {
         btn.setTitle("ReadMore", for: .normal)
         btn.setTitleColor(UIColor.init(named: Constants.Colors.DashCream), for: .normal)
         btn.titleLabel?.font = UIFont.systemFont(ofSize: 14, weight: .bold)
-        btn.backgroundColor = .black
+        btn.backgroundColor = UIColor.init(named: Constants.Colors.DashBlack)
         btn.layer.cornerRadius = CGFloat(15)
         btn.addTarget(self, action: #selector(readmoreBtnPressed), for: .touchUpInside)
         return btn
@@ -78,7 +78,7 @@ class RocketViewController: UIViewController {
     let bottomBlackView:UIView = {
         let v = UIView()
         v.translatesAutoresizingMaskIntoConstraints = false
-        v.backgroundColor = .black
+        v.backgroundColor = UIColor.init(named: Constants.Colors.DashBlack)
         return v
     }()
     
@@ -114,6 +114,7 @@ class RocketViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        overrideUserInterfaceStyle = .dark
         view.backgroundColor = UIColor.init(named: Constants.Colors.DashCream)
         setCustomNavBar()
         
@@ -154,25 +155,25 @@ class RocketViewController: UIViewController {
             rocketImage.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 20),
             rocketImage.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
             rocketImage.bottomAnchor.constraint(equalTo: descriptionMetric.topAnchor, constant: -20),
-            rocketImage.widthAnchor.constraint(equalToConstant: 30),
+            rocketImage.widthAnchor.constraint(equalToConstant: 40),
             
             upcomingLaunchMetric.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
-            upcomingLaunchMetric.heightAnchor.constraint(equalToConstant: 60),
+            upcomingLaunchMetric.heightAnchor.constraint(equalToConstant: 65),
             upcomingLaunchMetric.trailingAnchor.constraint(equalTo: rocketImage.leadingAnchor, constant: -40),
             upcomingLaunchMetric.topAnchor.constraint(equalTo: rocketName.bottomAnchor, constant: 30),
             
             latestLaunchMetric.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
-            latestLaunchMetric.heightAnchor.constraint(equalToConstant: 60),
+            latestLaunchMetric.heightAnchor.constraint(equalToConstant: 65),
             latestLaunchMetric.trailingAnchor.constraint(equalTo: rocketImage.leadingAnchor, constant: -40),
             latestLaunchMetric.topAnchor.constraint(equalTo: upcomingLaunchMetric.bottomAnchor, constant: 25),
             
             firstLaunchMetric.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
-            firstLaunchMetric.heightAnchor.constraint(equalToConstant: 60),
+            firstLaunchMetric.heightAnchor.constraint(equalToConstant: 65),
             firstLaunchMetric.trailingAnchor.constraint(equalTo: rocketImage.leadingAnchor, constant: -40),
             firstLaunchMetric.topAnchor.constraint(equalTo: latestLaunchMetric.bottomAnchor, constant: 25),
             
             engineAndThrustMetric.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
-            engineAndThrustMetric.heightAnchor.constraint(equalToConstant: 60),
+            engineAndThrustMetric.heightAnchor.constraint(equalToConstant: 65),
             engineAndThrustMetric.trailingAnchor.constraint(equalTo: rocketImage.leadingAnchor, constant: -40),
             engineAndThrustMetric.topAnchor.constraint(equalTo: firstLaunchMetric.bottomAnchor, constant: 25),
             
@@ -203,7 +204,12 @@ class RocketViewController: UIViewController {
         navigationItem.title = "Rockets"
         navigationController?.navigationBar.isTranslucent = false
         navigationController?.navigationBar.barTintColor = UIColor.init(named: Constants.Colors.DashCream)
-        navigationController?.navigationBar.tintColor = .black
+        navigationController?.navigationBar.tintColor = UIColor.init(named: Constants.Colors.DashBlack)
+        
+        self.navigationController!.navigationBar.titleTextAttributes = [
+            NSAttributedString.Key.font: UIFont.systemFont(ofSize: 17 , weight: .bold),
+            NSAttributedString.Key.foregroundColor: UIColor.init(named: Constants.Colors.DashBlack)!
+        ]
     }
     
     @objc func readmoreBtnPressed(){
@@ -212,6 +218,15 @@ class RocketViewController: UIViewController {
     
     @objc func closeBtnTappped(){
         togglePopUpView("close")
+    }
+    
+    /// Open webView when tappped
+    @objc func wikipediaBtnTapped(){
+        let VC = WebViewController()
+        VC.url = URL(string: "https://google.com")
+        let navVC = UINavigationController(rootViewController: VC)
+        navVC.modalPresentationStyle = .fullScreen
+        self.present(navVC, animated: true, completion: nil)
     }
     
     /// Setting up constraints for description popUpView

@@ -13,6 +13,7 @@ class CustomPopUpView: UIView {
     var delegate:RocketViewController?{
         didSet{
             closeBtn.addTarget(delegate, action: #selector(RocketViewController.closeBtnTappped), for: .touchUpInside)
+            wikipediaBtn.addTarget(delegate, action: #selector(RocketViewController.wikipediaBtnTapped), for: .touchUpInside)
         }
     }
     
@@ -41,7 +42,8 @@ class CustomPopUpView: UIView {
         let l = UILabel()
         l.translatesAutoresizingMaskIntoConstraints = false
         l.numberOfLines = 0
-        l.textColor = .black
+        l.textColor = UIColor.init(named: Constants.Colors.DashBlack)
+        l.textAlignment = .center
         l.text = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
         return l
     }()
@@ -72,10 +74,10 @@ class CustomPopUpView: UIView {
     }()
     
     /// Wikepedia btn
-    private let wekipediaBtn:UIButton = {
+    let wikipediaBtn:UIButton = {
         let btn = UIButton()
         btn.translatesAutoresizingMaskIntoConstraints = false
-        btn.setTitle("Wekipedia", for: .normal)
+        btn.setTitle(Constants.RocketView.wikipediaBtnTitle, for: .normal)
         btn.setTitleColor(.systemBlue, for: .normal)
         btn.titleLabel?.font = UIFont.systemFont(ofSize: 16, weight: .medium)
         return btn
@@ -90,7 +92,7 @@ class CustomPopUpView: UIView {
         addSubview(descriptionText)
         addSubview(closeBtn)
         addSubview(dividerLine)
-        addSubview(wekipediaBtn)
+        addSubview(wikipediaBtn)
         addSubview(pageControl)
         setUpConstraints()
         
@@ -134,12 +136,12 @@ class CustomPopUpView: UIView {
             dividerLine.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20),
             dividerLine.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -20),
             dividerLine.heightAnchor.constraint(equalToConstant: 0.7),
-            dividerLine.bottomAnchor.constraint(equalTo: wekipediaBtn.topAnchor, constant: -10),
+            dividerLine.bottomAnchor.constraint(equalTo: wikipediaBtn.topAnchor, constant: -10),
             
-            wekipediaBtn.widthAnchor.constraint(equalToConstant: 120),
-            wekipediaBtn.heightAnchor.constraint(equalToConstant: 40),
-            wekipediaBtn.bottomAnchor.constraint(equalTo: safeAreaLayoutGuide.bottomAnchor, constant: -10),
-            wekipediaBtn.centerXAnchor.constraint(equalTo: centerXAnchor)
+            wikipediaBtn.widthAnchor.constraint(equalToConstant: 120),
+            wikipediaBtn.heightAnchor.constraint(equalToConstant: 40),
+            wikipediaBtn.bottomAnchor.constraint(equalTo: safeAreaLayoutGuide.bottomAnchor, constant: -10),
+            wikipediaBtn.centerXAnchor.constraint(equalTo: centerXAnchor)
         ])
     }
     

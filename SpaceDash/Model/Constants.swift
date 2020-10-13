@@ -60,4 +60,8 @@ struct Constants {
         static let okButtonTitle = "Ok"
     }
     
+    struct RocketView {
+        static let wikipediaBtnTitle = "Wikipedia"
+    }
+    
 }

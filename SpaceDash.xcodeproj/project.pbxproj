@@ -12,6 +12,7 @@
 		4442C45C252FFCE700D0002F /* CustomPopUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4442C45B252FFCE700D0002F /* CustomPopUpView.swift */; };
 		4442C4622530450D00D0002F /* CustomMetricCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4442C4612530450D00D0002F /* CustomMetricCard.swift */; };
 		4442C4642530602000D0002F /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4442C4632530602000D0002F /* ImageCollectionViewCell.swift */; };
+		44C17F9225353CDC003EF9A5 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C17F9125353CDC003EF9A5 /* WebViewController.swift */; };
 		750F3DF5252703830030ED19 /* TentativeDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750F3DF3252703830030ED19 /* TentativeDetailsViewController.swift */; };
 		750F3DFD252708500030ED19 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750F3DFC252708500030ED19 /* String.swift */; };
 		FF3043D42507E5D0005F8EE6 /* FastlaneSnapshots.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3043D32507E5D0005F8EE6 /* FastlaneSnapshots.swift */; };
@@ -88,6 +89,7 @@
 		4442C45B252FFCE700D0002F /* CustomPopUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPopUpView.swift; sourceTree = "<group>"; };
 		4442C4612530450D00D0002F /* CustomMetricCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMetricCard.swift; sourceTree = "<group>"; };
 		4442C4632530602000D0002F /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		44C17F9125353CDC003EF9A5 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		5DE2958EE217DA2AEF4E463F /* Pods_SpaceDash.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpaceDash.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		750F3DF3252703830030ED19 /* TentativeDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TentativeDetailsViewController.swift; sourceTree = "<group>"; };
 		750F3DFC252708500030ED19 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
@@ -322,6 +324,7 @@
 				FFB734B924DB2B2B006C1518 /* DetailsViewController.swift */,
 				750F3DF3252703830030ED19 /* TentativeDetailsViewController.swift */,
 				443B17E625329E6C005B2144 /* RocketViewController.swift */,
+				44C17F9125353CDC003EF9A5 /* WebViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -722,6 +725,7 @@
 				FFB398FA24DDDBDC001D4EA1 /* UIImageView.swift in Sources */,
 				443B17E725329E6C005B2144 /* RocketViewController.swift in Sources */,
 				FFBEA64324DC6C3B00A22F9F /* DetailCellImageView.swift in Sources */,
+				44C17F9225353CDC003EF9A5 /* WebViewController.swift in Sources */,
 				FFC259E924A7A9C10019E354 /* InfoPanelView.swift in Sources */,
 				FF8E3EE224DF14EB00077DE3 /* LaunchesData.swift in Sources */,
 			);
