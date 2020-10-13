@@ -14,9 +14,8 @@ The app is currently in the second stage of development and several new features
 
 The project uses test-drive agile development processes, where requirements are turned into test cases, and code is improved upon. 
 
-#### Table of Contents
 * [👾 Technologies](##👾Technologies)
-* [📸  Screenshots](##📸 Screenshots)
+* [📸  Screenshots](##📸Screenshots)
 
 
 [<img src="https://github.com/pushpinderpalsingh/SpaceDash/blob/develop/Screenshots/Download_on_the_App_.png"  width=25%>](https://apps.apple.com/in/app/space-dash/id1527766640)
@@ -31,7 +30,6 @@ The project uses test-drive agile development processes, where requirements are 
 
 ## 📸 Screenshots
 
-[![alt text](https://github.com/pushpinderpalsingh/SpaceX/raw/develop/Screenshots/collage.png "Screen Shots")](https://github.com/pushpinderpalsingh/SpaceX/blob/develop/Screenshots/collage.png)
 
 ## ⚙️ [](https://github.com/pushpinderpalsingh/SpaceDash#getting-started-for-development)Quick Start
 
@@ -40,13 +38,13 @@ The project uses test-drive agile development processes, where requirements are 
 * [Contributing.md](https://github.com/pushpinderpalsingh/SpaceDash/blob/develop/Contributing.md)
 * [SpaceX API](https://github.com/r-spacex/SpaceX-API)
 
-### [](https://github.com/pushpinderpalsingh/SpaceDash#requirements)Requirements
+### [](https://github.com/pushpinderpalsingh/SpaceDash#requirements) Requirements
 
 -   iOS 13.0+
 -   Xcode 11.0+
 -   macOS Catalina or above
 
-### [](https://github.com/pushpinderpalsingh/SpaceDash#setup)Setup
+### [](https://github.com/pushpinderpalsingh/SpaceDash#setup) Setup
 
 1) Fork this project
 2) Clone the forked project to your machine
@@ -63,12 +61,6 @@ Before you start developing please read through [Contributing.md](https://github
 Before you assist with the development, please set up the project on your local machine, run it, and go through the complete application 
 
 Click through buttons you can find and see where they take you. Explore the app in detail so that you are aware of core features.
-
-#### Issues
-
-If you find an issue or would like to work on one already listed in the project, please add a comment with how you can assist. 
-
-If the issue is already assigned to someone, but there is no sign of progress, feel free to leave a comment so that the issue can be reassigned to you
 
 #### [Join the conversation on Slack. :speech_balloon: ](https://communityinviter.com/apps/spacedashworkspace/spacedash)
 
