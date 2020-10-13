@@ -8,7 +8,7 @@
 
 ### [](https://github.com/pushpinderpalsingh/SpaceDash#a-dashboard-for-space)A Dashboard for Space...🚀🚀🚀 
 
-SpaceDash is an app that provides information on all the present, past, and future **launches and vehicles of SpaceX**. The SpaceDash app also includes news and updates regarding all vehicles and missions.
+SpaceDash is an open-source app that provides information on all the present, past, and future **launches and vehicles of SpaceX**. The SpaceDash app also includes news and updates regarding all vehicles and missions.
 
 The app is currently in the second stage of development and several new features are being scoped/built. These features include an AR view of various vehicles of SpaceX and event updates from even more Space Agencies!
 
@@ -17,8 +17,14 @@ The project uses test-drive agile development processes, where requirements are 
 * [👾 Technologies](##👾Technologies)
 * [📸  Screenshots](##📸Screenshots)
 
+<table>
+<tr>
+<td><a href="https://apps.apple.com/us/app/space-dash/id1527766640?itsct=apps_box&amp;itscg=30200" style="display: inline-block; overflow: hidden; border-radius: 13px; width: 250px; height: 83px;"><img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-US?size=250x83&amp;releaseDate=1600041600&h=35302a3e940c9995849289c13729e5a5" alt="Download on the App Store" style="border-radius: 13px; width: 250px; height: 83px;"></a></td>
+<td><img src="https://tools-qr-production.s3.amazonaws.com/output/apple-toolbox/c77cd612d8090dd2b1b7fdee3c045534/b2b8aed6-a678-440e-af64-8b915798073f.png"></td>
+</tr>
+</table>
 
-[<img src="https://github.com/pushpinderpalsingh/SpaceDash/blob/develop/Screenshots/Download_on_the_App_.png"  width=25%>](https://apps.apple.com/in/app/space-dash/id1527766640)
+
 
 ## 👾 Technologies
 > To help scale development, this app is built using the MVC design pattern. subsequent changes made by contributors do not affect the central architecture.
