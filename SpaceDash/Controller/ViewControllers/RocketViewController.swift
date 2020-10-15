@@ -132,7 +132,8 @@ class RocketViewController: UIViewController {
         setUpConstraints()
         
         /// Dynamic estimated Height of popUpCard -> On the basic of content
-        self.popUpViewCardHeight = 580
+        let frame = self.view.safeAreaLayoutGuide.layoutFrame
+        self.popUpViewCardHeight = frame.height * 0.75
         
         /// Adding a popUpView as subview and setting up it's constraints
         view.addSubview(overlayView)
@@ -159,28 +160,28 @@ class RocketViewController: UIViewController {
             
             upcomingLaunchMetric.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
             upcomingLaunchMetric.heightAnchor.constraint(equalToConstant: 65),
-            upcomingLaunchMetric.trailingAnchor.constraint(equalTo: rocketImage.leadingAnchor, constant: -40),
+            upcomingLaunchMetric.widthAnchor.constraint(equalToConstant: 227),
             upcomingLaunchMetric.topAnchor.constraint(equalTo: rocketName.bottomAnchor, constant: 30),
             
             latestLaunchMetric.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
             latestLaunchMetric.heightAnchor.constraint(equalToConstant: 65),
-            latestLaunchMetric.trailingAnchor.constraint(equalTo: rocketImage.leadingAnchor, constant: -40),
+            latestLaunchMetric.widthAnchor.constraint(equalToConstant: 227),
             latestLaunchMetric.topAnchor.constraint(equalTo: upcomingLaunchMetric.bottomAnchor, constant: 25),
             
             firstLaunchMetric.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
             firstLaunchMetric.heightAnchor.constraint(equalToConstant: 65),
-            firstLaunchMetric.trailingAnchor.constraint(equalTo: rocketImage.leadingAnchor, constant: -40),
+            firstLaunchMetric.widthAnchor.constraint(equalToConstant: 227),
             firstLaunchMetric.topAnchor.constraint(equalTo: latestLaunchMetric.bottomAnchor, constant: 25),
             
             engineAndThrustMetric.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
             engineAndThrustMetric.heightAnchor.constraint(equalToConstant: 65),
-            engineAndThrustMetric.trailingAnchor.constraint(equalTo: rocketImage.leadingAnchor, constant: -40),
+            engineAndThrustMetric.widthAnchor.constraint(equalToConstant: 227),
             engineAndThrustMetric.topAnchor.constraint(equalTo: firstLaunchMetric.bottomAnchor, constant: 25),
             
             descriptionMetric.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
-            descriptionMetric.heightAnchor.constraint(equalToConstant: 110),
             descriptionMetric.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
             descriptionMetric.topAnchor.constraint(equalTo: engineAndThrustMetric.bottomAnchor, constant: 30),
+            descriptionMetric.bottomAnchor.constraint(equalTo: pathView.bottomAnchor, constant: -30),
             
             readMoreBtn.topAnchor.constraint(equalTo: descriptionMetric.bottomAnchor, constant: -15),
             readMoreBtn.heightAnchor.constraint(equalToConstant: 30),
@@ -190,7 +191,7 @@ class RocketViewController: UIViewController {
             bottomBlackView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
             bottomBlackView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             bottomBlackView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            bottomBlackView.topAnchor.constraint(equalTo: descriptionMetric.bottomAnchor, constant: -20),
+            bottomBlackView.heightAnchor.constraint(equalToConstant: 100),
             
             pathView.heightAnchor.constraint(equalToConstant: 70),
             pathView.topAnchor.constraint(equalTo: bottomBlackView.topAnchor),
@@ -239,7 +240,7 @@ class RocketViewController: UIViewController {
             
             popUpView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             popUpView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            popUpView.heightAnchor.constraint(equalToConstant: popUpViewCardHeight!)
+            popUpView.heightAnchor.constraint(equalToConstant: popUpViewCardHeight!),
         ])
         
         /// Initially hide popUpView by setting positive bottom constraint.

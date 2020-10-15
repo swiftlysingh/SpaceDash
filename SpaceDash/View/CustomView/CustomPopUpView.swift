@@ -44,7 +44,7 @@ class CustomPopUpView: UIView {
         l.numberOfLines = 0
         l.textColor = UIColor.init(named: Constants.Colors.DashBlack)
         l.textAlignment = .center
-        l.text = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
+        l.text = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries."
         return l
     }()
     
@@ -119,7 +119,7 @@ class CustomPopUpView: UIView {
             collectionView.topAnchor.constraint(equalTo: topAnchor),
             collectionView.leadingAnchor.constraint(equalTo: leadingAnchor),
             collectionView.trailingAnchor.constraint(equalTo: trailingAnchor),
-            collectionView.heightAnchor.constraint(equalToConstant: 270),
+            collectionView.heightAnchor.constraint(equalToConstant: 250),
             
             pageControl.topAnchor.constraint(equalTo: collectionView.bottomAnchor, constant: -30),
             pageControl.centerXAnchor.constraint(equalTo: centerXAnchor),
@@ -127,6 +127,7 @@ class CustomPopUpView: UIView {
             descriptionText.topAnchor.constraint(equalTo: collectionView.bottomAnchor, constant: 20),
             descriptionText.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20),
             descriptionText.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -20),
+            descriptionText.bottomAnchor.constraint(equalTo: dividerLine.topAnchor, constant: -10),
             
             closeBtn.topAnchor.constraint(equalTo: topAnchor, constant: 10),
             closeBtn.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -20),
