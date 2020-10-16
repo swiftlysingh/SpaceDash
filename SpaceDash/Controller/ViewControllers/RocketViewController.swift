@@ -161,22 +161,22 @@ class RocketViewController: UIViewController {
             upcomingLaunchMetric.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
             upcomingLaunchMetric.heightAnchor.constraint(equalToConstant: 65),
             upcomingLaunchMetric.widthAnchor.constraint(equalToConstant: 227),
-            upcomingLaunchMetric.topAnchor.constraint(equalTo: rocketName.bottomAnchor, constant: 30),
+            upcomingLaunchMetric.topAnchor.constraint(equalTo: rocketName.bottomAnchor, constant: 25),
             
             latestLaunchMetric.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
             latestLaunchMetric.heightAnchor.constraint(equalToConstant: 65),
             latestLaunchMetric.widthAnchor.constraint(equalToConstant: 227),
-            latestLaunchMetric.topAnchor.constraint(equalTo: upcomingLaunchMetric.bottomAnchor, constant: 25),
+            latestLaunchMetric.topAnchor.constraint(equalTo: upcomingLaunchMetric.bottomAnchor, constant: 20),
             
             firstLaunchMetric.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
             firstLaunchMetric.heightAnchor.constraint(equalToConstant: 65),
             firstLaunchMetric.widthAnchor.constraint(equalToConstant: 227),
-            firstLaunchMetric.topAnchor.constraint(equalTo: latestLaunchMetric.bottomAnchor, constant: 25),
+            firstLaunchMetric.topAnchor.constraint(equalTo: latestLaunchMetric.bottomAnchor, constant: 20),
             
             engineAndThrustMetric.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
             engineAndThrustMetric.heightAnchor.constraint(equalToConstant: 65),
             engineAndThrustMetric.widthAnchor.constraint(equalToConstant: 227),
-            engineAndThrustMetric.topAnchor.constraint(equalTo: firstLaunchMetric.bottomAnchor, constant: 25),
+            engineAndThrustMetric.topAnchor.constraint(equalTo: firstLaunchMetric.bottomAnchor, constant: 20),
             
             descriptionMetric.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
             descriptionMetric.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
