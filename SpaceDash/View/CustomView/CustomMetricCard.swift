@@ -47,6 +47,7 @@ class CustomMetricCard: UIView {
         NSLayoutConstraint.activate([
             title.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 15),
             title.topAnchor.constraint(equalTo: topAnchor, constant: 8),
+            title.heightAnchor.constraint(equalToConstant: 18),
             title.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -15),
             subTitle.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 15),
             subTitle.topAnchor.constraint(equalTo: title.bottomAnchor, constant: 5),
