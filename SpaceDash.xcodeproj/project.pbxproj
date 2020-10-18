@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2086C60A16283D2DB5341A79 /* Pods_SpaceDash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DE2958EE217DA2AEF4E463F /* Pods_SpaceDash.framework */; };
+		4FE9285F253C2A8D0008D173 /* RocketImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE9285E253C2A8D0008D173 /* RocketImageView.swift */; };
 		750F3DF5252703830030ED19 /* TentativeDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750F3DF3252703830030ED19 /* TentativeDetailsViewController.swift */; };
 		750F3DFD252708500030ED19 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750F3DFC252708500030ED19 /* String.swift */; };
 		FF3043D42507E5D0005F8EE6 /* FastlaneSnapshots.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3043D32507E5D0005F8EE6 /* FastlaneSnapshots.swift */; };
@@ -80,6 +81,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4FE9285E253C2A8D0008D173 /* RocketImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketImageView.swift; sourceTree = "<group>"; };
 		5DE2958EE217DA2AEF4E463F /* Pods_SpaceDash.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpaceDash.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		750F3DF3252703830030ED19 /* TentativeDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TentativeDetailsViewController.swift; sourceTree = "<group>"; };
 		750F3DFC252708500030ED19 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
@@ -310,6 +312,7 @@
 		FFBEA64624DC6D8D00A22F9F /* ImageView */ = {
 			isa = PBXGroup;
 			children = (
+				4FE9285E253C2A8D0008D173 /* RocketImageView.swift */,
 				FFBEA64224DC6C3B00A22F9F /* DetailCellImageView.swift */,
 			);
 			path = ImageView;
@@ -691,6 +694,7 @@
 				FFF7171224A48F730043EB81 /* DetailScrollViews.swift in Sources */,
 				FFA9CA5C24C0CCCA006FA5DE /* NetworkManager.swift in Sources */,
 				FFB398F724DDD2F8001D4EA1 /* DetailsViewModel.swift in Sources */,
+				4FE9285F253C2A8D0008D173 /* RocketImageView.swift in Sources */,
 				FFF266B224DEAF7400BA5C28 /* LandpadsData.swift in Sources */,
 				FFF7170C24A338D10043EB81 /* HomeViewController.swift in Sources */,
 				FFC259E724A772150019E354 /* CALayer.swift in Sources */,

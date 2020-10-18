@@ -16,7 +16,7 @@ class HomeViewController: UIViewController,NetworkManagerDelegate {
     @IBOutlet weak var launchSite: UILabel!
     @IBOutlet weak var payloadAndType: UILabel!
     @IBOutlet weak var isTentative: UILabel!
-    @IBOutlet weak var rocketImage: UIImageView!
+    @IBOutlet weak var rocketImage: RocketImageView!
     
     var networkObject = NetworkManager()
     var upcomingLaunch : UpcomingLaunchModel?
