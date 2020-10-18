@@ -37,7 +37,7 @@ The project uses test-drive agile development processes, where requirements are 
 ## 📸 Screenshots
 
 
-## ⚙️ [](https://github.com/pushpinderpalsingh/SpaceDash#getting-started-for-development)Quick Start
+## ⚙️ [](https://github.com/pushpinderpalsingh/SpaceDash#getting-started-for-development) Getting Started
 
 ### [](https://github.com/pushpinderpalsingh/SpaceDash#resources)Resources
 * [Architecure.md](https://github.com/pushpinderpalsingh/SpaceDash/blob/develop/Architecture.md)
