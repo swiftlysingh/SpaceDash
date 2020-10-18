@@ -17,10 +17,10 @@ The project uses test-drive agile development processes, where requirements are 
 * [👾 Technologies](##👾Technologies)
 * [📸  Screenshots](##📸Screenshots)
 
-<table>
+<table width="80%">
 <tr>
-<td><a href="https://apps.apple.com/us/app/space-dash/id1527766640?itsct=apps_box&amp;itscg=30200" style="display: inline-block; overflow: hidden; border-radius: 13px; width: 250px; height: 83px;"><img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-US?size=250x83&amp;releaseDate=1600041600&h=35302a3e940c9995849289c13729e5a5" alt="Download on the App Store" style="border-radius: 13px; width: 250px; height: 83px;"></a></td>
-<td><img src="https://tools-qr-production.s3.amazonaws.com/output/apple-toolbox/c77cd612d8090dd2b1b7fdee3c045534/b2b8aed6-a678-440e-af64-8b915798073f.png"></td>
+<td width="25%"><a href="https://apps.apple.com/us/app/space-dash/id1527766640?itsct=apps_box&amp;itscg=30200" style="display: inline-block; overflow: hidden; border-radius: 13px; width: 250px; height: 83px;"><img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-US?size=250x83&amp;releaseDate=1600041600&h=35302a3e940c9995849289c13729e5a5" alt="Download on the App Store" style="border-radius: 13px; width: 250px; height: 83px;"></a></td>
+<td width="25%"><img src="https://tools-qr-production.s3.amazonaws.com/output/apple-toolbox/c77cd612d8090dd2b1b7fdee3c045534/b2b8aed6-a678-440e-af64-8b915798073f.png"></td>
 </tr>
 </table>
 
