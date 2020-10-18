@@ -78,6 +78,15 @@
       "contributions": [
         "design"
       ]
+    },
+    {
+      "login": "pankova",
+      "name": "pankova",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/7028613?v=4",
+      "profile": "https://github.com/pankova",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
