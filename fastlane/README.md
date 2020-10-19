@@ -41,6 +41,11 @@ fastlane ios screenshots
 fastlane ios release
 ```
 
+### ios minor_version
+```
+fastlane ios minor_version
+```
+
 
 ----
 
