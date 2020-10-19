@@ -133,7 +133,8 @@ class RocketViewController: UIViewController {
         
         /// Dynamic estimated Height of popUpCard -> On the basic of content
         let frame = self.view.safeAreaLayoutGuide.layoutFrame
-        self.popUpViewCardHeight = frame.height * 0.75
+        /// 50% of screen size
+        self.popUpViewCardHeight = frame.height * 0.70
         
         /// Adding a popUpView as subview and setting up it's constraints
         view.addSubview(overlayView)
@@ -180,8 +181,8 @@ class RocketViewController: UIViewController {
             
             descriptionMetric.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
             descriptionMetric.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
-            descriptionMetric.topAnchor.constraint(equalTo: engineAndThrustMetric.bottomAnchor, constant: 30),
             descriptionMetric.bottomAnchor.constraint(equalTo: pathView.bottomAnchor, constant: -30),
+            descriptionMetric.heightAnchor.constraint(lessThanOrEqualToConstant: 90),
             
             readMoreBtn.topAnchor.constraint(equalTo: descriptionMetric.bottomAnchor, constant: -15),
             readMoreBtn.heightAnchor.constraint(equalToConstant: 30),
