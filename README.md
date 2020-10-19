@@ -8,62 +8,76 @@
 
 ### [](https://github.com/pushpinderpalsingh/SpaceDash#a-dashboard-for-space)A Dashboard for Space...🚀🚀🚀 
 
-SpaceDash is an app that provides information on all the present, past, and future **launches and vehicles of SpaceX**. The SpaceDash app also includes news and updates regarding all vehicles and missions.
+SpaceDash is an open-source app that provides information on all the present, past, and future **launches and vehicles of SpaceX**. The SpaceDash app also includes news and updates regarding all vehicles and missions.
 
 The app is currently in the second stage of development and several new features are being scoped/built. These features include an AR view of various vehicles of SpaceX and event updates from even more Space Agencies!
 
 The project uses test-drive agile development processes, where requirements are turned into test cases, and code is improved upon. 
 
-[<img src="https://github.com/pushpinderpalsingh/SpaceDash/blob/develop/Screenshots/Download_on_the_App_.png"  width=25%>](https://apps.apple.com/in/app/space-dash/id1527766640)
+* [👾 Technologies](##👾Technologies)
+* [📸  Screenshots](##📸Screenshots)
 
-## [](https://github.com/pushpinderpalsingh/SpaceDash#screenshots)Technologies 👾 
-> To help scale development this app is built using the MVC design pattern, changes made by contributors subsequently do not affect the entire model
+<span>
+  <img src="https://tools-qr-production.s3.amazonaws.com/output/apple-toolbox/c77cd612d8090dd2b1b7fdee3c045534/b2b8aed6-a678-440e-af64-8b915798073f.png" width="15%">
+  <span><a href="https://apps.apple.com/us/app/space-dash/id1527766640?itsct=apps_box&amp;itscg=30200" style="display: inline-block; overflow: hidden;  border-radius: 13px; width: 250px; height: 83px;"><img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-US?size=250x83&amp;releaseDate=1600041600&h=35302a3e940c9995849289c13729e5a5" alt="Download on the App Store" style="border-radius: 13px; width: 250px; height: 83px;">   </a></span>
+</span>
+
+
+
+## 👾 Technologies
+> To help scale development, this app is built using the MVC design pattern. subsequent changes made by contributors do not affect the central architecture.
 * Fetches and renders JSON from the SpaceX API
 * Intuitive error handling
 * Animations via the Lottie framework
 * Unit testing using XCTests framework
 
 
-## [](https://github.com/pushpinderpalsingh/SpaceDash#screenshots)Screenshots 📸 
+## 📸 Screenshots
 
-[![alt text](https://github.com/pushpinderpalsingh/SpaceX/raw/develop/Screenshots/collage.png "Screen Shots")](https://github.com/pushpinderpalsingh/SpaceX/blob/develop/Screenshots/collage.png)
+<span>
+  <img src="Assets/iphone_falconNine.png" width="24%"/>
+  <img src="Assets/iphone_wikiPopover.png" width="24%"/>
+</span>
 
-## [](https://github.com/pushpinderpalsingh/SpaceDash#getting-started-for-development)Getting Started With Development ⚙️
+## ⚙️ [](https://github.com/pushpinderpalsingh/SpaceDash#getting-started-for-development) Getting Started
 
 ### [](https://github.com/pushpinderpalsingh/SpaceDash#resources)Resources
 * [Architecure.md](https://github.com/pushpinderpalsingh/SpaceDash/blob/develop/Architecture.md)
 * [Contributing.md](https://github.com/pushpinderpalsingh/SpaceDash/blob/develop/Contributing.md)
 * [SpaceX API](https://github.com/r-spacex/SpaceX-API)
 
-### [](https://github.com/pushpinderpalsingh/SpaceDash#requirements)Requirements
+### [](https://github.com/pushpinderpalsingh/SpaceDash#requirements) Requirements
 
 -   iOS 13.0+
 -   Xcode 11.0+
 -   macOS Catalina or above
 
-### [](https://github.com/pushpinderpalsingh/SpaceDash#setup)Setup
+### [](https://github.com/pushpinderpalsingh/SpaceDash#setup) Setup
 
-* Fork this project
-* Clone the forked project to your machine
-* In your project directory open Terminal and Run  `$ pod install`  and  `$ pod update`
-* Open the .xcworkspace file in Xcode to start working on the App
+1) Fork this project
+2) Clone the forked project to your machine
+3) In your project directory open Terminal and Run  `$ pod install`  and  `$ pod update`
+4) Open the `.xcworkspace` file in Xcode to start menu working on the App
 
 
-### [](https://github.com/pushpinderpalsingh/SpaceDash#join-the-development)Join the development
+### [](https://github.com/pushpinderpalsingh/SpaceDash#join-the-development) Contribute with us!
 
-* Before you assist with the development, please set up the project on your local machine, run it, and go through the complete application 
-* Click through buttons you can find and see where they take you. Explore the app in detail so that you are aware of any core functionality
-* If you would like to work on an issue, add a comment with how you can assist. If the issue is already assigned to someone, but there is no sign of any work being undertaken, feel free to leave a comment so that the issue can be reassigned to you
-* Before you start developing please read through [Contributing.md](https://github.com/pushpinderpalsingh/SpaceDash/blob/develop/Contributing.md) 
+Before you start developing please read through [Contributing.md](https://github.com/pushpinderpalsingh/SpaceDash/blob/develop/Contributing.md) 
 
+#### Set up contributing environment
+
+Before you assist with the development, please set up the project on your local machine, run it, and go through the complete application 
+
+Click through buttons you can find and see where they take you. Explore the app in detail so that you are aware of core features.
+
+#### [Join the conversation on Slack. :speech_balloon: ](https://communityinviter.com/apps/spacedashworkspace/spacedash)
 
 ## [](https://github.com/pushpinderpalsingh/SpaceDash#license)License
 
 This project is licensed under the MIT License - see [LICENSE.md](https://github.com/pushpinderpalsingh/SpaceDash/blob/develop/LICENSE.md) for details
 
 ## Acknowledgement
--  A huge shoutout to r/SpaceX for their [API](https://github.com/r-spacex/SpaceX-API)
+-  A huge shoutout to SpaceX for their [API](https://github.com/r-spacex/SpaceX-API)
 
 #### This project won't be possible without our contributors. You may see [Contributors.md](https://github.com/pushpinderpalsingh/SpaceDash/blob/develop/Contributors.md) for details.
 
-#### [Join the conversation on Slack.](https://communityinviter.com/apps/spacedashworkspace/spacedash)

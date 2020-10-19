@@ -7,7 +7,7 @@ SpaceDash is an app that provides information on launches and vehicles of SpaceX
 
 # Core Architecture 📱
 
-![iOS MVC architecture](https://github.com/clarkeben/SpaceDash/blob/develop/Screenshots/MVC-IOS-architecture.png)
+![iOS MVC architecture](https://github.com/clarkeben/SpaceDash/blob/develop/Assets/Screenshots/MVC-IOS-architecture.png)
 
 ## What Is the MVC Design Pattern
 **MVC design pattern**: a design pattern for building apps using object orientated programming (OOP). It helps structuring complex apps, MVC stands for:
