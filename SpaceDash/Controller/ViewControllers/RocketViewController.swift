@@ -144,10 +144,13 @@ class RocketViewController: UIViewController {
         
         setPopupConstraints()
         
-        if UIScreen.main.bounds.height < 670 {
+        let sH = UIScreen.main.bounds.height
+        if sH < 670 {
             self.blackPanelHeight?.constant = 100
-        } else {
+        } else if sH > 670 && sH < 880 {
             self.blackPanelHeight?.constant = 170
+        } else {
+            self.blackPanelHeight?.constant = 240
         }
         
     }
