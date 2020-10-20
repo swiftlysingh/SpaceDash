@@ -10,6 +10,8 @@ import UIKit
 
 class RocketViewController: UIViewController {
 
+    var blackPanelHeight:NSLayoutConstraint?
+    
     public let rocketName:UILabel = {
         let l = UILabel()
         l.translatesAutoresizingMaskIntoConstraints = false
@@ -141,6 +143,13 @@ class RocketViewController: UIViewController {
         view.addSubview(popUpView)
         
         setPopupConstraints()
+        
+        if UIScreen.main.bounds.height < 670 {
+            self.blackPanelHeight?.constant = 100
+        } else {
+            self.blackPanelHeight?.constant = 170
+        }
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -192,13 +201,15 @@ class RocketViewController: UIViewController {
             bottomBlackView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
             bottomBlackView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             bottomBlackView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            bottomBlackView.heightAnchor.constraint(equalToConstant: 100),
             
             pathView.heightAnchor.constraint(equalToConstant: 70),
             pathView.topAnchor.constraint(equalTo: bottomBlackView.topAnchor),
             pathView.leadingAnchor.constraint(equalTo: bottomBlackView.leadingAnchor),
             pathView.trailingAnchor.constraint(equalTo: bottomBlackView.trailingAnchor)
         ])
+        
+        blackPanelHeight = bottomBlackView.heightAnchor.constraint(equalToConstant: 100)
+        blackPanelHeight?.isActive = true
     }
     
     /// Custom navigation bar settings
