@@ -332,6 +332,7 @@
 		FFBEA64624DC6D8D00A22F9F /* ImageView */ = {
 			isa = PBXGroup;
 			children = (
+				4FE9285E253C2A8D0008D173 /* RocketImageView.swift */,
 				FFBEA64224DC6C3B00A22F9F /* DetailCellImageView.swift */,
 			);
 			path = ImageView;
@@ -716,6 +717,7 @@
 				FFF7171224A48F730043EB81 /* DetailScrollViews.swift in Sources */,
 				FFA9CA5C24C0CCCA006FA5DE /* NetworkManager.swift in Sources */,
 				FFB398F724DDD2F8001D4EA1 /* DetailsViewModel.swift in Sources */,
+				4FE9285F253C2A8D0008D173 /* RocketImageView.swift in Sources */,
 				FFF266B224DEAF7400BA5C28 /* LandpadsData.swift in Sources */,
 				4442C4642530602000D0002F /* ImageCollectionViewCell.swift in Sources */,
 				FFF7170C24A338D10043EB81 /* HomeViewController.swift in Sources */,
