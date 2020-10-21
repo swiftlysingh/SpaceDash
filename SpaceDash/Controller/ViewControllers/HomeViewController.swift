@@ -18,7 +18,6 @@ class HomeViewController: UIViewController,NetworkManagerDelegate {
     @IBOutlet weak var isTentative: UILabel!
     @IBOutlet weak var rocketImage: RocketImageView!
     
-    
     var networkObject = NetworkManager()
     var upcomingLaunch : UpcomingLaunchModel?
     var constants : Constants.HomeView?
@@ -38,12 +37,6 @@ class HomeViewController: UIViewController,NetworkManagerDelegate {
         //tap gesture for tentative label
         self.isTentative.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(tentativeClicked(_:))))
         self.isTentative.isUserInteractionEnabled = true
-        
-        /// Adding a tap gesture to rocket image
-        let rocketImageTapGesture = UITapGestureRecognizer(target: self, action: #selector(rocketImageTapped))
-        rocketImageTapGesture.numberOfTapsRequired = 1
-        rocketImage.addGestureRecognizer(rocketImageTapGesture)
-        rocketImage.isUserInteractionEnabled = true
     }
     
     /// Making the Height of Upcoming Panel Dynamic
@@ -95,6 +88,7 @@ class HomeViewController: UIViewController,NetworkManagerDelegate {
         }
     }
     
+    
     @objc func tentativeClicked(_ sender: UITapGestureRecognizer){
         // we dont want to fill the popover to full width of the screen
         let standardWidth = self.view.frame.width - 60
@@ -114,12 +108,6 @@ class HomeViewController: UIViewController,NetworkManagerDelegate {
             popoverPresentationController.delegate = self
         }
         self.present(tentativeDetailsVC, animated: true, completion: nil)
-    }
-    
-    /// Go to RocketViewController when rocket tapped!
-    @objc func rocketImageTapped(){
-        let VC = RocketViewController()
-        navigationController?.pushViewController(VC, animated: true)
     }
     
 }
@@ -167,5 +155,6 @@ extension HomeViewController: UIPopoverPresentationControllerDelegate {
         // .none makes the viewcontroller to be present as popover always, no matter what trait changes
         return .none
     }
+    
 }
 

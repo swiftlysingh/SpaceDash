@@ -8,11 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2086C60A16283D2DB5341A79 /* Pods_SpaceDash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DE2958EE217DA2AEF4E463F /* Pods_SpaceDash.framework */; };
-		443B17E725329E6C005B2144 /* RocketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443B17E625329E6C005B2144 /* RocketViewController.swift */; };
-		4442C45C252FFCE700D0002F /* CustomPopUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4442C45B252FFCE700D0002F /* CustomPopUpView.swift */; };
-		4442C4622530450D00D0002F /* CustomMetricCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4442C4612530450D00D0002F /* CustomMetricCard.swift */; };
-		4442C4642530602000D0002F /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4442C4632530602000D0002F /* ImageCollectionViewCell.swift */; };
-		44C17F9225353CDC003EF9A5 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C17F9125353CDC003EF9A5 /* WebViewController.swift */; };
+		4FE9285F253C2A8D0008D173 /* RocketImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE9285E253C2A8D0008D173 /* RocketImageView.swift */; };
 		750F3DF5252703830030ED19 /* TentativeDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750F3DF3252703830030ED19 /* TentativeDetailsViewController.swift */; };
 		750F3DFD252708500030ED19 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750F3DFC252708500030ED19 /* String.swift */; };
 		FF3043D42507E5D0005F8EE6 /* FastlaneSnapshots.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3043D32507E5D0005F8EE6 /* FastlaneSnapshots.swift */; };
@@ -85,11 +81,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		443B17E625329E6C005B2144 /* RocketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketViewController.swift; sourceTree = "<group>"; };
-		4442C45B252FFCE700D0002F /* CustomPopUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPopUpView.swift; sourceTree = "<group>"; };
-		4442C4612530450D00D0002F /* CustomMetricCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMetricCard.swift; sourceTree = "<group>"; };
-		4442C4632530602000D0002F /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
-		44C17F9125353CDC003EF9A5 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		4FE9285E253C2A8D0008D173 /* RocketImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketImageView.swift; sourceTree = "<group>"; };
 		5DE2958EE217DA2AEF4E463F /* Pods_SpaceDash.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpaceDash.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		750F3DF3252703830030ED19 /* TentativeDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TentativeDetailsViewController.swift; sourceTree = "<group>"; };
 		750F3DFC252708500030ED19 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
@@ -185,16 +177,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4442C45A252FFCD000D0002F /* CustomView */ = {
-			isa = PBXGroup;
-			children = (
-				4442C45B252FFCE700D0002F /* CustomPopUpView.swift */,
-				4442C4612530450D00D0002F /* CustomMetricCard.swift */,
-				4442C4632530602000D0002F /* ImageCollectionViewCell.swift */,
-			);
-			path = CustomView;
-			sourceTree = "<group>";
-		};
 		9E7BE7660A5996338B49D647 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -323,8 +305,6 @@
 				FF60A64924D47B4E0030F5AE /* AboutViewController.swift */,
 				FFB734B924DB2B2B006C1518 /* DetailsViewController.swift */,
 				750F3DF3252703830030ED19 /* TentativeDetailsViewController.swift */,
-				443B17E625329E6C005B2144 /* RocketViewController.swift */,
-				44C17F9125353CDC003EF9A5 /* WebViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -351,7 +331,6 @@
 		FFC259DF24A76C720019E354 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				4442C45A252FFCD000D0002F /* CustomView */,
 				FFD549E325055F8200F49DC0 /* Animations */,
 				FFAFD9DC252CE4890063A6BA /* Storyboards */,
 				FFAFD9E2252CE49B0063A6BA /* TableViewCell */,
@@ -698,7 +677,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4442C4622530450D00D0002F /* CustomMetricCard.swift in Sources */,
 				FFA9CA8024C1B838006FA5DE /* UpcomingLaunchModel.swift in Sources */,
 				FF7F94FB2511E51000B2830B /* DetailView.swift in Sources */,
 				FFB398F424DDD025001D4EA1 /* RocketsData.swift in Sources */,
@@ -711,7 +689,6 @@
 				FFA9CA5D24C0CCCA006FA5DE /* UpcomingLaunchData.swift in Sources */,
 				750F3DFD252708500030ED19 /* String.swift in Sources */,
 				FFF716D8249D3E1C0043EB81 /* SceneDelegate.swift in Sources */,
-				4442C45C252FFCE700D0002F /* CustomPopUpView.swift in Sources */,
 				FF60A64A24D47B4E0030F5AE /* AboutViewController.swift in Sources */,
 				FFF266B424DEF93800BA5C28 /* CapsulesData.swift in Sources */,
 				FFF7171224A48F730043EB81 /* DetailScrollViews.swift in Sources */,
@@ -719,15 +696,12 @@
 				FFB398F724DDD2F8001D4EA1 /* DetailsViewModel.swift in Sources */,
 				4FE9285F253C2A8D0008D173 /* RocketImageView.swift in Sources */,
 				FFF266B224DEAF7400BA5C28 /* LandpadsData.swift in Sources */,
-				4442C4642530602000D0002F /* ImageCollectionViewCell.swift in Sources */,
 				FFF7170C24A338D10043EB81 /* HomeViewController.swift in Sources */,
 				FFC259E724A772150019E354 /* CALayer.swift in Sources */,
 				FFB734BA24DB2B2B006C1518 /* DetailsViewController.swift in Sources */,
 				750F3DF5252703830030ED19 /* TentativeDetailsViewController.swift in Sources */,
 				FFB398FA24DDDBDC001D4EA1 /* UIImageView.swift in Sources */,
-				443B17E725329E6C005B2144 /* RocketViewController.swift in Sources */,
 				FFBEA64324DC6C3B00A22F9F /* DetailCellImageView.swift in Sources */,
-				44C17F9225353CDC003EF9A5 /* WebViewController.swift in Sources */,
 				FFC259E924A7A9C10019E354 /* InfoPanelView.swift in Sources */,
 				FF8E3EE224DF14EB00077DE3 /* LaunchesData.swift in Sources */,
 			);
@@ -1062,15 +1036,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 7;
-				DEVELOPMENT_TEAM = 9W5STY688V;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4WMQY24R33;
 				INFOPLIST_FILE = "$(SRCROOT)/SpaceDash/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.4;
-				PRODUCT_BUNDLE_IDENTIFIER = com.dheerajdev.SpaceDash;
+				MARKETING_VERSION = 1.5;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pushpinderpalsingh.SpaceDash;
 				PRODUCT_NAME = SpaceDash;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1083,15 +1057,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 7;
-				DEVELOPMENT_TEAM = 9W5STY688V;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4WMQY24R33;
 				INFOPLIST_FILE = "$(SRCROOT)/SpaceDash/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.4;
-				PRODUCT_BUNDLE_IDENTIFIER = com.dheerajdev.SpaceDash;
+				MARKETING_VERSION = 1.5;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pushpinderpalsingh.SpaceDash;
 				PRODUCT_NAME = SpaceDash;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
