@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Bv7-a9-8MT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Bv7-a9-8MT">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -450,7 +450,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CCAFS SLC 40" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TAk-7B-GjH" customClass="MarqueeLabel" customModule="MarqueeLabel">
-                                                <rect key="frame" x="15" y="35" width="123" height="21"/>
+                                                <rect key="frame" x="15" y="35" width="123.5" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                 <color key="textColor" name="DashBlack"/>
                                                 <nil key="highlightedColor"/>
@@ -518,10 +518,27 @@
                                             <constraint firstItem="fpE-sJ-nR4" firstAttribute="top" secondItem="rTS-5a-Jvt" secondAttribute="bottom" constant="6" id="tOX-wI-voT"/>
                                         </constraints>
                                     </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zBb-bI-XbH" customClass="WatchNowButtonView" customModule="SpaceDash" customModuleProvider="target">
+                                        <rect key="frame" x="8" y="414" width="227" height="64"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="227" id="Iim-1a-ffZ"/>
+                                            <constraint firstAttribute="height" constant="64" id="orU-dV-or2"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                        <state key="normal" title="Watch Now">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="watchNowButton:" destination="oCg-FU-UY1" eventType="touchUpInside" id="TVf-dZ-XxS"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" name="DashCream"/>
                                 <constraints>
+                                    <constraint firstItem="zBb-bI-XbH" firstAttribute="top" secondItem="63K-uz-tNd" secondAttribute="bottom" constant="28" id="5Jw-LD-qEg"/>
                                     <constraint firstAttribute="trailing" secondItem="79I-bQ-LX0" secondAttribute="trailing" constant="8" id="E7A-IE-I5W"/>
+                                    <constraint firstItem="zBb-bI-XbH" firstAttribute="leading" secondItem="6ch-1d-wZ7" secondAttribute="leading" constant="8" id="EFt-HG-GPh"/>
                                     <constraint firstItem="79I-bQ-LX0" firstAttribute="top" secondItem="6ch-1d-wZ7" secondAttribute="top" constant="52" id="FRn-1S-mMK"/>
                                     <constraint firstItem="63K-uz-tNd" firstAttribute="top" secondItem="ceL-dE-FN9" secondAttribute="bottom" constant="28" id="I2h-Fk-b0r"/>
                                     <constraint firstItem="3j9-Du-2ed" firstAttribute="leading" secondItem="6ch-1d-wZ7" secondAttribute="leading" constant="8" id="JG0-Sm-9HV"/>
@@ -562,16 +579,19 @@
                         <outlet property="payloadAndType" destination="fpE-sJ-nR4" id="4dH-RO-ape"/>
                         <outlet property="rocketImage" destination="79I-bQ-LX0" id="NQK-F5-lfK"/>
                         <outlet property="upcomingPanel" destination="z63-l4-rY0" id="3Du-2z-Szr"/>
+                        <outlet property="upcomingView" destination="6ch-1d-wZ7" id="wGq-sw-wEM"/>
+                        <outlet property="watchNowButton" destination="zBb-bI-XbH" id="fwe-Al-gxx"/>
                         <outletCollection property="panelConstraints" destination="MkQ-qo-ysL" collectionClass="NSMutableArray" id="Vr3-fk-fs1"/>
                         <outletCollection property="panelConstraints" destination="KWN-6v-qQp" collectionClass="NSMutableArray" id="Byv-7r-eLn"/>
                         <outletCollection property="panelConstraints" destination="I2h-Fk-b0r" collectionClass="NSMutableArray" id="vql-27-OBc"/>
                         <outletCollection property="panelConstraints" destination="Kk4-1Y-XN1" collectionClass="NSMutableArray" id="ZQW-Sv-Qno"/>
+                        <outletCollection property="panelConstraints" destination="5Jw-LD-qEg" collectionClass="NSMutableArray" id="yFT-fm-VC3"/>
                         <segue destination="KhD-rD-70S" kind="show" identifier="DetailView" id="xQW-5v-hAb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rj7-I4-uF2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1796" y="-550"/>
+            <point key="canvasLocation" x="1794.9275362318842" y="-550.44642857142856"/>
         </scene>
         <!--Details View Controller-->
         <scene sceneID="PQc-ji-Mq3">

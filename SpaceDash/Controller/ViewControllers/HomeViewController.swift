@@ -10,11 +10,13 @@ import UIKit
 
 class HomeViewController: UIViewController,NetworkManagerDelegate {
     
+    @IBOutlet weak var upcomingView: UpcomingView!
     @IBOutlet weak var upcomingPanel: NSLayoutConstraint!
     @IBOutlet var panelConstraints: [NSLayoutConstraint]!
     @IBOutlet weak var launchDate: UILabel!
     @IBOutlet weak var launchSite: UILabel!
     @IBOutlet weak var payloadAndType: UILabel!
+    @IBOutlet weak var watchNowButton: WatchNowButtonView!
     @IBOutlet weak var isTentative: UILabel!
     @IBOutlet weak var rocketImage: RocketImageView!
     
@@ -22,6 +24,9 @@ class HomeViewController: UIViewController,NetworkManagerDelegate {
     var upcomingLaunch : UpcomingLaunchModel?
     var constants : Constants.HomeView?
     var senderView : String = ""
+    var watchURL : URL? = nil
+    
+    let smallDeviceHeight: CGFloat = 896
     
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
@@ -32,7 +37,7 @@ class HomeViewController: UIViewController,NetworkManagerDelegate {
         super.viewDidLoad()
         networkObject.delegate = self
         networkObject.fetchData(demand: Constants.NetworkManager.upcomingLaunchURL)
-        adjustSize()
+        adjustUpcomingPanelSize()
         
         //tap gesture for tentative label
         self.isTentative.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(tentativeClicked(_:))))
@@ -40,12 +45,21 @@ class HomeViewController: UIViewController,NetworkManagerDelegate {
     }
     
     /// Making the Height of Upcoming Panel Dynamic
-    func adjustSize(){
-        if UIScreen.main.bounds.height<896 {
-            upcomingPanel.constant = UIScreen.main.bounds.height*0.045
+    func adjustUpcomingPanelSize() {
+        if UIScreen.main.bounds.height<smallDeviceHeight {
+            upcomingPanel.constant = UIScreen.main.bounds.height*0.04
             
             for panels in panelConstraints{
-                panels.constant = UIScreen.main.bounds.height*0.03
+                panels.constant = UIScreen.main.bounds.height*0.025
+            }
+        }
+    }
+    
+    /// Making the Height of Upcoming View Dynamic
+    func adjustUpcomingViewSize() {
+        if UIScreen.main.bounds.height<smallDeviceHeight {
+            if !watchNowButton.isHidden {
+                upcomingView.setupSmallHeight()
             }
         }
     }
@@ -82,10 +96,20 @@ class HomeViewController: UIViewController,NetworkManagerDelegate {
         payloadAndType.text = constants?.payloadAndType
         launchDate.text =  upcomingLaunch?.getDate()
         
+        checkWatchButton()
+        adjustUpcomingViewSize()
+        
         self.isTentative.isHidden = !(self.upcomingLaunch?.decodedData!.is_tentative)!
         if(!(constants?.rocket=="Falcon 9")){
             rocketImage.image = UIImage(named: "f_heavy")
         }
+    }
+    
+    /// This function will assign the video URL of the upcoming launch and display the "Watch Now" button if the URL available
+    func checkWatchButton() {
+        guard let safeWatchURL = upcomingLaunch?.decodedData?.links.video_link_url, UIApplication.shared.canOpenURL(safeWatchURL) else { return }
+        self.watchURL = safeWatchURL
+        watchNowButton.isHidden = false
     }
     
     
@@ -116,6 +140,10 @@ class HomeViewController: UIViewController,NetworkManagerDelegate {
 //MARK: - IBOutlets
 
 extension HomeViewController {
+    
+    @IBAction func watchNowButton(_ sender: UIButton) {
+        UIApplication.shared.open(watchURL!)
+    }
     
     @IBAction func rocketsButton(_ sender: UIButton) {
         senderView = Constants.SegueManager.SenderValues.rocket

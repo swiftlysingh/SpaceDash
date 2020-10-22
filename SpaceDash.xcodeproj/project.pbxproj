@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2086C60A16283D2DB5341A79 /* Pods_SpaceDash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DE2958EE217DA2AEF4E463F /* Pods_SpaceDash.framework */; };
+		21490CDE25422676006FDF35 /* WatchNowButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21490CDD25422676006FDF35 /* WatchNowButtonView.swift */; };
 		4FE9285F253C2A8D0008D173 /* RocketImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE9285E253C2A8D0008D173 /* RocketImageView.swift */; };
 		750F3DF5252703830030ED19 /* TentativeDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750F3DF3252703830030ED19 /* TentativeDetailsViewController.swift */; };
 		750F3DFD252708500030ED19 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750F3DFC252708500030ED19 /* String.swift */; };
@@ -81,6 +82,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		21490CDD25422676006FDF35 /* WatchNowButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchNowButtonView.swift; sourceTree = "<group>"; };
 		4FE9285E253C2A8D0008D173 /* RocketImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketImageView.swift; sourceTree = "<group>"; };
 		5DE2958EE217DA2AEF4E463F /* Pods_SpaceDash.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpaceDash.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		750F3DF3252703830030ED19 /* TentativeDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TentativeDetailsViewController.swift; sourceTree = "<group>"; };
@@ -292,6 +294,7 @@
 			children = (
 				FFF7171124A48F730043EB81 /* DetailScrollViews.swift */,
 				FFC259E824A7A9C10019E354 /* InfoPanelView.swift */,
+				21490CDD25422676006FDF35 /* WatchNowButtonView.swift */,
 				FFC259EA24A7AB3C0019E354 /* UpcomingView.swift */,
 				FF7F94FA2511E51000B2830B /* DetailView.swift */,
 			);
@@ -686,6 +689,7 @@
 				FFF716D6249D3E1C0043EB81 /* AppDelegate.swift in Sources */,
 				FF8E3EDE24DF066E00077DE3 /* LaunchPadsData.swift in Sources */,
 				FF8E3EDC24DF003300077DE3 /* ShipsData.swift in Sources */,
+				21490CDE25422676006FDF35 /* WatchNowButtonView.swift in Sources */,
 				FFA9CA5D24C0CCCA006FA5DE /* UpcomingLaunchData.swift in Sources */,
 				750F3DFD252708500030ED19 /* String.swift in Sources */,
 				FFF716D8249D3E1C0043EB81 /* SceneDelegate.swift in Sources */,

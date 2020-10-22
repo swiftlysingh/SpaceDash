@@ -16,6 +16,7 @@ struct UpcomingLaunchData: Decodable{
     let is_tentative : Bool
     let rocket : Rocket
     let launch_site: LaunchSite
+    let links: Links
 
     struct Rocket:Decodable {
         let rocket_id : String
@@ -32,9 +33,19 @@ struct UpcomingLaunchData: Decodable{
             }
         }
     }
+    
     struct LaunchSite:Decodable {
         let site_name: String?
         let site_name_long: String?
+    }
+    
+    struct Links:Decodable {
+        let video_link: String?
+        var video_link_url: URL? {
+            guard let video_link = self.video_link else { return nil }
+            guard let watch_url = URL(string: video_link) else { return nil }
+            return watch_url
+        }
     }
 }
 
