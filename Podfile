@@ -8,5 +8,4 @@ target 'SpaceDash' do
 # Pods for SpaceDash
 	pod 'MarqueeLabel'
 	pod 'lottie-ios'
-        pod 'RealmSwift'
 end
