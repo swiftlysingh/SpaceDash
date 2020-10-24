@@ -1,152 +1,248 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yD3-ji-SQN">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="y3Y-gy-xco">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
-        <capability name="Named colors" minToolsVersion="9.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--About-->
-        <scene sceneID="RVU-wR-Hdd">
+        <scene sceneID="nSm-U1-ls7">
             <objects>
-                <viewController id="yD3-ji-SQN" customClass="AboutViewController" customModule="SpaceDash" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="syZ-bN-VMW">
+                <tableViewController storyboardIdentifier="about" id="d1G-pv-Ge1" customClass="AboutViewController" customModule="SpaceDash" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="wlL-dD-Fr8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <sections>
+                            <tableViewSection id="H11-bV-qJM">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="7Zc-pZ-3DC" style="IBUITableViewCellStyleDefault" id="WlS-ad-Izp">
+                                        <rect key="frame" x="20" y="18" width="374" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="WlS-ad-Izp" id="1eI-KO-5OM">
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="About SpaceDash" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7Zc-pZ-3DC">
+                                                    <rect key="frame" x="20" y="0.0" width="315" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="Scw-7K-0K5" kind="show" id="NaY-CS-6ed"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="bPf-jV-KHq" style="IBUITableViewCellStyleDefault" id="Gxt-AN-GM4">
+                                        <rect key="frame" x="20" y="61.5" width="374" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Gxt-AN-GM4" id="ASd-Ij-w84">
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="About SpaceX" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bPf-jV-KHq">
+                                                    <rect key="frame" x="20" y="0.0" width="315" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="QvW-SR-QGT" kind="show" id="hv9-lw-W3W"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="uKu-sO-6x7" style="IBUITableViewCellStyleDefault" id="K4x-AL-76a">
+                                        <rect key="frame" x="20" y="105" width="374" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="K4x-AL-76a" id="75j-36-MNo">
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Change App Icon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="uKu-sO-6x7">
+                                                    <rect key="frame" x="20" y="0.0" width="315" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="9cb-XN-Lew" kind="show" id="khq-3g-aU5"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="QuU-5P-tpV" style="IBUITableViewCellStyleDefault" id="l0c-63-rgi">
+                                        <rect key="frame" x="20" y="148.5" width="374" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="l0c-63-rgi" id="Aio-Jj-t8P">
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Privacy Policy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="QuU-5P-tpV">
+                                                    <rect key="frame" x="20" y="0.0" width="315" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="vHS-am-MJG" style="IBUITableViewCellStyleDefault" id="0Bc-vR-cD1">
+                                        <rect key="frame" x="20" y="192" width="374" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0Bc-vR-cD1" id="i0B-yr-MNw">
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Licenses &amp; Acknowledgements" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vHS-am-MJG">
+                                                    <rect key="frame" x="20" y="0.0" width="315" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="d1G-pv-Ge1" id="cgc-Mp-se4"/>
+                            <outlet property="delegate" destination="d1G-pv-Ge1" id="hyi-Fn-UEs"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="About" image="info.circle" catalog="system" id="wGm-EG-lTY"/>
+                    <navigationItem key="navigationItem" title="About" id="trA-Qx-oft"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bUd-5D-1Xg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="660.86956521739137" y="330.80357142857139"/>
+        </scene>
+        <!--About SpaceX-->
+        <scene sceneID="I7m-GS-Kll">
+            <objects>
+                <viewController id="QvW-SR-QGT" customClass="AboutSpaceXViewController" customModule="SpaceDash" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qsv-Jh-sYX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N5R-S6-Ut7" customClass="DetailScrollViews" customModule="SpaceDash" customModuleProvider="target">
-                                <rect key="frame" x="20" y="74" width="374" height="212"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About SpaceX" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uO5-Nr-Myd">
-                                        <rect key="frame" x="8" y="8" width="151" height="29.5"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="25"/>
-                                        <color key="textColor" name="DashBlack"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" textAlignment="justified" lineBreakMode="headTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X3h-kH-rng">
-                                        <rect key="frame" x="8" y="39.5" width="358" height="144.5"/>
-                                        <string key="text">Space Exploration Technologies Corp., trading as SpaceX, is an American aerospace manufacturer and space transportation services company headquartered in Hawthorne, California. It was founded in 2002 by Elon Musk with the goal of reducing space transportation costs to enable the colonization of Mars.</string>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="14"/>
-                                        <color key="textColor" name="DashBlack"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" name="DashCream"/>
-                                <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="X3h-kH-rng" secondAttribute="trailing" constant="8" id="7MV-28-KqW"/>
-                                    <constraint firstAttribute="height" constant="212" id="9hi-oa-Azu"/>
-                                    <constraint firstItem="X3h-kH-rng" firstAttribute="top" secondItem="uO5-Nr-Myd" secondAttribute="bottom" constant="2" id="MQI-Zm-aEB"/>
-                                    <constraint firstItem="X3h-kH-rng" firstAttribute="top" secondItem="uO5-Nr-Myd" secondAttribute="bottom" constant="2" id="VMK-8P-2TY"/>
-                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="uO5-Nr-Myd" secondAttribute="trailing" constant="20" symbolic="YES" id="eb6-Si-GZs"/>
-                                    <constraint firstItem="uO5-Nr-Myd" firstAttribute="top" secondItem="N5R-S6-Ut7" secondAttribute="top" constant="8" id="fAP-2q-Rvg"/>
-                                    <constraint firstItem="uO5-Nr-Myd" firstAttribute="leading" secondItem="N5R-S6-Ut7" secondAttribute="leading" constant="8" id="fUU-0z-BkB"/>
-                                    <constraint firstAttribute="bottom" secondItem="X3h-kH-rng" secondAttribute="bottom" constant="28" id="pe9-vo-PGq"/>
-                                    <constraint firstItem="X3h-kH-rng" firstAttribute="leading" secondItem="N5R-S6-Ut7" secondAttribute="leading" constant="8" id="sLR-ie-ft6"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SuG-Rh-GyO" customClass="DetailScrollViews" customModule="SpaceDash" customModuleProvider="target">
-                                <rect key="frame" x="20" y="335" width="374" height="212"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About SpaceDash" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Syz-yi-DN7">
-                                        <rect key="frame" x="8" y="8" width="191" height="36"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="36" id="MXW-zM-8BF"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="25"/>
-                                        <color key="textColor" name="DashBlack"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3qa-7R-CVD">
-                                        <rect key="frame" x="8" y="44" width="358" height="152"/>
-                                        <string key="text">SpaceDash will be Dashboard for all things Space. It is a beautiful app with simple but informative UI. You will be able to simply glance at the upcoming launches for various space agency. And even watch it live if there is a live stream happening (Coming in the future version of the app). Currently the app supports launches, missions, rockets etc for SpaceX but more space agencies will be added soon.</string>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="14"/>
-                                        <color key="textColor" name="DashBlack"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" name="DashCream"/>
-                                <constraints>
-                                    <constraint firstItem="Syz-yi-DN7" firstAttribute="leading" secondItem="SuG-Rh-GyO" secondAttribute="leadingMargin" id="A2V-QT-rWd"/>
-                                    <constraint firstAttribute="height" constant="212" id="Caz-dp-9PL"/>
-                                    <constraint firstItem="3qa-7R-CVD" firstAttribute="top" secondItem="Syz-yi-DN7" secondAttribute="bottom" id="ajP-tt-Ngi"/>
-                                    <constraint firstAttribute="bottom" secondItem="3qa-7R-CVD" secondAttribute="bottom" constant="16" id="cvN-Wo-0s5"/>
-                                    <constraint firstItem="3qa-7R-CVD" firstAttribute="leading" secondItem="SuG-Rh-GyO" secondAttribute="leading" constant="8" id="eId-cd-JAv"/>
-                                    <constraint firstAttribute="trailing" secondItem="3qa-7R-CVD" secondAttribute="trailing" constant="8" id="jQA-4d-6Et"/>
-                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Syz-yi-DN7" secondAttribute="trailing" constant="20" symbolic="YES" id="wGn-Gr-um8"/>
-                                    <constraint firstItem="3qa-7R-CVD" firstAttribute="top" secondItem="Syz-yi-DN7" secondAttribute="bottom" id="wRe-pJ-W5u"/>
-                                    <constraint firstItem="Syz-yi-DN7" firstAttribute="top" secondItem="SuG-Rh-GyO" secondAttribute="topMargin" id="yfM-O8-Rma"/>
-                                </constraints>
-                            </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9P7-BS-cxu">
-                                <rect key="frame" x="177.5" y="741" width="59" height="33"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="33" id="77m-Fx-0QH"/>
-                                </constraints>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XcQ-pj-Pml">
+                                <rect key="frame" x="20" y="108" width="374" height="142.5"/>
+                                <string key="text">Space Exploration Technologies Corp. is an American aerospace manufacturer and space transportation services company headquartered in Hawthorne, California. It was founded in 2002 by Elon Musk with the goal of reducing space transportation costs to enable the colonization of Mars.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal" title="License">
-                                    <color key="titleColor" systemColor="linkColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="licenseButtonPressed:" destination="yD3-ji-SQN" eventType="touchUpInside" id="wne-zg-1CR"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XCW-Df-G6E">
-                                <rect key="frame" x="154" y="700" width="106" height="33"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="33" id="2tT-a9-aaX"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal" title="Privacy Policy">
-                                    <color key="titleColor" systemColor="linkColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="privacyButtonPressed:" destination="yD3-ji-SQN" eventType="touchUpInside" id="jNS-m1-3MS"/>
-                                </connections>
-                            </button>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="ZFi-n0-aqc"/>
-                        <color key="backgroundColor" name="DashBlack"/>
+                        <viewLayoutGuide key="safeArea" id="nE1-uP-SYf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="XCW-Df-G6E" firstAttribute="centerX" secondItem="syZ-bN-VMW" secondAttribute="centerX" id="AIh-ZR-j66"/>
-                            <constraint firstItem="SuG-Rh-GyO" firstAttribute="leading" secondItem="ZFi-n0-aqc" secondAttribute="leading" constant="20" id="ICc-1L-Wuy"/>
-                            <constraint firstItem="SuG-Rh-GyO" firstAttribute="top" secondItem="N5R-S6-Ut7" secondAttribute="bottom" constant="49" id="SWy-bN-N2o"/>
-                            <constraint firstItem="ZFi-n0-aqc" firstAttribute="trailing" secondItem="SuG-Rh-GyO" secondAttribute="trailing" constant="20" id="U1Y-HQ-4hF"/>
-                            <constraint firstItem="9P7-BS-cxu" firstAttribute="centerX" secondItem="syZ-bN-VMW" secondAttribute="centerX" id="WaH-Hz-otk"/>
-                            <constraint firstItem="ZFi-n0-aqc" firstAttribute="bottom" secondItem="9P7-BS-cxu" secondAttribute="bottom" constant="39" id="XzT-O4-Zpy"/>
-                            <constraint firstItem="9P7-BS-cxu" firstAttribute="top" secondItem="XCW-Df-G6E" secondAttribute="bottom" constant="8" id="gQS-Pd-bS1"/>
-                            <constraint firstItem="N5R-S6-Ut7" firstAttribute="leading" secondItem="ZFi-n0-aqc" secondAttribute="leading" constant="20" id="qrh-bG-Ub4"/>
-                            <constraint firstItem="N5R-S6-Ut7" firstAttribute="top" secondItem="ZFi-n0-aqc" secondAttribute="top" constant="30" id="rm8-Kf-ama"/>
-                            <constraint firstItem="ZFi-n0-aqc" firstAttribute="trailing" secondItem="N5R-S6-Ut7" secondAttribute="trailing" constant="20" id="xMl-uS-5Kv"/>
+                            <constraint firstItem="XcQ-pj-Pml" firstAttribute="leading" secondItem="nE1-uP-SYf" secondAttribute="leading" constant="20" id="4Cl-HP-Q7B"/>
+                            <constraint firstItem="nE1-uP-SYf" firstAttribute="trailing" secondItem="XcQ-pj-Pml" secondAttribute="trailing" constant="20" id="SCn-c3-yT3"/>
+                            <constraint firstItem="XcQ-pj-Pml" firstAttribute="top" secondItem="nE1-uP-SYf" secondAttribute="top" constant="20" id="kBI-t9-dqj"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="About" image="info.circle" catalog="system" id="Gw8-zP-Jg0"/>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <connections>
-                        <outlet property="aboutSpaceConstraint" destination="SWy-bN-N2o" id="4nM-c1-ioX"/>
-                        <outlet property="aboutSpaceTopConstraint" destination="rm8-Kf-ama" id="6LG-3b-frF"/>
-                        <outlet property="licenseBottomConstraint" destination="XzT-O4-Zpy" id="aPO-ER-24p"/>
-                    </connections>
+                    <navigationItem key="navigationItem" title="About SpaceX" id="RDd-ag-zEn"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="wY2-s2-EhX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uRc-oC-vYu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-165.21739130434784" y="343.52678571428572"/>
+            <point key="canvasLocation" x="2161" y="330"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="JHQ-OI-OKd">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="y3Y-gy-xco" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="NvE-OB-sM0">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="d1G-pv-Ge1" kind="relationship" relationship="rootViewController" id="4Ja-tB-8AV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3aY-Zd-dBG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-249.27536231884059" y="330.80357142857139"/>
+        </scene>
+        <!--About SpaceDash-->
+        <scene sceneID="Gej-O9-1dq">
+            <objects>
+                <viewController id="Scw-7K-0K5" customClass="AboutSpaceDashViewController" customModule="SpaceDash" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YTt-7o-92M">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R1Y-Ma-KkJ">
+                                <rect key="frame" x="20" y="108" width="374" height="162.5"/>
+                                <string key="text">SpaceDash is an app that will provide information on all the present past and future Launches and Vehicles of SpaceX. Currently, the app is in developement. I am following Test-Driven Agile Development for this app. The future scope of this app includes an AR view of various vehicles of SpaceX, and event updates from even more Space Agencies!</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="AAA-AQ-Y6d"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="AAA-AQ-Y6d" firstAttribute="trailing" secondItem="R1Y-Ma-KkJ" secondAttribute="trailing" constant="20" id="69K-dD-tse"/>
+                            <constraint firstItem="R1Y-Ma-KkJ" firstAttribute="top" secondItem="AAA-AQ-Y6d" secondAttribute="top" constant="20" id="cXX-Ql-lgz"/>
+                            <constraint firstItem="R1Y-Ma-KkJ" firstAttribute="leading" secondItem="AAA-AQ-Y6d" secondAttribute="leading" constant="20" id="wii-Fd-HKe"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="About SpaceDash" id="5Zo-eA-j9p"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QVK-Vx-C7U" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1384" y="330"/>
+        </scene>
+        <!--Change App Icon-->
+        <scene sceneID="TJz-fb-e1o">
+            <objects>
+                <tableViewController id="9cb-XN-Lew" customClass="AppIconSelectTableViewController" customModule="SpaceDash" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="ltt-ZY-oML">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="AppIcon" id="6HA-u9-jSn">
+                                <rect key="frame" x="20" y="55.5" width="374" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6HA-u9-jSn" id="vaQ-sp-TLv">
+                                    <rect key="frame" x="0.0" y="0.0" width="374" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="9cb-XN-Lew" id="AN4-WV-b45"/>
+                            <outlet property="delegate" destination="9cb-XN-Lew" id="CeR-ou-1TM"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Change App Icon" id="rpe-gq-1KL"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CuD-TK-bfV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2932" y="330"/>
         </scene>
     </scenes>
     <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
     <resources>
         <image name="info.circle" catalog="system" width="128" height="121"/>
-        <namedColor name="DashBlack">
-            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="DashCream">
-            <color red="0.90600001811981201" green="0.90600001811981201" blue="0.90600001811981201" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-        </namedColor>
-        <systemColor name="linkColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>

@@ -3,7 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="dark"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
@@ -45,7 +45,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="490" height="33.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Mission Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ot5-xm-h0k" customClass="MarqueeLabel" customModule="MarqueeLabel">
-                                                        <rect key="frame" x="0.0" y="0.0" width="184" height="33.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="179" height="33.5"/>
                                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="28"/>
                                                         <color key="textColor" name="DashCream"/>
                                                         <nil key="highlightedColor"/>
@@ -135,7 +135,7 @@
     </objects>
     <designables>
         <designable name="Ot5-xm-h0k">
-            <size key="intrinsicContentSize" width="184" height="33.5"/>
+            <size key="intrinsicContentSize" width="179" height="33.5"/>
         </designable>
     </designables>
     <resources>
