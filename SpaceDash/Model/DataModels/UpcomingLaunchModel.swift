@@ -22,17 +22,4 @@ struct UpcomingLaunchModel{
             }
         decodedData = decodedDataSet[0]
     }
-    
-    func getDate()-> String{
-        if let timeResult = (decodedData?.launch_date_unix){
-            let date = Date(timeIntervalSince1970: timeResult)
-            let dateFormatter = DateFormatter()
-            dateFormatter.timeStyle = DateFormatter.Style.short
-            dateFormatter.dateStyle = DateFormatter.Style.medium
-            dateFormatter.timeZone = .current
-            let localDate = dateFormatter.string(from: date)
-            return localDate
-        }
-        return "TBD"
-    }
 }
