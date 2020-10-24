@@ -8,18 +8,21 @@
 
 import Foundation
 
-struct UpcomingLaunchModel{
-    var decodedDataSet : [UpcomingLaunchData]
-    var decodedData: UpcomingLaunchData?
+class UpcomingLaunchModel{
+    
+    var launchSite : String?
+    var payloadAndType : String?
+    var launchDate : String?
+    var isTentative : Bool?
+    var rocket : String?
     
     /// Will return the first Launch if no future launch is found
-    mutating func cleanData(){
-        for data in decodedDataSet {
+    func cleanData(_ launch: [UpcomingLaunchData]) -> UpcomingLaunchData{
+        for data in launch {
                 if data.launch_date_unix>=NSDate().timeIntervalSince1970 {
-                    decodedData = data
-                    return
+                    return data
                 }
             }
-        decodedData = decodedDataSet[0]
+        return launch[0]
     }
 }

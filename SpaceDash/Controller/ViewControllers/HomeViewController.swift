@@ -19,8 +19,7 @@ class HomeViewController: UIViewController,NetworkManagerDelegate {
     @IBOutlet weak var rocketImage: UIImageView!
     
     var networkObject = NetworkManager(key: Constants.NetworkManager.upcomingLaunchURL)
-    var upcomingLaunch : UpcomingLaunchModel?
-    var constants : Constants.HomeView?
+    var upcomingLaunch = UpcomingLaunchModel()
     var senderView : String = ""
     
     
@@ -31,12 +30,43 @@ class HomeViewController: UIViewController,NetworkManagerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         networkObject.delegate = self
-        networkObject.performRequest()
+        
+        networkObject.performRequest { [weak self] (result: Result<[UpcomingLaunchData],Error>) in
+            guard let self = self else { return }
+            
+            switch result {
+            
+            case .success(let launches):
+                
+                let launch = self.upcomingLaunch.cleanData(launches)
+                self.updateModel(launch)
+                self.updateUI()
+                
+                break
+                
+                
+            case .failure(let error):
+                print(error)
+            }
+            
+        }
         adjustSize()
         
         //tap gesture for tentative label
         self.isTentative.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(tentativeClicked(_:))))
         self.isTentative.isUserInteractionEnabled = true
+    }
+    
+    /// Update the model with new data that has just arrived from API
+    func updateModel(_ launch : UpcomingLaunchData){
+            
+            self.upcomingLaunch.launchSite = launch.launch_site.site_name_long
+            self.upcomingLaunch.payloadAndType = "\(launch.rocket.second_stage.payloads[0].payload_id), \(launch.rocket.second_stage.payloads[0].payload_type)"
+            self.upcomingLaunch.launchDate = launch.launch_date_unix.getDate()
+            self.upcomingLaunch.isTentative = launch.is_tentative
+            self.upcomingLaunch.rocket = launch.rocket.rocket_id
+            print(launch.rocket.rocket_id)
+        
     }
     
     /// Making the Height of Upcoming Panel Dynamic
@@ -67,8 +97,7 @@ class HomeViewController: UIViewController,NetworkManagerDelegate {
         DispatchQueue.main.async {
             
             self.upcomingLaunch = (data as! UpcomingLaunchModel)
-    
-            self.constants = Constants.HomeView(upcomingLaunch: self.upcomingLaunch!)
+            
             
             self.updateUI()
         }
@@ -77,14 +106,12 @@ class HomeViewController: UIViewController,NetworkManagerDelegate {
     /// This function will update the UI once updateFromAPI updates the data for HomeViewController
     
     func updateUI(){
-        
-        launchSite.text = constants?.launchSite
-        payloadAndType.text = constants?.payloadAndType
-        launchDate.text =  upcomingLaunch?.getDate()
-        
-        self.isTentative.isHidden = !(self.upcomingLaunch?.decodedData!.is_tentative)!
-        if(!(constants?.rocket=="Falcon 9")){
-            rocketImage.image = UIImage(named: "f_heavy")
+        DispatchQueue.main.async {
+            self.launchSite.text = self.upcomingLaunch.launchSite
+            self.payloadAndType.text = self.upcomingLaunch.payloadAndType
+            self.launchDate.text =  self.upcomingLaunch.launchDate
+            self.isTentative.isHidden = !(self.upcomingLaunch.isTentative!)
+            self.rocketImage.image = UIImage(named: self.upcomingLaunch.rocket!)
         }
     }
     
@@ -139,7 +166,7 @@ extension HomeViewController {
         performSegue(withIdentifier: Constants.SegueManager.detailViewSegue, sender: self)
     }
     @IBAction func launchesButton(_ sender: UIButton) {
-       senderView = Constants.SegueManager.SenderValues.launches
+        senderView = Constants.SegueManager.SenderValues.launches
         performSegue(withIdentifier: Constants.SegueManager.detailViewSegue, sender: self)
     }
     
