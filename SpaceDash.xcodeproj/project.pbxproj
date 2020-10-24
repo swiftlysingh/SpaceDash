@@ -17,15 +17,15 @@
 		CFD5D2D3254405B50068F790 /* AboutSpaceXViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD5D2D2254405B50068F790 /* AboutSpaceXViewController.swift */; };
 		CFD5D2DA2544073B0068F790 /* AppIconSelectTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD5D2D92544073B0068F790 /* AppIconSelectTableViewController.swift */; };
 		CFD5D2E1254407850068F790 /* AppIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD5D2E0254407850068F790 /* AppIcon.swift */; };
-		CFD5D2F1254407CB0068F790 /* SpaceDashIconShuttle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CFD5D2E8254407CB0068F790 /* SpaceDashIconShuttle@2x.png */; };
-		CFD5D2F2254407CB0068F790 /* SpaceDashIconSpaceShuttle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CFD5D2E9254407CB0068F790 /* SpaceDashIconSpaceShuttle@2x.png */; };
-		CFD5D2F3254407CB0068F790 /* SpaceDashIconSpaceShuttle@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CFD5D2EA254407CB0068F790 /* SpaceDashIconSpaceShuttle@3x.png */; };
-		CFD5D2F4254407CB0068F790 /* SpaceDashIconShuttle@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CFD5D2EB254407CB0068F790 /* SpaceDashIconShuttle@3x.png */; };
-		CFD5D2F5254407CB0068F790 /* SpaceDashIconRocket.png in Resources */ = {isa = PBXBuildFile; fileRef = CFD5D2EC254407CB0068F790 /* SpaceDashIconRocket.png */; };
-		CFD5D2F6254407CB0068F790 /* SpaceDashIconRocket@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CFD5D2ED254407CB0068F790 /* SpaceDashIconRocket@3x.png */; };
-		CFD5D2F7254407CB0068F790 /* SpaceDashIconSpaceShuttle.png in Resources */ = {isa = PBXBuildFile; fileRef = CFD5D2EE254407CB0068F790 /* SpaceDashIconSpaceShuttle.png */; };
-		CFD5D2F8254407CB0068F790 /* SpaceDashIconRocket@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CFD5D2EF254407CB0068F790 /* SpaceDashIconRocket@2x.png */; };
-		CFD5D2F9254407CB0068F790 /* SpaceDashIconShuttle.png in Resources */ = {isa = PBXBuildFile; fileRef = CFD5D2F0254407CB0068F790 /* SpaceDashIconShuttle.png */; };
+		CFE9F57325448FBC009521B1 /* SpaceDashIconShuttle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CFE9F56A25448FBC009521B1 /* SpaceDashIconShuttle@2x.png */; };
+		CFE9F57425448FBC009521B1 /* SpaceDashIconSpaceShuttle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CFE9F56B25448FBC009521B1 /* SpaceDashIconSpaceShuttle@2x.png */; };
+		CFE9F57525448FBC009521B1 /* SpaceDashIconSpaceShuttle@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CFE9F56C25448FBC009521B1 /* SpaceDashIconSpaceShuttle@3x.png */; };
+		CFE9F57625448FBC009521B1 /* SpaceDashIconShuttle@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CFE9F56D25448FBC009521B1 /* SpaceDashIconShuttle@3x.png */; };
+		CFE9F57725448FBC009521B1 /* SpaceDashIconRocket.png in Resources */ = {isa = PBXBuildFile; fileRef = CFE9F56E25448FBC009521B1 /* SpaceDashIconRocket.png */; };
+		CFE9F57825448FBC009521B1 /* SpaceDashIconRocket@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CFE9F56F25448FBC009521B1 /* SpaceDashIconRocket@3x.png */; };
+		CFE9F57925448FBC009521B1 /* SpaceDashIconSpaceShuttle.png in Resources */ = {isa = PBXBuildFile; fileRef = CFE9F57025448FBC009521B1 /* SpaceDashIconSpaceShuttle.png */; };
+		CFE9F57A25448FBC009521B1 /* SpaceDashIconRocket@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CFE9F57125448FBC009521B1 /* SpaceDashIconRocket@2x.png */; };
+		CFE9F57B25448FBC009521B1 /* SpaceDashIconShuttle.png in Resources */ = {isa = PBXBuildFile; fileRef = CFE9F57225448FBC009521B1 /* SpaceDashIconShuttle.png */; };
 		FF3043D42507E5D0005F8EE6 /* FastlaneSnapshots.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3043D32507E5D0005F8EE6 /* FastlaneSnapshots.swift */; };
 		FF3043DC2507E615005F8EE6 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3043DB2507E615005F8EE6 /* SnapshotHelper.swift */; };
 		FF42E94E24CD8CA5003E8DFE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF42E94D24CD8CA5003E8DFE /* Constants.swift */; };
@@ -109,15 +109,15 @@
 		CFD5D2D2254405B50068F790 /* AboutSpaceXViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutSpaceXViewController.swift; sourceTree = "<group>"; };
 		CFD5D2D92544073B0068F790 /* AppIconSelectTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIconSelectTableViewController.swift; sourceTree = "<group>"; };
 		CFD5D2E0254407850068F790 /* AppIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIcon.swift; sourceTree = "<group>"; };
-		CFD5D2E8254407CB0068F790 /* SpaceDashIconShuttle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SpaceDashIconShuttle@2x.png"; sourceTree = "<group>"; };
-		CFD5D2E9254407CB0068F790 /* SpaceDashIconSpaceShuttle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SpaceDashIconSpaceShuttle@2x.png"; sourceTree = "<group>"; };
-		CFD5D2EA254407CB0068F790 /* SpaceDashIconSpaceShuttle@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SpaceDashIconSpaceShuttle@3x.png"; sourceTree = "<group>"; };
-		CFD5D2EB254407CB0068F790 /* SpaceDashIconShuttle@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SpaceDashIconShuttle@3x.png"; sourceTree = "<group>"; };
-		CFD5D2EC254407CB0068F790 /* SpaceDashIconRocket.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SpaceDashIconRocket.png; sourceTree = "<group>"; };
-		CFD5D2ED254407CB0068F790 /* SpaceDashIconRocket@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SpaceDashIconRocket@3x.png"; sourceTree = "<group>"; };
-		CFD5D2EE254407CB0068F790 /* SpaceDashIconSpaceShuttle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SpaceDashIconSpaceShuttle.png; sourceTree = "<group>"; };
-		CFD5D2EF254407CB0068F790 /* SpaceDashIconRocket@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SpaceDashIconRocket@2x.png"; sourceTree = "<group>"; };
-		CFD5D2F0254407CB0068F790 /* SpaceDashIconShuttle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SpaceDashIconShuttle.png; sourceTree = "<group>"; };
+		CFE9F56A25448FBC009521B1 /* SpaceDashIconShuttle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SpaceDashIconShuttle@2x.png"; sourceTree = "<group>"; };
+		CFE9F56B25448FBC009521B1 /* SpaceDashIconSpaceShuttle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SpaceDashIconSpaceShuttle@2x.png"; sourceTree = "<group>"; };
+		CFE9F56C25448FBC009521B1 /* SpaceDashIconSpaceShuttle@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SpaceDashIconSpaceShuttle@3x.png"; sourceTree = "<group>"; };
+		CFE9F56D25448FBC009521B1 /* SpaceDashIconShuttle@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SpaceDashIconShuttle@3x.png"; sourceTree = "<group>"; };
+		CFE9F56E25448FBC009521B1 /* SpaceDashIconRocket.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SpaceDashIconRocket.png; sourceTree = "<group>"; };
+		CFE9F56F25448FBC009521B1 /* SpaceDashIconRocket@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SpaceDashIconRocket@3x.png"; sourceTree = "<group>"; };
+		CFE9F57025448FBC009521B1 /* SpaceDashIconSpaceShuttle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SpaceDashIconSpaceShuttle.png; sourceTree = "<group>"; };
+		CFE9F57125448FBC009521B1 /* SpaceDashIconRocket@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SpaceDashIconRocket@2x.png"; sourceTree = "<group>"; };
+		CFE9F57225448FBC009521B1 /* SpaceDashIconShuttle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SpaceDashIconShuttle.png; sourceTree = "<group>"; };
 		EAD33DEB1658F9122221595A /* Pods-SpaceX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceX.release.xcconfig"; path = "Target Support Files/Pods-SpaceX/Pods-SpaceX.release.xcconfig"; sourceTree = "<group>"; };
 		FF3043D12507E5D0005F8EE6 /* FastlaneSnapshots.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FastlaneSnapshots.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF3043D32507E5D0005F8EE6 /* FastlaneSnapshots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastlaneSnapshots.swift; sourceTree = "<group>"; };
@@ -215,21 +215,20 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		CFD5D2E7254407CB0068F790 /* App Icons */ = {
+		CFE9F56925448FBC009521B1 /* App Icons */ = {
 			isa = PBXGroup;
 			children = (
-				CFD5D2E8254407CB0068F790 /* SpaceDashIconShuttle@2x.png */,
-				CFD5D2E9254407CB0068F790 /* SpaceDashIconSpaceShuttle@2x.png */,
-				CFD5D2EA254407CB0068F790 /* SpaceDashIconSpaceShuttle@3x.png */,
-				CFD5D2EB254407CB0068F790 /* SpaceDashIconShuttle@3x.png */,
-				CFD5D2EC254407CB0068F790 /* SpaceDashIconRocket.png */,
-				CFD5D2ED254407CB0068F790 /* SpaceDashIconRocket@3x.png */,
-				CFD5D2EE254407CB0068F790 /* SpaceDashIconSpaceShuttle.png */,
-				CFD5D2EF254407CB0068F790 /* SpaceDashIconRocket@2x.png */,
-				CFD5D2F0254407CB0068F790 /* SpaceDashIconShuttle.png */,
+				CFE9F56A25448FBC009521B1 /* SpaceDashIconShuttle@2x.png */,
+				CFE9F56B25448FBC009521B1 /* SpaceDashIconSpaceShuttle@2x.png */,
+				CFE9F56C25448FBC009521B1 /* SpaceDashIconSpaceShuttle@3x.png */,
+				CFE9F56D25448FBC009521B1 /* SpaceDashIconShuttle@3x.png */,
+				CFE9F56E25448FBC009521B1 /* SpaceDashIconRocket.png */,
+				CFE9F56F25448FBC009521B1 /* SpaceDashIconRocket@3x.png */,
+				CFE9F57025448FBC009521B1 /* SpaceDashIconSpaceShuttle.png */,
+				CFE9F57125448FBC009521B1 /* SpaceDashIconRocket@2x.png */,
+				CFE9F57225448FBC009521B1 /* SpaceDashIconShuttle.png */,
 			);
-			name = "App Icons";
-			path = "../../../../Desktop/App Icons";
+			path = "App Icons";
 			sourceTree = "<group>";
 		};
 		E0C438289B70FCE13EB1B665 /* Pods */ = {
@@ -447,7 +446,7 @@
 		FFF716D4249D3E1C0043EB81 /* SpaceDash */ = {
 			isa = PBXGroup;
 			children = (
-				CFD5D2E7254407CB0068F790 /* App Icons */,
+				CFE9F56925448FBC009521B1 /* App Icons */,
 				FFA9CA5924C0CCCA006FA5DE /* Model */,
 				FFC259DE24A76C5B0019E354 /* Controller */,
 				FFC259DF24A76C720019E354 /* View */,
@@ -639,23 +638,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CFD5D2F7254407CB0068F790 /* SpaceDashIconSpaceShuttle.png in Resources */,
 				FFAFD9D6252CE22A0063A6BA /* Home.storyboard in Resources */,
-				CFD5D2F4254407CB0068F790 /* SpaceDashIconShuttle@3x.png in Resources */,
+				CFE9F57925448FBC009521B1 /* SpaceDashIconSpaceShuttle.png in Resources */,
+				CFE9F57725448FBC009521B1 /* SpaceDashIconRocket.png in Resources */,
+				CFE9F57325448FBC009521B1 /* SpaceDashIconShuttle@2x.png in Resources */,
+				CFE9F57A25448FBC009521B1 /* SpaceDashIconRocket@2x.png in Resources */,
 				FF4C3944250565AE00279A39 /* space.json in Resources */,
 				FFF716E2249D3E210043EB81 /* LaunchScreen.storyboard in Resources */,
 				FFAFD9CF252CE1FA0063A6BA /* About.storyboard in Resources */,
 				FFA9CA5824C0CA31006FA5DE /* Assets.xcassets in Resources */,
+				CFE9F57425448FBC009521B1 /* SpaceDashIconSpaceShuttle@2x.png in Resources */,
 				FFF25C6924D871EF00D0E1FF /* DetailsTableViewCell.xib in Resources */,
-				CFD5D2F3254407CB0068F790 /* SpaceDashIconSpaceShuttle@3x.png in Resources */,
-				CFD5D2F9254407CB0068F790 /* SpaceDashIconShuttle.png in Resources */,
-				CFD5D2F8254407CB0068F790 /* SpaceDashIconRocket@2x.png in Resources */,
-				CFD5D2F6254407CB0068F790 /* SpaceDashIconRocket@3x.png in Resources */,
-				CFD5D2F2254407CB0068F790 /* SpaceDashIconSpaceShuttle@2x.png in Resources */,
-				CFD5D2F1254407CB0068F790 /* SpaceDashIconShuttle@2x.png in Resources */,
+				CFE9F57825448FBC009521B1 /* SpaceDashIconRocket@3x.png in Resources */,
+				CFE9F57B25448FBC009521B1 /* SpaceDashIconShuttle.png in Resources */,
 				FFF716DD249D3E1C0043EB81 /* Main.storyboard in Resources */,
-				CFD5D2F5254407CB0068F790 /* SpaceDashIconRocket.png in Resources */,
+				CFE9F57525448FBC009521B1 /* SpaceDashIconSpaceShuttle@3x.png in Resources */,
 				CF860CC725440BDB00BDF00B /* AppIconCell.xib in Resources */,
+				CFE9F57625448FBC009521B1 /* SpaceDashIconShuttle@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
