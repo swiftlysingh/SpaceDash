@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HomeViewController: UIViewController,NetworkManagerDelegate {
+class HomeViewController: UIViewController {
     
     @IBOutlet weak var upcomingPanel: NSLayoutConstraint!
     @IBOutlet var panelConstraints: [NSLayoutConstraint]!
@@ -29,7 +29,6 @@ class HomeViewController: UIViewController,NetworkManagerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        networkObject.delegate = self
         
         networkObject.performRequest { [weak self] (result: Result<[UpcomingLaunchData],Error>) in
             guard let self = self else { return }
@@ -57,18 +56,6 @@ class HomeViewController: UIViewController,NetworkManagerDelegate {
         self.isTentative.isUserInteractionEnabled = true
     }
     
-    /// Update the model with new data that has just arrived from API
-    func updateModel(_ launch : UpcomingLaunchData){
-            
-            self.upcomingLaunch.launchSite = launch.launch_site.site_name_long
-            self.upcomingLaunch.payloadAndType = "\(launch.rocket.second_stage.payloads[0].payload_id), \(launch.rocket.second_stage.payloads[0].payload_type)"
-            self.upcomingLaunch.launchDate = launch.launch_date_unix.getDate()
-            self.upcomingLaunch.isTentative = launch.is_tentative
-            self.upcomingLaunch.rocket = launch.rocket.rocket_id
-            print(launch.rocket.rocket_id)
-        
-    }
-    
     /// Making the Height of Upcoming Panel Dynamic
     func adjustSize(){
         if UIScreen.main.bounds.height<896 {
@@ -84,27 +71,19 @@ class HomeViewController: UIViewController,NetworkManagerDelegate {
         self.navigationController?.setNavigationBarHidden(true, animated: true)
     }
     
-    /// This will print error in network call
-    /// - Parameter error: error
-    func error(error: Error) {
-        print(error)
-    }
-    
-    
-    /// This will bring decoded and cleaned data from the Network Manger
-    /// - Parameter data: data
-    func updateFromAPI(data: Any) {
-        DispatchQueue.main.async {
+    /// Update the model with new data that has just arrived from API
+    func updateModel(_ launch : UpcomingLaunchData){
             
-            self.upcomingLaunch = (data as! UpcomingLaunchModel)
-            
-            
-            self.updateUI()
-        }
+            self.upcomingLaunch.launchSite = launch.launch_site.site_name_long
+            self.upcomingLaunch.payloadAndType = "\(launch.rocket.second_stage.payloads[0].payload_id), \(launch.rocket.second_stage.payloads[0].payload_type)"
+            self.upcomingLaunch.launchDate = launch.launch_date_unix.getDate()
+            self.upcomingLaunch.isTentative = launch.is_tentative
+            self.upcomingLaunch.rocket = launch.rocket.rocket_id
+            print(launch.rocket.rocket_id)
+        
     }
     
     /// This function will update the UI once updateFromAPI updates the data for HomeViewController
-    
     func updateUI(){
         DispatchQueue.main.async {
             self.launchSite.text = self.upcomingLaunch.launchSite

@@ -10,7 +10,6 @@ import Foundation
 
 struct NetworkManager{
     
-    weak var delegate:NetworkManagerDelegate?
     private let key : String
     private let urlString : String
     

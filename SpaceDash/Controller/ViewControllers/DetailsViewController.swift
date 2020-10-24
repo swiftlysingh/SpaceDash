@@ -48,7 +48,7 @@ class DetailsViewController: UIViewController {
 
 //MARK: - Network Manager
 
-extension DetailsViewController:NetworkManagerDelegate {
+extension DetailsViewController {
     
     func updateFromAPI(data: Any) {
         DispatchQueue.main.async {
