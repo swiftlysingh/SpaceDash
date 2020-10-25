@@ -12,8 +12,9 @@ import Lottie
 class DetailsViewController: UIViewController {
     
     var senderView : String = ""
-//    var networkObject = NetworkManager(key: " ")
+    var networkObject = NetworkManager(Constants.NetworkManager.baseURL)
     var decodedData : DetailsViewModel?
+    typealias senderObj = Result<[RocketData],Error>
     
     @IBOutlet var DetailTableView: UITableView!
     @IBOutlet var loadingAnimation: AnimationView!
@@ -33,8 +34,19 @@ class DetailsViewController: UIViewController {
         DetailTableView.dataSource = self
         DetailTableView.register(UINib(nibName: Constants.DetailsView.nibName, bundle: nil), forCellReuseIdentifier: Constants.DetailsView.reuseId)
         
-//        networkObject.delegate = self
-//        networkObject.fetchData(demand: senderView)
+        networkObject.performRequest(key: senderView) { [weak self] (result: senderObj) in
+            guard let self = self else { return }
+            
+            switch result {
+            
+            case .success(let launches):
+                print(launches.description)
+                break
+                
+            case .failure(let error):
+                print(error)
+            }
+        }
     }
     
     /// Add loading Animation before the Details View. The type of animation is in Interface Builder

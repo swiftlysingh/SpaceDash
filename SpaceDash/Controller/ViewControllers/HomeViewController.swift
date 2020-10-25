@@ -18,8 +18,8 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var isTentative: UILabel!
     @IBOutlet weak var rocketImage: UIImageView!
     
-    var networkObject = NetworkManager(Constants.NetworkManager.baseURL)
-    var upcomingLaunch = UpcomingLaunchModel()
+    let networkObject = NetworkManager(Constants.NetworkManager.baseURL)
+    let upcomingLaunch = UpcomingLaunchModel()
     var senderView : String = ""
     
     override func viewDidLoad() {
