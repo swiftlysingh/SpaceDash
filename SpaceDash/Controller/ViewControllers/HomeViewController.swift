@@ -16,7 +16,7 @@ class HomeViewController: UIViewController,NetworkManagerDelegate {
     @IBOutlet weak var launchDate: UILabel!
     @IBOutlet weak var launchSite: UILabel!
     @IBOutlet weak var payloadAndType: UILabel!
-    @IBOutlet weak var watchNowButton: WatchNowButtonView!
+    @IBOutlet weak var watchNowButton: WatchNowButton!
     @IBOutlet weak var isTentative: UILabel!
     @IBOutlet weak var rocketImage: RocketImageView!
     
@@ -37,30 +37,24 @@ class HomeViewController: UIViewController,NetworkManagerDelegate {
         super.viewDidLoad()
         networkObject.delegate = self
         networkObject.fetchData(demand: Constants.NetworkManager.upcomingLaunchURL)
-        adjustUpcomingPanelSize()
         
         //tap gesture for tentative label
         self.isTentative.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(tentativeClicked(_:))))
         self.isTentative.isUserInteractionEnabled = true
     }
     
-    /// Making the Height of Upcoming Panel Dynamic
-    func adjustUpcomingPanelSize() {
-        if UIScreen.main.bounds.height<smallDeviceHeight {
+    /// Making the Height of Upcoming Panel and View Dynamic
+    func adjustUpcomingSize() {
+        if UIScreen.main.bounds.height<smallDeviceHeight || !watchNowButton.isHidden {
             upcomingPanel.constant = UIScreen.main.bounds.height*0.04
             
             for panels in panelConstraints{
                 panels.constant = UIScreen.main.bounds.height*0.025
             }
         }
-    }
-    
-    /// Making the Height of Upcoming View Dynamic
-    func adjustUpcomingViewSize() {
-        if UIScreen.main.bounds.height<smallDeviceHeight {
-            if !watchNowButton.isHidden {
-                upcomingView.setupSmallHeight()
-            }
+        
+        if UIScreen.main.bounds.height<smallDeviceHeight && !watchNowButton.isHidden {
+            upcomingView.setupSmallHeight()
         }
     }
     
@@ -97,7 +91,7 @@ class HomeViewController: UIViewController,NetworkManagerDelegate {
         launchDate.text =  upcomingLaunch?.getDate()
         
         checkWatchButton()
-        adjustUpcomingViewSize()
+        adjustUpcomingSize()
         
         self.isTentative.isHidden = !(self.upcomingLaunch?.decodedData!.is_tentative)!
         if(!(constants?.rocket=="Falcon 9")){

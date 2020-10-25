@@ -8,7 +8,7 @@
 
 import UIKit
 
-final class WatchNowButtonView: UIButton {
+final class WatchNowButton: UIButton {
 
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)

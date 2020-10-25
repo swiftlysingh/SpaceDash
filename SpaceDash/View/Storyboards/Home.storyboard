@@ -518,14 +518,14 @@
                                             <constraint firstItem="fpE-sJ-nR4" firstAttribute="top" secondItem="rTS-5a-Jvt" secondAttribute="bottom" constant="6" id="tOX-wI-voT"/>
                                         </constraints>
                                     </view>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zBb-bI-XbH" customClass="WatchNowButtonView" customModule="SpaceDash" customModuleProvider="target">
-                                        <rect key="frame" x="8" y="414" width="227" height="64"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zBb-bI-XbH" customClass="WatchNowButton" customModule="SpaceDash" customModuleProvider="target">
+                                        <rect key="frame" x="8" y="414" width="227" height="41"/>
                                         <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="227" id="Iim-1a-ffZ"/>
-                                            <constraint firstAttribute="height" constant="64" id="orU-dV-or2"/>
+                                            <constraint firstAttribute="height" constant="41" id="rnY-bI-3it"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                         <state key="normal" title="Watch Now">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
