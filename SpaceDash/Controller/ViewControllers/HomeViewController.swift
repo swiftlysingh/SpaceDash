@@ -138,13 +138,16 @@ extension HomeViewController: UIPopoverPresentationControllerDelegate {
     @objc func tentativeClicked(_ sender: UITapGestureRecognizer){
         // we dont want to fill the popover to full width of the screen
         let standardWidth = self.view.frame.width - 60
+        
         //to dynamically resize the popover, we premature-ly calculate the height of the label using the text content
-        let estimatedHeight = Constants.HomeView.tentativeDetail.height(ConstrainedWidth: standardWidth - 24) //12 + 12 horizontal padding
+        let estimatedHeight = Constants.HomeView.tentativeDetail.height(ConstrainedWidth: standardWidth - 24)
+        
         let tentativeDetailsVC = TentativeDetailsViewController()
         tentativeDetailsVC.lblTentativeDetail.text = Constants.HomeView.tentativeDetail
         tentativeDetailsVC.modalPresentationStyle = .popover //this tells that the presenting viewcontroller is an popover style
         tentativeDetailsVC.preferredContentSize = CGSize.init(width: standardWidth, height: estimatedHeight + 40) //40 is vertical padding
         tentativeDetailsVC.overrideUserInterfaceStyle = .light //disabling dark mode
+        
         if let popoverPresentationController = tentativeDetailsVC.popoverPresentationController {
             //this option makes popover to preview below the "T" sign
             popoverPresentationController.permittedArrowDirections = .up
