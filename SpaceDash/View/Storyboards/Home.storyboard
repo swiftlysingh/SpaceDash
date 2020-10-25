@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Bv7-a9-8MT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Bv7-a9-8MT">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -55,7 +57,7 @@
                                                             <constraint firstItem="4JW-BB-J8F" firstAttribute="top" secondItem="pBg-SD-URv" secondAttribute="bottom" constant="8" id="zP1-qq-QhY"/>
                                                         </constraints>
                                                     </view>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3HV-yk-VOF">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3HV-yk-VOF">
                                                         <rect key="frame" x="0.0" y="0.0" width="166" height="30"/>
                                                         <connections>
                                                             <action selector="rocketsButton:" destination="oCg-FU-UY1" eventType="touchUpInside" id="2pq-Al-Mkz"/>
@@ -106,7 +108,7 @@
                                                             <constraint firstItem="PAC-vQ-jIc" firstAttribute="leading" secondItem="TVQ-O3-zPd" secondAttribute="leading" constant="32" id="xUX-be-iBP"/>
                                                         </constraints>
                                                     </view>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ScO-mr-RjH">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ScO-mr-RjH">
                                                         <rect key="frame" x="0.0" y="0.0" width="166" height="30"/>
                                                         <connections>
                                                             <action selector="launchesButton:" destination="oCg-FU-UY1" eventType="touchUpInside" id="rGx-wF-ebe"/>
@@ -158,7 +160,7 @@
                                                             <constraint firstAttribute="bottom" secondItem="Mf7-kV-0s5" secondAttribute="bottom" constant="20" id="ybj-Gs-PrB"/>
                                                         </constraints>
                                                     </view>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2vy-mY-vWB">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2vy-mY-vWB">
                                                         <rect key="frame" x="0.0" y="0.0" width="166" height="30"/>
                                                         <connections>
                                                             <action selector="shipsButton:" destination="oCg-FU-UY1" eventType="touchUpInside" id="oly-bb-4Sh"/>
@@ -211,7 +213,7 @@
                                                             <constraint firstItem="jAk-DJ-ZqX" firstAttribute="centerX" secondItem="FKl-bB-8Zx" secondAttribute="centerX" id="yIx-c7-IQI"/>
                                                         </constraints>
                                                     </view>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xTZ-pV-2nh">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xTZ-pV-2nh">
                                                         <rect key="frame" x="0.0" y="0.0" width="166" height="30"/>
                                                         <connections>
                                                             <action selector="capsulesButton:" destination="oCg-FU-UY1" eventType="touchUpInside" id="dp1-fn-gkP"/>
@@ -264,7 +266,7 @@
                                                             <constraint firstAttribute="width" secondItem="gvW-HU-srz" secondAttribute="height" multiplier="119:127" id="yBu-2D-cvf"/>
                                                         </constraints>
                                                     </view>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WNc-aF-ffN">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WNc-aF-ffN">
                                                         <rect key="frame" x="0.0" y="0.0" width="166" height="30"/>
                                                         <connections>
                                                             <action selector="landpadsButton:" destination="oCg-FU-UY1" eventType="touchUpInside" id="9JV-LJ-7D4"/>
@@ -317,7 +319,7 @@
                                                             <constraint firstItem="zrs-iQ-zEX" firstAttribute="centerX" secondItem="8Fb-vG-oie" secondAttribute="centerX" id="xeZ-0S-MsI"/>
                                                         </constraints>
                                                     </view>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lhe-fL-ksI">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lhe-fL-ksI">
                                                         <rect key="frame" x="0.0" y="0.0" width="166" height="30"/>
                                                         <connections>
                                                             <action selector="launchSitesButton:" destination="oCg-FU-UY1" eventType="touchUpInside" id="33P-vv-GvG"/>
@@ -403,14 +405,14 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2020/06/13 9:21am" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="R32-xA-f2f">
-                                                <rect key="frame" x="15" y="35" width="158" height="21"/>
+                                                <rect key="frame" x="15" y="35" width="156" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                 <color key="textColor" name="DashBlack"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="T" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W53-We-TyD">
                                                 <rect key="frame" x="117" y="10" width="16" height="16"/>
-                                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" systemColor="systemGreenColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="W53-We-TyD" secondAttribute="height" multiplier="1:1" id="5UO-Wu-Yae"/>
                                                     <constraint firstAttribute="width" secondItem="W53-We-TyD" secondAttribute="height" multiplier="1:1" id="buz-z3-i4z"/>
@@ -450,7 +452,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CCAFS SLC 40" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TAk-7B-GjH" customClass="MarqueeLabel" customModule="MarqueeLabel">
-                                                <rect key="frame" x="15" y="35" width="123.5" height="21"/>
+                                                <rect key="frame" x="15" y="35" width="123" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                 <color key="textColor" name="DashBlack"/>
                                                 <nil key="highlightedColor"/>
@@ -498,11 +500,31 @@
                                                 <color key="textColor" name="DashBlack"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ANASIS-II, Satellite" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fpE-sJ-nR4">
-                                                <rect key="frame" x="15" y="35" width="154" height="21"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ANASIS-II, Satellite" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fpE-sJ-nR4" customClass="MarqueeLabel" customModule="MarqueeLabel">
+                                                <rect key="frame" x="15" y="35" width="158" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                 <color key="textColor" name="DashBlack"/>
                                                 <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="scrollDuration">
+                                                        <real key="value" value="0.5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="scrollRate">
+                                                        <real key="value" value="17"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="leadingBuffer">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="trailingBuffer">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="fadeLength">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="animationDelay">
+                                                        <real key="value" value="3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                             </label>
                                         </subviews>
                                         <color key="backgroundColor" red="0.90588837860000004" green="0.90587145089999999" blue="0.90588295460000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -518,9 +540,9 @@
                                             <constraint firstItem="fpE-sJ-nR4" firstAttribute="top" secondItem="rTS-5a-Jvt" secondAttribute="bottom" constant="6" id="tOX-wI-voT"/>
                                         </constraints>
                                     </view>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zBb-bI-XbH" customClass="WatchNowButton" customModule="SpaceDash" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zBb-bI-XbH" customClass="WatchNowButton" customModule="SpaceDash" customModuleProvider="target">
                                         <rect key="frame" x="8" y="414" width="227" height="41"/>
-                                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="227" id="Iim-1a-ffZ"/>
                                             <constraint firstAttribute="height" constant="41" id="rnY-bI-3it"/>
@@ -555,6 +577,7 @@
                                 </constraints>
                             </view>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="JKZ-Hx-ESK"/>
                         <color key="backgroundColor" name="DashBlack"/>
                         <constraints>
                             <constraint firstItem="6ch-1d-wZ7" firstAttribute="trailing" secondItem="JKZ-Hx-ESK" secondAttribute="trailing" priority="250" id="F2M-Q9-gSt"/>
@@ -565,7 +588,6 @@
                             <constraint firstAttribute="bottom" secondItem="wpX-Nu-xzc" secondAttribute="bottom" constant="20" id="pz6-AA-T4p"/>
                             <constraint firstItem="wpX-Nu-xzc" firstAttribute="trailing" secondItem="JKZ-Hx-ESK" secondAttribute="trailing" id="qhj-gg-Xew"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="JKZ-Hx-ESK"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" id="owd-cE-Zai">
                         <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="0.0"/>
@@ -626,6 +648,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="5cC-rH-nHq"/>
                         <color key="backgroundColor" name="DashBlack"/>
                         <constraints>
                             <constraint firstItem="teU-Rm-P40" firstAttribute="top" secondItem="5cC-rH-nHq" secondAttribute="top" id="FOd-61-Oqr"/>
@@ -633,7 +656,6 @@
                             <constraint firstItem="teU-Rm-P40" firstAttribute="leading" secondItem="5cC-rH-nHq" secondAttribute="leading" id="ihn-L5-l4U"/>
                             <constraint firstItem="5cC-rH-nHq" firstAttribute="trailing" secondItem="teU-Rm-P40" secondAttribute="trailing" id="mxj-ad-0CL"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="5cC-rH-nHq"/>
                     </view>
                     <navigationItem key="navigationItem" id="dmB-km-fqk"/>
                     <connections>
@@ -663,12 +685,21 @@
             <point key="canvasLocation" x="139" y="-548"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="IGg-qL-12A"/>
+        <designable name="TAk-7B-GjH">
+            <size key="intrinsicContentSize" width="123" height="20.5"/>
+        </designable>
+        <designable name="fpE-sJ-nR4">
+            <size key="intrinsicContentSize" width="158" height="20.5"/>
+        </designable>
+    </designables>
     <resources>
         <image name="cargo-ship" width="512" height="512"/>
         <image name="f_9" width="510" height="5842"/>
         <image name="fast" width="512" height="512"/>
         <image name="helipad (1)" width="512" height="512"/>
-        <image name="house" catalog="system" width="128" height="110"/>
+        <image name="house" catalog="system" width="128" height="106"/>
         <image name="launch" width="512" height="512"/>
         <image name="space-capsule (1)" width="512" height="512"/>
         <image name="spaceship" width="512" height="512"/>
@@ -678,5 +709,8 @@
         <namedColor name="DashCream">
             <color red="0.90600001811981201" green="0.90600001811981201" blue="0.90600001811981201" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
     </resources>
 </document>
