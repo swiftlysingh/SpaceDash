@@ -9,20 +9,17 @@
 import Foundation
 
 struct NetworkManager{
+
+    private let base : String
     
-    private let key : String
-    private let urlString : String
-    
-    init(key: String) {
-        self.key = key
-        self.urlString = "\(Constants.NetworkManager.baseURL)\(key)"
+    init(_ base: String) {
+        self.base = base
     }
     
     /// This will function will call the API and bring back the JSON data and will call parseJSON function to parse the data
-    
-    func performRequest<T: Decodable>(completion: @escaping (Result<T,Error>) -> Void){
+    func performRequest<T: Decodable>(key: String, completion: @escaping (Result<T,Error>) -> Void){
         
-        if let url = URL(string: urlString){
+        if let url = URL(string: "\(base)\(key)"){
             
             let session = URLSession(configuration: .default)
             
