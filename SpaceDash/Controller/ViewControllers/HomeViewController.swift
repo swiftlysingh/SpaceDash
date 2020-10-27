@@ -67,46 +67,18 @@ class HomeViewController: UIViewController {
             print(launch.rocket.rocket_id)
         
     }
-}
-
-
-//MARK: - IBOutlets
-
-extension HomeViewController {
     
-    @IBAction func rocketsButton(_ sender: UIButton) {
-        senderView = Constants.SegueManager.SenderValues.rocket
-        performSegue(withIdentifier: Constants.SegueManager.detailViewSegue, sender: self)
-    }
-    
-    @IBAction func launchSitesButton(_ sender: UIButton) {
-        senderView = Constants.SegueManager.SenderValues.launchSite
-        performSegue(withIdentifier: Constants.SegueManager.detailViewSegue, sender: self)
-    }
-    @IBAction func landpadsButton(_ sender: UIButton) {
-        senderView = Constants.SegueManager.SenderValues.landpads
-        performSegue(withIdentifier: Constants.SegueManager.detailViewSegue, sender: self)
-    }
-    @IBAction func capsulesButton(_ sender: UIButton) {
-        senderView = Constants.SegueManager.SenderValues.capsules
-        performSegue(withIdentifier: Constants.SegueManager.detailViewSegue, sender: self)
-    }
-    @IBAction func shipsButton(_ sender: UIButton) {
-        senderView = Constants.SegueManager.SenderValues.ships
-        performSegue(withIdentifier: Constants.SegueManager.detailViewSegue, sender: self)
-    }
-    @IBAction func launchesButton(_ sender: UIButton) {
-        senderView = Constants.SegueManager.SenderValues.launches
-        performSegue(withIdentifier: Constants.SegueManager.detailViewSegue, sender: self)
+    @IBAction func buttonPressed(_ sender: UIButton) {
+        performSegue(withIdentifier: Constants.SegueManager.detailViewSegue, sender: sender.titleLabel?.text)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let target = segue.destination as? DetailsViewController {
-            target.senderView = senderView
+            target.senderView = sender as! String
         }
     }
+    
 }
-
 
 //MARK: - UI
 

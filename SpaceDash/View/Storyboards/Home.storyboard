@@ -63,7 +63,7 @@
                                                             <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                         <connections>
-                                                            <action selector="rocketsButton:" destination="oCg-FU-UY1" eventType="touchUpInside" id="2pq-Al-Mkz"/>
+                                                            <action selector="buttonPressed:" destination="oCg-FU-UY1" eventType="touchUpInside" id="VOQ-hl-FEs"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -117,7 +117,7 @@
                                                             <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                         <connections>
-                                                            <action selector="launchesButton:" destination="oCg-FU-UY1" eventType="touchUpInside" id="rGx-wF-ebe"/>
+                                                            <action selector="buttonPressed:" destination="oCg-FU-UY1" eventType="touchUpInside" id="VO6-BP-Q9P"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -172,7 +172,7 @@
                                                             <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                         <connections>
-                                                            <action selector="shipsButton:" destination="oCg-FU-UY1" eventType="touchUpInside" id="oly-bb-4Sh"/>
+                                                            <action selector="buttonPressed:" destination="oCg-FU-UY1" eventType="touchUpInside" id="srz-TX-uV2"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -228,7 +228,7 @@
                                                             <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                         <connections>
-                                                            <action selector="capsulesButton:" destination="oCg-FU-UY1" eventType="touchUpInside" id="dp1-fn-gkP"/>
+                                                            <action selector="buttonPressed:" destination="oCg-FU-UY1" eventType="touchUpInside" id="oMb-Mr-1rJ"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -284,7 +284,7 @@
                                                             <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                         <connections>
-                                                            <action selector="landpadsButton:" destination="oCg-FU-UY1" eventType="touchUpInside" id="9JV-LJ-7D4"/>
+                                                            <action selector="buttonPressed:" destination="oCg-FU-UY1" eventType="touchUpInside" id="hlO-CN-nCT"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -340,7 +340,7 @@
                                                             <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                         <connections>
-                                                            <action selector="launchSitesButton:" destination="oCg-FU-UY1" eventType="touchUpInside" id="33P-vv-GvG"/>
+                                                            <action selector="buttonPressed:" destination="oCg-FU-UY1" eventType="touchUpInside" id="5Ir-Zi-41c"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
