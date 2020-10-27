@@ -3,7 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -59,6 +59,9 @@
                                                     </view>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3HV-yk-VOF">
                                                         <rect key="frame" x="0.0" y="0.0" width="166" height="30"/>
+                                                        <state key="normal" title="rockets">
+                                                            <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
                                                         <connections>
                                                             <action selector="rocketsButton:" destination="oCg-FU-UY1" eventType="touchUpInside" id="2pq-Al-Mkz"/>
                                                         </connections>
@@ -110,6 +113,9 @@
                                                     </view>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ScO-mr-RjH">
                                                         <rect key="frame" x="0.0" y="0.0" width="166" height="30"/>
+                                                        <state key="normal" title="launches">
+                                                            <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
                                                         <connections>
                                                             <action selector="launchesButton:" destination="oCg-FU-UY1" eventType="touchUpInside" id="rGx-wF-ebe"/>
                                                         </connections>
@@ -162,6 +168,9 @@
                                                     </view>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2vy-mY-vWB">
                                                         <rect key="frame" x="0.0" y="0.0" width="166" height="30"/>
+                                                        <state key="normal" title="ships">
+                                                            <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
                                                         <connections>
                                                             <action selector="shipsButton:" destination="oCg-FU-UY1" eventType="touchUpInside" id="oly-bb-4Sh"/>
                                                         </connections>
@@ -215,6 +224,9 @@
                                                     </view>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xTZ-pV-2nh">
                                                         <rect key="frame" x="0.0" y="0.0" width="166" height="30"/>
+                                                        <state key="normal" title="capsules">
+                                                            <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
                                                         <connections>
                                                             <action selector="capsulesButton:" destination="oCg-FU-UY1" eventType="touchUpInside" id="dp1-fn-gkP"/>
                                                         </connections>
@@ -268,6 +280,9 @@
                                                     </view>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WNc-aF-ffN">
                                                         <rect key="frame" x="0.0" y="0.0" width="166" height="30"/>
+                                                        <state key="normal" title="landpads">
+                                                            <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
                                                         <connections>
                                                             <action selector="landpadsButton:" destination="oCg-FU-UY1" eventType="touchUpInside" id="9JV-LJ-7D4"/>
                                                         </connections>
@@ -321,6 +336,9 @@
                                                     </view>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lhe-fL-ksI">
                                                         <rect key="frame" x="0.0" y="0.0" width="166" height="30"/>
+                                                        <state key="normal" title="launchpads">
+                                                            <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
                                                         <connections>
                                                             <action selector="launchSitesButton:" destination="oCg-FU-UY1" eventType="touchUpInside" id="33P-vv-GvG"/>
                                                         </connections>
