@@ -139,9 +139,9 @@
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="5J5-UG-1TA">
                                 <rect key="frame" x="20" y="76" width="374" height="32"/>
                                 <segments>
-                                    <segment title="Shuttle"/>
+                                    <segment title="Stock"/>
                                     <segment title="Space Shuttle"/>
-                                    <segment title="Rocket"/>
+                                    <segment title="Saturn-V"/>
                                 </segments>
                                 <connections>
                                     <action selector="iconIndexChanged:" destination="xKu-oX-pDS" eventType="valueChanged" id="L9g-nw-d4b"/>

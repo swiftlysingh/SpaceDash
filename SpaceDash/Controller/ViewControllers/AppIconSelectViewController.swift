@@ -40,7 +40,7 @@ class AppIconSelectViewController: UIViewController {
     func changeAppIcon(to name: String?) {
         UIApplication.shared.setAlternateIconName(name) { error in
             if let error = error {
-                print(error.localizedDescription)
+                self.showError(title: "Error", message: error.localizedDescription)
             } else {
                 print("App Icon Changed!")
             }
@@ -54,9 +54,9 @@ class AppIconSelectViewController: UIViewController {
     func setIconName(selectedIndex: Int) -> String? {
         switch selectedIndex {
         case 1:
-            return "SpaceShuttle"
+            return Constants.AppIcon.spaceShuttle
         case 2:
-            return "Rocket"
+            return Constants.AppIcon.rocket
         default:
             return nil
         }
@@ -65,12 +65,18 @@ class AppIconSelectViewController: UIViewController {
     func setImageView(selectedIndex: Int) -> UIImage! {
         switch selectedIndex {
         case 1:
-            return UIImage(named: "SpaceDashIconSpaceShuttle")
+            return UIImage(named: Constants.AppIcon.spaceShuttle)
         case 2:
-            return UIImage(named: "SpaceDashIconRocket")
+            return UIImage(named: Constants.AppIcon.rocket)
         default:
-            return UIImage(named: "SpaceDashIconShuttle")
+            return UIImage(named: Constants.AppIcon.shuttle)
         }
+    }
+    
+    func showError(title: String, message: String) {
+        let ac = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        ac.addAction(UIAlertAction(title: "OK", style: .cancel))
+        present(ac, animated: true)
     }
     
 }

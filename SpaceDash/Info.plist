@@ -75,7 +75,7 @@
         </dict>
         <key>CFBundleAlternateIcons</key>
         <dict>
-            <key>SpaceShuttle</key>
+            <key>SpaceDashIconSpaceShuttle</key>
             <dict>
                 <key>CFBundleIconFiles</key>
                 <array>
@@ -84,7 +84,7 @@
                 <key>UIPrerenderedIcon</key>
                 <false/>
             </dict>
-            <key>Rocket</key>
+            <key>SpaceDashIconRocket</key>
             <dict>
                 <key>CFBundleIconFiles</key>
                 <array>
