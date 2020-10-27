@@ -87,6 +87,11 @@ class SpaceXUITests: XCTestCase {
             XCTAssertTrue(aboutSpaceDashTitle.exists)
         }
         
+    
+        XCTAssert(app/*@START_MENU_TOKEN@*/.staticTexts["Change App Icon"]/*[[".buttons[\"Change App Icon\"].staticTexts[\"Change App Icon\"]",".staticTexts[\"Change App Icon\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.exists)
+        XCTAssert(app/*@START_MENU_TOKEN@*/.staticTexts["Privacy Policy"]/*[[".buttons[\"Privacy Policy\"].staticTexts[\"Privacy Policy\"]",".staticTexts[\"Privacy Policy\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.exists)
+        
+        
     }
 }
 
