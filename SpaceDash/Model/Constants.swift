@@ -60,4 +60,10 @@ struct Constants {
         static let okButtonTitle = "Ok"
     }
     
+    struct AppIcon {
+        static let rocket = "SpaceDashIconRocket"
+        static let shuttle = "SpaceDashIconShuttle"
+        static let spaceShuttle = "SpaceDashIconSpaceShuttle"
+    }
+    
 }

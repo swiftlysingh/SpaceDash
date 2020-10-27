@@ -11,7 +11,6 @@ import UIKit
 class AboutViewController: UIViewController {
     
     @IBOutlet weak var aboutSpaceConstraint: NSLayoutConstraint!
-    @IBOutlet weak var licenseBottomConstraint: NSLayoutConstraint!
     @IBOutlet weak var aboutSpaceTopConstraint: NSLayoutConstraint!
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
@@ -24,11 +23,6 @@ class AboutViewController: UIViewController {
         adjustSize()
         
     }
-    
-    @IBAction func licenseButtonPressed(_ sender: UIButton) {
-        checkIfAppCanOpenURL(urlString: Constants.AboutView.licenseURLString)
-        openUrl(with: Constants.AboutView.licenseURLString)
-      }
       
       @IBAction func privacyButtonPressed(_ sender: UIButton) {
         checkIfAppCanOpenURL(urlString: Constants.AboutView.privacyURLString)
@@ -57,7 +51,6 @@ class AboutViewController: UIViewController {
     
     func adjustSize(){
         aboutSpaceConstraint.constant = UIScreen.main.bounds.height*0.03
-        licenseBottomConstraint.constant = UIScreen.main.bounds.height*0.03
         aboutSpaceTopConstraint.constant = UIScreen.main.bounds.height*0.01
     }
 }
