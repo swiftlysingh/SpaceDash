@@ -81,24 +81,8 @@
                                     <constraint firstItem="Syz-yi-DN7" firstAttribute="top" secondItem="SuG-Rh-GyO" secondAttribute="topMargin" id="yfM-O8-Rma"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9P7-BS-cxu">
-                                <rect key="frame" x="177.5" y="741" width="59" height="33"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="33" id="77m-Fx-0QH"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal" title="License">
-                                    <color key="titleColor" systemColor="linkColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="licenseButtonPressed:" destination="yD3-ji-SQN" eventType="touchUpInside" id="wne-zg-1CR"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XCW-Df-G6E">
-                                <rect key="frame" x="154" y="700" width="106" height="33"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="33" id="2tT-a9-aaX"/>
-                                </constraints>
+                                <rect key="frame" x="154" y="747" width="106" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Privacy Policy">
                                     <color key="titleColor" systemColor="linkColor"/>
@@ -108,10 +92,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DTs-ao-IyD">
-                                <rect key="frame" x="148" y="662" width="118" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="YqO-fk-gPD"/>
-                                </constraints>
+                                <rect key="frame" x="141.5" y="706" width="131" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Change App Icon">
                                     <color key="titleColor" systemColor="linkColor"/>
                                 </state>
@@ -123,15 +105,13 @@
                         <viewLayoutGuide key="safeArea" id="ZFi-n0-aqc"/>
                         <color key="backgroundColor" name="DashBlack"/>
                         <constraints>
-                            <constraint firstItem="XCW-Df-G6E" firstAttribute="centerX" secondItem="syZ-bN-VMW" secondAttribute="centerX" id="AIh-ZR-j66"/>
+                            <constraint firstItem="ZFi-n0-aqc" firstAttribute="bottom" secondItem="XCW-Df-G6E" secondAttribute="bottom" constant="33" id="0J0-FP-lgF"/>
+                            <constraint firstItem="XCW-Df-G6E" firstAttribute="top" secondItem="DTs-ao-IyD" secondAttribute="bottom" constant="8" symbolic="YES" id="7Vr-uP-W6K"/>
+                            <constraint firstItem="XCW-Df-G6E" firstAttribute="centerX" secondItem="ZFi-n0-aqc" secondAttribute="centerX" id="GZ6-QJ-Fxe"/>
                             <constraint firstItem="SuG-Rh-GyO" firstAttribute="leading" secondItem="ZFi-n0-aqc" secondAttribute="leading" constant="20" id="ICc-1L-Wuy"/>
-                            <constraint firstItem="DTs-ao-IyD" firstAttribute="centerX" secondItem="syZ-bN-VMW" secondAttribute="centerX" id="NgK-Jn-1cm"/>
                             <constraint firstItem="SuG-Rh-GyO" firstAttribute="top" secondItem="N5R-S6-Ut7" secondAttribute="bottom" constant="49" id="SWy-bN-N2o"/>
                             <constraint firstItem="ZFi-n0-aqc" firstAttribute="trailing" secondItem="SuG-Rh-GyO" secondAttribute="trailing" constant="20" id="U1Y-HQ-4hF"/>
-                            <constraint firstItem="9P7-BS-cxu" firstAttribute="centerX" secondItem="syZ-bN-VMW" secondAttribute="centerX" id="WaH-Hz-otk"/>
-                            <constraint firstItem="ZFi-n0-aqc" firstAttribute="bottom" secondItem="9P7-BS-cxu" secondAttribute="bottom" constant="39" id="XzT-O4-Zpy"/>
-                            <constraint firstItem="9P7-BS-cxu" firstAttribute="top" secondItem="XCW-Df-G6E" secondAttribute="bottom" constant="8" id="gQS-Pd-bS1"/>
-                            <constraint firstItem="XCW-Df-G6E" firstAttribute="top" secondItem="DTs-ao-IyD" secondAttribute="bottom" constant="8" symbolic="YES" id="n5u-4r-JMZ"/>
+                            <constraint firstItem="DTs-ao-IyD" firstAttribute="centerX" secondItem="ZFi-n0-aqc" secondAttribute="centerX" id="aKF-vt-Dz3"/>
                             <constraint firstItem="N5R-S6-Ut7" firstAttribute="leading" secondItem="ZFi-n0-aqc" secondAttribute="leading" constant="20" id="qrh-bG-Ub4"/>
                             <constraint firstItem="N5R-S6-Ut7" firstAttribute="top" secondItem="ZFi-n0-aqc" secondAttribute="top" constant="30" id="rm8-Kf-ama"/>
                             <constraint firstItem="ZFi-n0-aqc" firstAttribute="trailing" secondItem="N5R-S6-Ut7" secondAttribute="trailing" constant="20" id="xMl-uS-5Kv"/>
@@ -142,7 +122,6 @@
                     <connections>
                         <outlet property="aboutSpaceConstraint" destination="SWy-bN-N2o" id="4nM-c1-ioX"/>
                         <outlet property="aboutSpaceTopConstraint" destination="rm8-Kf-ama" id="6LG-3b-frF"/>
-                        <outlet property="licenseBottomConstraint" destination="XzT-O4-Zpy" id="aPO-ER-24p"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wY2-s2-EhX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
