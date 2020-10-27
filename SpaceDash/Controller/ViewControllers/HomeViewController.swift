@@ -20,7 +20,6 @@ class HomeViewController: UIViewController {
     
     let networkObject = NetworkManager(Constants.NetworkManager.baseURL)
     let upcomingLaunch = UpcomingLaunchModel()
-    var senderView : String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -75,6 +74,7 @@ class HomeViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let target = segue.destination as? DetailsViewController {
             target.senderView = sender as! String
+            print("Sender: \(target.senderView)")
         }
     }
     
