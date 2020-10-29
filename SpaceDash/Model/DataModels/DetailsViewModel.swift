@@ -52,7 +52,7 @@ class DetailsViewModel {
             for capsule in data {
                 title.append("\(capsule.type) : \(capsule.capsule_serial)")
                 for mission in capsule.missions {
-                    details.append("\(capsule.details ?? "") \n \nMissions: \(mission.name) \n Original Launch: \(getDate(capsule.original_launch_unix) )")
+                    details.append("\(capsule.details ?? "") \n \nMissions: \(mission.name) \n Original Launch: \(capsule.original_launch_unix?.getDate() ?? "" )")
                 }
                 isActive.append(false)
             }
@@ -90,7 +90,7 @@ class DetailsViewModel {
             for launch in data {
                 title.append(launch.mission_name)
                 details.append(launch.details ?? Constants.DefaultArgs.noData)
-                subTitle.append(getDate(launch.launch_date_unix))
+                subTitle.append(launch.launch_date_unix.getDate())
                 isActive.append(false)
             }
         default:
@@ -102,18 +102,5 @@ class DetailsViewModel {
         subTitle.remove(at: 0)
         details.remove(at: 0)
         image.remove(at: 0)
-    }
-    
-    func getDate(_ time: TimeInterval?)-> String{
-        if let timeInUnix = time{
-            let date = Date(timeIntervalSince1970: timeInUnix)
-            let dateFormatter = DateFormatter()
-            dateFormatter.timeStyle = DateFormatter.Style.short
-            dateFormatter.dateStyle = DateFormatter.Style.medium
-            dateFormatter.timeZone = .current
-            let localDate = dateFormatter.string(from: date)
-            return localDate
-        }
-        return Constants.DefaultArgs.noData
     }
 }
