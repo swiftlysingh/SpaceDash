@@ -10,16 +10,22 @@ import UIKit
 
 class HomeViewController: UIViewController {
     
+    @IBOutlet weak var upcomingView: UpcomingView!
     @IBOutlet weak var upcomingPanel: NSLayoutConstraint!
     @IBOutlet var panelConstraints: [NSLayoutConstraint]!
     @IBOutlet weak var launchDate: UILabel!
     @IBOutlet weak var launchSite: UILabel!
     @IBOutlet weak var payloadAndType: UILabel!
+    @IBOutlet weak var watchNowButton: WatchNowButton!
     @IBOutlet weak var isTentative: UILabel!
-    @IBOutlet weak var rocketImage: UIImageView!
+    @IBOutlet weak var rocketImage: RocketImageView!
     
     let networkObject = NetworkManager(Constants.NetworkManager.baseURL)
     let upcomingLaunch = UpcomingLaunchModel()
+  
+      var watchURL : URL? = nil
+    
+    let smallDeviceHeight: CGFloat = 896
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -70,6 +76,10 @@ class HomeViewController: UIViewController {
     @IBAction func buttonPressed(_ sender: UIButton) {
         performSegue(withIdentifier: Constants.SegueManager.detailViewSegue, sender: sender.titleLabel?.text)
     }
+      
+    @IBAction func watchNowButton(_ sender: UIButton) {
+        UIApplication.shared.open(watchURL!)
+    }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let target = segue.destination as? DetailsViewController {
@@ -107,16 +117,19 @@ class HomeViewController: UIViewController {
 
 extension HomeViewController: UIPopoverPresentationControllerDelegate {
 
-    /// Making the Height of Upcoming Panel Dynamic
-    func adjustSize(){
-        if UIScreen.main.bounds.height<896 {
-            upcomingPanel.constant = UIScreen.main.bounds.height*0.045
+        /// Making the Height of Upcoming Panel and View Dynamic
+    func adjustUpcomingSize() {
+        if UIScreen.main.bounds.height<smallDeviceHeight || !watchNowButton.isHidden {
+            upcomingPanel.constant = UIScreen.main.bounds.height*0.04
             
             for panels in panelConstraints{
-                panels.constant = UIScreen.main.bounds.height*0.03
+                panels.constant = UIScreen.main.bounds.height*0.025
             }
         }
-    }
+        
+        if UIScreen.main.bounds.height<smallDeviceHeight && !watchNowButton.isHidden {
+            upcomingView.setupSmallHeight()
+        }
     
     /// This function will update the UI once updateFromAPI updates the data for HomeViewController
     func updateUI(){
@@ -126,7 +139,16 @@ extension HomeViewController: UIPopoverPresentationControllerDelegate {
             self.launchDate.text =  self.upcomingLaunch.launchDate
             self.isTentative.isHidden = !(self.upcomingLaunch.isTentative!)
             self.rocketImage.image = UIImage(named: self.upcomingLaunch.rocket!)
+            self.checkWatchButton()
+            self.adjustUpcomingSize()
         }
+    }
+    
+    /// This function will assign the video URL of the upcoming launch and display the "Watch Now" button if the URL available
+    func checkWatchButton() {
+        guard let safeWatchURL = upcomingLaunch?.decodedData?.links.video_link_url, UIApplication.shared.canOpenURL(safeWatchURL) else { return }
+        self.watchURL = safeWatchURL
+        watchNowButton.isHidden = false
     }
     
     
@@ -153,7 +175,6 @@ extension HomeViewController: UIPopoverPresentationControllerDelegate {
         }
         self.present(tentativeDetailsVC, animated: true, completion: nil)
     }
-    
     
     func adaptivePresentationStyle(for controller: UIPresentationController) -> UIModalPresentationStyle {
         // .none makes the viewcontroller to be present as popover always, no matter what trait changes

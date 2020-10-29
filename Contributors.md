@@ -13,6 +13,9 @@
   </tr>
   <tr>
     <td align="center"><a href="https://github.com/M1zz"><img src="https://avatars3.githubusercontent.com/u/12761948?v=4" width="100px;" alt=""/><br /><sub><b>Leeo</b></sub></a><br /><a href="#design-M1zz" title="Design">🎨</a></td>
+    <td align="center"><a href="https://github.com/pankova"><img src="https://avatars0.githubusercontent.com/u/7028613?v=4" width="100px;" alt=""/><br /><sub><b>pankova</b></sub></a><br /><a href="https://github.com/pushpinderpalsingh/SpaceDash/commits?author=pankova" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/jkreller"><img src="https://avatars0.githubusercontent.com/u/33465273?v=4" width="100px;" alt=""/><br /><sub><b>jkreller</b></sub></a><br /><a href="https://github.com/pushpinderpalsingh/SpaceDash/commits?author=jkreller" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/rajhraval1"><img src="https://avatars2.githubusercontent.com/u/35184001?v=4" width="100px;" alt=""/><br /><sub><b>Raj H Raval</b></sub></a><br /><a href="https://github.com/pushpinderpalsingh/SpaceDash/commits?author=rajhraval1" title="Code">💻</a></td>
   </tr>
 </table>
 

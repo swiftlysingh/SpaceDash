@@ -1,17 +1,20 @@
 //
-//  InfoPanelView.swift
+//  WatchNowButtonView.swift
 //  SpaceX
 //
-//  Created by Pushpinder Pal Singh on 27/06/20.
-//  Copyright © 2020 Pushpinder Pal Singh. All rights reserved.
+//  Created by Julian Kreller on 22/10/20.
+//  Copyright © 2020 Julian Kreller. All rights reserved.
 //
 
 import UIKit
 
-final class InfoPanelView: UIView {
+final class WatchNowButton: UIButton {
 
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
+        
+        //Is hidden by default
+        self.isHidden = true
 
         //Adding Shadow
         self.layer.applySketchShadow(

@@ -401,7 +401,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6ch-1d-wZ7" userLabel="Upcoming Launch" customClass="UpcomingView" customModule="SpaceDash" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="1159" height="779"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="f_9" translatesAutoresizingMaskIntoConstraints="NO" id="79I-bQ-LX0">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="f_9" translatesAutoresizingMaskIntoConstraints="NO" id="79I-bQ-LX0" customClass="RocketImageView" customModule="SpaceDash" customModuleProvider="target">
                                         <rect key="frame" x="1067" y="52" width="84" height="719"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="84" id="yc5-tX-8pX"/>
@@ -518,11 +518,31 @@
                                                 <color key="textColor" name="DashBlack"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ANASIS-II, Satellite" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fpE-sJ-nR4">
-                                                <rect key="frame" x="15" y="35" width="153" height="21"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ANASIS-II, Satellite" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fpE-sJ-nR4" customClass="MarqueeLabel" customModule="MarqueeLabel">
+                                                <rect key="frame" x="15" y="35" width="158" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                 <color key="textColor" name="DashBlack"/>
                                                 <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="scrollDuration">
+                                                        <real key="value" value="0.5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="scrollRate">
+                                                        <real key="value" value="17"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="leadingBuffer">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="trailingBuffer">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="fadeLength">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="animationDelay">
+                                                        <real key="value" value="3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                             </label>
                                         </subviews>
                                         <color key="backgroundColor" red="0.90588837860000004" green="0.90587145089999999" blue="0.90588295460000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -538,10 +558,27 @@
                                             <constraint firstItem="fpE-sJ-nR4" firstAttribute="top" secondItem="rTS-5a-Jvt" secondAttribute="bottom" constant="6" id="tOX-wI-voT"/>
                                         </constraints>
                                     </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zBb-bI-XbH" customClass="WatchNowButton" customModule="SpaceDash" customModuleProvider="target">
+                                        <rect key="frame" x="8" y="414" width="227" height="41"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="227" id="Iim-1a-ffZ"/>
+                                            <constraint firstAttribute="height" constant="41" id="rnY-bI-3it"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                        <state key="normal" title="Watch Now">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="watchNowButton:" destination="oCg-FU-UY1" eventType="touchUpInside" id="TVf-dZ-XxS"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" name="DashCream"/>
                                 <constraints>
+                                    <constraint firstItem="zBb-bI-XbH" firstAttribute="top" secondItem="63K-uz-tNd" secondAttribute="bottom" constant="28" id="5Jw-LD-qEg"/>
                                     <constraint firstAttribute="trailing" secondItem="79I-bQ-LX0" secondAttribute="trailing" constant="8" id="E7A-IE-I5W"/>
+                                    <constraint firstItem="zBb-bI-XbH" firstAttribute="leading" secondItem="6ch-1d-wZ7" secondAttribute="leading" constant="8" id="EFt-HG-GPh"/>
                                     <constraint firstItem="79I-bQ-LX0" firstAttribute="top" secondItem="6ch-1d-wZ7" secondAttribute="top" constant="52" id="FRn-1S-mMK"/>
                                     <constraint firstItem="63K-uz-tNd" firstAttribute="top" secondItem="ceL-dE-FN9" secondAttribute="bottom" constant="28" id="I2h-Fk-b0r"/>
                                     <constraint firstItem="3j9-Du-2ed" firstAttribute="leading" secondItem="6ch-1d-wZ7" secondAttribute="leading" constant="8" id="JG0-Sm-9HV"/>
@@ -582,16 +619,19 @@
                         <outlet property="payloadAndType" destination="fpE-sJ-nR4" id="4dH-RO-ape"/>
                         <outlet property="rocketImage" destination="79I-bQ-LX0" id="NQK-F5-lfK"/>
                         <outlet property="upcomingPanel" destination="z63-l4-rY0" id="3Du-2z-Szr"/>
+                        <outlet property="upcomingView" destination="6ch-1d-wZ7" id="wGq-sw-wEM"/>
+                        <outlet property="watchNowButton" destination="zBb-bI-XbH" id="fwe-Al-gxx"/>
                         <outletCollection property="panelConstraints" destination="MkQ-qo-ysL" collectionClass="NSMutableArray" id="Vr3-fk-fs1"/>
                         <outletCollection property="panelConstraints" destination="KWN-6v-qQp" collectionClass="NSMutableArray" id="Byv-7r-eLn"/>
                         <outletCollection property="panelConstraints" destination="I2h-Fk-b0r" collectionClass="NSMutableArray" id="vql-27-OBc"/>
                         <outletCollection property="panelConstraints" destination="Kk4-1Y-XN1" collectionClass="NSMutableArray" id="ZQW-Sv-Qno"/>
+                        <outletCollection property="panelConstraints" destination="5Jw-LD-qEg" collectionClass="NSMutableArray" id="yFT-fm-VC3"/>
                         <segue destination="KhD-rD-70S" kind="show" identifier="DetailView" id="xQW-5v-hAb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rj7-I4-uF2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1796" y="-550"/>
+            <point key="canvasLocation" x="1794.9275362318842" y="-550.44642857142856"/>
         </scene>
         <!--Details View Controller-->
         <scene sceneID="PQc-ji-Mq3">
@@ -666,6 +706,9 @@
     <designables>
         <designable name="TAk-7B-GjH">
             <size key="intrinsicContentSize" width="118" height="20.5"/>
+        </designable>
+        <designable name="fpE-sJ-nR4">
+            <size key="intrinsicContentSize" width="158" height="20.5"/>
         </designable>
     </designables>
     <resources>

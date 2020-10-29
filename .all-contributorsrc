@@ -78,6 +78,33 @@
       "contributions": [
         "design"
       ]
+    },
+    {
+      "login": "pankova",
+      "name": "pankova",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/7028613?v=4",
+      "profile": "https://github.com/pankova",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "jkreller",
+      "name": "jkreller",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/33465273?v=4",
+      "profile": "https://github.com/jkreller",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "rajhraval1",
+      "name": "Raj H Raval",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/35184001?v=4",
+      "profile": "https://github.com/rajhraval1",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,

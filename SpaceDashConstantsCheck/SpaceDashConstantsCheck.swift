@@ -43,6 +43,9 @@ class SpaceDashConstantsCheck: XCTestCase {
         XCTAssertEqual("Unable to open due to some reasons please check back later", Constants.AboutView.alertMessage)
         XCTAssertEqual("Ok", Constants.AboutView.okButtonTitle)
         XCTAssertEqual("This is the tentative launch date and subjected to change", Constants.HomeView.tentativeDetail)
+        XCTAssertEqual("SpaceDashIconSpaceShuttle", Constants.AppIcon.spaceShuttle)
+        XCTAssertEqual("SpaceDashIconShuttle", Constants.AppIcon.shuttle)
+        XCTAssertEqual("SpaceDashIconRocket", Constants.AppIcon.rocket)
     }
 
 }

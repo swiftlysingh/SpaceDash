@@ -3,7 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -81,24 +81,8 @@
                                     <constraint firstItem="Syz-yi-DN7" firstAttribute="top" secondItem="SuG-Rh-GyO" secondAttribute="topMargin" id="yfM-O8-Rma"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9P7-BS-cxu">
-                                <rect key="frame" x="177.5" y="741" width="59" height="33"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="33" id="77m-Fx-0QH"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal" title="License">
-                                    <color key="titleColor" systemColor="linkColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="licenseButtonPressed:" destination="yD3-ji-SQN" eventType="touchUpInside" id="wne-zg-1CR"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XCW-Df-G6E">
-                                <rect key="frame" x="154" y="700" width="106" height="33"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="33" id="2tT-a9-aaX"/>
-                                </constraints>
+                                <rect key="frame" x="154" y="747" width="106" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Privacy Policy">
                                     <color key="titleColor" systemColor="linkColor"/>
@@ -107,17 +91,27 @@
                                     <action selector="privacyButtonPressed:" destination="yD3-ji-SQN" eventType="touchUpInside" id="jNS-m1-3MS"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DTs-ao-IyD">
+                                <rect key="frame" x="141.5" y="706" width="131" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Change App Icon">
+                                    <color key="titleColor" systemColor="linkColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Ek8-th-xK0" kind="presentation" id="OIz-17-6eh"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ZFi-n0-aqc"/>
                         <color key="backgroundColor" name="DashBlack"/>
                         <constraints>
-                            <constraint firstItem="XCW-Df-G6E" firstAttribute="centerX" secondItem="syZ-bN-VMW" secondAttribute="centerX" id="AIh-ZR-j66"/>
+                            <constraint firstItem="ZFi-n0-aqc" firstAttribute="bottom" secondItem="XCW-Df-G6E" secondAttribute="bottom" constant="33" id="0J0-FP-lgF"/>
+                            <constraint firstItem="XCW-Df-G6E" firstAttribute="top" secondItem="DTs-ao-IyD" secondAttribute="bottom" constant="8" symbolic="YES" id="7Vr-uP-W6K"/>
+                            <constraint firstItem="XCW-Df-G6E" firstAttribute="centerX" secondItem="ZFi-n0-aqc" secondAttribute="centerX" id="GZ6-QJ-Fxe"/>
                             <constraint firstItem="SuG-Rh-GyO" firstAttribute="leading" secondItem="ZFi-n0-aqc" secondAttribute="leading" constant="20" id="ICc-1L-Wuy"/>
                             <constraint firstItem="SuG-Rh-GyO" firstAttribute="top" secondItem="N5R-S6-Ut7" secondAttribute="bottom" constant="49" id="SWy-bN-N2o"/>
                             <constraint firstItem="ZFi-n0-aqc" firstAttribute="trailing" secondItem="SuG-Rh-GyO" secondAttribute="trailing" constant="20" id="U1Y-HQ-4hF"/>
-                            <constraint firstItem="9P7-BS-cxu" firstAttribute="centerX" secondItem="syZ-bN-VMW" secondAttribute="centerX" id="WaH-Hz-otk"/>
-                            <constraint firstItem="ZFi-n0-aqc" firstAttribute="bottom" secondItem="9P7-BS-cxu" secondAttribute="bottom" constant="39" id="XzT-O4-Zpy"/>
-                            <constraint firstItem="9P7-BS-cxu" firstAttribute="top" secondItem="XCW-Df-G6E" secondAttribute="bottom" constant="8" id="gQS-Pd-bS1"/>
+                            <constraint firstItem="DTs-ao-IyD" firstAttribute="centerX" secondItem="ZFi-n0-aqc" secondAttribute="centerX" id="aKF-vt-Dz3"/>
                             <constraint firstItem="N5R-S6-Ut7" firstAttribute="leading" secondItem="ZFi-n0-aqc" secondAttribute="leading" constant="20" id="qrh-bG-Ub4"/>
                             <constraint firstItem="N5R-S6-Ut7" firstAttribute="top" secondItem="ZFi-n0-aqc" secondAttribute="top" constant="30" id="rm8-Kf-ama"/>
                             <constraint firstItem="ZFi-n0-aqc" firstAttribute="trailing" secondItem="N5R-S6-Ut7" secondAttribute="trailing" constant="20" id="xMl-uS-5Kv"/>
@@ -128,16 +122,82 @@
                     <connections>
                         <outlet property="aboutSpaceConstraint" destination="SWy-bN-N2o" id="4nM-c1-ioX"/>
                         <outlet property="aboutSpaceTopConstraint" destination="rm8-Kf-ama" id="6LG-3b-frF"/>
-                        <outlet property="licenseBottomConstraint" destination="XzT-O4-Zpy" id="aPO-ER-24p"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wY2-s2-EhX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-165.21739130434784" y="343.52678571428572"/>
         </scene>
+        <!--Change App Icon-->
+        <scene sceneID="Fg5-uY-bZo">
+            <objects>
+                <viewController id="xKu-oX-pDS" customClass="AppIconSelectViewController" customModule="SpaceDash" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="N1S-EN-yuv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="5J5-UG-1TA">
+                                <rect key="frame" x="20" y="76" width="374" height="32"/>
+                                <segments>
+                                    <segment title="Stock"/>
+                                    <segment title="Space Shuttle"/>
+                                    <segment title="Saturn-V"/>
+                                </segments>
+                                <connections>
+                                    <action selector="iconIndexChanged:" destination="xKu-oX-pDS" eventType="valueChanged" id="L9g-nw-d4b"/>
+                                </connections>
+                            </segmentedControl>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SpaceDashIconShuttle.png" translatesAutoresizingMaskIntoConstraints="NO" id="rTi-iO-LSW">
+                                <rect key="frame" x="107" y="171" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="N3p-OG-XDC"/>
+                                    <constraint firstAttribute="width" constant="200" id="WU1-YK-C7e"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="OAq-BF-unm"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="rTi-iO-LSW" firstAttribute="centerX" secondItem="N1S-EN-yuv" secondAttribute="centerX" id="CVR-4I-AVQ"/>
+                            <constraint firstItem="5J5-UG-1TA" firstAttribute="leading" secondItem="OAq-BF-unm" secondAttribute="leading" constant="20" id="XXV-Ht-PDm"/>
+                            <constraint firstItem="OAq-BF-unm" firstAttribute="trailing" secondItem="5J5-UG-1TA" secondAttribute="trailing" constant="20" id="dCL-V3-HQN"/>
+                            <constraint firstItem="rTi-iO-LSW" firstAttribute="top" secondItem="5J5-UG-1TA" secondAttribute="bottom" constant="64" id="mxe-Nl-IeX"/>
+                            <constraint firstItem="5J5-UG-1TA" firstAttribute="top" secondItem="OAq-BF-unm" secondAttribute="top" constant="20" id="rKr-qd-pbj"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Change App Icon" largeTitleDisplayMode="never" id="RHK-L8-Xvt"/>
+                    <connections>
+                        <outlet property="iconImageView" destination="rTi-iO-LSW" id="Ofg-DL-G88"/>
+                        <outlet property="iconSegmentedControl" destination="5J5-UG-1TA" id="qiV-eb-zuS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qCG-H8-cvW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1500.0000000000002" y="343.52678571428572"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="GQ2-ax-9vb">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ek8-th-xK0" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="VP1-my-Pmg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" systemColor="linkColor"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="xKu-oX-pDS" kind="relationship" relationship="rootViewController" id="rdm-SZ-swe"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0lc-FM-44Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="589.85507246376812" y="343.52678571428572"/>
+        </scene>
     </scenes>
     <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
     <resources>
+        <image name="SpaceDashIconShuttle.png" width="1024" height="1024"/>
         <image name="info.circle" catalog="system" width="128" height="121"/>
         <namedColor name="DashBlack">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -147,6 +207,9 @@
         </namedColor>
         <systemColor name="linkColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>
