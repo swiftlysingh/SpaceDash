@@ -38,13 +38,6 @@ struct Constants {
     }
     
     struct HomeView{
-        let upcomingLaunch: UpcomingLaunchModel
-        
-        lazy var payloadAndType = "\(upcomingLaunch.decodedData?.rocket.second_stage.payloads[0].payload_id ?? Constants.DefaultArgs.noData ), \(upcomingLaunch.decodedData?.rocket.second_stage.payloads[0].payload_type ?? Constants.DefaultArgs.noData)"
-        
-        lazy var launchSite = self.upcomingLaunch.decodedData?.launch_site.site_name_long ?? Constants.DefaultArgs.launchSite
-        
-        lazy var rocket = upcomingLaunch.decodedData?.rocket.rocket_name ?? "Falcon 9"
         static let tentativeDetail = "This is the tentative launch date and subjected to change"
     }
     

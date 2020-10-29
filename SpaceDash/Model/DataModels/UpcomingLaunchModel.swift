@@ -8,30 +8,22 @@
 
 import Foundation
 
-struct UpcomingLaunchModel{
-    var decodedDataSet : [UpcomingLaunchData]
-    var decodedData: UpcomingLaunchData?
+class UpcomingLaunchModel{
     
-    mutating func cleanData(){
-        for data in decodedDataSet {
+    var launchSite : String?
+    var payloadAndType : String?
+    var launchDate : String?
+    var isTentative : Bool?
+    var rocket : String?
+    var watchNow : URL?
+    
+    /// Will return the first Launch if no future launch is found
+    func cleanData(_ launch: [UpcomingLaunchData]) -> UpcomingLaunchData{
+        for data in launch {
                 if data.launch_date_unix>=NSDate().timeIntervalSince1970 {
-                    decodedData = data
-                    return
+                    return data
                 }
             }
-        decodedData = decodedDataSet[0]
-    }
-    
-    func getDate()-> String{
-        if let timeResult = (decodedData?.launch_date_unix){
-            let date = Date(timeIntervalSince1970: timeResult)
-            let dateFormatter = DateFormatter()
-            dateFormatter.timeStyle = DateFormatter.Style.short
-            dateFormatter.dateStyle = DateFormatter.Style.medium
-            dateFormatter.timeZone = .current
-            let localDate = dateFormatter.string(from: date)
-            return localDate
-        }
-        return "TBD"
+        return launch[0]
     }
 }

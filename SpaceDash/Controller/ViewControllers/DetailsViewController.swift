@@ -11,9 +11,8 @@ import Lottie
 
 class DetailsViewController: UIViewController {
     
-    var senderView : String = ""
-    var networkObject = NetworkManager()
-    var decodedData : DetailsViewModel?
+    let networkObject = NetworkManager(Constants.NetworkManager.baseURL)
+    let detailsModel = DetailsViewModel()
     
     @IBOutlet var DetailTableView: UITableView!
     @IBOutlet var loadingAnimation: AnimationView!
@@ -33,8 +32,28 @@ class DetailsViewController: UIViewController {
         DetailTableView.dataSource = self
         DetailTableView.register(UINib(nibName: Constants.DetailsView.nibName, bundle: nil), forCellReuseIdentifier: Constants.DetailsView.reuseId)
         
-        networkObject.delegate = self
-        networkObject.fetchData(demand: senderView)
+    }
+    
+    func callAPI<T:Decodable>(withEndpoint senderView : String,decode model : T){
+        
+        networkObject.performRequest(key: senderView) { [weak self] (result: Result<T,Error>) in
+            guard let self = self else { return }
+            
+            switch result {
+            
+            case .success(let launches):
+                DispatchQueue.main.async {
+                    self.detailsModel.fillData(model: launches, key: senderView)
+                    self.updateUI()
+                }
+                
+                
+                break
+                
+            case .failure(let error):
+                print(error)
+            }
+        }
     }
     
     /// Add loading Animation before the Details View. The type of animation is in Interface Builder
@@ -48,11 +67,10 @@ class DetailsViewController: UIViewController {
 
 //MARK: - Network Manager
 
-extension DetailsViewController:NetworkManagerDelegate {
+extension DetailsViewController {
     
-    func updateFromAPI(data: Any) {
+    func updateUI() {
         DispatchQueue.main.async {
-            self.decodedData = (data as! DetailsViewModel)
             self.loadingAnimation.stop()
             self.loadingAnimation.removeFromSuperview()
             self.DetailTableView.reloadData()
@@ -71,7 +89,7 @@ extension DetailsViewController:NetworkManagerDelegate {
 extension DetailsViewController:UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return decodedData?.count ?? 0
+        return detailsModel.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -79,15 +97,15 @@ extension DetailsViewController:UITableViewDelegate, UITableViewDataSource {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: Constants.DetailsView.reuseId, for: indexPath) as! DetailsTableViewCell
         
-        cell.title.text = decodedData?.title[indexPath.row]
-        cell.details.text = decodedData?.details[indexPath.row]
-        if !(decodedData?.image.isEmpty)! {
-            cell.photo.downloadImage(from: (decodedData?.image[indexPath.row])!)
+        cell.title.text = detailsModel.title[indexPath.row]
+        cell.details.text = detailsModel.details[indexPath.row]
+        if !(detailsModel.image.isEmpty) {
+            cell.photo.downloadImage(from: (detailsModel.image[indexPath.row]))
         }
-        if !(decodedData?.subTitle.isEmpty)!{
-            cell.subTitle.text = decodedData?.subTitle[indexPath.row]
+        if !(detailsModel.subTitle.isEmpty){
+            cell.subTitle.text = detailsModel.subTitle[indexPath.row]
         }
-        cell.isActive.isHidden = !decodedData!.isActive[indexPath.row]
+        cell.isActive.isHidden = !detailsModel.isActive[indexPath.row]
         return cell
     }
     
