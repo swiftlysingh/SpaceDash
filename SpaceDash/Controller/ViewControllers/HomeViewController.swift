@@ -73,8 +73,31 @@ class HomeViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let target = segue.destination as? DetailsViewController {
-            target.senderView = sender as! String
-            print("Sender: \(target.senderView)")
+            let key = sender as! String
+            print("Sender: \(key)")
+            
+            switch key {
+            case Constants.SegueManager.SenderValues.rocket:
+                target.callAPI(withEndpoint: key, decode: [RocketData]())
+                break
+            case Constants.SegueManager.SenderValues.launches:
+                target.callAPI(withEndpoint: key, decode: [LaunchesData]())
+                break
+            case Constants.SegueManager.SenderValues.launchSite:
+                target.callAPI(withEndpoint: key, decode: [LaunchPadData]())
+                break
+            case Constants.SegueManager.SenderValues.ships:
+                target.callAPI(withEndpoint: key, decode: [ShipsData]())
+                break
+            case Constants.SegueManager.SenderValues.capsules:
+                target.callAPI(withEndpoint: key, decode: [CapsulesData]())
+                break
+            case Constants.SegueManager.SenderValues.landpads:
+                target.callAPI(withEndpoint: key, decode: [LandpadsData]())
+                break
+            default:
+                print("error")
+            }
         }
     }
     

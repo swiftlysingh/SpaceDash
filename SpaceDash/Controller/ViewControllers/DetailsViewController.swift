@@ -11,10 +11,8 @@ import Lottie
 
 class DetailsViewController: UIViewController {
     
-    var senderView : String = ""
     var networkObject = NetworkManager(Constants.NetworkManager.baseURL)
     var decodedData : DetailsViewModel?
-    typealias senderObj = Result<[RocketData],Error>
     
     @IBOutlet var DetailTableView: UITableView!
     @IBOutlet var loadingAnimation: AnimationView!
@@ -34,13 +32,17 @@ class DetailsViewController: UIViewController {
         DetailTableView.dataSource = self
         DetailTableView.register(UINib(nibName: Constants.DetailsView.nibName, bundle: nil), forCellReuseIdentifier: Constants.DetailsView.reuseId)
         
-        networkObject.performRequest(key: senderView) { [weak self] (result: senderObj) in
+    }
+    
+    func callAPI<T:Decodable>(withEndpoint senderView : String,decode model : T){
+        
+        networkObject.performRequest(key: senderView) { [weak self] (result: Result<T,Error>) in
             guard let self = self else { return }
             
             switch result {
             
             case .success(let launches):
-                print(launches.description)
+                print("yeah,\(launches.self)")
                 break
                 
             case .failure(let error):
