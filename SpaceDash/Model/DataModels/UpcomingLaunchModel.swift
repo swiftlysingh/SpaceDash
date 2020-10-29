@@ -15,6 +15,7 @@ class UpcomingLaunchModel{
     var launchDate : String?
     var isTentative : Bool?
     var rocket : String?
+    var watchNow : URL?
     
     /// Will return the first Launch if no future launch is found
     func cleanData(_ launch: [UpcomingLaunchData]) -> UpcomingLaunchData{

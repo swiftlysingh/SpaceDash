@@ -22,8 +22,8 @@ class HomeViewController: UIViewController {
     
     let networkObject = NetworkManager(Constants.NetworkManager.baseURL)
     let upcomingLaunch = UpcomingLaunchModel()
-  
-      var watchURL : URL? = nil
+    
+    var watchURL : URL? = nil
     
     let smallDeviceHeight: CGFloat = 896
     
@@ -46,7 +46,7 @@ class HomeViewController: UIViewController {
             }
         }
         
-        adjustSize()
+        adjustUpcomingSize()
         
         //tap gesture for tentative label
         self.isTentative.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(tentativeClicked(_:))))
@@ -63,20 +63,22 @@ class HomeViewController: UIViewController {
     
     /// Update the model with new data that has just arrived from API
     func updateModel(_ launch : UpcomingLaunchData){
-            
-            self.upcomingLaunch.launchSite = launch.launch_site.site_name_long
-            self.upcomingLaunch.payloadAndType = "\(launch.rocket.second_stage.payloads[0].payload_id), \(launch.rocket.second_stage.payloads[0].payload_type)"
-            self.upcomingLaunch.launchDate = launch.launch_date_unix.getDate()
-            self.upcomingLaunch.isTentative = launch.is_tentative
-            self.upcomingLaunch.rocket = launch.rocket.rocket_id
-            print(launch.rocket.rocket_id)
+        
+        self.upcomingLaunch.launchSite = launch.launch_site.site_name_long
+        self.upcomingLaunch.payloadAndType = "\(launch.rocket.second_stage.payloads[0].payload_id), \(launch.rocket.second_stage.payloads[0].payload_type)"
+        self.upcomingLaunch.launchDate = launch.launch_date_unix.getDate()
+        self.upcomingLaunch.isTentative = launch.is_tentative
+        self.upcomingLaunch.rocket = launch.rocket.rocket_id
+        self.upcomingLaunch.watchNow = launch.links.video_link_url
+        
+        print(launch.rocket.rocket_id)
         
     }
     
     @IBAction func buttonPressed(_ sender: UIButton) {
         performSegue(withIdentifier: Constants.SegueManager.detailViewSegue, sender: sender.titleLabel?.text)
     }
-      
+    
     @IBAction func watchNowButton(_ sender: UIButton) {
         UIApplication.shared.open(watchURL!)
     }
@@ -116,8 +118,8 @@ class HomeViewController: UIViewController {
 //MARK: - UI
 
 extension HomeViewController: UIPopoverPresentationControllerDelegate {
-
-        /// Making the Height of Upcoming Panel and View Dynamic
+    
+    /// Making the Height of Upcoming Panel and View Dynamic
     func adjustUpcomingSize() {
         if UIScreen.main.bounds.height<smallDeviceHeight || !watchNowButton.isHidden {
             upcomingPanel.constant = UIScreen.main.bounds.height*0.04
@@ -130,6 +132,7 @@ extension HomeViewController: UIPopoverPresentationControllerDelegate {
         if UIScreen.main.bounds.height<smallDeviceHeight && !watchNowButton.isHidden {
             upcomingView.setupSmallHeight()
         }
+    }
     
     /// This function will update the UI once updateFromAPI updates the data for HomeViewController
     func updateUI(){
@@ -146,7 +149,7 @@ extension HomeViewController: UIPopoverPresentationControllerDelegate {
     
     /// This function will assign the video URL of the upcoming launch and display the "Watch Now" button if the URL available
     func checkWatchButton() {
-        guard let safeWatchURL = upcomingLaunch?.decodedData?.links.video_link_url, UIApplication.shared.canOpenURL(safeWatchURL) else { return }
+        guard let safeWatchURL = upcomingLaunch.watchNow, UIApplication.shared.canOpenURL(safeWatchURL) else { return }
         self.watchURL = safeWatchURL
         watchNowButton.isHidden = false
     }
@@ -182,4 +185,3 @@ extension HomeViewController: UIPopoverPresentationControllerDelegate {
     }
     
 }
-
