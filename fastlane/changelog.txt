@@ -1,3 +1,5 @@
-- Added a pop up that will tell what that T sign is next to the launch date means
+- Now you can customise the App Icon of the app based on your liking!
+- Added shadow to Rockets for better view.
+- Added WatchNow Button so that you can see the launch happening live!
 - Fixed a bug that was eating up too much of your memory
-- Some other minor bugs and performance improvements
+- Some other minor bugs and other performance improvements
