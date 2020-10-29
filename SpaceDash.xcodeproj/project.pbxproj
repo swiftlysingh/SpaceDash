@@ -58,6 +58,7 @@
 		FFF716E2249D3E210043EB81 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFF716E0249D3E210043EB81 /* LaunchScreen.storyboard */; };
 		FFF7170C24A338D10043EB81 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF7170B24A338D10043EB81 /* HomeViewController.swift */; };
 		FFF7171224A48F730043EB81 /* DetailScrollViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF7171124A48F730043EB81 /* DetailScrollViews.swift */; };
+		FFFB937E2544C1B70099CD2B /* TimeInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFB937D2544C1B70099CD2B /* TimeInterval.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -157,6 +158,7 @@
 		FFF716E3249D3E210043EB81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FFF7170B24A338D10043EB81 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		FFF7171124A48F730043EB81 /* DetailScrollViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailScrollViews.swift; sourceTree = "<group>"; };
+		FFFB937D2544C1B70099CD2B /* TimeInterval.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeInterval.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -401,6 +403,7 @@
 				FFC259E624A772150019E354 /* CALayer.swift */,
 				FFB398F924DDDBDC001D4EA1 /* UIImageView.swift */,
 				750F3DFC252708500030ED19 /* String.swift */,
+				FFFB937D2544C1B70099CD2B /* TimeInterval.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -758,6 +761,7 @@
 				FFF266B224DEAF7400BA5C28 /* LandpadsData.swift in Sources */,
 				FFF7170C24A338D10043EB81 /* HomeViewController.swift in Sources */,
 				FFC259E724A772150019E354 /* CALayer.swift in Sources */,
+				FFFB937E2544C1B70099CD2B /* TimeInterval.swift in Sources */,
 				FFB734BA24DB2B2B006C1518 /* DetailsViewController.swift in Sources */,
 				750F3DF5252703830030ED19 /* TentativeDetailsViewController.swift in Sources */,
 				FFB398FA24DDDBDC001D4EA1 /* UIImageView.swift in Sources */,
@@ -1096,7 +1100,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = 4WMQY24R33;
 				INFOPLIST_FILE = "$(SRCROOT)/SpaceDash/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1117,7 +1121,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = 4WMQY24R33;
 				INFOPLIST_FILE = "$(SRCROOT)/SpaceDash/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (

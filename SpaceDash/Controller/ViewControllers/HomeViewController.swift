@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HomeViewController: UIViewController,NetworkManagerDelegate {
+class HomeViewController: UIViewController {
     
     @IBOutlet weak var upcomingView: UpcomingView!
     @IBOutlet weak var upcomingPanel: NSLayoutConstraint!
@@ -20,28 +20,104 @@ class HomeViewController: UIViewController,NetworkManagerDelegate {
     @IBOutlet weak var isTentative: UILabel!
     @IBOutlet weak var rocketImage: RocketImageView!
     
-    var networkObject = NetworkManager()
-    var upcomingLaunch : UpcomingLaunchModel?
-    var constants : Constants.HomeView?
-    var senderView : String = ""
+    let networkObject = NetworkManager(Constants.NetworkManager.baseURL)
+    let upcomingLaunch = UpcomingLaunchModel()
+    
     var watchURL : URL? = nil
     
     let smallDeviceHeight: CGFloat = 896
     
-    
-    override var preferredStatusBarStyle: UIStatusBarStyle {
-        return .darkContent
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        networkObject.delegate = self
-        networkObject.fetchData(demand: Constants.NetworkManager.upcomingLaunchURL)
+        
+        networkObject.performRequest(key: Constants.NetworkManager.upcomingLaunchURL) { [weak self] (result: Result<[UpcomingLaunchData],Error>) in
+            guard let self = self else { return }
+            
+            switch result {
+            
+            case .success(let launches):
+                let launch = self.upcomingLaunch.cleanData(launches)
+                self.updateModel(launch)
+                self.updateUI()
+                break
+                
+            case .failure(let error):
+                print(error)
+            }
+        }
+        
+        adjustUpcomingSize()
         
         //tap gesture for tentative label
         self.isTentative.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(tentativeClicked(_:))))
         self.isTentative.isUserInteractionEnabled = true
     }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .darkContent
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
+    }
+    
+    /// Update the model with new data that has just arrived from API
+    func updateModel(_ launch : UpcomingLaunchData){
+        
+        self.upcomingLaunch.launchSite = launch.launch_site.site_name_long
+        self.upcomingLaunch.payloadAndType = "\(launch.rocket.second_stage.payloads[0].payload_id), \(launch.rocket.second_stage.payloads[0].payload_type)"
+        self.upcomingLaunch.launchDate = launch.launch_date_unix.getDate()
+        self.upcomingLaunch.isTentative = launch.is_tentative
+        self.upcomingLaunch.rocket = launch.rocket.rocket_id
+        self.upcomingLaunch.watchNow = launch.links.video_link_url
+        
+        print(launch.rocket.rocket_id)
+        
+    }
+    
+    @IBAction func buttonPressed(_ sender: UIButton) {
+        performSegue(withIdentifier: Constants.SegueManager.detailViewSegue, sender: sender.titleLabel?.text)
+    }
+    
+    @IBAction func watchNowButton(_ sender: UIButton) {
+        UIApplication.shared.open(watchURL!)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let target = segue.destination as? DetailsViewController {
+            let key = sender as! String
+            print("Sender: \(key)")
+            
+            switch key {
+            case Constants.SegueManager.SenderValues.rocket:
+                target.callAPI(withEndpoint: key, decode: [RocketData]())
+                break
+            case Constants.SegueManager.SenderValues.launches:
+                target.callAPI(withEndpoint: key, decode: [LaunchesData]())
+                break
+            case Constants.SegueManager.SenderValues.launchSite:
+                target.callAPI(withEndpoint: key, decode: [LaunchPadData]())
+                break
+            case Constants.SegueManager.SenderValues.ships:
+                target.callAPI(withEndpoint: key, decode: [ShipsData]())
+                break
+            case Constants.SegueManager.SenderValues.capsules:
+                target.callAPI(withEndpoint: key, decode: [CapsulesData]())
+                break
+            case Constants.SegueManager.SenderValues.landpads:
+                target.callAPI(withEndpoint: key, decode: [LandpadsData]())
+                break
+            default:
+                print("error")
+            }
+        }
+    }
+    
+}
+
+//MARK: - UI
+
+extension HomeViewController: UIPopoverPresentationControllerDelegate {
     
     /// Making the Height of Upcoming Panel and View Dynamic
     func adjustUpcomingSize() {
@@ -58,50 +134,22 @@ class HomeViewController: UIViewController,NetworkManagerDelegate {
         }
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        self.navigationController?.setNavigationBarHidden(true, animated: true)
-    }
-    
-    /// This will print error in network call
-    /// - Parameter error: error
-    func error(error: Error) {
-        print(error)
-    }
-    
-    
-    /// This will bring decoded and cleaned data from the Network Manger
-    /// - Parameter data: data
-    func updateFromAPI(data: Any) {
-        DispatchQueue.main.async {
-            
-            self.upcomingLaunch = (data as! UpcomingLaunchModel)
-    
-            self.constants = Constants.HomeView(upcomingLaunch: self.upcomingLaunch!)
-            
-            self.updateUI()
-        }
-    }
-    
     /// This function will update the UI once updateFromAPI updates the data for HomeViewController
-    
     func updateUI(){
-        
-        launchSite.text = constants?.launchSite
-        payloadAndType.text = constants?.payloadAndType
-        launchDate.text =  upcomingLaunch?.getDate()
-        
-        checkWatchButton()
-        adjustUpcomingSize()
-        
-        self.isTentative.isHidden = !(self.upcomingLaunch?.decodedData!.is_tentative)!
-        if(!(constants?.rocket=="Falcon 9")){
-            rocketImage.image = UIImage(named: "f_heavy")
+        DispatchQueue.main.async {
+            self.launchSite.text = self.upcomingLaunch.launchSite
+            self.payloadAndType.text = self.upcomingLaunch.payloadAndType
+            self.launchDate.text =  self.upcomingLaunch.launchDate
+            self.isTentative.isHidden = !(self.upcomingLaunch.isTentative!)
+            self.rocketImage.image = UIImage(named: self.upcomingLaunch.rocket!)
+            self.checkWatchButton()
+            self.adjustUpcomingSize()
         }
     }
     
     /// This function will assign the video URL of the upcoming launch and display the "Watch Now" button if the URL available
     func checkWatchButton() {
-        guard let safeWatchURL = upcomingLaunch?.decodedData?.links.video_link_url, UIApplication.shared.canOpenURL(safeWatchURL) else { return }
+        guard let safeWatchURL = upcomingLaunch.watchNow, UIApplication.shared.canOpenURL(safeWatchURL) else { return }
         self.watchURL = safeWatchURL
         watchNowButton.isHidden = false
     }
@@ -110,13 +158,16 @@ class HomeViewController: UIViewController,NetworkManagerDelegate {
     @objc func tentativeClicked(_ sender: UITapGestureRecognizer){
         // we dont want to fill the popover to full width of the screen
         let standardWidth = self.view.frame.width - 60
+        
         //to dynamically resize the popover, we premature-ly calculate the height of the label using the text content
-        let estimatedHeight = Constants.HomeView.tentativeDetail.height(ConstrainedWidth: standardWidth - 24) //12 + 12 horizontal padding
+        let estimatedHeight = Constants.HomeView.tentativeDetail.height(ConstrainedWidth: standardWidth - 24)
+        
         let tentativeDetailsVC = TentativeDetailsViewController()
         tentativeDetailsVC.lblTentativeDetail.text = Constants.HomeView.tentativeDetail
         tentativeDetailsVC.modalPresentationStyle = .popover //this tells that the presenting viewcontroller is an popover style
         tentativeDetailsVC.preferredContentSize = CGSize.init(width: standardWidth, height: estimatedHeight + 40) //40 is vertical padding
         tentativeDetailsVC.overrideUserInterfaceStyle = .light //disabling dark mode
+        
         if let popoverPresentationController = tentativeDetailsVC.popoverPresentationController {
             //this option makes popover to preview below the "T" sign
             popoverPresentationController.permittedArrowDirections = .up
@@ -128,55 +179,9 @@ class HomeViewController: UIViewController,NetworkManagerDelegate {
         self.present(tentativeDetailsVC, animated: true, completion: nil)
     }
     
-}
-
-
-//MARK: - IBOutlets
-
-extension HomeViewController {
-    
-    @IBAction func watchNowButton(_ sender: UIButton) {
-        UIApplication.shared.open(watchURL!)
-    }
-    
-    @IBAction func rocketsButton(_ sender: UIButton) {
-        senderView = Constants.SegueManager.SenderValues.rocket
-        performSegue(withIdentifier: Constants.SegueManager.detailViewSegue, sender: self)
-    }
-    
-    @IBAction func launchSitesButton(_ sender: UIButton) {
-        senderView = Constants.SegueManager.SenderValues.launchSite
-        performSegue(withIdentifier: Constants.SegueManager.detailViewSegue, sender: self)
-    }
-    @IBAction func landpadsButton(_ sender: UIButton) {
-        senderView = Constants.SegueManager.SenderValues.landpads
-        performSegue(withIdentifier: Constants.SegueManager.detailViewSegue, sender: self)
-    }
-    @IBAction func capsulesButton(_ sender: UIButton) {
-        senderView = Constants.SegueManager.SenderValues.capsules
-        performSegue(withIdentifier: Constants.SegueManager.detailViewSegue, sender: self)
-    }
-    @IBAction func shipsButton(_ sender: UIButton) {
-        senderView = Constants.SegueManager.SenderValues.ships
-        performSegue(withIdentifier: Constants.SegueManager.detailViewSegue, sender: self)
-    }
-    @IBAction func launchesButton(_ sender: UIButton) {
-       senderView = Constants.SegueManager.SenderValues.launches
-        performSegue(withIdentifier: Constants.SegueManager.detailViewSegue, sender: self)
-    }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let target = segue.destination as? DetailsViewController {
-            target.senderView = senderView
-        }
-    }
-}
-
-extension HomeViewController: UIPopoverPresentationControllerDelegate {
     func adaptivePresentationStyle(for controller: UIPresentationController) -> UIModalPresentationStyle {
         // .none makes the viewcontroller to be present as popover always, no matter what trait changes
         return .none
     }
     
 }
-
