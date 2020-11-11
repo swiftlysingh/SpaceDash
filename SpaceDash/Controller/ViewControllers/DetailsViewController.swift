@@ -12,7 +12,7 @@ import Lottie
 class DetailsViewController: UIViewController {
     
     let networkObject = NetworkManager(Constants.NetworkManager.baseURL)
-    let detailsModel = DetailsViewModel()
+    var detailsModel = DetailsViewModel()
     
     @IBOutlet var DetailTableView: UITableView!
     @IBOutlet var loadingAnimation: AnimationView!
@@ -34,26 +34,37 @@ class DetailsViewController: UIViewController {
         
     }
     
-    func callAPI<T:Decodable>(withEndpoint senderView : String,decode model : T){
+    func callAPI<T:Decodable>(withEndpoint senderView : String,decode model : T,cachedData cache : NSCache<NSString, DetailsViewModel>){
         
-        networkObject.performRequest(key: senderView) { [weak self] (result: Result<T,Error>) in
-            guard let self = self else { return }
-            
-            switch result {
-            
-            case .success(let launches):
-                DispatchQueue.main.async {
-                    self.detailsModel.fillData(model: launches, key: senderView)
-                    self.updateUI()
-                }
-                
-                
-                break
-                
-            case .failure(let error):
-                print(error)
+        if let cachedVersion = cache.object(forKey: senderView as NSString){
+            DispatchQueue.main.async {
+                self.detailsModel = cachedVersion
+                print("Cached")
+                self.updateUI()
             }
         }
+        else{
+            networkObject.performRequest(key: senderView) { [weak self] (result: Result<T,Error>) in
+                guard let self = self else { return }
+                
+                switch result {
+                
+                case .success(let launches):
+                    DispatchQueue.main.async {
+                        self.detailsModel.fillData(model: launches, key: senderView)
+                        cache.setObject(self.detailsModel, forKey: senderView as NSString)
+                        self.updateUI()
+                    }
+                    print("Uncached")
+                    
+                    break
+                    
+                case .failure(let error):
+                    print(error)
+                }
+            }
+        }
+        
     }
     
     /// Add loading Animation before the Details View. The type of animation is in Interface Builder

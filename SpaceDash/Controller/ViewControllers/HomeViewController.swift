@@ -22,6 +22,7 @@ class HomeViewController: UIViewController {
     
     let networkObject = NetworkManager(Constants.NetworkManager.baseURL)
     let upcomingLaunch = UpcomingLaunchModel()
+    let cache = NSCache<NSString, DetailsViewModel>()
     
     var watchURL : URL? = nil
     
@@ -90,22 +91,22 @@ class HomeViewController: UIViewController {
             
             switch key {
             case Constants.SegueManager.SenderValues.rocket:
-                target.callAPI(withEndpoint: key, decode: [RocketData]())
+                target.callAPI(withEndpoint: key, decode: [RocketData](), cachedData: cache)
                 break
             case Constants.SegueManager.SenderValues.launches:
-                target.callAPI(withEndpoint: key, decode: [LaunchesData]())
+                target.callAPI(withEndpoint: key, decode: [LaunchesData](), cachedData: cache)
                 break
             case Constants.SegueManager.SenderValues.launchSite:
-                target.callAPI(withEndpoint: key, decode: [LaunchPadData]())
+                target.callAPI(withEndpoint: key, decode: [LaunchPadData](), cachedData: cache)
                 break
             case Constants.SegueManager.SenderValues.ships:
-                target.callAPI(withEndpoint: key, decode: [ShipsData]())
+                target.callAPI(withEndpoint: key, decode: [ShipsData](), cachedData: cache)
                 break
             case Constants.SegueManager.SenderValues.capsules:
-                target.callAPI(withEndpoint: key, decode: [CapsulesData]())
+                target.callAPI(withEndpoint: key, decode: [CapsulesData](), cachedData: cache)
                 break
             case Constants.SegueManager.SenderValues.landpads:
-                target.callAPI(withEndpoint: key, decode: [LandpadsData]())
+                target.callAPI(withEndpoint: key, decode: [LandpadsData](), cachedData: cache)
                 break
             default:
                 print("error")
