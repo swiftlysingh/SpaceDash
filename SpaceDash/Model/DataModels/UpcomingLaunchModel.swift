@@ -17,13 +17,13 @@ class UpcomingLaunchModel{
     var rocket : String?
     var watchNow : URL?
     
-    /// Will return the first Launch if no future launch is found
-    func cleanData(_ launch: [UpcomingLaunchData]) -> UpcomingLaunchData{
-        for data in launch {
-                if data.launch_date_unix>=NSDate().timeIntervalSince1970 {
-                    return data
-                }
-            }
-        return launch[0]
-    }
+//    /// Will return the first Launch if no future launch is found
+//    func cleanData(_ launch: [UpcomingLaunchData]) -> UpcomingLaunchData{
+//        for data in launch {
+//                if data.launch_date_unix>=NSDate().timeIntervalSince1970 {
+//                    return data
+//                }
+//            }
+//        return launch[0]
+//    }
 }

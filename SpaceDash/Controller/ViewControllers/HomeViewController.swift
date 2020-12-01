@@ -20,7 +20,7 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var isTentative: UILabel!
     @IBOutlet weak var rocketImage: RocketImageView!
     
-    let networkObject = NetworkManager(Constants.NetworkManager.spaceXAPI)
+    let networkObject = NetworkManager(Constants.NetworkManager.rocketLaunchLiveAPI)
     let upcomingLaunch = UpcomingLaunchModel()
     let cache = NSCache<NSString, DetailsViewModel>()
     
@@ -31,15 +31,13 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        networkObject.performRequest(key: Constants.HomeView.nextLaunch) { [weak self] (result: Result<[UpcomingLaunchData],Error>) in
+        networkObject.performRequest(key: Constants.HomeView.nextLaunch) { [weak self] (result: Result<NextLaunchData,Error>) in
             guard let self = self else { return }
             
             switch result {
             
             case .success(let launches):
-                let launch = self.upcomingLaunch.cleanData(launches)
-                self.updateModel(launch)
-                self.updateUI()
+                print(launches)
                 break
                 
             case .failure(let error):
@@ -63,18 +61,18 @@ class HomeViewController: UIViewController {
     }
     
     /// Update the model with new data that has just arrived from API
-    func updateModel(_ launch : UpcomingLaunchData){
-        
-        self.upcomingLaunch.launchSite = launch.launch_site.site_name_long
-        self.upcomingLaunch.payloadAndType = "\(launch.rocket.second_stage.payloads[0].payload_id), \(launch.rocket.second_stage.payloads[0].payload_type)"
-        self.upcomingLaunch.launchDate = launch.launch_date_unix.getDate()
-        self.upcomingLaunch.isTentative = launch.is_tentative
-        self.upcomingLaunch.rocket = launch.rocket.rocket_id
-        self.upcomingLaunch.watchNow = launch.links.video_link_url
-        
-        print(launch.rocket.rocket_id)
-        
-    }
+//    func updateModel(_ launch : UpcomingLaunchData){
+//
+//        self.upcomingLaunch.launchSite = launch.launch_site.site_name_long
+//        self.upcomingLaunch.payloadAndType = "\(launch.rocket.second_stage.payloads[0].payload_id), \(launch.rocket.second_stage.payloads[0].payload_type)"
+//        self.upcomingLaunch.launchDate = launch.launch_date_unix.getDate()
+//        self.upcomingLaunch.isTentative = launch.is_tentative
+//        self.upcomingLaunch.rocket = launch.rocket.rocket_id
+//        self.upcomingLaunch.watchNow = launch.links.video_link_url
+//
+//        print(launch.rocket.rocket_id)
+//
+//    }
     
     @IBAction func buttonPressed(_ sender: UIButton) {
         performSegue(withIdentifier: Constants.SegueManager.detailViewSegue, sender: sender.titleLabel?.text)

@@ -35,9 +35,11 @@
 		FF8E3EE224DF14EB00077DE3 /* LaunchesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8E3EE124DF14EB00077DE3 /* LaunchesData.swift */; };
 		FFA9CA5824C0CA31006FA5DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFA9CA5724C0CA31006FA5DE /* Assets.xcassets */; };
 		FFA9CA5C24C0CCCA006FA5DE /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA9CA5A24C0CCCA006FA5DE /* NetworkManager.swift */; };
-		FFA9CA5D24C0CCCA006FA5DE /* UpcomingLaunchData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA9CA5B24C0CCCA006FA5DE /* UpcomingLaunchData.swift */; };
 		FFA9CA7824C0D9D3006FA5DE /* SpaceDashUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA9CA7724C0D9D3006FA5DE /* SpaceDashUITests.swift */; };
 		FFA9CA8024C1B838006FA5DE /* UpcomingLaunchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA9CA7F24C1B838006FA5DE /* UpcomingLaunchModel.swift */; };
+		FFAFCB19257684CC003A5252 /* PadData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAFCB18257684CC003A5252 /* PadData.swift */; };
+		FFAFCB25257688D7003A5252 /* NextLaunchData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAFCB24257688D7003A5252 /* NextLaunchData.swift */; };
+		FFAFCB2C25768A0C003A5252 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAFCB2B25768A0C003A5252 /* Result.swift */; };
 		FFAFD9CF252CE1FA0063A6BA /* About.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFAFD9CE252CE1FA0063A6BA /* About.storyboard */; };
 		FFAFD9D6252CE22A0063A6BA /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFAFD9D5252CE22A0063A6BA /* Home.storyboard */; };
 		FFB398F424DDD025001D4EA1 /* RocketsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB398F324DDD025001D4EA1 /* RocketsData.swift */; };
@@ -131,11 +133,13 @@
 		FF8E3EE124DF14EB00077DE3 /* LaunchesData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesData.swift; sourceTree = "<group>"; };
 		FFA9CA5724C0CA31006FA5DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FFA9CA5A24C0CCCA006FA5DE /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
-		FFA9CA5B24C0CCCA006FA5DE /* UpcomingLaunchData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpcomingLaunchData.swift; sourceTree = "<group>"; };
 		FFA9CA7524C0D9D3006FA5DE /* SpaceDashUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpaceDashUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFA9CA7724C0D9D3006FA5DE /* SpaceDashUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceDashUITests.swift; sourceTree = "<group>"; };
 		FFA9CA7924C0D9D3006FA5DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FFA9CA7F24C1B838006FA5DE /* UpcomingLaunchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingLaunchModel.swift; sourceTree = "<group>"; };
+		FFAFCB18257684CC003A5252 /* PadData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PadData.swift; sourceTree = "<group>"; };
+		FFAFCB24257688D7003A5252 /* NextLaunchData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextLaunchData.swift; sourceTree = "<group>"; };
+		FFAFCB2B25768A0C003A5252 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		FFAFD9CE252CE1FA0063A6BA /* About.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = About.storyboard; sourceTree = "<group>"; };
 		FFAFD9D5252CE22A0063A6BA /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		FFB398F324DDD025001D4EA1 /* RocketsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketsData.swift; sourceTree = "<group>"; };
@@ -315,13 +319,15 @@
 		FFB398F524DDD037001D4EA1 /* JsonDecoders */ = {
 			isa = PBXGroup;
 			children = (
-				FFA9CA5B24C0CCCA006FA5DE /* UpcomingLaunchData.swift */,
+				FFAFCB24257688D7003A5252 /* NextLaunchData.swift */,
 				FFB398F324DDD025001D4EA1 /* RocketsData.swift */,
 				FFF266B124DEAF7400BA5C28 /* LandpadsData.swift */,
 				FFF266B324DEF93800BA5C28 /* CapsulesData.swift */,
 				FF8E3EDB24DF003300077DE3 /* ShipsData.swift */,
 				FF8E3EDD24DF066E00077DE3 /* LaunchPadsData.swift */,
 				FF8E3EE124DF14EB00077DE3 /* LaunchesData.swift */,
+				FFAFCB18257684CC003A5252 /* PadData.swift */,
+				FFAFCB2B25768A0C003A5252 /* Result.swift */,
 			);
 			path = JsonDecoders;
 			sourceTree = "<group>";
@@ -744,13 +750,14 @@
 				FF42E94E24CD8CA5003E8DFE /* Constants.swift in Sources */,
 				CFF4E6132546A3B000CE83AF /* AppIconSelectViewController.swift in Sources */,
 				FFF25C6824D871EF00D0E1FF /* DetailsTableViewCell.swift in Sources */,
+				FFAFCB2C25768A0C003A5252 /* Result.swift in Sources */,
 				FFC259EB24A7AB3C0019E354 /* UpcomingView.swift in Sources */,
 				FFF716D6249D3E1C0043EB81 /* AppDelegate.swift in Sources */,
 				FF8E3EDE24DF066E00077DE3 /* LaunchPadsData.swift in Sources */,
 				FF8E3EDC24DF003300077DE3 /* ShipsData.swift in Sources */,
 				21490CDE25422676006FDF35 /* WatchNowButton.swift in Sources */,
-				FFA9CA5D24C0CCCA006FA5DE /* UpcomingLaunchData.swift in Sources */,
 				750F3DFD252708500030ED19 /* String.swift in Sources */,
+				FFAFCB19257684CC003A5252 /* PadData.swift in Sources */,
 				FFF716D8249D3E1C0043EB81 /* SceneDelegate.swift in Sources */,
 				FF60A64A24D47B4E0030F5AE /* AboutViewController.swift in Sources */,
 				FFF266B424DEF93800BA5C28 /* CapsulesData.swift in Sources */,
@@ -765,6 +772,7 @@
 				FFB734BA24DB2B2B006C1518 /* DetailsViewController.swift in Sources */,
 				750F3DF5252703830030ED19 /* TentativeDetailsViewController.swift in Sources */,
 				FFB398FA24DDDBDC001D4EA1 /* UIImageView.swift in Sources */,
+				FFAFCB25257688D7003A5252 /* NextLaunchData.swift in Sources */,
 				FFBEA64324DC6C3B00A22F9F /* DetailCellImageView.swift in Sources */,
 				FFC259E924A7A9C10019E354 /* InfoPanelView.swift in Sources */,
 				FF8E3EE224DF14EB00077DE3 /* LaunchesData.swift in Sources */,
