@@ -11,7 +11,7 @@ import Lottie
 
 class DetailsViewController: UIViewController {
     
-    let networkObject = NetworkManager(Constants.NetworkManager.baseURL)
+    let networkObject = NetworkManager(Constants.NetworkManager.spaceXAPI)
     var detailsModel = DetailsViewModel()
     
     @IBOutlet var DetailTableView: UITableView!

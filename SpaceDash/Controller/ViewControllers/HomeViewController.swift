@@ -20,7 +20,7 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var isTentative: UILabel!
     @IBOutlet weak var rocketImage: RocketImageView!
     
-    let networkObject = NetworkManager(Constants.NetworkManager.baseURL)
+    let networkObject = NetworkManager(Constants.NetworkManager.spaceXAPI)
     let upcomingLaunch = UpcomingLaunchModel()
     let cache = NSCache<NSString, DetailsViewModel>()
     
@@ -31,7 +31,7 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        networkObject.performRequest(key: Constants.NetworkManager.upcomingLaunchURL) { [weak self] (result: Result<[UpcomingLaunchData],Error>) in
+        networkObject.performRequest(key: Constants.HomeView.nextLaunch) { [weak self] (result: Result<[UpcomingLaunchData],Error>) in
             guard let self = self else { return }
             
             switch result {
