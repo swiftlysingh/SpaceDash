@@ -5,6 +5,8 @@
 
 [![Slack](https://img.shields.io/badge/Slack-black.svg?style=for-the-badge&logo=slack)](https://communityinviter.com/apps/spacedashworkspace/spacedash)
 [![Twitter](https://img.shields.io/badge/Twitter-skyblue.svg?style=for-the-badge&logo=twitter)](https://twitter.com/get_dash)
+[![Testflight](https://img.shields.io/badge/Testflight-blue.svg?style=for-the-badge)](https://testflight.apple.com/join/voEgmLv8)
+[![App Store](https://img.shields.io/badge/App%20Store-Coming%20Soon-orange.svg?style=for-the-badge)](https://testflight.apple.com/join/voEgmLv8)
 # [](https://github.com/pushpinderpalsingh/SpaceDash#spacedash)SpaceDash
 
 ### [](https://github.com/pushpinderpalsingh/SpaceDash#a-dashboard-for-space)A Dashboard for Space...🚀🚀🚀 
@@ -17,10 +19,7 @@ The project uses test-drive agile development processes, where requirements are 
 
 ***Notice***
 
-Currently, new version was not accepted by the App Store review team. Since there was recent update to the r/SpaceX API which caused our app to crash on launch and no way to update our App I removed it from the App Store as of now. The team is working to add functionality to the app which will become Version 2 of the app. Version 2 of the will be available in early to mid January. To still use the app, you can use the pre release version by the following testflight deployement.
-
-[![Testflight](https://img.shields.io/badge/Testflight-blue.svg?style=for-the-badge)](https://testflight.apple.com/join/voEgmLv8)
-[![App Store](https://img.shields.io/badge/App%20Store-Coming%20Soon-orange.svg?style=for-the-badge)](https://testflight.apple.com/join/voEgmLv8)
+Currently, new version was not accepted by the App Store review team. Since there was recent update to the r/SpaceX API which caused our app to crash on launch and no way to update our App I removed it from the App Store as of now. The team is working to add functionality to the app which will become Version 2 of the app. Version 2 of the will be available in early to mid January. To still use and test the app, you can use the beta version using Testflight link above.
 
 ## 📸 Screenshots
 
