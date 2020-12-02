@@ -31,10 +31,9 @@ Currently, new version was not accepted by the App Store review team. Since ther
 
 ## 👾 Technologies
 > To help scale development, this app is built using the MVC design pattern. subsequent changes made by contributors do not affect the central architecture.
-* Fetches and renders JSON from the SpaceX API
-* Intuitive error handling
-* Animations via the Lottie framework
-* Unit testing using XCTests framework
+* UIKit
+* XCTests
+* Lottie
 
 
 ## ⚙️ [](https://github.com/pushpinderpalsingh/SpaceDash#getting-started-for-development) Getting Started
