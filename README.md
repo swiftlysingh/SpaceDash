@@ -4,6 +4,7 @@
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 [![Slack](https://img.shields.io/badge/Slack-black.svg?style=for-the-badge&logo=slack)](https://communityinviter.com/apps/spacedashworkspace/spacedash)
+[![Notion](https://img.shields.io/badge/Notion-grey.svg?style=for-the-badge&logo=notion)](https://www.notion.so/SpaceDash-193ad11fe7d54131b6dd0d34be6698f3)
 [![Twitter](https://img.shields.io/badge/Twitter-skyblue.svg?style=for-the-badge&logo=twitter)](https://twitter.com/get_dash)
 [![Testflight](https://img.shields.io/badge/Testflight-blue.svg?style=for-the-badge)](https://testflight.apple.com/join/voEgmLv8)
 [![App Store](https://img.shields.io/badge/App%20Store-Coming%20Soon-orange.svg?style=for-the-badge)](https://testflight.apple.com/join/voEgmLv8)
