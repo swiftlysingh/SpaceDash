@@ -36,7 +36,6 @@
 		FFA9CA5824C0CA31006FA5DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFA9CA5724C0CA31006FA5DE /* Assets.xcassets */; };
 		FFA9CA5C24C0CCCA006FA5DE /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA9CA5A24C0CCCA006FA5DE /* NetworkManager.swift */; };
 		FFA9CA7824C0D9D3006FA5DE /* SpaceDashUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA9CA7724C0D9D3006FA5DE /* SpaceDashUITests.swift */; };
-		FFA9CA8024C1B838006FA5DE /* UpcomingLaunchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA9CA7F24C1B838006FA5DE /* UpcomingLaunchModel.swift */; };
 		FFAFCB19257684CC003A5252 /* PadData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAFCB18257684CC003A5252 /* PadData.swift */; };
 		FFAFCB25257688D7003A5252 /* NextLaunchData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAFCB24257688D7003A5252 /* NextLaunchData.swift */; };
 		FFAFCB2C25768A0C003A5252 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAFCB2B25768A0C003A5252 /* Result.swift */; };
@@ -138,7 +137,6 @@
 		FFA9CA7524C0D9D3006FA5DE /* SpaceDashUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpaceDashUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFA9CA7724C0D9D3006FA5DE /* SpaceDashUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceDashUITests.swift; sourceTree = "<group>"; };
 		FFA9CA7924C0D9D3006FA5DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FFA9CA7F24C1B838006FA5DE /* UpcomingLaunchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingLaunchModel.swift; sourceTree = "<group>"; };
 		FFAFCB18257684CC003A5252 /* PadData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PadData.swift; sourceTree = "<group>"; };
 		FFAFCB24257688D7003A5252 /* NextLaunchData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextLaunchData.swift; sourceTree = "<group>"; };
 		FFAFCB2B25768A0C003A5252 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
@@ -349,7 +347,6 @@
 		FFB398F824DDD306001D4EA1 /* DataModels */ = {
 			isa = PBXGroup;
 			children = (
-				FFA9CA7F24C1B838006FA5DE /* UpcomingLaunchModel.swift */,
 				FFB398F624DDD2F8001D4EA1 /* DetailsViewModel.swift */,
 			);
 			path = DataModels;
@@ -758,7 +755,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FFA9CA8024C1B838006FA5DE /* UpcomingLaunchModel.swift in Sources */,
 				FF7F94FB2511E51000B2830B /* DetailView.swift in Sources */,
 				FFB398F424DDD025001D4EA1 /* RocketsData.swift in Sources */,
 				FF42E94E24CD8CA5003E8DFE /* Constants.swift in Sources */,

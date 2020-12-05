@@ -35,9 +35,9 @@ class HomeViewController: UIViewController {
             
             switch result {
             
-            case .success(let launches):
-                self.updateUI(launches)
-                print(launches)
+            case .success(let nextLaunch):
+                self.updateUI(nextLaunch)
+                print(nextLaunch)
                 break
                 
             case .failure(let error):
@@ -59,20 +59,6 @@ class HomeViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.setNavigationBarHidden(true, animated: true)
     }
-    
-    /// Update the model with new data that has just arrived from API
-//    func updateModel(_ launch : UpcomingLaunchData){
-//
-//        self.upcomingLaunch.launchSite = launch.launch_site.site_name_long
-//        self.upcomingLaunch.payloadAndType = "\(launch.rocket.second_stage.payloads[0].payload_id), \(launch.rocket.second_stage.payloads[0].payload_type)"
-//        self.upcomingLaunch.launchDate = launch.launch_date_unix.getDate()
-//        self.upcomingLaunch.isTentative = launch.is_tentative
-//        self.upcomingLaunch.rocket = launch.rocket.rocket_id
-//        self.upcomingLaunch.watchNow = launch.links.video_link_url
-//
-//        print(launch.rocket.rocket_id)
-//
-//    }
     
     @IBAction func buttonPressed(_ sender: UIButton) {
         performSegue(withIdentifier: Constants.SegueManager.detailViewSegue, sender: sender.titleLabel?.text)
