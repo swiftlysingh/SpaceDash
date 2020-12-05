@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Results {
+struct ResultData {
     
     let id : Int
     let date : String
@@ -26,7 +26,7 @@ struct Results {
     
 }
 
-extension Results : Decodable {
+extension ResultData : Decodable {
     enum CodingKeys : String, CodingKey {
         case id
         case name
@@ -63,32 +63,32 @@ extension Results : Decodable {
         date = try container.decode(String.self, forKey: .date)
         launchDesc = try container.decode(String.self, forKey: .launchDesc)
         weatherIcon = try container.decode(String.self, forKey: .weatherIcon)
-        
+
         let providerKeys = try decoder.container(keyedBy: CodingKeys.ProviderKeys.self)
         providerName = try providerKeys.decode(String.self, forKey: .name)
         providerSlug = try providerKeys.decode(String.self, forKey: .slug)
-        
+
         let vehicleKeys = try decoder.container(keyedBy: CodingKeys.VehicleKeys.self)
         vehicleId = try vehicleKeys.decode(Int.self, forKey: .id)
         vehicleName = try vehicleKeys.decode(String.self, forKey: .name)
         vehicleSlug = try vehicleKeys.decode(String.self, forKey: .slug)
-        
+
         let missionData = try container.decode([MissionData].self, forKey: .missions)
         var missionName = [String]()
-                
+
         for mission in missionData{
             missionName.append(mission.name)
         }
-        
+
         missions = missionName
-        
+
         let tagData = try container.decode([TagsData].self, forKey: .tags)
         var tag = [String]()
-        
+
         for tags in tagData {
             tag.append(tags.text)
         }
-        
+
         tags = tag
     }
 }
