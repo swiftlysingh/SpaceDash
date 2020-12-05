@@ -19,9 +19,9 @@ struct Results {
     let vehicleName : String
     let vehicleSlug : String
     let pad : PadData
-//    let missions : [String]
+    let missions : [String]
     let launchDesc : String
-//    let tags : [String]
+    let tags : [String]
     let weatherIcon : String
     
 }
@@ -53,10 +53,6 @@ extension Results : Decodable {
             case name
             case slug
         }
-        
-        enum TagKeys : String, CodingKey {
-            case text
-        }
     }
     
     init(from decoder: Decoder) throws {
@@ -64,7 +60,6 @@ extension Results : Decodable {
         id = try container.decode(Int.self, forKey: .id)
         name = try container.decode(String.self, forKey: .name)
         pad = try container.decode(PadData.self, forKey: .pad)
-//        missions = try container.decode([String].self, forKey: .missions)
         date = try container.decode(String.self, forKey: .date)
         launchDesc = try container.decode(String.self, forKey: .launchDesc)
         weatherIcon = try container.decode(String.self, forKey: .weatherIcon)
@@ -78,6 +73,22 @@ extension Results : Decodable {
         vehicleName = try vehicleKeys.decode(String.self, forKey: .name)
         vehicleSlug = try vehicleKeys.decode(String.self, forKey: .slug)
         
-//        tags = try decoder.container(keyedBy: CodingKeys.TagKeys.self).decode([String].self, forKey: .text)
+        let missionData = try container.decode([MissionData].self, forKey: .missions)
+        var missionName = [String]()
+                
+        for mission in missionData{
+            missionName.append(mission.name)
+        }
+        
+        missions = missionName
+        
+        let tagData = try container.decode([TagsData].self, forKey: .tags)
+        var tag = [String]()
+        
+        for tags in tagData {
+            tag.append(tags.text)
+        }
+        
+        tags = tag
     }
 }
