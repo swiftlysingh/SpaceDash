@@ -41,7 +41,7 @@ extension NextLaunchData : Decodable {
 // Following is copying data decoded from result into the current object. If you have a better way to do this, let me know
         
         id = result.id
-        date = result.date
+        date = Double(result.date)?.getDate() ?? Constants.DefaultArgs.noData
         name = result.name
         providerName = result.providerName
         providerSlug = result.providerSlug
