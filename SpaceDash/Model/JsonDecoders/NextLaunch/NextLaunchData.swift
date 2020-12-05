@@ -38,6 +38,8 @@ extension NextLaunchData : Decodable {
         let results = try container.decode([ResultData].self, forKey: .result)
         let result = results[0]
 
+// Following is copying data decoded from result into the current object. If you have a better way to do this, let me know
+        
         id = result.id
         date = result.date
         name = result.name
