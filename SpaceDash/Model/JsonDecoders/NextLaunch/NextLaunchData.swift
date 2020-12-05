@@ -18,7 +18,7 @@ struct NextLaunchData {
     let vehicleId : Int
     let vehicleName : String
     let vehicleSlug : String
-    let pad : PadData
+    let launchSite : String
     let missions : [String]
     let launchDesc : String
     let tags : [String]
@@ -48,7 +48,7 @@ extension NextLaunchData : Decodable {
         vehicleId = result.vehicleId
         vehicleName = result.vehicleName
         vehicleSlug = result.vehicleSlug
-        pad = result.pad
+        launchSite = "\(result.pad.location), \(result.pad.locationState)  \(result.pad.locationCountry)"
         missions = result.missions
         launchDesc = result.launchDesc
         tags = result.tags

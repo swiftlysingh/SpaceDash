@@ -21,7 +21,6 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var rocketImage: RocketImageView!
     
     let networkObject = NetworkManager(Constants.NetworkManager.rocketLaunchLiveAPI)
-    let upcomingLaunch = UpcomingLaunchModel()
     let cache = NSCache<NSString, DetailsViewModel>()
     
     var watchURL : URL? = nil
@@ -37,6 +36,7 @@ class HomeViewController: UIViewController {
             switch result {
             
             case .success(let launches):
+                self.updateUI(launches)
                 print(launches)
                 break
                 
@@ -134,24 +134,24 @@ extension HomeViewController: UIPopoverPresentationControllerDelegate {
     }
     
     /// This function will update the UI once updateFromAPI updates the data for HomeViewController
-    func updateUI(){
+    func updateUI(_ upcomingLaunch : NextLaunchData){
         DispatchQueue.main.async {
-            self.launchSite.text = self.upcomingLaunch.launchSite
-            self.payloadAndType.text = self.upcomingLaunch.payloadAndType
-            self.launchDate.text =  self.upcomingLaunch.launchDate
-            self.isTentative.isHidden = !(self.upcomingLaunch.isTentative!)
-            self.rocketImage.image = UIImage(named: self.upcomingLaunch.rocket!)
-            self.checkWatchButton()
+            self.launchSite.text = upcomingLaunch.launchSite
+//            self.payloadAndType.text = upcomingLaunch.payloadAndType
+            self.launchDate.text =  upcomingLaunch.date
+//            self.isTentative.isHidden = !(upcomingLaunch.isTentative!)
+//            self.rocketImage.image = UIImage(named: upcomingLaunch.rocket!)
+//            self.checkWatchButton()
             self.adjustUpcomingSize()
         }
     }
     
     /// This function will assign the video URL of the upcoming launch and display the "Watch Now" button if the URL available
-    func checkWatchButton() {
-        guard let safeWatchURL = upcomingLaunch.watchNow, UIApplication.shared.canOpenURL(safeWatchURL) else { return }
-        self.watchURL = safeWatchURL
-        watchNowButton.isHidden = false
-    }
+//    func checkWatchButton() {
+//        guard let safeWatchURL = upcomingLaunch.watchNow, UIApplication.shared.canOpenURL(safeWatchURL) else { return }
+//        self.watchURL = safeWatchURL
+//        watchNowButton.isHidden = false
+//    }
     
     
     @objc func tentativeClicked(_ sender: UITapGestureRecognizer){
