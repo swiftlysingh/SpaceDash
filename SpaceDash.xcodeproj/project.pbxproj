@@ -300,6 +300,18 @@
 			path = SpaceDashUITests;
 			sourceTree = "<group>";
 		};
+		FFAFCBA8257C23E3003A5252 /* NextLaunch */ = {
+			isa = PBXGroup;
+			children = (
+				FFAFCB24257688D7003A5252 /* NextLaunchData.swift */,
+				FFAFCB18257684CC003A5252 /* PadData.swift */,
+				FFAFCB2B25768A0C003A5252 /* Result.swift */,
+				FFAFCB80257C13D9003A5252 /* MissionData.swift */,
+				FFAFCB87257C1AA5003A5252 /* TagsData.swift */,
+			);
+			path = NextLaunch;
+			sourceTree = "<group>";
+		};
 		FFAFD9DC252CE4890063A6BA /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
@@ -323,17 +335,13 @@
 		FFB398F524DDD037001D4EA1 /* JsonDecoders */ = {
 			isa = PBXGroup;
 			children = (
-				FFAFCB24257688D7003A5252 /* NextLaunchData.swift */,
+				FFAFCBA8257C23E3003A5252 /* NextLaunch */,
 				FFB398F324DDD025001D4EA1 /* RocketsData.swift */,
 				FFF266B124DEAF7400BA5C28 /* LandpadsData.swift */,
 				FFF266B324DEF93800BA5C28 /* CapsulesData.swift */,
 				FF8E3EDB24DF003300077DE3 /* ShipsData.swift */,
 				FF8E3EDD24DF066E00077DE3 /* LaunchPadsData.swift */,
 				FF8E3EE124DF14EB00077DE3 /* LaunchesData.swift */,
-				FFAFCB18257684CC003A5252 /* PadData.swift */,
-				FFAFCB2B25768A0C003A5252 /* Result.swift */,
-				FFAFCB80257C13D9003A5252 /* MissionData.swift */,
-				FFAFCB87257C1AA5003A5252 /* TagsData.swift */,
 			);
 			path = JsonDecoders;
 			sourceTree = "<group>";
