@@ -11,9 +11,9 @@ import Foundation
 struct PadData  {
     let name : String
     let location : String
-    let locationState : String?
-    let locationCountry : String
-    let locationSlug : String
+//    let locationState : String?
+//    let locationCountry : String
+//    let locationSlug : String
 }
 
 extension PadData : Decodable {
@@ -38,8 +38,8 @@ extension PadData : Decodable {
         
         let locationContainer = try decoder.container(keyedBy: CodingKeys.LocationKeys.self)
         location = try locationContainer.decode(String.self, forKey: .name)
-        locationState = try locationContainer.decode(String.self, forKey: .state)
-        locationCountry = try locationContainer.decode(String.self, forKey: .country)
-        locationSlug = try locationContainer.decode(String.self, forKey: .slug)
+//        locationState = try locationContainer.decode(String.self, forKey: .state)
+//        locationCountry = try locationContainer.decode(String.self, forKey: .country)
+//        locationSlug = try locationContainer.decode(String.self, forKey: .slug)
     }
 }
