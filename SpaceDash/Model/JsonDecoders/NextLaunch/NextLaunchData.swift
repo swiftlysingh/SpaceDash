@@ -52,7 +52,7 @@ extension NextLaunchData : Decodable {
         vehicleId = result.vehicleId
         vehicleName = result.vehicleName
         vehicleSlug = result.vehicleSlug
-        launchSite = "\(result.pad.location), \(result.pad.locationState)  \(result.pad.locationCountry)"
+        launchSite = result.pad.location
         missions = result.missions
         launchDesc = result.launchDesc
         tags = result.tags
