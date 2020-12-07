@@ -13,7 +13,7 @@ struct Constants {
     struct NetworkManager {
         static let spaceXAPI = "https://api.spacexdata.com/v3/"
         static let rocketLaunchLiveAPI = "https://fdo.rocketlaunch.live/json/"
-        
+        static let authorization = "Authorization"
     }
     struct  Colors {
         static let DashCream = "DashCream"

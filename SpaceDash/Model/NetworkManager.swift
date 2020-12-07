@@ -21,9 +21,15 @@ struct NetworkManager{
         
         if let url = URL(string: "\(base)\(key)"){
             
+            var request = URLRequest(url: url)
+            
+            if base == Constants.NetworkManager.rocketLaunchLiveAPI {
+                request.setValue(Secrets.key.rawValue, forHTTPHeaderField: Constants.NetworkManager.authorization)
+            }
+            
             let session = URLSession(configuration: .default)
             
-            let task = session.dataTask(with: url) { (data, response, error) in
+            let task = session.dataTask(with: request) { (data, response, error) in
                 if error != nil {
                     completion(.failure(error!))
                 }

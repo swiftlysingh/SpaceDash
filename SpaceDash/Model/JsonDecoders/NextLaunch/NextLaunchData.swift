@@ -11,6 +11,7 @@ import Foundation
 struct NextLaunchData {
     
     let id : Int
+    let isAuth : Bool
     let date : String
     let name : String
     let providerName : String
@@ -29,6 +30,7 @@ extension NextLaunchData : Decodable {
     
     enum CodingKeys : String, CodingKey {
         case result
+        case isAuth = "valid_auth"
     }
     
     
@@ -37,6 +39,8 @@ extension NextLaunchData : Decodable {
         
         let results = try container.decode([ResultData].self, forKey: .result)
         let result = results[0]
+        
+        isAuth = try container.decode(Bool.self, forKey: .isAuth)
 
 // Following is copying data decoded from result into the current object. If you have a better way to do this, let me know
         

@@ -22,6 +22,7 @@
 		CF0592F82546DDBB0033DBE1 /* SpaceDashIconShuttle.png in Resources */ = {isa = PBXBuildFile; fileRef = CFF4E5F425469FD200CE83AF /* SpaceDashIconShuttle.png */; };
 		CF0592F92546DDBB0033DBE1 /* SpaceDashIconSpaceShuttle.png in Resources */ = {isa = PBXBuildFile; fileRef = CFF4E5F225469FD200CE83AF /* SpaceDashIconSpaceShuttle.png */; };
 		CFF4E6132546A3B000CE83AF /* AppIconSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF4E6122546A3B000CE83AF /* AppIconSelectViewController.swift */; };
+		FF1AC785257E9415009775F5 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1AC784257E9415009775F5 /* Secrets.swift */; };
 		FF3043D42507E5D0005F8EE6 /* FastlaneSnapshots.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3043D32507E5D0005F8EE6 /* FastlaneSnapshots.swift */; };
 		FF3043DC2507E615005F8EE6 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3043DB2507E615005F8EE6 /* SnapshotHelper.swift */; };
 		FF42E94E24CD8CA5003E8DFE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF42E94D24CD8CA5003E8DFE /* Constants.swift */; };
@@ -115,6 +116,7 @@
 		CFF4E5F425469FD200CE83AF /* SpaceDashIconShuttle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SpaceDashIconShuttle.png; sourceTree = "<group>"; };
 		CFF4E6122546A3B000CE83AF /* AppIconSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIconSelectViewController.swift; sourceTree = "<group>"; };
 		EAD33DEB1658F9122221595A /* Pods-SpaceX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceX.release.xcconfig"; path = "Target Support Files/Pods-SpaceX/Pods-SpaceX.release.xcconfig"; sourceTree = "<group>"; };
+		FF1AC784257E9415009775F5 /* Secrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
 		FF3043D12507E5D0005F8EE6 /* FastlaneSnapshots.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FastlaneSnapshots.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF3043D32507E5D0005F8EE6 /* FastlaneSnapshots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastlaneSnapshots.swift; sourceTree = "<group>"; };
 		FF3043D52507E5D0005F8EE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -282,6 +284,7 @@
 			isa = PBXGroup;
 			children = (
 				FFA9CA5A24C0CCCA006FA5DE /* NetworkManager.swift */,
+				FF1AC784257E9415009775F5 /* Secrets.swift */,
 				FF42E94D24CD8CA5003E8DFE /* Constants.swift */,
 				FFB398F524DDD037001D4EA1 /* JsonDecoders */,
 				FFB398F824DDD306001D4EA1 /* DataModels */,
@@ -760,6 +763,7 @@
 				FF42E94E24CD8CA5003E8DFE /* Constants.swift in Sources */,
 				CFF4E6132546A3B000CE83AF /* AppIconSelectViewController.swift in Sources */,
 				FFF25C6824D871EF00D0E1FF /* DetailsTableViewCell.swift in Sources */,
+				FF1AC785257E9415009775F5 /* Secrets.swift in Sources */,
 				FFAFCB2C25768A0C003A5252 /* Result.swift in Sources */,
 				FFC259EB24A7AB3C0019E354 /* UpcomingView.swift in Sources */,
 				FFF716D6249D3E1C0043EB81 /* AppDelegate.swift in Sources */,
