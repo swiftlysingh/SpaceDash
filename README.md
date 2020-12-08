@@ -75,7 +75,8 @@ Click through buttons you can find and see where they take you. Explore the app 
 This project is licensed under the MIT License - see [LICENSE.md](https://github.com/pushpinderpalsingh/SpaceDash/blob/develop/LICENSE.md) for details
 
 ## Acknowledgement
--  A huge shoutout to SpaceX for their [API](https://github.com/r-spacex/SpaceX-API)
+- [RocketLaunch.Live](https://www.rocketlaunch.live/)
+- [r/SpaceX API](https://github.com/r-spacex/SpaceX-API)
 
 #### This project won't be possible without our contributors. You may see [Contributors.md](https://github.com/pushpinderpalsingh/SpaceDash/blob/develop/Contributors.md) for details.
 
