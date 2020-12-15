@@ -1,20 +1,24 @@
 PODS:
   - lottie-ios (3.1.8)
   - MarqueeLabel (4.0.2)
+  - SnapKit (5.0.1)
 
 DEPENDENCIES:
   - lottie-ios
   - MarqueeLabel
+  - SnapKit
 
 SPEC REPOS:
   trunk:
     - lottie-ios
     - MarqueeLabel
+    - SnapKit
 
 SPEC CHECKSUMS:
   lottie-ios: 48fac6be217c76937e36e340e2d09cf7b10b7f5f
   MarqueeLabel: f762aa681ae201f66c1d511858b171f75d83013a
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
 
-PODFILE CHECKSUM: ceca5c3fa56ae640c1db8633568bd906f292243e
+PODFILE CHECKSUM: af353e05b6f3fa1d359e70ed8077b68d805fa15e
 
 COCOAPODS: 1.10.0

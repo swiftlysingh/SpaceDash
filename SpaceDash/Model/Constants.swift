@@ -15,10 +15,24 @@ struct Constants {
         static let upcomingLaunchURL = "launches/Upcoming"
         
     }
+    
     struct  Colors {
         static let DashCream = "DashCream"
         static let DashBlack = "DashBlack"
+        static let DashGray = "DashGray"
     }
+    
+    struct Font{
+        static let lora = "Lora"
+        static let playFairDisplay = "PlayfairDisplay"
+        public enum FontType: String {
+            case semibold = "-SemiBold"
+            case regular = "-Regular"
+            case medium = "-Medium"
+            case bold = "-Bold"
+        }
+    }
+    
     struct SegueManager {
         static let detailViewSegue = "DetailView"
         

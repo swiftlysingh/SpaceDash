@@ -8,4 +8,5 @@ target 'SpaceDash' do
 # Pods for SpaceX
 	pod 'MarqueeLabel'
 	pod 'lottie-ios'
+	pod 'SnapKit'
 end
