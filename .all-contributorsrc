@@ -6,7 +6,8 @@
   "imageSize": 100,
   "commit": false,
   "contributors": [
-    {
+   
+   {
       "login": "pushpinderpalsingh",
       "name": "Pushpinder Pal Singh",
       "avatar_url": "https://avatars3.githubusercontent.com/u/47032662?v=4",
@@ -15,6 +16,7 @@
         "maintenance"
       ]
     },
+    
     {
       "login": "brainboxdeveloper",
       "name": "simplybenjamin",
@@ -24,6 +26,7 @@
         "code"
       ]
     },
+    
     {
       "login": "clarkeben",
       "name": "Ben",
@@ -88,6 +91,7 @@
         "code"
       ]
     },
+    
     {
       "login": "jkreller",
       "name": "jkreller",
@@ -97,6 +101,7 @@
         "code"
       ]
     },
+    
     {
       "login": "rajhraval1",
       "name": "Raj H Raval",
