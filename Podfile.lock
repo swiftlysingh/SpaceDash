@@ -1,5 +1,5 @@
 PODS:
-  - lottie-ios (3.1.8)
+  - lottie-ios (3.1.9)
   - MarqueeLabel (4.0.5)
 
 DEPENDENCIES:
@@ -12,7 +12,7 @@ SPEC REPOS:
     - MarqueeLabel
 
 SPEC CHECKSUMS:
-  lottie-ios: 48fac6be217c76937e36e340e2d09cf7b10b7f5f
+  lottie-ios: 3a3758ef5a008e762faec9c9d50a39842f26d124
   MarqueeLabel: 00cc0bcd087111dca575878b3531af980559707d
 
 PODFILE CHECKSUM: 1cba57b3d975ea67fdadfc5ee27592c28c295caa
