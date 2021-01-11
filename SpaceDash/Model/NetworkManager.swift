@@ -50,6 +50,5 @@ struct NetworkManager{
             task.resume()
             
         }
-        return
     }
 }
