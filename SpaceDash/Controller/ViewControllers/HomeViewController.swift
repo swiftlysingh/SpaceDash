@@ -130,7 +130,7 @@ extension HomeViewController: UIPopoverPresentationControllerDelegate {
             self.launchProviderLogo.image = UIImage(named: upcomingLaunch.providerSlug)
             self.flagImage.image = UIImage(named: upcomingLaunch.countrySlug)
 //            self.isTentative.isHidden = !(upcomingLaunch.isTentative!)
-//            self.rocketImage.image = UIImage(named: upcomingLaunch.rocket!)
+            self.rocketImage.image = UIImage(named: upcomingLaunch.vehicleSlug)
 //            self.checkWatchButton()
             self.adjustUpcomingSize()
         }

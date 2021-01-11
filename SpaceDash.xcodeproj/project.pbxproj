@@ -22,6 +22,7 @@
 		CF0592F82546DDBB0033DBE1 /* SpaceDashIconShuttle.png in Resources */ = {isa = PBXBuildFile; fileRef = CFF4E5F425469FD200CE83AF /* SpaceDashIconShuttle.png */; };
 		CF0592F92546DDBB0033DBE1 /* SpaceDashIconSpaceShuttle.png in Resources */ = {isa = PBXBuildFile; fileRef = CFF4E5F225469FD200CE83AF /* SpaceDashIconSpaceShuttle.png */; };
 		CFF4E6132546A3B000CE83AF /* AppIconSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF4E6122546A3B000CE83AF /* AppIconSelectViewController.swift */; };
+		FF13D26925ACEB08004FB143 /* Vehicles.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF13D26825ACEB08004FB143 /* Vehicles.xcassets */; };
 		FF1AC785257E9415009775F5 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1AC784257E9415009775F5 /* Secrets.swift */; };
 		FF281A8C25AC32F000B553AD /* LaunchProviders.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF281A8B25AC32F000B553AD /* LaunchProviders.xcassets */; };
 		FF3043D42507E5D0005F8EE6 /* FastlaneSnapshots.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3043D32507E5D0005F8EE6 /* FastlaneSnapshots.swift */; };
@@ -117,6 +118,7 @@
 		CFF4E5F425469FD200CE83AF /* SpaceDashIconShuttle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SpaceDashIconShuttle.png; sourceTree = "<group>"; };
 		CFF4E6122546A3B000CE83AF /* AppIconSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIconSelectViewController.swift; sourceTree = "<group>"; };
 		EAD33DEB1658F9122221595A /* Pods-SpaceX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceX.release.xcconfig"; path = "Target Support Files/Pods-SpaceX/Pods-SpaceX.release.xcconfig"; sourceTree = "<group>"; };
+		FF13D26825ACEB08004FB143 /* Vehicles.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Vehicles.xcassets; sourceTree = "<group>"; };
 		FF1AC784257E9415009775F5 /* Secrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
 		FF281A8B25AC32F000B553AD /* LaunchProviders.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = LaunchProviders.xcassets; sourceTree = "<group>"; };
 		FF3043D12507E5D0005F8EE6 /* FastlaneSnapshots.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FastlaneSnapshots.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -475,6 +477,7 @@
 				FFC259E124A76CCA0019E354 /* Config */,
 				FFF716E3249D3E210043EB81 /* Info.plist */,
 				FFA9CA5724C0CA31006FA5DE /* Assets.xcassets */,
+				FF13D26825ACEB08004FB143 /* Vehicles.xcassets */,
 				FF281A8B25AC32F000B553AD /* LaunchProviders.xcassets */,
 			);
 			path = SpaceDash;
@@ -672,6 +675,7 @@
 				CF0592F22546DDBB0033DBE1 /* SpaceDashIconSpaceShuttle@3x.png in Resources */,
 				CF0592F92546DDBB0033DBE1 /* SpaceDashIconSpaceShuttle.png in Resources */,
 				CF0592F52546DDBB0033DBE1 /* SpaceDashIconRocket@3x.png in Resources */,
+				FF13D26925ACEB08004FB143 /* Vehicles.xcassets in Resources */,
 				FFF716DD249D3E1C0043EB81 /* Main.storyboard in Resources */,
 				CF0592F82546DDBB0033DBE1 /* SpaceDashIconShuttle.png in Resources */,
 				CF0592F62546DDBB0033DBE1 /* SpaceDashIconShuttle@3x.png in Resources */,
