@@ -573,7 +573,7 @@
                                             <action selector="watchNowButton:" destination="oCg-FU-UY1" eventType="touchUpInside" id="TVf-dZ-XxS"/>
                                         </connections>
                                     </button>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="china" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="s7d-d7-zPb" userLabel="LaunchProviders">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="isro" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="s7d-d7-zPb" userLabel="LaunchProviders">
                                         <rect key="frame" x="8" y="693" width="227" height="71"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="71" id="7qK-2d-HK4"/>
@@ -624,6 +624,7 @@
                     <connections>
                         <outlet property="isTentative" destination="W53-We-TyD" id="v0B-og-hlX"/>
                         <outlet property="launchDate" destination="R32-xA-f2f" id="ONA-Zg-5YP"/>
+                        <outlet property="launchProviderLogo" destination="s7d-d7-zPb" id="M6g-fL-ELy"/>
                         <outlet property="launchSite" destination="TAk-7B-GjH" id="2Ov-Dc-cOU"/>
                         <outlet property="missions" destination="fpE-sJ-nR4" id="4dH-RO-ape"/>
                         <outlet property="rocketImage" destination="79I-bQ-LX0" id="NQK-F5-lfK"/>
@@ -722,11 +723,11 @@
     </designables>
     <resources>
         <image name="cargo-ship" width="512" height="512"/>
-        <image name="china" width="300" height="76"/>
         <image name="f_9" width="510" height="5842"/>
         <image name="fast" width="512" height="512"/>
         <image name="helipad (1)" width="512" height="512"/>
         <image name="house" catalog="system" width="128" height="106"/>
+        <image name="isro" width="1059" height="1024"/>
         <image name="launch" width="512" height="512"/>
         <image name="space-capsule (1)" width="512" height="512"/>
         <image name="spaceship" width="512" height="512"/>
