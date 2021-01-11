@@ -39,6 +39,9 @@ extension ResultData : Decodable {
         case missions
         case tags
         
+        case provider
+        case vehicle
+        
         case date = "sort_date"
         case launchDesc = "launch_description"
         case weatherIcon = "weather_icon"
@@ -64,11 +67,11 @@ extension ResultData : Decodable {
         launchDesc = try container.decode(String.self, forKey: .launchDesc)
         weatherIcon = try container.decode(String?.self, forKey: .weatherIcon)
 
-        let providerKeys = try decoder.container(keyedBy: CodingKeys.ProviderKeys.self)
+        let providerKeys = try container.nestedContainer(keyedBy: CodingKeys.ProviderKeys.self, forKey: .provider)
         providerName = try providerKeys.decode(String.self, forKey: .name)
         providerSlug = try providerKeys.decode(String.self, forKey: .slug)
 
-        let vehicleKeys = try decoder.container(keyedBy: CodingKeys.VehicleKeys.self)
+        let vehicleKeys = try container.nestedContainer(keyedBy: CodingKeys.VehicleKeys.self, forKey: .vehicle)
         vehicleId = try vehicleKeys.decode(Int.self, forKey: .id)
         vehicleName = try vehicleKeys.decode(String.self, forKey: .name)
         vehicleSlug = try vehicleKeys.decode(String.self, forKey: .slug)
