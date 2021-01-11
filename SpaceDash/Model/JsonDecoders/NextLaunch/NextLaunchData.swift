@@ -20,7 +20,7 @@ struct NextLaunchData {
     let vehicleName : String
     let vehicleSlug : String
     let launchSite : String
-    let missions : [String]
+    let missions : String
     let launchDesc : String
     let tags : [String]
     let weatherIcon : String?

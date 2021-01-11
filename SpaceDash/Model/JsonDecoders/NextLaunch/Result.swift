@@ -19,7 +19,7 @@ struct ResultData {
     let vehicleName : String
     let vehicleSlug : String
     let pad : PadData
-    let missions : [String]
+    let missions : String
     let launchDesc : String
     let tags : [String]
     let weatherIcon : String?
@@ -74,14 +74,18 @@ extension ResultData : Decodable {
         vehicleSlug = try vehicleKeys.decode(String.self, forKey: .slug)
 
         let missionData = try container.decode([MissionData].self, forKey: .missions)
-        var missionName = [String]()
-
-        for mission in missionData{
-            missionName.append(mission.name)
+        var missionString = String()
+        
+        if missionData.count > 1 {
+            for mission in missionData {
+                missionString = missionString + ", " + mission.name
+            }
+            missions = missionString
         }
-
-        missions = missionName
-
+        else {
+            missions = missionData[0].name
+        }
+                
         let tagData = try container.decode([TagsData].self, forKey: .tags)
         var tag = [String]()
 

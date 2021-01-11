@@ -15,7 +15,7 @@ class HomeViewController: UIViewController {
     @IBOutlet var panelConstraints: [NSLayoutConstraint]!
     @IBOutlet weak var launchDate: UILabel!
     @IBOutlet weak var launchSite: UILabel!
-    @IBOutlet weak var payloadAndType: UILabel!
+    @IBOutlet weak var missions: UILabel!
     @IBOutlet weak var watchNowButton: WatchNowButton!
     @IBOutlet weak var isTentative: UILabel!
     @IBOutlet weak var rocketImage: RocketImageView!
@@ -123,7 +123,7 @@ extension HomeViewController: UIPopoverPresentationControllerDelegate {
     func updateUI(_ upcomingLaunch : NextLaunchData){
         DispatchQueue.main.async {
             self.launchSite.text = upcomingLaunch.launchSite
-//            self.payloadAndType.text = upcomingLaunch.payloadAndType
+            self.missions.text = upcomingLaunch.missions
             self.launchDate.text =  upcomingLaunch.date
 //            self.isTentative.isHidden = !(upcomingLaunch.isTentative!)
 //            self.rocketImage.image = UIImage(named: upcomingLaunch.rocket!)

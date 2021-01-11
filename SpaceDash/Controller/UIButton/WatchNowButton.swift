@@ -12,9 +12,6 @@ final class WatchNowButton: UIButton {
 
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        
-        //Is hidden by default
-        self.isHidden = true
 
         //Adding Shadow
         self.layer.applySketchShadow(

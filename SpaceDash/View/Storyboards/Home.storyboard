@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Bv7-a9-8MT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Bv7-a9-8MT">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -470,7 +470,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CCAFS SLC 40" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TAk-7B-GjH" customClass="MarqueeLabel" customModule="MarqueeLabel">
-                                                <rect key="frame" x="15" y="35" width="118" height="21"/>
+                                                <rect key="frame" x="15" y="35" width="123" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                 <color key="textColor" name="DashBlack"/>
                                                 <nil key="highlightedColor"/>
@@ -512,8 +512,8 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="63K-uz-tNd" userLabel="Payload&amp;Type" customClass="InfoPanelView" customModule="SpaceDash" customModuleProvider="target">
                                         <rect key="frame" x="8" y="322" width="227" height="64"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payload &amp; Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rTS-5a-Jvt">
-                                                <rect key="frame" x="15" y="8" width="114" height="21"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MIssions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rTS-5a-Jvt">
+                                                <rect key="frame" x="15" y="8" width="64" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
                                                 <color key="textColor" name="DashBlack"/>
                                                 <nil key="highlightedColor"/>
@@ -585,7 +585,6 @@
                                     <constraint firstItem="ceL-dE-FN9" firstAttribute="top" secondItem="3j9-Du-2ed" secondAttribute="bottom" constant="29" id="KWN-6v-qQp"/>
                                     <constraint firstAttribute="bottom" secondItem="63K-uz-tNd" secondAttribute="bottom" priority="250" constant="94" id="Kk4-1Y-XN1"/>
                                     <constraint firstItem="3j9-Du-2ed" firstAttribute="centerX" secondItem="4A4-gA-ahX" secondAttribute="centerX" id="LcC-az-nl6"/>
-                                    <constraint firstItem="ceL-dE-FN9" firstAttribute="top" secondItem="3j9-Du-2ed" secondAttribute="bottom" constant="29" id="MkQ-qo-ysL"/>
                                     <constraint firstItem="63K-uz-tNd" firstAttribute="leading" secondItem="6ch-1d-wZ7" secondAttribute="leading" constant="8" id="Roa-c4-7Y5"/>
                                     <constraint firstItem="4A4-gA-ahX" firstAttribute="leading" secondItem="6ch-1d-wZ7" secondAttribute="leading" constant="8" id="US9-UM-4V7"/>
                                     <constraint firstItem="4A4-gA-ahX" firstAttribute="top" secondItem="6ch-1d-wZ7" secondAttribute="top" constant="52" id="WjB-el-Vhb"/>
@@ -616,12 +615,11 @@
                         <outlet property="isTentative" destination="W53-We-TyD" id="v0B-og-hlX"/>
                         <outlet property="launchDate" destination="R32-xA-f2f" id="ONA-Zg-5YP"/>
                         <outlet property="launchSite" destination="TAk-7B-GjH" id="2Ov-Dc-cOU"/>
-                        <outlet property="payloadAndType" destination="fpE-sJ-nR4" id="4dH-RO-ape"/>
+                        <outlet property="missions" destination="fpE-sJ-nR4" id="4dH-RO-ape"/>
                         <outlet property="rocketImage" destination="79I-bQ-LX0" id="NQK-F5-lfK"/>
                         <outlet property="upcomingPanel" destination="z63-l4-rY0" id="3Du-2z-Szr"/>
                         <outlet property="upcomingView" destination="6ch-1d-wZ7" id="wGq-sw-wEM"/>
                         <outlet property="watchNowButton" destination="zBb-bI-XbH" id="fwe-Al-gxx"/>
-                        <outletCollection property="panelConstraints" destination="MkQ-qo-ysL" collectionClass="NSMutableArray" id="Vr3-fk-fs1"/>
                         <outletCollection property="panelConstraints" destination="KWN-6v-qQp" collectionClass="NSMutableArray" id="Byv-7r-eLn"/>
                         <outletCollection property="panelConstraints" destination="I2h-Fk-b0r" collectionClass="NSMutableArray" id="vql-27-OBc"/>
                         <outletCollection property="panelConstraints" destination="Kk4-1Y-XN1" collectionClass="NSMutableArray" id="ZQW-Sv-Qno"/>
@@ -704,8 +702,9 @@
         </scene>
     </scenes>
     <designables>
+        <designable name="IGg-qL-12A"/>
         <designable name="TAk-7B-GjH">
-            <size key="intrinsicContentSize" width="118" height="20.5"/>
+            <size key="intrinsicContentSize" width="123" height="20.5"/>
         </designable>
         <designable name="fpE-sJ-nR4">
             <size key="intrinsicContentSize" width="158" height="20.5"/>
