@@ -428,36 +428,18 @@
                                                 <color key="textColor" name="DashBlack"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="T" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W53-We-TyD">
-                                                <rect key="frame" x="58" y="10" width="16" height="16"/>
-                                                <color key="backgroundColor" systemColor="systemGreenColor"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" secondItem="W53-We-TyD" secondAttribute="height" multiplier="1:1" id="5UO-Wu-Yae"/>
-                                                    <constraint firstAttribute="width" secondItem="W53-We-TyD" secondAttribute="height" multiplier="1:1" id="buz-z3-i4z"/>
-                                                    <constraint firstAttribute="width" constant="16" id="i7V-Ic-cGh"/>
-                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="16" id="rfl-B6-IHf"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
-                                                <color key="textColor" name="DashBlack"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" red="0.90588837860000004" green="0.90587145089999999" blue="0.90588295460000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
-                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="W53-We-TyD" secondAttribute="trailing" constant="20" symbolic="YES" id="10z-e8-1mG"/>
                                             <constraint firstItem="R32-xA-f2f" firstAttribute="top" secondItem="Ahn-A9-8im" secondAttribute="bottom" constant="6" id="AVO-bi-3uS"/>
-                                            <constraint firstItem="R32-xA-f2f" firstAttribute="top" secondItem="W53-We-TyD" secondAttribute="bottom" constant="9" id="Axv-so-3Ju"/>
-                                            <constraint firstItem="W53-We-TyD" firstAttribute="leading" secondItem="Ahn-A9-8im" secondAttribute="trailing" constant="8" id="J24-8U-tq0"/>
                                             <constraint firstItem="R32-xA-f2f" firstAttribute="leading" secondItem="3j9-Du-2ed" secondAttribute="leading" constant="15" id="QAr-rV-xYE"/>
                                             <constraint firstItem="R32-xA-f2f" firstAttribute="top" secondItem="Ahn-A9-8im" secondAttribute="bottom" constant="6" id="R6u-94-aaU"/>
                                             <constraint firstAttribute="bottom" secondItem="R32-xA-f2f" secondAttribute="bottom" constant="8" id="YHG-e9-Rcg"/>
                                             <constraint firstItem="Ahn-A9-8im" firstAttribute="leading" secondItem="3j9-Du-2ed" secondAttribute="leading" constant="15" id="YMt-9y-tsq"/>
                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Ahn-A9-8im" secondAttribute="trailing" constant="20" symbolic="YES" id="ZXk-XC-E0B"/>
                                             <constraint firstItem="Ahn-A9-8im" firstAttribute="top" secondItem="3j9-Du-2ed" secondAttribute="top" constant="8" id="c2G-eY-cuY"/>
-                                            <constraint firstItem="W53-We-TyD" firstAttribute="top" secondItem="3j9-Du-2ed" secondAttribute="top" constant="10" id="d1z-7R-alH"/>
                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="R32-xA-f2f" secondAttribute="trailing" constant="20" symbolic="YES" id="fzL-xc-zQa"/>
                                             <constraint firstAttribute="width" constant="227" id="mu8-UI-1gV"/>
-                                            <constraint firstItem="W53-We-TyD" firstAttribute="width" secondItem="W53-We-TyD" secondAttribute="height" multiplier="1:1" id="uca-4o-dX6"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ceL-dE-FN9" userLabel="Launch Site" customClass="InfoPanelView" customModule="SpaceDash" customModuleProvider="target">
@@ -632,7 +614,6 @@
                     <size key="freeformSize" width="1159" height="896"/>
                     <connections>
                         <outlet property="flagImage" destination="r5g-90-97b" id="nNe-6f-LSb"/>
-                        <outlet property="isTentative" destination="W53-We-TyD" id="v0B-og-hlX"/>
                         <outlet property="launchDate" destination="R32-xA-f2f" id="ONA-Zg-5YP"/>
                         <outlet property="launchProviderLogo" destination="s7d-d7-zPb" id="M6g-fL-ELy"/>
                         <outlet property="launchSite" destination="TAk-7B-GjH" id="2Ov-Dc-cOU"/>

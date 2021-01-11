@@ -17,7 +17,6 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var launchSite: UILabel!
     @IBOutlet weak var missions: UILabel!
     @IBOutlet weak var watchNowButton: WatchNowButton!
-    @IBOutlet weak var isTentative: UILabel!
     @IBOutlet weak var rocketImage: RocketImageView!
     @IBOutlet var launchProviderLogo: UIImageView!
     @IBOutlet var flagImage: UIImageView!
@@ -48,10 +47,6 @@ class HomeViewController: UIViewController {
         }
         
         adjustUpcomingSize()
-        
-        //tap gesture for tentative label
-        self.isTentative.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(tentativeClicked(_:))))
-        self.isTentative.isUserInteractionEnabled = true
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
@@ -129,7 +124,6 @@ extension HomeViewController: UIPopoverPresentationControllerDelegate {
             self.launchDate.text =  upcomingLaunch.date
             self.launchProviderLogo.image = UIImage(named: upcomingLaunch.providerSlug)
             self.flagImage.image = UIImage(named: upcomingLaunch.countrySlug)
-//            self.isTentative.isHidden = !(upcomingLaunch.isTentative!)
             self.rocketImage.image = UIImage(named: upcomingLaunch.vehicleSlug)
 //            self.checkWatchButton()
             self.adjustUpcomingSize()
@@ -142,35 +136,4 @@ extension HomeViewController: UIPopoverPresentationControllerDelegate {
 //        self.watchURL = safeWatchURL
 //        watchNowButton.isHidden = false
 //    }
-    
-    
-    @objc func tentativeClicked(_ sender: UITapGestureRecognizer){
-        // we dont want to fill the popover to full width of the screen
-        let standardWidth = self.view.frame.width - 60
-        
-        //to dynamically resize the popover, we premature-ly calculate the height of the label using the text content
-        let estimatedHeight = Constants.HomeView.tentativeDetail.height(ConstrainedWidth: standardWidth - 24)
-        
-        let tentativeDetailsVC = TentativeDetailsViewController()
-        tentativeDetailsVC.lblTentativeDetail.text = Constants.HomeView.tentativeDetail
-        tentativeDetailsVC.modalPresentationStyle = .popover //this tells that the presenting viewcontroller is an popover style
-        tentativeDetailsVC.preferredContentSize = CGSize.init(width: standardWidth, height: estimatedHeight + 40) //40 is vertical padding
-        tentativeDetailsVC.overrideUserInterfaceStyle = .light //disabling dark mode
-        
-        if let popoverPresentationController = tentativeDetailsVC.popoverPresentationController {
-            //this option makes popover to preview below the "T" sign
-            popoverPresentationController.permittedArrowDirections = .up
-            //source view and source rect is used by popover controller to determine where the triangle should be placed and present the popover relative to the source view
-            popoverPresentationController.sourceView = self.isTentative
-            popoverPresentationController.sourceRect = self.isTentative.bounds
-            popoverPresentationController.delegate = self
-        }
-        self.present(tentativeDetailsVC, animated: true, completion: nil)
-    }
-    
-    func adaptivePresentationStyle(for controller: UIPresentationController) -> UIModalPresentationStyle {
-        // .none makes the viewcontroller to be present as popover always, no matter what trait changes
-        return .none
-    }
-    
 }
