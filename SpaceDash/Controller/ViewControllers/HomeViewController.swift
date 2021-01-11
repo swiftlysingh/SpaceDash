@@ -20,6 +20,7 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var isTentative: UILabel!
     @IBOutlet weak var rocketImage: RocketImageView!
     @IBOutlet var launchProviderLogo: UIImageView!
+    @IBOutlet var flagImage: UIImageView!
     
     let networkObject = NetworkManager(Constants.NetworkManager.rocketLaunchLiveAPI)
     let cache = NSCache<NSString, DetailsViewModel>()
@@ -127,6 +128,7 @@ extension HomeViewController: UIPopoverPresentationControllerDelegate {
             self.missions.text = upcomingLaunch.name
             self.launchDate.text =  upcomingLaunch.date
             self.launchProviderLogo.image = UIImage(named: upcomingLaunch.providerSlug)
+            self.flagImage.image = UIImage(named: upcomingLaunch.countrySlug)
 //            self.isTentative.isHidden = !(upcomingLaunch.isTentative!)
 //            self.rocketImage.image = UIImage(named: upcomingLaunch.rocket!)
 //            self.checkWatchButton()

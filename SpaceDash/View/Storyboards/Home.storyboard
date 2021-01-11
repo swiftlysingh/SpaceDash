@@ -495,11 +495,20 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="India" translatesAutoresizingMaskIntoConstraints="NO" id="r5g-90-97b">
+                                                <rect key="frame" x="86" y="6" width="33" height="21"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="21" id="0V9-Q3-NO6"/>
+                                                    <constraint firstAttribute="width" constant="33" id="pDg-Af-fki"/>
+                                                </constraints>
+                                            </imageView>
                                         </subviews>
                                         <color key="backgroundColor" red="0.90588837860000004" green="0.90587145089999999" blue="0.90588295460000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="bottom" secondItem="TAk-7B-GjH" secondAttribute="bottom" constant="8" id="11m-dB-EHJ"/>
+                                            <constraint firstItem="r5g-90-97b" firstAttribute="top" secondItem="ceL-dE-FN9" secondAttribute="top" constant="6" id="74j-YR-jx1"/>
                                             <constraint firstAttribute="width" constant="227" id="GOL-wz-YIg"/>
+                                            <constraint firstItem="r5g-90-97b" firstAttribute="leading" secondItem="9dL-ir-evW" secondAttribute="trailing" constant="7.5" id="Ii4-vU-9p2"/>
                                             <constraint firstAttribute="bottom" secondItem="9dL-ir-evW" secondAttribute="bottom" constant="35" id="MQL-1P-dV5"/>
                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="9dL-ir-evW" secondAttribute="trailing" constant="20" symbolic="YES" id="Pyl-ai-v5q"/>
                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="TAk-7B-GjH" secondAttribute="trailing" constant="8" id="Tn4-KV-4Se"/>
@@ -622,6 +631,7 @@
                     <navigationItem key="navigationItem" id="nPU-go-GUq"/>
                     <size key="freeformSize" width="1159" height="896"/>
                     <connections>
+                        <outlet property="flagImage" destination="r5g-90-97b" id="nNe-6f-LSb"/>
                         <outlet property="isTentative" destination="W53-We-TyD" id="v0B-og-hlX"/>
                         <outlet property="launchDate" destination="R32-xA-f2f" id="ONA-Zg-5YP"/>
                         <outlet property="launchProviderLogo" destination="s7d-d7-zPb" id="M6g-fL-ELy"/>
@@ -722,6 +732,7 @@
         </designable>
     </designables>
     <resources>
+        <image name="India" width="2000" height="1333"/>
         <image name="cargo-ship" width="512" height="512"/>
         <image name="f_9" width="510" height="5842"/>
         <image name="fast" width="512" height="512"/>

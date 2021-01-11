@@ -20,6 +20,7 @@ struct NextLaunchData {
     let vehicleName : String
     let vehicleSlug : String
     let launchSite : String
+    let countrySlug : String
     let missions : String
     let launchDesc : String
     let tags : [String]
@@ -53,6 +54,7 @@ extension NextLaunchData : Decodable {
         vehicleName = result.vehicleName
         vehicleSlug = result.vehicleSlug
         launchSite = result.pad.location
+        countrySlug = result.pad.countrySlug
         missions = result.missions
         launchDesc = result.launchDesc
         tags = result.tags
