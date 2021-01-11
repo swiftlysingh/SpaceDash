@@ -416,8 +416,8 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3j9-Du-2ed" userLabel="Launch Date" customClass="InfoPanelView" customModule="SpaceDash" customModuleProvider="target">
                                         <rect key="frame" x="8" y="137" width="227" height="64"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Launch Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ahn-A9-8im">
-                                                <rect key="frame" x="15" y="8" width="94" height="21"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ahn-A9-8im">
+                                                <rect key="frame" x="15" y="8" width="35" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
                                                 <color key="textColor" name="DashBlack"/>
                                                 <nil key="highlightedColor"/>
@@ -429,7 +429,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="T" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W53-We-TyD">
-                                                <rect key="frame" x="117" y="10" width="16" height="16"/>
+                                                <rect key="frame" x="58" y="10" width="16" height="16"/>
                                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="W53-We-TyD" secondAttribute="height" multiplier="1:1" id="5UO-Wu-Yae"/>
@@ -463,8 +463,8 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ceL-dE-FN9" userLabel="Launch Site" customClass="InfoPanelView" customModule="SpaceDash" customModuleProvider="target">
                                         <rect key="frame" x="8" y="230" width="227" height="64"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Launch Site" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9dL-ir-evW">
-                                                <rect key="frame" x="15" y="8" width="87" height="21"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9dL-ir-evW">
+                                                <rect key="frame" x="15" y="8" width="63.5" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
                                                 <color key="textColor" name="DashBlack"/>
                                                 <nil key="highlightedColor"/>
@@ -502,7 +502,7 @@
                                             <constraint firstAttribute="width" constant="227" id="GOL-wz-YIg"/>
                                             <constraint firstAttribute="bottom" secondItem="9dL-ir-evW" secondAttribute="bottom" constant="35" id="MQL-1P-dV5"/>
                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="9dL-ir-evW" secondAttribute="trailing" constant="20" symbolic="YES" id="Pyl-ai-v5q"/>
-                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="TAk-7B-GjH" secondAttribute="trailing" constant="20" symbolic="YES" id="Tn4-KV-4Se"/>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="TAk-7B-GjH" secondAttribute="trailing" constant="8" id="Tn4-KV-4Se"/>
                                             <constraint firstItem="9dL-ir-evW" firstAttribute="leading" secondItem="ceL-dE-FN9" secondAttribute="leading" constant="15" id="X1t-3V-end"/>
                                             <constraint firstItem="9dL-ir-evW" firstAttribute="top" secondItem="ceL-dE-FN9" secondAttribute="top" constant="8" id="nCn-rU-fdk"/>
                                             <constraint firstItem="TAk-7B-GjH" firstAttribute="leading" secondItem="ceL-dE-FN9" secondAttribute="leading" constant="15" id="oho-e9-jFM"/>
@@ -512,7 +512,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="63K-uz-tNd" userLabel="Payload&amp;Type" customClass="InfoPanelView" customModule="SpaceDash" customModuleProvider="target">
                                         <rect key="frame" x="8" y="322" width="227" height="64"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MIssions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rTS-5a-Jvt">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Missions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rTS-5a-Jvt">
                                                 <rect key="frame" x="15" y="8" width="64" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
                                                 <color key="textColor" name="DashBlack"/>

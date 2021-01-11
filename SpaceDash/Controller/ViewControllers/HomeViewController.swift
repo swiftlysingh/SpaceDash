@@ -124,7 +124,7 @@ extension HomeViewController: UIPopoverPresentationControllerDelegate {
     func updateUI(_ upcomingLaunch : NextLaunchData){
         DispatchQueue.main.async {
             self.launchSite.text = upcomingLaunch.launchSite
-            self.missions.text = upcomingLaunch.missions
+            self.missions.text = upcomingLaunch.name
             self.launchDate.text =  upcomingLaunch.date
             self.launchProviderLogo.image = UIImage(named: upcomingLaunch.providerSlug)
 //            self.isTentative.isHidden = !(upcomingLaunch.isTentative!)
