@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		202CCA972580AAB600BCC0A2 /* Feed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 202CCA962580AAB600BCC0A2 /* Feed.storyboard */; };
+		2030775F2589699A00DD1F75 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2030775D2589699A00DD1F75 /* FeedCell.swift */; };
+		2030776C25896B3000DD1F75 /* UIStackView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2030776B25896B3000DD1F75 /* UIStackView+Layout.swift */; };
+		2030777325896B9B00DD1F75 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2030777225896B9B00DD1F75 /* UIButton+Extension.swift */; };
+		2030777A25896BBC00DD1F75 /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2030777925896BBC00DD1F75 /* UILabel+Extension.swift */; };
+		203077852589728200DD1F75 /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203077842589728200DD1F75 /* ReusableView.swift */; };
+		2030778C258972A300DD1F75 /* UICollectionView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2030778B258972A300DD1F75 /* UICollectionView+Extensions.swift */; };
 		2086C60A16283D2DB5341A79 /* Pods_SpaceDash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DE2958EE217DA2AEF4E463F /* Pods_SpaceDash.framework */; };
 		20953C632588D7D2009ED75E /* UISegementedControl+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20953C622588D7D2009ED75E /* UISegementedControl+Extension.swift */; };
 		20953C732588D9AB009ED75E /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20953C722588D9AB009ED75E /* UIView+Extension.swift */; };
@@ -86,6 +92,12 @@
 
 /* Begin PBXFileReference section */
 		202CCA962580AAB600BCC0A2 /* Feed.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Feed.storyboard; sourceTree = "<group>"; };
+		2030775D2589699A00DD1F75 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
+		2030776B25896B3000DD1F75 /* UIStackView+Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+Layout.swift"; sourceTree = "<group>"; };
+		2030777225896B9B00DD1F75 /* UIButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
+		2030777925896BBC00DD1F75 /* UILabel+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
+		203077842589728200DD1F75 /* ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
+		2030778B258972A300DD1F75 /* UICollectionView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extensions.swift"; sourceTree = "<group>"; };
 		20953C622588D7D2009ED75E /* UISegementedControl+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISegementedControl+Extension.swift"; sourceTree = "<group>"; };
 		20953C722588D9AB009ED75E /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		20953C7B2588DE59009ED75E /* Lora-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lora-Regular.ttf"; sourceTree = "<group>"; };
@@ -185,6 +197,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2030774B2589676C00DD1F75 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				2030775D2589699A00DD1F75 /* FeedCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		208828C4257C4DBD00D6AD98 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
@@ -198,6 +218,7 @@
 			isa = PBXGroup;
 			children = (
 				20953C7A2588DE3C009ED75E /* Fonts */,
+				203077842589728200DD1F75 /* ReusableView.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -346,6 +367,7 @@
 		FFC259DF24A76C720019E354 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				2030774B2589676C00DD1F75 /* Cells */,
 				208828C4257C4DBD00D6AD98 /* Storyboards */,
 				FFD549E325055F8200F49DC0 /* Animations */,
 				FFF716E0249D3E210043EB81 /* LaunchScreen.storyboard */,
@@ -372,6 +394,10 @@
 				20953C622588D7D2009ED75E /* UISegementedControl+Extension.swift */,
 				20953C722588D9AB009ED75E /* UIView+Extension.swift */,
 				20953C7D2588DF7D009ED75E /* UIFont+Extension.swift */,
+				2030776B25896B3000DD1F75 /* UIStackView+Layout.swift */,
+				2030777225896B9B00DD1F75 /* UIButton+Extension.swift */,
+				2030777925896BBC00DD1F75 /* UILabel+Extension.swift */,
+				2030778B258972A300DD1F75 /* UICollectionView+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -698,6 +724,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2030777A25896BBC00DD1F75 /* UILabel+Extension.swift in Sources */,
 				20A82BF5257C4BD000E7BF29 /* FeedViewController.swift in Sources */,
 				FFA9CA8024C1B838006FA5DE /* UpcomingLaunchModel.swift in Sources */,
 				FF7F94FB2511E51000B2830B /* DetailView.swift in Sources */,
@@ -706,10 +733,13 @@
 				FFF25C6824D871EF00D0E1FF /* DetailsTableViewCell.swift in Sources */,
 				FFC259EB24A7AB3C0019E354 /* UpcomingView.swift in Sources */,
 				FFF716D6249D3E1C0043EB81 /* AppDelegate.swift in Sources */,
+				2030775F2589699A00DD1F75 /* FeedCell.swift in Sources */,
 				FF8E3EDE24DF066E00077DE3 /* LaunchPadsData.swift in Sources */,
 				20953C9D25890F7C009ED75E /* ArticlesViewController.swift in Sources */,
+				2030776C25896B3000DD1F75 /* UIStackView+Layout.swift in Sources */,
 				FF8E3EDC24DF003300077DE3 /* ShipsData.swift in Sources */,
 				FFA9CA5D24C0CCCA006FA5DE /* UpcomingLaunchData.swift in Sources */,
+				2030777325896B9B00DD1F75 /* UIButton+Extension.swift in Sources */,
 				FFF716D8249D3E1C0043EB81 /* SceneDelegate.swift in Sources */,
 				20953C732588D9AB009ED75E /* UIView+Extension.swift in Sources */,
 				20953C632588D7D2009ED75E /* UISegementedControl+Extension.swift in Sources */,
@@ -720,11 +750,13 @@
 				FFA9CA5C24C0CCCA006FA5DE /* NetworkManager.swift in Sources */,
 				FFB398F724DDD2F8001D4EA1 /* DetailsViewModel.swift in Sources */,
 				FFF266B224DEAF7400BA5C28 /* LandpadsData.swift in Sources */,
+				203077852589728200DD1F75 /* ReusableView.swift in Sources */,
 				FFF7170C24A338D10043EB81 /* HomeViewController.swift in Sources */,
 				FFC259E724A772150019E354 /* CALayer.swift in Sources */,
 				FFB734BA24DB2B2B006C1518 /* DetailsViewController.swift in Sources */,
 				FFB398FA24DDDBDC001D4EA1 /* UIImageView.swift in Sources */,
 				FFBEA64324DC6C3B00A22F9F /* DetailCellImageView.swift in Sources */,
+				2030778C258972A300DD1F75 /* UICollectionView+Extensions.swift in Sources */,
 				20953C9625890E12009ED75E /* NewsViewController.swift in Sources */,
 				FFC259E924A7A9C10019E354 /* InfoPanelView.swift in Sources */,
 				FF8E3EE224DF14EB00077DE3 /* LaunchesData.swift in Sources */,

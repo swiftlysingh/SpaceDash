@@ -9,11 +9,11 @@
 import UIKit
 
 extension UIFont{
-    static func lora(_ type: Constants.Font.FontType = .regular, size: CGFloat = UIFont.systemFontSize) -> UIFont {
+    static func lora(_ type: Constants.Font.FontType = .regular, size: CGFloat = 16) -> UIFont {
         return UIFont(name: "\(Constants.Font.lora)\(type.rawValue)", size: size)!
     }
     
-    static func playFairDisplay(_ type: Constants.Font.FontType = .regular, size: CGFloat = UIFont.systemFontSize) -> UIFont {
+    static func playFairDisplay(_ type: Constants.Font.FontType = .bold, size: CGFloat =  24) -> UIFont {
         return UIFont(name: "\(Constants.Font.playFairDisplay)\(type.rawValue)", size: size)!
     }
     

@@ -165,6 +165,11 @@
                                         </collectionViewCellContentView>
                                     </collectionViewCell>
                                 </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="XRJ-iI-uFt" id="05x-G2-B56"/>
+                                    <outlet property="delegate" destination="XRJ-iI-uFt" id="hWu-85-kkl"/>
+                                    <outlet property="dragDelegate" destination="XRJ-iI-uFt" id="uXh-hU-6ha"/>
+                                </connections>
                             </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ine-mk-VwO"/>
