@@ -21,8 +21,7 @@ jobs:
 
     - name: Releasing Secrets
       run: |
-       gpg --quiet --batch --yes --decrypt --passphrase="${{ secrets.key }}" --output fastlane/metadata/reviewInformation.tar.gz SpaceDash/Model/Secrets.swift S
-paceDash/Model/Secrets.swift.gpg
+       gpg --quiet --batch --yes --decrypt --passphrase="${{ secrets.key }}" --output fastlane/metadata/reviewInformation.tar.gz SpaceDash/Model/Secrets.swift SpaceDash/Model/Secrets.swift.gpg
 
     - name: Installing FastLane
       run: | 
