@@ -18,7 +18,7 @@ jobs:
        - name: Checking for Security Vulnerabilities
          run: |
           if grep -q .github/workflows ~/files_{created,updated}.json; then
-              exit 1
+              exit 0
           fi 
        - name: Checking for Security Vulnerabilities
          run: |
