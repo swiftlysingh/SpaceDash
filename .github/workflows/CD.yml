@@ -30,6 +30,11 @@ jobs:
        pod install
        pod update
 
+    - name: Releasing Secrets
+      run: |
+       gpg --quiet --batch --yes --decrypt --passphrase="${{ secrets.key }}" --output fastlane/metadata/reviewInformation.tar.gz SpaceDash/Model/Secrets.swift S
+paceDash/Model/Secrets.swift.gpg
+
     - name: Installing FastLane
       run: |
        bundle install
@@ -57,6 +62,7 @@ jobs:
        gpg --quiet --batch --yes --decrypt --passphrase="${{ secrets.key }}" --output fastlane/metadata/reviewInformation.tar.gz fastlane/metadata/reviewInformation.tar.gz.gpg
        tar xzf fastlane/metadata/reviewInformation.tar.gz -C fastlane/metadata
        ls fastlane/metadata/
+       gpg --quiet --batch --yes --decrypt --passphrase="${{ secrets.key }}" --output fastlane/metadata/reviewInformation.tar.gz SpaceDash/Model/Secrets.swift SpaceDash/Model/Secrets.swift.gpg
 
     - name: Releasing my little app to the world
       run: fastlane release

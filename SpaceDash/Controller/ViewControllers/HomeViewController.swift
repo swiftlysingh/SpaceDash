@@ -15,13 +15,13 @@ class HomeViewController: UIViewController {
     @IBOutlet var panelConstraints: [NSLayoutConstraint]!
     @IBOutlet weak var launchDate: UILabel!
     @IBOutlet weak var launchSite: UILabel!
-    @IBOutlet weak var payloadAndType: UILabel!
+    @IBOutlet weak var missions: UILabel!
     @IBOutlet weak var watchNowButton: WatchNowButton!
-    @IBOutlet weak var isTentative: UILabel!
     @IBOutlet weak var rocketImage: RocketImageView!
+    @IBOutlet var launchProviderLogo: UIImageView!
+    @IBOutlet var flagImage: UIImageView!
     
-    let networkObject = NetworkManager(Constants.NetworkManager.baseURL)
-    let upcomingLaunch = UpcomingLaunchModel()
+    let networkObject = NetworkManager(Constants.NetworkManager.rocketLaunchLiveAPI)
     let cache = NSCache<NSString, DetailsViewModel>()
     
     var watchURL : URL? = nil
@@ -31,15 +31,14 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        networkObject.performRequest(key: Constants.NetworkManager.upcomingLaunchURL) { [weak self] (result: Result<[UpcomingLaunchData],Error>) in
+        networkObject.performRequest(key: Constants.HomeView.nextLaunch) { [weak self] (result: Result<NextLaunchData,Error>) in
             guard let self = self else { return }
             
             switch result {
             
-            case .success(let launches):
-                let launch = self.upcomingLaunch.cleanData(launches)
-                self.updateModel(launch)
-                self.updateUI()
+            case .success(let nextLaunch):
+                self.updateUI(nextLaunch)
+                print(nextLaunch)
                 break
                 
             case .failure(let error):
@@ -48,10 +47,6 @@ class HomeViewController: UIViewController {
         }
         
         adjustUpcomingSize()
-        
-        //tap gesture for tentative label
-        self.isTentative.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(tentativeClicked(_:))))
-        self.isTentative.isUserInteractionEnabled = true
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
@@ -60,20 +55,6 @@ class HomeViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.setNavigationBarHidden(true, animated: true)
-    }
-    
-    /// Update the model with new data that has just arrived from API
-    func updateModel(_ launch : UpcomingLaunchData){
-        
-        self.upcomingLaunch.launchSite = launch.launch_site.site_name_long
-        self.upcomingLaunch.payloadAndType = "\(launch.rocket.second_stage.payloads[0].payload_id), \(launch.rocket.second_stage.payloads[0].payload_type)"
-        self.upcomingLaunch.launchDate = launch.launch_date_unix.getDate()
-        self.upcomingLaunch.isTentative = launch.is_tentative
-        self.upcomingLaunch.rocket = launch.rocket.rocket_id
-        self.upcomingLaunch.watchNow = launch.links.video_link_url
-        
-        print(launch.rocket.rocket_id)
-        
     }
     
     @IBAction func buttonPressed(_ sender: UIButton) {
@@ -136,53 +117,23 @@ extension HomeViewController: UIPopoverPresentationControllerDelegate {
     }
     
     /// This function will update the UI once updateFromAPI updates the data for HomeViewController
-    func updateUI(){
+    func updateUI(_ upcomingLaunch : NextLaunchData){
         DispatchQueue.main.async {
-            self.launchSite.text = self.upcomingLaunch.launchSite
-            self.payloadAndType.text = self.upcomingLaunch.payloadAndType
-            self.launchDate.text =  self.upcomingLaunch.launchDate
-            self.isTentative.isHidden = !(self.upcomingLaunch.isTentative!)
-            self.rocketImage.image = UIImage(named: self.upcomingLaunch.rocket!)
-            self.checkWatchButton()
+            self.launchSite.text = upcomingLaunch.launchSite
+            self.missions.text = upcomingLaunch.name
+            self.launchDate.text =  upcomingLaunch.date
+            self.launchProviderLogo.image = UIImage(named: upcomingLaunch.providerSlug)
+            self.flagImage.image = UIImage(named: upcomingLaunch.countrySlug)
+            self.rocketImage.image = UIImage(named: upcomingLaunch.vehicleSlug)
+//            self.checkWatchButton()
             self.adjustUpcomingSize()
         }
     }
     
     /// This function will assign the video URL of the upcoming launch and display the "Watch Now" button if the URL available
-    func checkWatchButton() {
-        guard let safeWatchURL = upcomingLaunch.watchNow, UIApplication.shared.canOpenURL(safeWatchURL) else { return }
-        self.watchURL = safeWatchURL
-        watchNowButton.isHidden = false
-    }
-    
-    
-    @objc func tentativeClicked(_ sender: UITapGestureRecognizer){
-        // we dont want to fill the popover to full width of the screen
-        let standardWidth = self.view.frame.width - 60
-        
-        //to dynamically resize the popover, we premature-ly calculate the height of the label using the text content
-        let estimatedHeight = Constants.HomeView.tentativeDetail.height(ConstrainedWidth: standardWidth - 24)
-        
-        let tentativeDetailsVC = TentativeDetailsViewController()
-        tentativeDetailsVC.lblTentativeDetail.text = Constants.HomeView.tentativeDetail
-        tentativeDetailsVC.modalPresentationStyle = .popover //this tells that the presenting viewcontroller is an popover style
-        tentativeDetailsVC.preferredContentSize = CGSize.init(width: standardWidth, height: estimatedHeight + 40) //40 is vertical padding
-        tentativeDetailsVC.overrideUserInterfaceStyle = .light //disabling dark mode
-        
-        if let popoverPresentationController = tentativeDetailsVC.popoverPresentationController {
-            //this option makes popover to preview below the "T" sign
-            popoverPresentationController.permittedArrowDirections = .up
-            //source view and source rect is used by popover controller to determine where the triangle should be placed and present the popover relative to the source view
-            popoverPresentationController.sourceView = self.isTentative
-            popoverPresentationController.sourceRect = self.isTentative.bounds
-            popoverPresentationController.delegate = self
-        }
-        self.present(tentativeDetailsVC, animated: true, completion: nil)
-    }
-    
-    func adaptivePresentationStyle(for controller: UIPresentationController) -> UIModalPresentationStyle {
-        // .none makes the viewcontroller to be present as popover always, no matter what trait changes
-        return .none
-    }
-    
+//    func checkWatchButton() {
+//        guard let safeWatchURL = upcomingLaunch.watchNow, UIApplication.shared.canOpenURL(safeWatchURL) else { return }
+//        self.watchURL = safeWatchURL
+//        watchNowButton.isHidden = false
+//    }
 }

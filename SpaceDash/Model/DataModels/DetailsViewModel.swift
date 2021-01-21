@@ -13,7 +13,7 @@ class DetailsViewModel {
     var title : [String] = [""]
     var subTitle : [String] = [""]
     var details : [String] = [""]
-    var image : [URL] = [URL(string:Constants.NetworkManager.baseURL)!]
+    var image : [URL] = [URL(string:Constants.NetworkManager.spaceXAPI)!]
     var count : Int = 0
     var isActive : [Bool] = [false]
     

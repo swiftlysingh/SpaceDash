@@ -23,8 +23,10 @@ class SpaceDashConstantsCheck: XCTestCase {
     }
 
     func testConstant() throws {
-        XCTAssertEqual("https://api.spacexdata.com/v3/", sut.NetworkManager.baseURL)
-        XCTAssertEqual("launches/Upcoming", sut.NetworkManager.upcomingLaunchURL)
+        XCTAssertEqual("https://api.spacexdata.com/v3/", sut.NetworkManager.spaceXAPI)
+        XCTAssertEqual("https://fdo.rocketlaunch.live/json/", sut.NetworkManager.rocketLaunchLiveAPI)
+        XCTAssertEqual("Authorization",sut.NetworkManager.authorization)
+        XCTAssertEqual("launches/next/1", sut.HomeView.nextLaunch)
         XCTAssertEqual("Launch Site Not Declared", sut.DefaultArgs.launchSite)
         XCTAssertEqual("Not Available", sut.DefaultArgs.noData)
         XCTAssertEqual("DetailView", sut.SegueManager.detailViewSegue)

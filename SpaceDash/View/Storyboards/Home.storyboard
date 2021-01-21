@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Bv7-a9-8MT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Bv7-a9-8MT">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -401,7 +401,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6ch-1d-wZ7" userLabel="Upcoming Launch" customClass="UpcomingView" customModule="SpaceDash" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="1159" height="779"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="f_9" translatesAutoresizingMaskIntoConstraints="NO" id="79I-bQ-LX0" customClass="RocketImageView" customModule="SpaceDash" customModuleProvider="target">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="79I-bQ-LX0" customClass="RocketImageView" customModule="SpaceDash" customModuleProvider="target">
                                         <rect key="frame" x="1067" y="52" width="84" height="719"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="84" id="yc5-tX-8pX"/>
@@ -416,8 +416,8 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3j9-Du-2ed" userLabel="Launch Date" customClass="InfoPanelView" customModule="SpaceDash" customModuleProvider="target">
                                         <rect key="frame" x="8" y="137" width="227" height="64"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Launch Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ahn-A9-8im">
-                                                <rect key="frame" x="15" y="8" width="94" height="21"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ahn-A9-8im">
+                                                <rect key="frame" x="15" y="8" width="35" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
                                                 <color key="textColor" name="DashBlack"/>
                                                 <nil key="highlightedColor"/>
@@ -428,49 +428,31 @@
                                                 <color key="textColor" name="DashBlack"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="T" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W53-We-TyD">
-                                                <rect key="frame" x="117" y="10" width="16" height="16"/>
-                                                <color key="backgroundColor" systemColor="systemGreenColor"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" secondItem="W53-We-TyD" secondAttribute="height" multiplier="1:1" id="5UO-Wu-Yae"/>
-                                                    <constraint firstAttribute="width" secondItem="W53-We-TyD" secondAttribute="height" multiplier="1:1" id="buz-z3-i4z"/>
-                                                    <constraint firstAttribute="width" constant="16" id="i7V-Ic-cGh"/>
-                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="16" id="rfl-B6-IHf"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
-                                                <color key="textColor" name="DashBlack"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" red="0.90588837860000004" green="0.90587145089999999" blue="0.90588295460000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
-                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="W53-We-TyD" secondAttribute="trailing" constant="20" symbolic="YES" id="10z-e8-1mG"/>
                                             <constraint firstItem="R32-xA-f2f" firstAttribute="top" secondItem="Ahn-A9-8im" secondAttribute="bottom" constant="6" id="AVO-bi-3uS"/>
-                                            <constraint firstItem="R32-xA-f2f" firstAttribute="top" secondItem="W53-We-TyD" secondAttribute="bottom" constant="9" id="Axv-so-3Ju"/>
-                                            <constraint firstItem="W53-We-TyD" firstAttribute="leading" secondItem="Ahn-A9-8im" secondAttribute="trailing" constant="8" id="J24-8U-tq0"/>
                                             <constraint firstItem="R32-xA-f2f" firstAttribute="leading" secondItem="3j9-Du-2ed" secondAttribute="leading" constant="15" id="QAr-rV-xYE"/>
                                             <constraint firstItem="R32-xA-f2f" firstAttribute="top" secondItem="Ahn-A9-8im" secondAttribute="bottom" constant="6" id="R6u-94-aaU"/>
                                             <constraint firstAttribute="bottom" secondItem="R32-xA-f2f" secondAttribute="bottom" constant="8" id="YHG-e9-Rcg"/>
                                             <constraint firstItem="Ahn-A9-8im" firstAttribute="leading" secondItem="3j9-Du-2ed" secondAttribute="leading" constant="15" id="YMt-9y-tsq"/>
                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Ahn-A9-8im" secondAttribute="trailing" constant="20" symbolic="YES" id="ZXk-XC-E0B"/>
                                             <constraint firstItem="Ahn-A9-8im" firstAttribute="top" secondItem="3j9-Du-2ed" secondAttribute="top" constant="8" id="c2G-eY-cuY"/>
-                                            <constraint firstItem="W53-We-TyD" firstAttribute="top" secondItem="3j9-Du-2ed" secondAttribute="top" constant="10" id="d1z-7R-alH"/>
                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="R32-xA-f2f" secondAttribute="trailing" constant="20" symbolic="YES" id="fzL-xc-zQa"/>
                                             <constraint firstAttribute="width" constant="227" id="mu8-UI-1gV"/>
-                                            <constraint firstItem="W53-We-TyD" firstAttribute="width" secondItem="W53-We-TyD" secondAttribute="height" multiplier="1:1" id="uca-4o-dX6"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ceL-dE-FN9" userLabel="Launch Site" customClass="InfoPanelView" customModule="SpaceDash" customModuleProvider="target">
                                         <rect key="frame" x="8" y="230" width="227" height="64"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Launch Site" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9dL-ir-evW">
-                                                <rect key="frame" x="15" y="8" width="87" height="21"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9dL-ir-evW">
+                                                <rect key="frame" x="15" y="8" width="63.5" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
                                                 <color key="textColor" name="DashBlack"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CCAFS SLC 40" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TAk-7B-GjH" customClass="MarqueeLabel" customModule="MarqueeLabel">
-                                                <rect key="frame" x="15" y="35" width="118" height="21"/>
+                                                <rect key="frame" x="15" y="35" width="123" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                 <color key="textColor" name="DashBlack"/>
                                                 <nil key="highlightedColor"/>
@@ -495,14 +477,23 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="r5g-90-97b">
+                                                <rect key="frame" x="86" y="6" width="33" height="21"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="21" id="0V9-Q3-NO6"/>
+                                                    <constraint firstAttribute="width" constant="33" id="pDg-Af-fki"/>
+                                                </constraints>
+                                            </imageView>
                                         </subviews>
                                         <color key="backgroundColor" red="0.90588837860000004" green="0.90587145089999999" blue="0.90588295460000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="bottom" secondItem="TAk-7B-GjH" secondAttribute="bottom" constant="8" id="11m-dB-EHJ"/>
+                                            <constraint firstItem="r5g-90-97b" firstAttribute="top" secondItem="ceL-dE-FN9" secondAttribute="top" constant="6" id="74j-YR-jx1"/>
                                             <constraint firstAttribute="width" constant="227" id="GOL-wz-YIg"/>
+                                            <constraint firstItem="r5g-90-97b" firstAttribute="leading" secondItem="9dL-ir-evW" secondAttribute="trailing" constant="7.5" id="Ii4-vU-9p2"/>
                                             <constraint firstAttribute="bottom" secondItem="9dL-ir-evW" secondAttribute="bottom" constant="35" id="MQL-1P-dV5"/>
                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="9dL-ir-evW" secondAttribute="trailing" constant="20" symbolic="YES" id="Pyl-ai-v5q"/>
-                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="TAk-7B-GjH" secondAttribute="trailing" constant="20" symbolic="YES" id="Tn4-KV-4Se"/>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="TAk-7B-GjH" secondAttribute="trailing" constant="8" id="Tn4-KV-4Se"/>
                                             <constraint firstItem="9dL-ir-evW" firstAttribute="leading" secondItem="ceL-dE-FN9" secondAttribute="leading" constant="15" id="X1t-3V-end"/>
                                             <constraint firstItem="9dL-ir-evW" firstAttribute="top" secondItem="ceL-dE-FN9" secondAttribute="top" constant="8" id="nCn-rU-fdk"/>
                                             <constraint firstItem="TAk-7B-GjH" firstAttribute="leading" secondItem="ceL-dE-FN9" secondAttribute="leading" constant="15" id="oho-e9-jFM"/>
@@ -512,8 +503,8 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="63K-uz-tNd" userLabel="Payload&amp;Type" customClass="InfoPanelView" customModule="SpaceDash" customModuleProvider="target">
                                         <rect key="frame" x="8" y="322" width="227" height="64"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payload &amp; Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rTS-5a-Jvt">
-                                                <rect key="frame" x="15" y="8" width="114" height="21"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Missions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rTS-5a-Jvt">
+                                                <rect key="frame" x="15" y="8" width="64" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
                                                 <color key="textColor" name="DashBlack"/>
                                                 <nil key="highlightedColor"/>
@@ -558,7 +549,7 @@
                                             <constraint firstItem="fpE-sJ-nR4" firstAttribute="top" secondItem="rTS-5a-Jvt" secondAttribute="bottom" constant="6" id="tOX-wI-voT"/>
                                         </constraints>
                                     </view>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zBb-bI-XbH" customClass="WatchNowButton" customModule="SpaceDash" customModuleProvider="target">
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zBb-bI-XbH" customClass="WatchNowButton" customModule="SpaceDash" customModuleProvider="target">
                                         <rect key="frame" x="8" y="414" width="227" height="41"/>
                                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                                         <constraints>
@@ -573,9 +564,18 @@
                                             <action selector="watchNowButton:" destination="oCg-FU-UY1" eventType="touchUpInside" id="TVf-dZ-XxS"/>
                                         </connections>
                                     </button>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="s7d-d7-zPb" userLabel="LaunchProviders">
+                                        <rect key="frame" x="8" y="693" width="227" height="71"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="71" id="7qK-2d-HK4"/>
+                                            <constraint firstAttribute="width" constant="227" id="m4Y-dF-rlV"/>
+                                        </constraints>
+                                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default" weight="black"/>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" name="DashCream"/>
                                 <constraints>
+                                    <constraint firstItem="s7d-d7-zPb" firstAttribute="leading" secondItem="6ch-1d-wZ7" secondAttribute="leading" constant="8" id="3bv-KG-6vj"/>
                                     <constraint firstItem="zBb-bI-XbH" firstAttribute="top" secondItem="63K-uz-tNd" secondAttribute="bottom" constant="28" id="5Jw-LD-qEg"/>
                                     <constraint firstAttribute="trailing" secondItem="79I-bQ-LX0" secondAttribute="trailing" constant="8" id="E7A-IE-I5W"/>
                                     <constraint firstItem="zBb-bI-XbH" firstAttribute="leading" secondItem="6ch-1d-wZ7" secondAttribute="leading" constant="8" id="EFt-HG-GPh"/>
@@ -585,10 +585,10 @@
                                     <constraint firstItem="ceL-dE-FN9" firstAttribute="top" secondItem="3j9-Du-2ed" secondAttribute="bottom" constant="29" id="KWN-6v-qQp"/>
                                     <constraint firstAttribute="bottom" secondItem="63K-uz-tNd" secondAttribute="bottom" priority="250" constant="94" id="Kk4-1Y-XN1"/>
                                     <constraint firstItem="3j9-Du-2ed" firstAttribute="centerX" secondItem="4A4-gA-ahX" secondAttribute="centerX" id="LcC-az-nl6"/>
-                                    <constraint firstItem="ceL-dE-FN9" firstAttribute="top" secondItem="3j9-Du-2ed" secondAttribute="bottom" constant="29" id="MkQ-qo-ysL"/>
                                     <constraint firstItem="63K-uz-tNd" firstAttribute="leading" secondItem="6ch-1d-wZ7" secondAttribute="leading" constant="8" id="Roa-c4-7Y5"/>
                                     <constraint firstItem="4A4-gA-ahX" firstAttribute="leading" secondItem="6ch-1d-wZ7" secondAttribute="leading" constant="8" id="US9-UM-4V7"/>
                                     <constraint firstItem="4A4-gA-ahX" firstAttribute="top" secondItem="6ch-1d-wZ7" secondAttribute="top" constant="52" id="WjB-el-Vhb"/>
+                                    <constraint firstAttribute="bottom" secondItem="s7d-d7-zPb" secondAttribute="bottom" constant="15" id="Z6h-xU-NdD"/>
                                     <constraint firstAttribute="bottom" secondItem="79I-bQ-LX0" secondAttribute="bottom" constant="8" id="iAk-YS-Ljv"/>
                                     <constraint firstItem="ceL-dE-FN9" firstAttribute="leading" secondItem="6ch-1d-wZ7" secondAttribute="leading" constant="8" id="n47-4y-XPD"/>
                                     <constraint firstItem="3j9-Du-2ed" firstAttribute="top" relation="lessThanOrEqual" secondItem="4A4-gA-ahX" secondAttribute="bottom" constant="54" id="z63-l4-rY0"/>
@@ -613,15 +613,15 @@
                     <navigationItem key="navigationItem" id="nPU-go-GUq"/>
                     <size key="freeformSize" width="1159" height="896"/>
                     <connections>
-                        <outlet property="isTentative" destination="W53-We-TyD" id="v0B-og-hlX"/>
+                        <outlet property="flagImage" destination="r5g-90-97b" id="nNe-6f-LSb"/>
                         <outlet property="launchDate" destination="R32-xA-f2f" id="ONA-Zg-5YP"/>
+                        <outlet property="launchProviderLogo" destination="s7d-d7-zPb" id="M6g-fL-ELy"/>
                         <outlet property="launchSite" destination="TAk-7B-GjH" id="2Ov-Dc-cOU"/>
-                        <outlet property="payloadAndType" destination="fpE-sJ-nR4" id="4dH-RO-ape"/>
+                        <outlet property="missions" destination="fpE-sJ-nR4" id="4dH-RO-ape"/>
                         <outlet property="rocketImage" destination="79I-bQ-LX0" id="NQK-F5-lfK"/>
                         <outlet property="upcomingPanel" destination="z63-l4-rY0" id="3Du-2z-Szr"/>
                         <outlet property="upcomingView" destination="6ch-1d-wZ7" id="wGq-sw-wEM"/>
                         <outlet property="watchNowButton" destination="zBb-bI-XbH" id="fwe-Al-gxx"/>
-                        <outletCollection property="panelConstraints" destination="MkQ-qo-ysL" collectionClass="NSMutableArray" id="Vr3-fk-fs1"/>
                         <outletCollection property="panelConstraints" destination="KWN-6v-qQp" collectionClass="NSMutableArray" id="Byv-7r-eLn"/>
                         <outletCollection property="panelConstraints" destination="I2h-Fk-b0r" collectionClass="NSMutableArray" id="vql-27-OBc"/>
                         <outletCollection property="panelConstraints" destination="Kk4-1Y-XN1" collectionClass="NSMutableArray" id="ZQW-Sv-Qno"/>
@@ -704,8 +704,9 @@
         </scene>
     </scenes>
     <designables>
+        <designable name="IGg-qL-12A"/>
         <designable name="TAk-7B-GjH">
-            <size key="intrinsicContentSize" width="118" height="20.5"/>
+            <size key="intrinsicContentSize" width="123" height="20.5"/>
         </designable>
         <designable name="fpE-sJ-nR4">
             <size key="intrinsicContentSize" width="158" height="20.5"/>
@@ -713,7 +714,6 @@
     </designables>
     <resources>
         <image name="cargo-ship" width="512" height="512"/>
-        <image name="f_9" width="510" height="5842"/>
         <image name="fast" width="512" height="512"/>
         <image name="helipad (1)" width="512" height="512"/>
         <image name="house" catalog="system" width="128" height="106"/>

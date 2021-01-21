@@ -30,9 +30,9 @@ class SpaceXUITests: XCTestCase {
         let elementsQuery = scrollViewsQuery.otherElements
         
         let upcomingLaunch = app.staticTexts["Upcoming Launch"]
-        let launchDate = app.staticTexts["Launch Date"]
-        let launchSite = app.staticTexts["Launch Site"]
-        let payloadType = app.staticTexts["Payload & Type"]
+        let launchDate = app.staticTexts["Date"]
+        let launchSite = app.staticTexts["Location"]
+        let payloadType = app.staticTexts["Missions"]
         
         let landPads = elementsQuery.staticTexts["Land Pads"]
         let capsules = elementsQuery.staticTexts["Capsules"]
