@@ -26,8 +26,8 @@ paceDash/Model/Secrets.swift.gpg
 
     - name: Installing FastLane
       run: | 
-       bundle install
-       bundle update fastlane
+        bundle install
+        bundle update fastlane
          
  
     - name: Running Tests
