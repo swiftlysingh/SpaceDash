@@ -12,7 +12,7 @@
 
 ### [](https://github.com/pushpinderpalsingh/SpaceDash#a-dashboard-for-space)A Dashboard for Space...🚀🚀🚀 
 
-SpaceDash is an open-source app that provides information on all the present, past, and future **launches and vehicles of SpaceX**. The SpaceDash app also includes news and updates regarding all vehicles and missions.
+SpaceDash is an open-source app that provides information of SpaceFlights. SpaceDash also includes news and updates regarding all vehicles and missions.
 
 The app is currently in the second stage of development and several new features are being scoped/built. These features include an AR view of various vehicles of SpaceX and event updates from even more Space Agencies!
 
