@@ -22,7 +22,7 @@ struct ResultData {
     let missions : String
     let launchDesc : String
     let tags : [String]
-    let weatherIcon : String?
+    let weatherIcon : String
     
 }
 
@@ -65,7 +65,9 @@ extension ResultData : Decodable {
         pad = try container.decode(PadData.self, forKey: .pad)
         date = try container.decode(String.self, forKey: .date)
         launchDesc = try container.decode(String.self, forKey: .launchDesc)
-        weatherIcon = try container.decode(String?.self, forKey: .weatherIcon)
+        if let optionalWeatherIcon = try container.decode(String?.self, forKey: .weatherIcon){
+            weatherIcon = optionalWeatherIcon
+        }
 
         let providerKeys = try container.nestedContainer(keyedBy: CodingKeys.ProviderKeys.self, forKey: .provider)
         providerName = try providerKeys.decode(String.self, forKey: .name)
