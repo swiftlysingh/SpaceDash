@@ -57,6 +57,8 @@ Currently, new version was not accepted by the App Store review team. Since ther
 3) In your project directory open Terminal and Run  `$ pod install`  and  `$ pod update`
 4) Open the `.xcworkspace` file in Xcode to start menu working on the App
 
+#### *For API Keys, contact me on twitter/slack.*
+
 
 ### [](https://github.com/pushpinderpalsingh/SpaceDash#join-the-development) Contribute with us!
 
