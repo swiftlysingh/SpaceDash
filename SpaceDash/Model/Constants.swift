@@ -15,10 +15,30 @@ struct Constants {
         static let upcomingLaunchURL = "launches/Upcoming"
         
     }
+    
     struct  Colors {
         static let DashCream = "DashCream"
         static let DashBlack = "DashBlack"
+        static let DashGray = "DashGray"
     }
+    
+    struct Images {
+        static let stockImage = "stockImage"
+    }
+    
+    
+    struct Font{
+        static let lora = "Lora"
+        static let playFairDisplay = "PlayfairDisplay"
+        public enum FontType: String {
+            case semibold = "-SemiBold"
+            case regular = "-Regular"
+            case medium = "-Medium"
+            case bold = "-Bold"
+        }
+    }
+    
+    
     struct SegueManager {
         static let detailViewSegue = "DetailView"
         
@@ -58,5 +78,12 @@ struct Constants {
         static let alertMessage = "Unable to open due to some reasons please check back later"
         static let okButtonTitle = "Ok"
     }
+    
+    struct NewCell {
+        static let reuseId = "NewsCell"
+        static let title = "U.S. Stocks Post Biggest Monthly Gains Since April"
+        static let description = "U.S. stocks wavered with the S&P 500 slipping, but the benchmark still finished August with a 7% advance marked by consistent daily gains.U.S. stocks wavered with the S&P 500 slipping, but the benchmark still finished August with a 7% advance marked by consistent daily gains.U.S. stocks wavered with the S&P 500 slipping, but the benchmark still finished August with a 7% advance marked by consistent daily gains."
+    }
+    
     
 }

@@ -1,13 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vOc-32-Bel">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vOc-32-Bel">
     <device id="retina6_1" orientation="portrait" appearance="dark"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Feed-->
+        <scene sceneID="tw7-9N-Sd4">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Feed" id="o3Z-oe-5UB" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="P51-54-Jbw"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DT0-ld-ykM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1133" y="537"/>
+        </scene>
         <!--About-->
         <scene sceneID="ofz-mg-3An">
             <objects>
@@ -79,33 +91,34 @@
                                     <constraint firstAttribute="trailing" secondItem="EV8-EB-CFC" secondAttribute="trailing" constant="8" id="xqd-4s-fBk"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GQe-lI-h6a">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GQe-lI-h6a">
                                 <rect key="frame" x="177.5" y="741" width="59" height="33"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="33" id="DhM-Sr-boO"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="License">
-                                    <color key="titleColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" systemColor="linkColor"/>
                                 </state>
                                 <connections>
                                     <action selector="licenseButtonPressed:" destination="tFj-sZ-DS6" eventType="touchUpInside" id="enI-xU-Zbx"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f9x-2A-JJL">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f9x-2A-JJL">
                                 <rect key="frame" x="154" y="700" width="106" height="33"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="33" id="9sq-zr-hyW"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Privacy Policy">
-                                    <color key="titleColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" systemColor="linkColor"/>
                                 </state>
                                 <connections>
                                     <action selector="privacyButtonPressed:" destination="tFj-sZ-DS6" eventType="touchUpInside" id="iET-bU-BRb"/>
                                 </connections>
                             </button>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="WqM-e0-9Qd"/>
                         <color key="backgroundColor" name="DashBlack"/>
                         <constraints>
                             <constraint firstItem="Kfb-df-F9N" firstAttribute="top" secondItem="EJi-mX-Uv4" secondAttribute="bottom" constant="49" id="9OV-cL-ReV"/>
@@ -119,7 +132,6 @@
                             <constraint firstItem="EJi-mX-Uv4" firstAttribute="top" secondItem="WqM-e0-9Qd" secondAttribute="top" constant="30" id="ji7-6U-5Tu"/>
                             <constraint firstItem="EJi-mX-Uv4" firstAttribute="leading" secondItem="WqM-e0-9Qd" secondAttribute="leading" constant="20" id="npn-cK-mjl"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="WqM-e0-9Qd"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="About" image="info.circle" catalog="system" id="1Wb-kc-AhX"/>
                     <connections>
@@ -179,7 +191,7 @@
                                                             <constraint firstItem="DW7-MM-Lho" firstAttribute="leading" secondItem="Ocr-kZ-tmB" secondAttribute="leading" constant="32" id="geR-UM-2fU"/>
                                                         </constraints>
                                                     </view>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="szk-PP-f6D">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="szk-PP-f6D">
                                                         <rect key="frame" x="0.0" y="0.0" width="166" height="30"/>
                                                         <connections>
                                                             <action selector="rocketsButton:" destination="ZKl-d6-ple" eventType="touchUpInside" id="fPN-eK-R75"/>
@@ -230,7 +242,7 @@
                                                             <constraint firstItem="3XN-DS-0g2" firstAttribute="centerX" secondItem="iQD-Si-E3A" secondAttribute="centerX" id="mY5-UJ-cou"/>
                                                         </constraints>
                                                     </view>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rfr-UE-yom">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rfr-UE-yom">
                                                         <rect key="frame" x="0.0" y="0.0" width="166" height="30"/>
                                                         <connections>
                                                             <action selector="launchesButton:" destination="ZKl-d6-ple" eventType="touchUpInside" id="k2A-ID-BYZ"/>
@@ -282,7 +294,7 @@
                                                             <constraint firstItem="v78-Vz-acT" firstAttribute="centerX" secondItem="41A-NP-38D" secondAttribute="centerX" id="jwK-ld-PTO"/>
                                                         </constraints>
                                                     </view>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xLt-9L-lDE">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xLt-9L-lDE">
                                                         <rect key="frame" x="0.0" y="0.0" width="166" height="30"/>
                                                         <connections>
                                                             <action selector="shipsButton:" destination="ZKl-d6-ple" eventType="touchUpInside" id="ikT-8d-yht"/>
@@ -335,7 +347,7 @@
                                                             <constraint firstAttribute="bottom" secondItem="yvp-dk-Iom" secondAttribute="bottom" constant="20" id="wr5-jD-8HL"/>
                                                         </constraints>
                                                     </view>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YFp-Dd-If6">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YFp-Dd-If6">
                                                         <rect key="frame" x="0.0" y="0.0" width="166" height="30"/>
                                                         <connections>
                                                             <action selector="capsulesButton:" destination="ZKl-d6-ple" eventType="touchUpInside" id="PYP-kz-dUE"/>
@@ -388,7 +400,7 @@
                                                             <constraint firstAttribute="width" secondItem="Psp-6q-UPj" secondAttribute="height" multiplier="119:127" id="wd9-tJ-M7G"/>
                                                         </constraints>
                                                     </view>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RPJ-hh-ap2">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RPJ-hh-ap2">
                                                         <rect key="frame" x="0.0" y="0.0" width="166" height="30"/>
                                                         <connections>
                                                             <action selector="landpadsButton:" destination="ZKl-d6-ple" eventType="touchUpInside" id="RPG-O5-CDE"/>
@@ -441,7 +453,7 @@
                                                             <constraint firstAttribute="trailing" secondItem="iR9-wI-Fkv" secondAttribute="trailing" constant="32" id="nRn-sB-U8G"/>
                                                         </constraints>
                                                     </view>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xI7-7E-iLS">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xI7-7E-iLS">
                                                         <rect key="frame" x="0.0" y="0.0" width="166" height="30"/>
                                                         <connections>
                                                             <action selector="launchSitesButton:" destination="ZKl-d6-ple" eventType="touchUpInside" id="aSg-v2-hiz"/>
@@ -527,14 +539,14 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2020/06/13 9:21am" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Gk-Ro-p3A">
-                                                <rect key="frame" x="15" y="35" width="158" height="21"/>
+                                                <rect key="frame" x="15" y="35" width="156" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                 <color key="textColor" name="DashBlack"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="T" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Wf-rF-y5V">
                                                 <rect key="frame" x="117" y="10" width="16" height="16"/>
-                                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" systemColor="systemGreenColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="16" id="VAo-2G-yKC"/>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="16" id="WF5-J3-FlM"/>
@@ -574,7 +586,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CCAFS SLC 40" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o2Z-bp-yMi" customClass="MarqueeLabel" customModule="MarqueeLabel">
-                                                <rect key="frame" x="15" y="35" width="123.5" height="21"/>
+                                                <rect key="frame" x="15" y="35" width="123" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                 <color key="textColor" name="DashBlack"/>
                                                 <nil key="highlightedColor"/>
@@ -617,13 +629,13 @@
                                         <rect key="frame" x="8" y="322" width="227" height="64"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payload &amp; Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0F4-kc-63G">
-                                                <rect key="frame" x="15" y="8" width="115" height="21"/>
+                                                <rect key="frame" x="15" y="8" width="114" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
                                                 <color key="textColor" name="DashBlack"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ANASIS-II, Satellite" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c7l-ks-VE4">
-                                                <rect key="frame" x="15" y="35" width="154" height="21"/>
+                                                <rect key="frame" x="15" y="35" width="153" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                 <color key="textColor" name="DashBlack"/>
                                                 <nil key="highlightedColor"/>
@@ -662,6 +674,7 @@
                                 </constraints>
                             </view>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="FWa-wi-cq3"/>
                         <color key="backgroundColor" name="DashBlack"/>
                         <constraints>
                             <constraint firstItem="6rF-J0-zFb" firstAttribute="top" secondItem="waM-qQ-kTW" secondAttribute="bottom" constant="8" id="CE9-OU-jbu"/>
@@ -672,7 +685,6 @@
                             <constraint firstItem="waM-qQ-kTW" firstAttribute="leading" secondItem="6rF-J0-zFb" secondAttribute="leading" id="bKj-6b-rIZ"/>
                             <constraint firstItem="waM-qQ-kTW" firstAttribute="top" secondItem="nU2-Np-Sti" secondAttribute="top" id="oYF-cy-qMG"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="FWa-wi-cq3"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" id="mmo-XP-eUv">
                         <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="0.0"/>
@@ -730,6 +742,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="bYL-ni-3Pl"/>
                         <color key="backgroundColor" name="DashBlack"/>
                         <constraints>
                             <constraint firstItem="Z7W-GD-Mqn" firstAttribute="bottom" secondItem="bYL-ni-3Pl" secondAttribute="bottom" id="MH8-gh-Tvz"/>
@@ -737,8 +750,8 @@
                             <constraint firstItem="bYL-ni-3Pl" firstAttribute="trailing" secondItem="Z7W-GD-Mqn" secondAttribute="trailing" id="cnF-nk-HRe"/>
                             <constraint firstItem="Z7W-GD-Mqn" firstAttribute="leading" secondItem="bYL-ni-3Pl" secondAttribute="leading" id="ctQ-lh-7ju"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="bYL-ni-3Pl"/>
                     </view>
+                    <navigationItem key="navigationItem" id="yEL-XL-EPn"/>
                     <connections>
                         <outlet property="DetailTableView" destination="Z7W-GD-Mqn" id="OlQ-nr-qf4"/>
                         <outlet property="loadingAnimation" destination="nr6-Wh-xN2" id="Vj2-JC-Jeu"/>
@@ -765,6 +778,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="ZLd-ne-N0j" kind="relationship" relationship="viewControllers" id="uhm-PQ-LtA"/>
+                        <segue destination="o3Z-oe-5UB" kind="relationship" relationship="viewControllers" id="sT0-ZG-VwX"/>
                         <segue destination="tFj-sZ-DS6" kind="relationship" relationship="viewControllers" id="tya-TO-c71"/>
                     </connections>
                 </tabBarController>
@@ -790,13 +804,19 @@
             <point key="canvasLocation" x="-165" y="-408"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="nr6-Wh-xN2"/>
+        <designable name="o2Z-bp-yMi">
+            <size key="intrinsicContentSize" width="123" height="20.5"/>
+        </designable>
+    </designables>
     <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
     <resources>
         <image name="cargo-ship" width="512" height="512"/>
         <image name="f_9" width="510" height="5842"/>
         <image name="fast" width="512" height="512"/>
         <image name="helipad (1)" width="512" height="512"/>
-        <image name="house" catalog="system" width="128" height="110"/>
+        <image name="house" catalog="system" width="128" height="106"/>
         <image name="info.circle" catalog="system" width="128" height="121"/>
         <image name="launch" width="512" height="512"/>
         <image name="space-capsule (1)" width="512" height="512"/>
@@ -807,5 +827,11 @@
         <namedColor name="DashCream">
             <color red="0.90600001811981201" green="0.90600001811981201" blue="0.90600001811981201" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
     </resources>
 </document>

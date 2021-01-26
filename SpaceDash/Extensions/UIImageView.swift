@@ -23,4 +23,18 @@ extension UIImageView {
          }
       }
    }
+    
+    convenience init(cornerRadius: CGFloat){
+        self.init(frame: .zero)
+        self.layer.cornerRadius = cornerRadius
+        self.clipsToBounds = true
+        self.contentMode = .scaleAspectFill
+    }
+    
+    convenience init(imageName: String){
+        self.init(frame: .zero)
+        self.image = UIImage(named: imageName)
+        self.clipsToBounds = true
+        self.contentMode = .scaleAspectFill
+    }
 }
