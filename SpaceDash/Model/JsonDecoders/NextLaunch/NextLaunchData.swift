@@ -24,7 +24,7 @@ struct NextLaunchData {
     let missions : String
     let launchDesc : String
     let tags : [String]
-    let weatherIcon : String?
+    let weatherIconCode : String?
 }
 
 extension NextLaunchData : Decodable {
@@ -58,6 +58,6 @@ extension NextLaunchData : Decodable {
         missions = result.missions
         launchDesc = result.launchDesc
         tags = result.tags
-        weatherIcon = result.weatherIcon
+        weatherIconCode = result.weatherIconCode
     }
 }
