@@ -428,6 +428,13 @@
                                                 <color key="textColor" name="DashBlack"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wL1-Ls-vEr">
+                                                <rect key="frame" x="58" y="6" width="33" height="21"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="21" id="ZFA-dS-fOb"/>
+                                                    <constraint firstAttribute="width" constant="33" id="wy5-75-man"/>
+                                                </constraints>
+                                            </imageView>
                                         </subviews>
                                         <color key="backgroundColor" red="0.90588837860000004" green="0.90587145089999999" blue="0.90588295460000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
@@ -437,6 +444,8 @@
                                             <constraint firstAttribute="bottom" secondItem="R32-xA-f2f" secondAttribute="bottom" constant="8" id="YHG-e9-Rcg"/>
                                             <constraint firstItem="Ahn-A9-8im" firstAttribute="leading" secondItem="3j9-Du-2ed" secondAttribute="leading" constant="15" id="YMt-9y-tsq"/>
                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Ahn-A9-8im" secondAttribute="trailing" constant="20" symbolic="YES" id="ZXk-XC-E0B"/>
+                                            <constraint firstItem="wL1-Ls-vEr" firstAttribute="top" secondItem="3j9-Du-2ed" secondAttribute="top" constant="6" id="a9s-Xq-m3G"/>
+                                            <constraint firstItem="wL1-Ls-vEr" firstAttribute="leading" secondItem="Ahn-A9-8im" secondAttribute="trailing" constant="8" symbolic="YES" id="aMx-Id-Lcu"/>
                                             <constraint firstItem="Ahn-A9-8im" firstAttribute="top" secondItem="3j9-Du-2ed" secondAttribute="top" constant="8" id="c2G-eY-cuY"/>
                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="R32-xA-f2f" secondAttribute="trailing" constant="20" symbolic="YES" id="fzL-xc-zQa"/>
                                             <constraint firstAttribute="width" constant="227" id="mu8-UI-1gV"/>
@@ -622,6 +631,7 @@
                         <outlet property="upcomingPanel" destination="z63-l4-rY0" id="3Du-2z-Szr"/>
                         <outlet property="upcomingView" destination="6ch-1d-wZ7" id="wGq-sw-wEM"/>
                         <outlet property="watchNowButton" destination="zBb-bI-XbH" id="fwe-Al-gxx"/>
+                        <outlet property="weatherIcon" destination="wL1-Ls-vEr" id="mF4-8N-FuO"/>
                         <outletCollection property="panelConstraints" destination="KWN-6v-qQp" collectionClass="NSMutableArray" id="Byv-7r-eLn"/>
                         <outletCollection property="panelConstraints" destination="I2h-Fk-b0r" collectionClass="NSMutableArray" id="vql-27-OBc"/>
                         <outletCollection property="panelConstraints" destination="Kk4-1Y-XN1" collectionClass="NSMutableArray" id="ZQW-Sv-Qno"/>

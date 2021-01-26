@@ -20,6 +20,7 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var rocketImage: RocketImageView!
     @IBOutlet var launchProviderLogo: UIImageView!
     @IBOutlet var flagImage: UIImageView!
+    @IBOutlet var weatherIcon: UIImageView!
     
     let networkObject = NetworkManager(Constants.NetworkManager.rocketLaunchLiveAPI)
     let cache = NSCache<NSString, DetailsViewModel>()
