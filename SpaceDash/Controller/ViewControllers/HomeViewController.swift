@@ -126,18 +126,17 @@ extension HomeViewController: UIPopoverPresentationControllerDelegate {
             self.launchProviderLogo.image = UIImage(named: upcomingLaunch.providerSlug)
             self.flagImage.image = UIImage(named: upcomingLaunch.countrySlug)
             self.rocketImage.image = UIImage(named: upcomingLaunch.vehicleSlug)
+            
             if let weatherIconCode = upcomingLaunch.weatherIconCode {
                 self.weatherIcon.image = UIImage(named: weatherIconCode)
             }
-//            self.checkWatchButton()
+            
+            if let media = upcomingLaunch.youtubeLink {
+                self.watchNowButton.isHidden = false
+                self.watchURL = media
+            }
+            
             self.adjustUpcomingSize()
         }
     }
-    
-    /// This function will assign the video URL of the upcoming launch and display the "Watch Now" button if the URL available
-//    func checkWatchButton() {
-//        guard let safeWatchURL = upcomingLaunch.watchNow, UIApplication.shared.canOpenURL(safeWatchURL) else { return }
-//        self.watchURL = safeWatchURL
-//        watchNowButton.isHidden = false
-//    }
 }
