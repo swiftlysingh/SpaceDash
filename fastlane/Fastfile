@@ -27,9 +27,10 @@ lane :beta do
   get_provisioning_profile
   build_app(scheme: "SpaceDash")
 
-  changelog_from_git_commits(commits_count:1)
+  changelog = File.read("./changelog.txt") 
  
-  upload_to_testflight( 
+  upload_to_testflight(
+   changelog: changelog, 
    distribute_external: true,
    groups: ["External Testers", "Unknown External Testers"] )
 end
