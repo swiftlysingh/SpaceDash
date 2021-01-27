@@ -66,6 +66,7 @@
 		FFF7170C24A338D10043EB81 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF7170B24A338D10043EB81 /* HomeViewController.swift */; };
 		FFF7171224A48F730043EB81 /* DetailScrollViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF7171124A48F730043EB81 /* DetailScrollViews.swift */; };
 		FFFB937E2544C1B70099CD2B /* TimeInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFB937D2544C1B70099CD2B /* TimeInterval.swift */; };
+		FFFFA72525C1A0A6007D7971 /* MediaData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFFA72425C1A0A6007D7971 /* MediaData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -173,6 +174,7 @@
 		FFF7170B24A338D10043EB81 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		FFF7171124A48F730043EB81 /* DetailScrollViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailScrollViews.swift; sourceTree = "<group>"; };
 		FFFB937D2544C1B70099CD2B /* TimeInterval.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeInterval.swift; sourceTree = "<group>"; };
+		FFFFA72425C1A0A6007D7971 /* MediaData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -315,6 +317,7 @@
 				FFAFCB2B25768A0C003A5252 /* Result.swift */,
 				FFAFCB80257C13D9003A5252 /* MissionData.swift */,
 				FFAFCB87257C1AA5003A5252 /* TagsData.swift */,
+				FFFFA72425C1A0A6007D7971 /* MediaData.swift */,
 			);
 			path = NextLaunch;
 			sourceTree = "<group>";
@@ -771,6 +774,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF7F94FB2511E51000B2830B /* DetailView.swift in Sources */,
+				FFFFA72525C1A0A6007D7971 /* MediaData.swift in Sources */,
 				FFB398F424DDD025001D4EA1 /* RocketsData.swift in Sources */,
 				FF42E94E24CD8CA5003E8DFE /* Constants.swift in Sources */,
 				CFF4E6132546A3B000CE83AF /* AppIconSelectViewController.swift in Sources */,

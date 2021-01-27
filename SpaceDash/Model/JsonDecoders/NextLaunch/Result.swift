@@ -23,7 +23,10 @@ struct ResultData {
     let launchDesc : String
     let tags : [String]
     let weatherIconCode : String?
-    
+    let mediaId : Int?
+    let youtubeLink : URL?
+    let launchDayMedia : Bool?
+    let featured : Bool?
 }
 
 extension ResultData : Decodable {
@@ -41,6 +44,12 @@ extension ResultData : Decodable {
         
         case provider
         case vehicle
+        
+        case media
+        case mediaId
+        case youtubeLink
+        case launchDayMedia
+        case featured
         
         case date = "sort_date"
         case launchDesc = "launch_description"
@@ -97,5 +106,17 @@ extension ResultData : Decodable {
         }
 
         tags = tag
+        
+        if let mediaData = try container.decode([MediaData]?.self, forKey: .media){
+            mediaId = mediaData[0].id
+            featured = mediaData[0].featured
+            launchDayMedia = mediaData[0].ldfeatured
+            youtubeLink = URL(string:"\(Constants.NetworkManager.youtubeWatchURL + mediaData[0].youtube_vidid)")
+        } else{
+            mediaId = nil
+            featured = nil
+            launchDayMedia = nil
+            youtubeLink = nil
+        }
     }
 }

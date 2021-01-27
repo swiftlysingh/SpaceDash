@@ -14,6 +14,7 @@ struct Constants {
         static let spaceXAPI = "https://api.spacexdata.com/v3/"
         static let rocketLaunchLiveAPI = "https://fdo.rocketlaunch.live/json/"
         static let authorization = "Authorization"
+        static let youtubeWatchURL = "https://www.youtube.com/watch?v="
     }
     struct  Colors {
         static let DashCream = "DashCream"
