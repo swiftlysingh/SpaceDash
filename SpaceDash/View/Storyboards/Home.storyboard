@@ -429,10 +429,10 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wL1-Ls-vEr">
-                                                <rect key="frame" x="58" y="6" width="33" height="21"/>
+                                                <rect key="frame" x="51" y="5" width="27" height="27"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="21" id="ZFA-dS-fOb"/>
-                                                    <constraint firstAttribute="width" constant="33" id="wy5-75-man"/>
+                                                    <constraint firstAttribute="width" constant="27" id="H4T-zv-UW7"/>
+                                                    <constraint firstAttribute="height" constant="27" id="hRL-4H-MKp"/>
                                                 </constraints>
                                             </imageView>
                                         </subviews>
@@ -441,11 +441,11 @@
                                             <constraint firstItem="R32-xA-f2f" firstAttribute="top" secondItem="Ahn-A9-8im" secondAttribute="bottom" constant="6" id="AVO-bi-3uS"/>
                                             <constraint firstItem="R32-xA-f2f" firstAttribute="leading" secondItem="3j9-Du-2ed" secondAttribute="leading" constant="15" id="QAr-rV-xYE"/>
                                             <constraint firstItem="R32-xA-f2f" firstAttribute="top" secondItem="Ahn-A9-8im" secondAttribute="bottom" constant="6" id="R6u-94-aaU"/>
+                                            <constraint firstItem="wL1-Ls-vEr" firstAttribute="top" secondItem="Ahn-A9-8im" secondAttribute="top" constant="-3" id="Y2m-He-x6Y"/>
                                             <constraint firstAttribute="bottom" secondItem="R32-xA-f2f" secondAttribute="bottom" constant="8" id="YHG-e9-Rcg"/>
                                             <constraint firstItem="Ahn-A9-8im" firstAttribute="leading" secondItem="3j9-Du-2ed" secondAttribute="leading" constant="15" id="YMt-9y-tsq"/>
                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Ahn-A9-8im" secondAttribute="trailing" constant="20" symbolic="YES" id="ZXk-XC-E0B"/>
-                                            <constraint firstItem="wL1-Ls-vEr" firstAttribute="top" secondItem="3j9-Du-2ed" secondAttribute="top" constant="6" id="a9s-Xq-m3G"/>
-                                            <constraint firstItem="wL1-Ls-vEr" firstAttribute="leading" secondItem="Ahn-A9-8im" secondAttribute="trailing" constant="8" symbolic="YES" id="aMx-Id-Lcu"/>
+                                            <constraint firstItem="wL1-Ls-vEr" firstAttribute="leading" secondItem="Ahn-A9-8im" secondAttribute="trailing" constant="1" id="aiU-aS-Gc3"/>
                                             <constraint firstItem="Ahn-A9-8im" firstAttribute="top" secondItem="3j9-Du-2ed" secondAttribute="top" constant="8" id="c2G-eY-cuY"/>
                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="R32-xA-f2f" secondAttribute="trailing" constant="20" symbolic="YES" id="fzL-xc-zQa"/>
                                             <constraint firstAttribute="width" constant="227" id="mu8-UI-1gV"/>
@@ -487,7 +487,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </label>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="r5g-90-97b">
-                                                <rect key="frame" x="86" y="6" width="33" height="21"/>
+                                                <rect key="frame" x="89" y="8" width="33" height="21"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="21" id="0V9-Q3-NO6"/>
                                                     <constraint firstAttribute="width" constant="33" id="pDg-Af-fki"/>
@@ -497,9 +497,9 @@
                                         <color key="backgroundColor" red="0.90588837860000004" green="0.90587145089999999" blue="0.90588295460000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="bottom" secondItem="TAk-7B-GjH" secondAttribute="bottom" constant="8" id="11m-dB-EHJ"/>
-                                            <constraint firstItem="r5g-90-97b" firstAttribute="top" secondItem="ceL-dE-FN9" secondAttribute="top" constant="6" id="74j-YR-jx1"/>
+                                            <constraint firstItem="r5g-90-97b" firstAttribute="top" secondItem="ceL-dE-FN9" secondAttribute="top" constant="8" id="74j-YR-jx1"/>
                                             <constraint firstAttribute="width" constant="227" id="GOL-wz-YIg"/>
-                                            <constraint firstItem="r5g-90-97b" firstAttribute="leading" secondItem="9dL-ir-evW" secondAttribute="trailing" constant="7.5" id="Ii4-vU-9p2"/>
+                                            <constraint firstItem="r5g-90-97b" firstAttribute="leading" secondItem="9dL-ir-evW" secondAttribute="trailing" constant="10.5" id="Ii4-vU-9p2"/>
                                             <constraint firstAttribute="bottom" secondItem="9dL-ir-evW" secondAttribute="bottom" constant="35" id="MQL-1P-dV5"/>
                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="9dL-ir-evW" secondAttribute="trailing" constant="20" symbolic="YES" id="Pyl-ai-v5q"/>
                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="TAk-7B-GjH" secondAttribute="trailing" constant="8" id="Tn4-KV-4Se"/>
