@@ -1,3 +1,3 @@
-- Added Weather Support for the launch site 
-- Fixed a bug that was eating up too much of your memory
+- Added Watch Now button for live streams when available 
+- Minor tweaks to the UI
 - Some other minor bugs and other performance improvements
