@@ -107,11 +107,13 @@ extension ResultData : Decodable {
 
         tags = tag
         
-        if let mediaData = try container.decode([MediaData]?.self, forKey: .media){
-            mediaId = mediaData[0].id
-            featured = mediaData[0].featured
-            launchDayMedia = mediaData[0].ldfeatured
-            youtubeLink = URL(string:"\(Constants.NetworkManager.youtubeWatchURL + mediaData[0].youtube_vidid)")
+        let mediaArray = try container.decode([MediaData].self, forKey: .media)
+        if (!mediaArray.isEmpty){
+            let mediaData = mediaArray[0]
+            mediaId = mediaData.id
+            featured = mediaData.featured
+            launchDayMedia = mediaData.ldfeatured
+            youtubeLink = URL(string:"\(Constants.NetworkManager.youtubeWatchURL + mediaData.youtube_vidid)")
         } else{
             mediaId = nil
             featured = nil

@@ -25,6 +25,10 @@ struct NextLaunchData {
     let launchDesc : String
     let tags : [String]
     let weatherIconCode : String?
+    let mediaId : Int?
+    let youtubeLink : URL?
+    let launchDayMedia : Bool?
+    let featured : Bool?
 }
 
 extension NextLaunchData : Decodable {
@@ -59,5 +63,9 @@ extension NextLaunchData : Decodable {
         launchDesc = result.launchDesc
         tags = result.tags
         weatherIconCode = result.weatherIconCode
+        mediaId = result.mediaId
+        youtubeLink = result.youtubeLink
+        launchDayMedia = result.launchDayMedia
+        featured = result.featured
     }
 }
