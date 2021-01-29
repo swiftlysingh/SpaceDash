@@ -14,16 +14,21 @@ protocol NetworkManagerDelegate {
 }
 
 struct NetworkManager{
-    
+    static var shared = NetworkManager()
     var delegate:NetworkManagerDelegate?
     var key : String = " "
-    
+    var urlString: String = " "
     
     /// This function will create the URL of the data demanded by any controllers
     /// - Parameter demand: the additional string that will be appended to the spaceXURL
     
     mutating func fetchData(demand: String){
-        let urlString = "\(Constants.NetworkManager.baseURL)\(demand)"
+        switch demand {
+        case Constants.SegueManager.SenderValues.news:
+            urlString = Constants.NetworkManager.newURL
+        default:
+            urlString = "\(Constants.NetworkManager.baseURL)\(demand)"
+        }
         key = demand
         performRequest(urlString: urlString)
     }
@@ -66,7 +71,7 @@ struct NetworkManager{
                 upcomingLaunch.cleanData()
                 delegate?.updateFromAPI(data: upcomingLaunch)
                 break
-            
+                
             case Constants.SegueManager.SenderValues.rocket:
                 var rocket = DetailsViewModel(rockets: try decoder.decode([RocketData].self, from: data))
                 rocket.fillData(key: Constants.SegueManager.SenderValues.rocket)
@@ -78,7 +83,7 @@ struct NetworkManager{
                 landpads.fillData(key: Constants.SegueManager.SenderValues.landpads)
                 delegate?.updateFromAPI(data: landpads)
                 break
-            
+                
             case Constants.SegueManager.SenderValues.capsules:
                 var capsules = DetailsViewModel(capsules:try decoder.decode([CapsulesData].self, from: data))
                 capsules.fillData(key: Constants.SegueManager.SenderValues.capsules)
@@ -101,6 +106,9 @@ struct NetworkManager{
                 var launches = DetailsViewModel(launches: try decoder.decode([LaunchesData].self, from: data))
                 launches.fillData(key: Constants.SegueManager.SenderValues.launches)
                 delegate?.updateFromAPI(data: launches)
+            case Constants.SegueManager.SenderValues.news:
+                let newsData = try decoder.decode([NewsDatum].self, from: data)
+                print(newsData.forEach{print($0.title)})
             default:
                 return
             }

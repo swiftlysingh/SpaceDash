@@ -23,6 +23,8 @@
 		20953C9625890E12009ED75E /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20953C9525890E12009ED75E /* NewsViewController.swift */; };
 		20953C9D25890F7C009ED75E /* ArticlesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20953C9C25890F7C009ED75E /* ArticlesViewController.swift */; };
 		20A82BF5257C4BD000E7BF29 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A82BF4257C4BD000E7BF29 /* FeedViewController.swift */; };
+		20E7261225C3AAD70011BB74 /* NewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E7261125C3AAD70011BB74 /* NewsViewModel.swift */; };
+		20E7261925C3AAE20011BB74 /* NewsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E7261825C3AAE20011BB74 /* NewsData.swift */; };
 		FF3043D42507E5D0005F8EE6 /* FastlaneSnapshots.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3043D32507E5D0005F8EE6 /* FastlaneSnapshots.swift */; };
 		FF3043DC2507E615005F8EE6 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3043DB2507E615005F8EE6 /* SnapshotHelper.swift */; };
 		FF42E94E24CD8CA5003E8DFE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF42E94D24CD8CA5003E8DFE /* Constants.swift */; };
@@ -106,6 +108,8 @@
 		20953C9525890E12009ED75E /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		20953C9C25890F7C009ED75E /* ArticlesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesViewController.swift; sourceTree = "<group>"; };
 		20A82BF4257C4BD000E7BF29 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		20E7261125C3AAD70011BB74 /* NewsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsViewModel.swift; sourceTree = "<group>"; };
+		20E7261825C3AAE20011BB74 /* NewsData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsData.swift; sourceTree = "<group>"; };
 		5DE2958EE217DA2AEF4E463F /* Pods_SpaceDash.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpaceDash.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B15257ADD46DBE38C7F17D09 /* Pods-SpaceDash.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceDash.release.xcconfig"; path = "Target Support Files/Pods-SpaceDash/Pods-SpaceDash.release.xcconfig"; sourceTree = "<group>"; };
 		B5A11B9FE2BFCA5CB1A21EC0 /* Pods-SpaceX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceX.debug.xcconfig"; path = "Target Support Files/Pods-SpaceX/Pods-SpaceX.debug.xcconfig"; sourceTree = "<group>"; };
@@ -302,6 +306,7 @@
 		FFB398F524DDD037001D4EA1 /* JsonDecoders */ = {
 			isa = PBXGroup;
 			children = (
+				20E7261825C3AAE20011BB74 /* NewsData.swift */,
 				FFA9CA5B24C0CCCA006FA5DE /* UpcomingLaunchData.swift */,
 				FFB398F324DDD025001D4EA1 /* RocketsData.swift */,
 				FFF266B124DEAF7400BA5C28 /* LandpadsData.swift */,
@@ -318,6 +323,7 @@
 			children = (
 				FFA9CA7F24C1B838006FA5DE /* UpcomingLaunchModel.swift */,
 				FFB398F624DDD2F8001D4EA1 /* DetailsViewModel.swift */,
+				20E7261125C3AAD70011BB74 /* NewsViewModel.swift */,
 			);
 			path = DataModels;
 			sourceTree = "<group>";
@@ -732,9 +738,11 @@
 				FF42E94E24CD8CA5003E8DFE /* Constants.swift in Sources */,
 				FFF25C6824D871EF00D0E1FF /* DetailsTableViewCell.swift in Sources */,
 				FFC259EB24A7AB3C0019E354 /* UpcomingView.swift in Sources */,
+				20E7261925C3AAE20011BB74 /* NewsData.swift in Sources */,
 				FFF716D6249D3E1C0043EB81 /* AppDelegate.swift in Sources */,
 				2030775F2589699A00DD1F75 /* FeedCell.swift in Sources */,
 				FF8E3EDE24DF066E00077DE3 /* LaunchPadsData.swift in Sources */,
+				20E7261225C3AAD70011BB74 /* NewsViewModel.swift in Sources */,
 				20953C9D25890F7C009ED75E /* ArticlesViewController.swift in Sources */,
 				2030776C25896B3000DD1F75 /* UIStackView+Layout.swift in Sources */,
 				FF8E3EDC24DF003300077DE3 /* ShipsData.swift in Sources */,

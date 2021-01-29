@@ -13,7 +13,7 @@ struct Constants {
     struct NetworkManager {
         static let baseURL = "https://api.spacexdata.com/v3/"
         static let upcomingLaunchURL = "launches/Upcoming"
-        
+        static let newURL = "https://spaceflightnewsapi.net/api/v2/articles"
     }
     
     struct  Colors {
@@ -49,6 +49,7 @@ struct Constants {
             static let capsules = "capsules"
             static let ships = "ships"
             static let launches = "launches"
+            static let news = "news"
         }
     }
     

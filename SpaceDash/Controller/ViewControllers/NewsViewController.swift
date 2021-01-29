@@ -14,6 +14,7 @@ class NewsViewController: UIViewController{
     @IBOutlet weak var collectionView: UICollectionView!
     
     
+    let viewModel = NewsViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
