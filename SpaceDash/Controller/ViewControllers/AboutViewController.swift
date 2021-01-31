@@ -10,18 +10,12 @@ import UIKit
 
 class AboutViewController: UIViewController {
     
-    @IBOutlet weak var aboutSpaceConstraint: NSLayoutConstraint!
-    @IBOutlet weak var aboutSpaceTopConstraint: NSLayoutConstraint!
-    
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        adjustSize()
-        
     }
       
       @IBAction func privacyButtonPressed(_ sender: UIButton) {
@@ -47,10 +41,4 @@ class AboutViewController: UIViewController {
           }
           
       }
-      
-    
-    func adjustSize(){
-        aboutSpaceConstraint.constant = UIScreen.main.bounds.height*0.03
-        aboutSpaceTopConstraint.constant = UIScreen.main.bounds.height*0.01
-    }
 }

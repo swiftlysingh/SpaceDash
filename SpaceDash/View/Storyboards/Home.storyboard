@@ -469,7 +469,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CCAFS SLC 40" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TAk-7B-GjH" customClass="MarqueeLabel" customModule="MarqueeLabel">
-                                                <rect key="frame" x="15" y="35" width="118" height="21"/>
+                                                <rect key="frame" x="15" y="35" width="123" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                 <color key="textColor" name="DashBlack"/>
                                                 <nil key="highlightedColor"/>
@@ -527,7 +527,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ANASIS-II, Satellite" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fpE-sJ-nR4" customClass="MarqueeLabel" customModule="MarqueeLabel">
-                                                <rect key="frame" x="15" y="35" width="153" height="21"/>
+                                                <rect key="frame" x="15" y="35" width="158" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                 <color key="textColor" name="DashBlack"/>
                                                 <nil key="highlightedColor"/>
@@ -713,11 +713,12 @@
         </scene>
     </scenes>
     <designables>
+        <designable name="IGg-qL-12A"/>
         <designable name="TAk-7B-GjH">
-            <size key="intrinsicContentSize" width="118" height="20.5"/>
+            <size key="intrinsicContentSize" width="123" height="20.5"/>
         </designable>
         <designable name="fpE-sJ-nR4">
-            <size key="intrinsicContentSize" width="153" height="20.5"/>
+            <size key="intrinsicContentSize" width="158" height="20.5"/>
         </designable>
     </designables>
     <resources>

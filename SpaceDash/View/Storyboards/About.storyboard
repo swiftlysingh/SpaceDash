@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yD3-ji-SQN">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yD3-ji-SQN">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -19,50 +19,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N5R-S6-Ut7" customClass="DetailScrollViews" customModule="SpaceDash" customModuleProvider="target">
-                                <rect key="frame" x="20" y="74" width="374" height="212"/>
+                                <rect key="frame" x="20" y="74" width="374" height="202.5"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About SpaceX" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uO5-Nr-Myd">
-                                        <rect key="frame" x="8" y="8" width="151" height="29.5"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="25"/>
-                                        <color key="textColor" name="DashBlack"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" textAlignment="justified" lineBreakMode="headTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X3h-kH-rng">
-                                        <rect key="frame" x="8" y="39.5" width="358" height="144.5"/>
-                                        <string key="text">Space Exploration Technologies Corp., trading as SpaceX, is an American aerospace manufacturer and space transportation services company headquartered in Hawthorne, California. It was founded in 2002 by Elon Musk with the goal of reducing space transportation costs to enable the colonization of Mars.</string>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="14"/>
-                                        <color key="textColor" name="DashBlack"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" name="DashCream"/>
-                                <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="X3h-kH-rng" secondAttribute="trailing" constant="8" id="7MV-28-KqW"/>
-                                    <constraint firstAttribute="height" constant="212" id="9hi-oa-Azu"/>
-                                    <constraint firstItem="X3h-kH-rng" firstAttribute="top" secondItem="uO5-Nr-Myd" secondAttribute="bottom" constant="2" id="MQI-Zm-aEB"/>
-                                    <constraint firstItem="X3h-kH-rng" firstAttribute="top" secondItem="uO5-Nr-Myd" secondAttribute="bottom" constant="2" id="VMK-8P-2TY"/>
-                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="uO5-Nr-Myd" secondAttribute="trailing" constant="20" symbolic="YES" id="eb6-Si-GZs"/>
-                                    <constraint firstItem="uO5-Nr-Myd" firstAttribute="top" secondItem="N5R-S6-Ut7" secondAttribute="top" constant="8" id="fAP-2q-Rvg"/>
-                                    <constraint firstItem="uO5-Nr-Myd" firstAttribute="leading" secondItem="N5R-S6-Ut7" secondAttribute="leading" constant="8" id="fUU-0z-BkB"/>
-                                    <constraint firstAttribute="bottom" secondItem="X3h-kH-rng" secondAttribute="bottom" constant="28" id="pe9-vo-PGq"/>
-                                    <constraint firstItem="X3h-kH-rng" firstAttribute="leading" secondItem="N5R-S6-Ut7" secondAttribute="leading" constant="8" id="sLR-ie-ft6"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SuG-Rh-GyO" customClass="DetailScrollViews" customModule="SpaceDash" customModuleProvider="target">
-                                <rect key="frame" x="20" y="335" width="374" height="212"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About SpaceDash" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Syz-yi-DN7">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About SpaceDash" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OGE-Hw-9db">
                                         <rect key="frame" x="8" y="8" width="191" height="36"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="36" id="MXW-zM-8BF"/>
+                                            <constraint firstAttribute="height" constant="36" id="dYo-h4-FFr"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="25"/>
                                         <color key="textColor" name="DashBlack"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3qa-7R-CVD">
-                                        <rect key="frame" x="8" y="44" width="358" height="152"/>
-                                        <string key="text">SpaceDash will be Dashboard for all things Space. It is a beautiful app with simple but informative UI. You will be able to simply glance at the upcoming launches for various space agency. And even watch it live if there is a live stream happening (Coming in the future version of the app). Currently the app supports launches, missions, rockets etc for SpaceX but more space agencies will be added soon.</string>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XUv-kJ-Kf0">
+                                        <rect key="frame" x="8" y="44" width="358" height="150.5"/>
+                                        <string key="text">SpaceDash is a Dashboard for all things Space. It is a beautiful app with simple but informative UI. You will be able to simply glance at the upcoming launches for various space agency. And even watch it live if there is a live stream happening. The app supports launches for various different Space Agencies. Currently it will show various rockets, capsules etc for SpaceX only. Although support for different space agencies coming soon! A news feed will also be added soon. </string>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="14"/>
                                         <color key="textColor" name="DashBlack"/>
                                         <nil key="highlightedColor"/>
@@ -70,15 +40,13 @@
                                 </subviews>
                                 <color key="backgroundColor" name="DashCream"/>
                                 <constraints>
-                                    <constraint firstItem="Syz-yi-DN7" firstAttribute="leading" secondItem="SuG-Rh-GyO" secondAttribute="leadingMargin" id="A2V-QT-rWd"/>
-                                    <constraint firstAttribute="height" constant="212" id="Caz-dp-9PL"/>
-                                    <constraint firstItem="3qa-7R-CVD" firstAttribute="top" secondItem="Syz-yi-DN7" secondAttribute="bottom" id="ajP-tt-Ngi"/>
-                                    <constraint firstAttribute="bottom" secondItem="3qa-7R-CVD" secondAttribute="bottom" constant="16" id="cvN-Wo-0s5"/>
-                                    <constraint firstItem="3qa-7R-CVD" firstAttribute="leading" secondItem="SuG-Rh-GyO" secondAttribute="leading" constant="8" id="eId-cd-JAv"/>
-                                    <constraint firstAttribute="trailing" secondItem="3qa-7R-CVD" secondAttribute="trailing" constant="8" id="jQA-4d-6Et"/>
-                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Syz-yi-DN7" secondAttribute="trailing" constant="20" symbolic="YES" id="wGn-Gr-um8"/>
-                                    <constraint firstItem="3qa-7R-CVD" firstAttribute="top" secondItem="Syz-yi-DN7" secondAttribute="bottom" id="wRe-pJ-W5u"/>
-                                    <constraint firstItem="Syz-yi-DN7" firstAttribute="top" secondItem="SuG-Rh-GyO" secondAttribute="topMargin" id="yfM-O8-Rma"/>
+                                    <constraint firstItem="OGE-Hw-9db" firstAttribute="top" secondItem="N5R-S6-Ut7" secondAttribute="top" constant="8" id="0ZA-Qd-RUL"/>
+                                    <constraint firstItem="OGE-Hw-9db" firstAttribute="leading" secondItem="N5R-S6-Ut7" secondAttribute="leading" constant="8" id="AgZ-zg-C66"/>
+                                    <constraint firstAttribute="bottom" secondItem="XUv-kJ-Kf0" secondAttribute="bottom" constant="8" id="EsU-30-HLh"/>
+                                    <constraint firstAttribute="trailing" secondItem="XUv-kJ-Kf0" secondAttribute="trailing" constant="8" id="Pss-hZ-QVq"/>
+                                    <constraint firstItem="XUv-kJ-Kf0" firstAttribute="leading" secondItem="N5R-S6-Ut7" secondAttribute="leading" constant="8" id="cHI-QM-RAo"/>
+                                    <constraint firstItem="XUv-kJ-Kf0" firstAttribute="top" secondItem="OGE-Hw-9db" secondAttribute="bottom" id="ksu-Yt-nnk"/>
+                                    <constraint firstItem="XUv-kJ-Kf0" firstAttribute="top" secondItem="OGE-Hw-9db" secondAttribute="bottom" id="xqG-mC-DQ9"/>
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XCW-Df-G6E">
@@ -108,9 +76,6 @@
                             <constraint firstItem="ZFi-n0-aqc" firstAttribute="bottom" secondItem="XCW-Df-G6E" secondAttribute="bottom" constant="33" id="0J0-FP-lgF"/>
                             <constraint firstItem="XCW-Df-G6E" firstAttribute="top" secondItem="DTs-ao-IyD" secondAttribute="bottom" constant="8" symbolic="YES" id="7Vr-uP-W6K"/>
                             <constraint firstItem="XCW-Df-G6E" firstAttribute="centerX" secondItem="ZFi-n0-aqc" secondAttribute="centerX" id="GZ6-QJ-Fxe"/>
-                            <constraint firstItem="SuG-Rh-GyO" firstAttribute="leading" secondItem="ZFi-n0-aqc" secondAttribute="leading" constant="20" id="ICc-1L-Wuy"/>
-                            <constraint firstItem="SuG-Rh-GyO" firstAttribute="top" secondItem="N5R-S6-Ut7" secondAttribute="bottom" constant="49" id="SWy-bN-N2o"/>
-                            <constraint firstItem="ZFi-n0-aqc" firstAttribute="trailing" secondItem="SuG-Rh-GyO" secondAttribute="trailing" constant="20" id="U1Y-HQ-4hF"/>
                             <constraint firstItem="DTs-ao-IyD" firstAttribute="centerX" secondItem="ZFi-n0-aqc" secondAttribute="centerX" id="aKF-vt-Dz3"/>
                             <constraint firstItem="N5R-S6-Ut7" firstAttribute="leading" secondItem="ZFi-n0-aqc" secondAttribute="leading" constant="20" id="qrh-bG-Ub4"/>
                             <constraint firstItem="N5R-S6-Ut7" firstAttribute="top" secondItem="ZFi-n0-aqc" secondAttribute="top" constant="30" id="rm8-Kf-ama"/>
@@ -119,10 +84,6 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="About" image="info.circle" catalog="system" id="Gw8-zP-Jg0"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <connections>
-                        <outlet property="aboutSpaceConstraint" destination="SWy-bN-N2o" id="4nM-c1-ioX"/>
-                        <outlet property="aboutSpaceTopConstraint" destination="rm8-Kf-ama" id="6LG-3b-frF"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wY2-s2-EhX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
