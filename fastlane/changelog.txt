@@ -1,2 +1,7 @@
-- Minor tweaks to the UI
+- Upcoming Launch will show the launches of every space agency!
+- Added weather condition for the launch day
+- Now you can customise the App Icon of the app based on your liking!
+- Added shadow to Rockets for better view.
+- Added WatchNow Button so that you can see the launch happening live!
+- Fixed a bug that was eating up too much of your memory
 - Some other minor bugs and other performance improvements
