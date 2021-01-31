@@ -1,3 +1,2 @@
-- Added Watch Now button for live streams when available 
 - Minor tweaks to the UI
 - Some other minor bugs and other performance improvements
