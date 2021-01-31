@@ -60,7 +60,7 @@ lane :release do
  set_changelog
 
  deliver(
-    submit_for_review: true,
+    submit_for_review: false,
     automatic_release: true,
     force: true, # Skip HTMl report verification
     skip_metadata: false,
