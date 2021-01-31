@@ -656,21 +656,16 @@
                                 <color key="backgroundColor" name="DashBlack"/>
                                 <color key="tintColor" name="DashBlack"/>
                             </tableView>
-                            <view contentMode="scaleToFill" id="IGg-qL-12A" customClass="AnimationView" customModule="Lottie">
-                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IGg-qL-12A" customClass="AnimationView" customModule="Lottie">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
-                                    <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lca-6F-H9L">
+                                    <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lca-6F-H9L">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="barTintColor" name="DashBlack"/>
                                     </navigationBar>
                                 </subviews>
                                 <color key="backgroundColor" name="DashBlack"/>
-                                <constraints>
-                                    <constraint firstItem="Lca-6F-H9L" firstAttribute="leading" secondItem="IGg-qL-12A" secondAttribute="leading" id="0qh-P7-SP3"/>
-                                    <constraint firstAttribute="trailing" secondItem="Lca-6F-H9L" secondAttribute="trailing" id="XVJ-gp-dyR"/>
-                                    <constraint firstItem="Lca-6F-H9L" firstAttribute="top" secondItem="IGg-qL-12A" secondAttribute="top" id="yZV-z4-Hr9"/>
-                                </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="animationName" value="space"/>
                                 </userDefinedRuntimeAttributes>
@@ -679,10 +674,14 @@
                         <viewLayoutGuide key="safeArea" id="5cC-rH-nHq"/>
                         <color key="backgroundColor" name="DashBlack"/>
                         <constraints>
+                            <constraint firstAttribute="bottom" secondItem="IGg-qL-12A" secondAttribute="bottom" id="CJB-jD-BUq"/>
                             <constraint firstItem="teU-Rm-P40" firstAttribute="top" secondItem="5cC-rH-nHq" secondAttribute="top" id="FOd-61-Oqr"/>
+                            <constraint firstItem="IGg-qL-12A" firstAttribute="leading" secondItem="KEM-DT-UJn" secondAttribute="leading" id="KSp-5r-yiF"/>
                             <constraint firstItem="teU-Rm-P40" firstAttribute="bottom" secondItem="5cC-rH-nHq" secondAttribute="bottom" id="cgt-sY-3XR"/>
                             <constraint firstItem="teU-Rm-P40" firstAttribute="leading" secondItem="5cC-rH-nHq" secondAttribute="leading" id="ihn-L5-l4U"/>
                             <constraint firstItem="5cC-rH-nHq" firstAttribute="trailing" secondItem="teU-Rm-P40" secondAttribute="trailing" id="mxj-ad-0CL"/>
+                            <constraint firstItem="IGg-qL-12A" firstAttribute="top" secondItem="KEM-DT-UJn" secondAttribute="top" id="rDF-Vw-mzO"/>
+                            <constraint firstAttribute="trailing" secondItem="IGg-qL-12A" secondAttribute="trailing" id="tnI-iG-hfi"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="dmB-km-fqk"/>
