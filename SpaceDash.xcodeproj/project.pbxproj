@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 53;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -22,8 +22,12 @@
 		CF0592F82546DDBB0033DBE1 /* SpaceDashIconShuttle.png in Resources */ = {isa = PBXBuildFile; fileRef = CFF4E5F425469FD200CE83AF /* SpaceDashIconShuttle.png */; };
 		CF0592F92546DDBB0033DBE1 /* SpaceDashIconSpaceShuttle.png in Resources */ = {isa = PBXBuildFile; fileRef = CFF4E5F225469FD200CE83AF /* SpaceDashIconSpaceShuttle.png */; };
 		CFF4E6132546A3B000CE83AF /* AppIconSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF4E6122546A3B000CE83AF /* AppIconSelectViewController.swift */; };
+		EE205A9C2A71A216001B5FBF /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE205A9B2A71A216001B5FBF /* Secrets.swift */; };
+		EE205A9D2A71A216001B5FBF /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE205A9B2A71A216001B5FBF /* Secrets.swift */; };
+		EE205A9E2A71A216001B5FBF /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE205A9B2A71A216001B5FBF /* Secrets.swift */; };
+		EE205A9F2A71A216001B5FBF /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE205A9B2A71A216001B5FBF /* Secrets.swift */; };
+		EE205AA02A71A216001B5FBF /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE205A9B2A71A216001B5FBF /* Secrets.swift */; };
 		FF13D26925ACEB08004FB143 /* Vehicles.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF13D26825ACEB08004FB143 /* Vehicles.xcassets */; };
-		FF1AC785257E9415009775F5 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1AC784257E9415009775F5 /* Secrets.swift */; };
 		FF281A8C25AC32F000B553AD /* LaunchProviders.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF281A8B25AC32F000B553AD /* LaunchProviders.xcassets */; };
 		FF3043D42507E5D0005F8EE6 /* FastlaneSnapshots.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3043D32507E5D0005F8EE6 /* FastlaneSnapshots.swift */; };
 		FF3043DC2507E615005F8EE6 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3043DB2507E615005F8EE6 /* SnapshotHelper.swift */; };
@@ -120,8 +124,8 @@
 		CFF4E5F425469FD200CE83AF /* SpaceDashIconShuttle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SpaceDashIconShuttle.png; sourceTree = "<group>"; };
 		CFF4E6122546A3B000CE83AF /* AppIconSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIconSelectViewController.swift; sourceTree = "<group>"; };
 		EAD33DEB1658F9122221595A /* Pods-SpaceX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceX.release.xcconfig"; path = "Target Support Files/Pods-SpaceX/Pods-SpaceX.release.xcconfig"; sourceTree = "<group>"; };
+		EE205A9B2A71A216001B5FBF /* Secrets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
 		FF13D26825ACEB08004FB143 /* Vehicles.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Vehicles.xcassets; sourceTree = "<group>"; };
-		FF1AC784257E9415009775F5 /* Secrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
 		FF281A8B25AC32F000B553AD /* LaunchProviders.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = LaunchProviders.xcassets; sourceTree = "<group>"; };
 		FF3043D12507E5D0005F8EE6 /* FastlaneSnapshots.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FastlaneSnapshots.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF3043D32507E5D0005F8EE6 /* FastlaneSnapshots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastlaneSnapshots.swift; sourceTree = "<group>"; };
@@ -292,7 +296,7 @@
 			isa = PBXGroup;
 			children = (
 				FFA9CA5A24C0CCCA006FA5DE /* NetworkManager.swift */,
-				FF1AC784257E9415009775F5 /* Secrets.swift */,
+				EE205A9B2A71A216001B5FBF /* Secrets.swift */,
 				FF42E94D24CD8CA5003E8DFE /* Constants.swift */,
 				FFB398F524DDD037001D4EA1 /* JsonDecoders */,
 				FFB398F824DDD306001D4EA1 /* DataModels */,
@@ -589,8 +593,9 @@
 		FFF716CA249D3E1C0043EB81 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1160;
-				LastUpgradeCheck = 1200;
+				LastUpgradeCheck = 1430;
 				ORGANIZATIONNAME = "Pushpinder Pal Singh";
 				TargetAttributes = {
 					FF3043D02507E5D0005F8EE6 = {
@@ -741,6 +746,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF3043D42507E5D0005F8EE6 /* FastlaneSnapshots.swift in Sources */,
+				EE205AA02A71A216001B5FBF /* Secrets.swift in Sources */,
 				FF3043DC2507E615005F8EE6 /* SnapshotHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -750,6 +756,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF42E95624CD8F1B003E8DFE /* SpaceDashConstantsCheck.swift in Sources */,
+				EE205A9E2A71A216001B5FBF /* Secrets.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -758,6 +765,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF42E96424CD9254003E8DFE /* SpaceDashAPITest.swift in Sources */,
+				EE205A9F2A71A216001B5FBF /* Secrets.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -766,6 +774,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FFA9CA7824C0D9D3006FA5DE /* SpaceDashUITests.swift in Sources */,
+				EE205A9D2A71A216001B5FBF /* Secrets.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -779,7 +788,6 @@
 				FF42E94E24CD8CA5003E8DFE /* Constants.swift in Sources */,
 				CFF4E6132546A3B000CE83AF /* AppIconSelectViewController.swift in Sources */,
 				FFF25C6824D871EF00D0E1FF /* DetailsTableViewCell.swift in Sources */,
-				FF1AC785257E9415009775F5 /* Secrets.swift in Sources */,
 				FFAFCB2C25768A0C003A5252 /* Result.swift in Sources */,
 				FFC259EB24A7AB3C0019E354 /* UpcomingView.swift in Sources */,
 				FFF716D6249D3E1C0043EB81 /* AppDelegate.swift in Sources */,
@@ -790,6 +798,7 @@
 				750F3DFD252708500030ED19 /* String.swift in Sources */,
 				FFAFCB19257684CC003A5252 /* PadData.swift in Sources */,
 				FFF716D8249D3E1C0043EB81 /* SceneDelegate.swift in Sources */,
+				EE205A9C2A71A216001B5FBF /* Secrets.swift in Sources */,
 				FF60A64A24D47B4E0030F5AE /* AboutViewController.swift in Sources */,
 				FFF266B424DEF93800BA5C28 /* CapsulesData.swift in Sources */,
 				FFF7171224A48F730043EB81 /* DetailScrollViews.swift in Sources */,
@@ -1147,7 +1156,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.0;
+				MARKETING_VERSION = 2.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pushpinderpalsingh.SpaceDash;
 				PRODUCT_NAME = SpaceDash;
 				SWIFT_VERSION = 5.0;
@@ -1168,7 +1177,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.0;
+				MARKETING_VERSION = 2.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pushpinderpalsingh.SpaceDash;
 				PRODUCT_NAME = SpaceDash;
 				SWIFT_VERSION = 5.0;
