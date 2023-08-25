@@ -2,10 +2,11 @@
 
 # A list of devices you want to take the screenshots from
 devices([
-   "iPhone 8 Plus",
-   "iPhone 11 Pro Max",
-   "iPad Pro (12.9-inch) (3rd generation)",
-   "iPad Pro (12.9-inch) (2nd generation)"
+   "iPhone 14 Plus",
+   "iPhone 14 Pro",
+   "iPhone 14 Pro Max",
+   "iPhone SE (3rd generation)",
+   "iPad Pro (12.9-inch) (6th generation)"
 ])
 
 languages([
@@ -16,7 +17,7 @@ languages([
 ])
 
 # The name of the scheme which contains the UI Tests
-scheme("FastlaneSnapshot")
+scheme("FastlaneSnapshots")
 
 # Where should the resulting screenshots be stored?
 # output_directory("./screenshots")
