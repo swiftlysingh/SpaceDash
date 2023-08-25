@@ -1152,6 +1152,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4WMQY24R33;
 				INFOPLIST_FILE = "$(SRCROOT)/SpaceDash/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = SpaceDash;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1173,6 +1175,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4WMQY24R33;
 				INFOPLIST_FILE = "$(SRCROOT)/SpaceDash/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = SpaceDash;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
